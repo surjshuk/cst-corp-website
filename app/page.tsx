@@ -2,7 +2,7 @@ import { Team, WhatWeDo } from "@/components/sections"
 import Special from "@/components/sections/common/Special"
 import { Achievements } from "@/components/sections/home/Achievements"
 import Hero from "@/components/sections/home/Hero"
-import { AUTONOMY, FOCUSONDEEPTECH, RANGERBLACKSTUDIO } from "@/app/assets";
+import { AUTONOMY, FOCUSONDEEPTECH } from "@/app/assets";
 
 const tabData = [
   {
@@ -10,7 +10,7 @@ const tabData = [
       title: "Uncrewed Aerial Systems",
       heading: "Redefining Drone Technology",
       description: "We build high-performance drones with complete control over design, engineering, and technology. Our technology is designed to make drones accessible for consumers, scalable for enterprises, and indispensable for defense and industrial applications, unlocking possibilities at the edge of imagination today.",
-      image: RANGERBLACKSTUDIO,
+      image: FOCUSONDEEPTECH,
       mask: "bg-gradient-to-t tablet:bg-none from-black to-transparent absolute inset-0"
   },
   {

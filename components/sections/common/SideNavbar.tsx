@@ -157,7 +157,7 @@ const SideNavbar = () => {
                 }`}
             >
                 <figure className="items-center justify-start gap-4 mb-8 hidden tablet:flex">
-                    <Image src={LOGO} alt="bramer-logo" className="w-fit h-[52px]" />
+                    <Image src={LOGO} alt="cst-logo" className="w-fit h-[52px]" />
                 </figure>
                 
                 <nav className="h-[93%] flex flex-col justify-between pt-16 tablet:pt-4">
@@ -175,7 +175,9 @@ const SideNavbar = () => {
                             activeSection={activeSection}
                             handleSubLinkClick={handleSubLinkClick}
                         />
-                        <NavItem href="" label="Technology" active={activeRoute === "/technology"} />  
+                        <NavItem href="/technology" label="Technology" active={activeRoute === "/technology"} />  
+                        <NavItem href="/customers" label="Customers" active={activeRoute === "/customers"} />  
+                        <NavItem href="/products&services" label="Products & Services" active={activeRoute === "/products&servies"} />  
                         <NavItem
                             href="/culture"
                             label="Culture & Jobs"

@@ -48,8 +48,8 @@ const myFont = localFont({
 })
 
 export const metadata: Metadata = {
-  title: "Bramer",
-  description: "Bramer is an Indian defence technology company that specializes in advanced autonomous systems.",
+  title: "CST Corp",
+  description: "",
   openGraph: {
     url: "/",
     type: "website",

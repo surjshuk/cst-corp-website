@@ -13,8 +13,8 @@ export * from "./home/Achievements"
 
 export * from "./contacts/contact"
 
-export * from "./jobs/Values"
-export * from "./jobs/Jobs"
-export * from "./jobs/ApplyForJob"
-export * from "./jobs/Locations"
-export * from "./jobs/share-dialog"
+export * from "./culture/Values"
+export * from "./culture/Jobs"
+export * from "./culture/ApplyForJob"
+export * from "./culture/Locations"
+export * from "./culture/share-dialog"

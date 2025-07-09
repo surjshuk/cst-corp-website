@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 const inquiries = [
-    { type: "General Inquiries", email: "contact@bramer.in" },
-    { type: "Job Inquiries", email: "hr@bramer.in" },
-    { type: "PR Inquiries", email: "pr@bramer.in" },
+    { type: "General Inquiries", email: "contact@cst-corp.net" },
+    { type: "Job Inquiries", email: "hr@cst-corp.net" },
+    { type: "PR Inquiries", email: "pr@cst-corp.net" },
 ];
 
 export const Contact = () => {
@@ -36,7 +36,7 @@ export const Contact = () => {
                         Your personal data will be securely stored for a period of time in line with legal and regulatory requirements depending on the nature of your inquiry. To find out more about your rights and our privacy practices, please refer to our {" "}
                         <Link
                             href="/privary-policy"
-                            className="text-[#E60923] hover:underline">
+                            className="text-[#0892D0] hover:underline">
                             Privacy Policy.
                         </Link>
                     </p>
@@ -51,7 +51,7 @@ export const Contact = () => {
                         <p>
                             <Link
                                 href={`mailto:${inquiry.email}`}
-                                className="text-[#ff1e31] text-[16px] tablet:text-2xl"
+                                className="text-[#0892D0] text-[16px] tablet:text-2xl"
                             >
                                 {inquiry.email}
                             </Link>
