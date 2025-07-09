@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'WayRay GroteskTM';
+    src: url('WayRayGrotesk_Semibold.eot');
+    src: local('WayRay Grotesk Semibold'), local('WayRayGrotesk_Semibold'),
+        url('WayRayGrotesk_Semibold.eot?#iefix') format('embedded-opentype'),
+        url('WayRayGrotesk_Semibold.woff2') format('woff2'),
+        url('WayRayGrotesk_Semibold.woff') format('woff'),
+        url('WayRayGrotesk_Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WayRay GroteskTM';
+    src: url('WayRayGrotesk_Light.eot');
+    src: local('WayRay Grotesk Light'), local('WayRayGrotesk_Light'),
+        url('WayRayGrotesk_Light.eot?#iefix') format('embedded-opentype'),
+        url('WayRayGrotesk_Light.woff2') format('woff2'),
+        url('WayRayGrotesk_Light.woff') format('woff'),
+        url('WayRayGrotesk_Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WayRay GroteskTM';
+    src: url('WayRayGrotesk_Thin.eot');
+    src: local('WayRay Grotesk Thin'), local('WayRayGrotesk_Thin'),
+        url('WayRayGrotesk_Thin.eot?#iefix') format('embedded-opentype'),
+        url('WayRayGrotesk_Thin.woff2') format('woff2'),
+        url('WayRayGrotesk_Thin.woff') format('woff'),
+        url('WayRayGrotesk_Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WayRay GroteskTM';
+    src: url('WayRayGrotesk_Medium.eot');
+    src: local('WayRay Grotesk Medium'), local('WayRayGrotesk_Medium'),
+        url('WayRayGrotesk_Medium.eot?#iefix') format('embedded-opentype'),
+        url('WayRayGrotesk_Medium.woff2') format('woff2'),
+        url('WayRayGrotesk_Medium.woff') format('woff'),
+        url('WayRayGrotesk_Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WayRay GroteskTM';
+    src: url('WayRayGrotesk_Regular.eot');
+    src: local('WayRay Grotesk Regular'), local('WayRayGrotesk_Regular'),
+        url('WayRayGrotesk_Regular.eot?#iefix') format('embedded-opentype'),
+        url('WayRayGrotesk_Regular.woff2') format('woff2'),
+        url('WayRayGrotesk_Regular.woff') format('woff'),
+        url('WayRayGrotesk_Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WayRay GroteskTM';
+    src: url('WayRayGrotesk_Bold.eot');
+    src: local('WayRay Grotesk Bold'), local('WayRayGrotesk_Bold'),
+        url('WayRayGrotesk_Bold.eot?#iefix') format('embedded-opentype'),
+        url('WayRayGrotesk_Bold.woff2') format('woff2'),
+        url('WayRayGrotesk_Bold.woff') format('woff'),
+        url('WayRayGrotesk_Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
