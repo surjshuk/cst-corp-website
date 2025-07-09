@@ -18,7 +18,7 @@ export const Contact = () => {
                         <span className="text-sm">India</span>
                         <div className="space-y-1.5">
                             <p className="text-[10px] tablet:text-sm text-primary">R&D center</p>
-                            <p className="text-[10px] tablet:text-sm">811C, AB4, Delhi Technological University, <br /> Rohini, Delhi, India</p>
+                            <p className="text-[10px] tablet:text-sm">12210 Bedford St. Houston, TX 77031</p>
                         </div>
                     </div>
                 </div>
