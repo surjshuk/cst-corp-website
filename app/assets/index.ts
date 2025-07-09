@@ -1,0 +1,22 @@
+export { default as LOGO } from "./images/icons/logo.png";
+export { default as LOGOWITHTITLE } from "./images/icons/logo-full-red.svg";
+export { default as BRO } from "./images/icons/bro.png";
+export { default as IDEX } from "./images/icons/idex.png";
+export { default as MOD } from "./images/icons/ministry-of-defence.png";
+export { default as SIGN } from "./images/icons/sign.png";
+export { default as CHEVRONRIGHT } from "./images/icons/chevron-right.svg";
+export { default as ARROWUP } from "./images/icons/fontisto_arrow-up.svg";
+export { default as ARROWDOWN } from "./images/icons/subway_down-2.svg";
+export { default as PLUS } from "./images/icons/bytesize_plus.svg";
+export { default as INPUT } from "./images/icons/input.svg";
+
+export { default as RANGERBLACKSTUDIO } from "./images/backgrounds/ranger-studio-dark-background.jpg";
+export { default as AUTONOMY } from "./images/backgrounds/autonomy.png";
+export { default as FOCUSONDEEPTECH } from "./images/backgrounds/focus-on-deep-tech.png";
+export { default as DEFENCEAPPLICATION } from "./images/backgrounds/defence.jpg";
+export { default as OURTEAM } from "./images/backgrounds/our-team.png";
+export { default as INSPECTION } from "./images/backgrounds/inspection.png";
+export { default as GEOSPATIAL } from "./images/backgrounds/geospatial.jpg";
+export { default as MISSION } from "./images/backgrounds/mission.png";
+export { default as LOCATION } from "./images/backgrounds/location.png";
+export { default as HIGHLIGHT } from "./images/backgrounds/highlight.png";
