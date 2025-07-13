@@ -3,6 +3,8 @@ import Special from "@/components/sections/common/Special"
 import { Achievements } from "@/components/sections/home/Achievements"
 import Hero from "@/components/sections/home/Hero"
 import { AUTONOMY, FOCUSONDEEPTECH } from "@/app/assets";
+import Grid from "@/components/sections/common/grid"; /** this is for the 8-box grid import */
+
 
 const tabData = [
   {
@@ -46,6 +48,11 @@ export default function Home() {
         <Achievements />
         <Team />
       </div>
+      <div data-id="grid-section" style={{ margin: '40px 0', padding: '20px 0', background: '#f0f0f0' }}>
+        <Grid />
+      </div>
+
+
     </>
   )
 }

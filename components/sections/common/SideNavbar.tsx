@@ -157,7 +157,7 @@ const SideNavbar = () => {
                 }`}
             >
                 <figure className="items-center justify-start gap-4 mb-8 hidden tablet:flex">
-                    <Image src={LOGO} alt="cst-logo" className="w-fit h-[52px]" />
+                    <Image src={LOGO} alt="bramer-logo" className="w-fit h-[52px]" />
                 </figure>
                 
                 <nav className="h-[93%] flex flex-col justify-between pt-16 tablet:pt-4">
@@ -175,7 +175,6 @@ const SideNavbar = () => {
                             activeSection={activeSection}
                             handleSubLinkClick={handleSubLinkClick}
                         />
-                        <NavItem href="/technology" label="Technology" active={activeRoute === "/technology"} />  
                         <NavItem 
                             href="/cybersecurity" 
                             label="Cybersecurity" 
@@ -184,7 +183,7 @@ const SideNavbar = () => {
                             activeSection={activeSection}
                             handleSubLinkClick={handleSubLinkClick}
 
-                        />  
+                        /> 
                         <NavItem
                             href="/culture"
                             label="Culture & Jobs"
@@ -248,3 +247,8 @@ const NavItem = ({ href, label, active, subLinks = [], activeSection, handleSubL
 );
 
 export default SideNavbar;
+
+
+
+
+                       
