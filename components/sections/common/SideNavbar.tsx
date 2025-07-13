@@ -170,16 +170,53 @@ const SideNavbar = () => {
                             subLinks={[
                                 "who-we-are",
                                 "what-we-do",
-                                "achievements",
+                                "partners",
+                                "team",
                             ]}
                             activeSection={activeSection}
                             handleSubLinkClick={handleSubLinkClick}
                         />
                         <NavItem 
+                            href="/ai-innovation" 
+                            label="AI" 
+                            active={activeRoute === "/ai-innovation"} 
+                            subLinks={["overview", "ai-consulting", "ai-predictive-pythia-ai", "ai-twin", "ai-anabled-medicines-inventory", "oil-rig-project", "saferig"]}
+                            activeSection={activeSection}
+                            handleSubLinkClick={handleSubLinkClick}
+
+                        /> 
+                        <NavItem 
                             href="/cybersecurity" 
                             label="Cybersecurity" 
                             active={activeRoute === "/cybersecurity"} 
-                            subLinks={["cloud-security", "data-security", "email-security"]}
+                            subLinks={["cloud-security", "data-security", "email-security", "endpoint-security", "identity-and-access-managemenet(IAM)", "network-security", "operational-technology-security(OT)", "threat-detection-and-response(TDR)"]}
+                            activeSection={activeSection}
+                            handleSubLinkClick={handleSubLinkClick}
+
+                        /> 
+                        <NavItem 
+                            href="/cloud-services" 
+                            label="Cloud Services" 
+                            active={activeRoute === "/cloud-services"} 
+                            subLinks={[]}
+                            activeSection={activeSection}
+                            handleSubLinkClick={handleSubLinkClick}
+
+                        /> 
+                        <NavItem 
+                            href="/software-development" 
+                            label="Software Development" 
+                            active={activeRoute === "/software-development"} 
+                            subLinks={[]}
+                            activeSection={activeSection}
+                            handleSubLinkClick={handleSubLinkClick}
+
+                        /> 
+                        <NavItem 
+                            href="/enterprise-network" 
+                            label="Enterprise Network" 
+                            active={activeRoute === "/enterprise-network"} 
+                            subLinks={["cloud-security", "data-security", "email-security", "endpoint-security", "identity-and-access-managemenet(IAM)", "network-security", "operational-technology-security(OT)", "threat-detection-and-response(TDR)"]}
                             activeSection={activeSection}
                             handleSubLinkClick={handleSubLinkClick}
 
