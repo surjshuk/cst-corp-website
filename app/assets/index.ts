@@ -20,3 +20,10 @@ export { default as GEOSPATIAL } from "./images/backgrounds/geospatial.jpg";
 export { default as MISSION } from "./images/backgrounds/mission.png";
 export { default as LOCATION } from "./images/backgrounds/location.png";
 export { default as HIGHLIGHT } from "./images/backgrounds/highlight.png";
+
+export { default as INDUSTRIESBG } from "./images/backgrounds/AI/industriesBG.png";
+export { default as SERVICESBG } from "./images/backgrounds/AI/servicesBG.png";
+export { default as SOLUTIONSBG } from "./images/backgrounds/AI/solutionsBG.png";
+export { default as ENTERPRISEBG } from "./images/backgrounds/AI/enterpriseBG.png";
+export { default as PYTHIAAI } from "./images/backgrounds/AI/pythiaAI.png";
+export { default as MONITORING } from "./images/backgrounds/AI/monitoring.png";
