@@ -20,3 +20,4 @@ export { default as GEOSPATIAL } from "./images/backgrounds/geospatial.jpg";
 export { default as MISSION } from "./images/backgrounds/mission.png";
 export { default as LOCATION } from "./images/backgrounds/location.png";
 export { default as HIGHLIGHT } from "./images/backgrounds/highlight.png";
+export { default as PLACEHOLDER } from "./images/backgrounds/placeholder.jpg";

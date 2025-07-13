@@ -176,8 +176,15 @@ const SideNavbar = () => {
                             handleSubLinkClick={handleSubLinkClick}
                         />
                         <NavItem href="/technology" label="Technology" active={activeRoute === "/technology"} />  
-                        <NavItem href="/customers" label="Customers" active={activeRoute === "/customers"} />  
-                        <NavItem href="/products&services" label="Products & Services" active={activeRoute === "/products&servies"} />  
+                        <NavItem 
+                            href="/cybersecurity" 
+                            label="Cybersecurity" 
+                            active={activeRoute === "/cybersecurity"} 
+                            subLinks={["cloud-security", "data-security", "email-security"]}
+                            activeSection={activeSection}
+                            handleSubLinkClick={handleSubLinkClick}
+
+                        />  
                         <NavItem
                             href="/culture"
                             label="Culture & Jobs"
