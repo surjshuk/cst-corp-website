@@ -6,37 +6,54 @@ import { AUTONOMY, FOCUSONDEEPTECH } from "@/app/assets";
 
 const tabData = [
   {
-      id: "0",
-      title: "AI Solutions",
-      heading: "Scalable AI-Powered Transformation",
-      description: "With the post-digital age showing no signs of slowing down, the need for scalability and rapid business transformation has never been more crucial",
-      image: FOCUSONDEEPTECH,
-      mask: "bg-gradient-to-t tablet:bg-black/50 from-black to-transparent absolute inset-0"
+    id: "0",
+    title: "AI",
+    heading: "AI-Driven Innovation for Every Sector",
+    description: "Harness advanced AI solutions including predictive systems, digital twins, and AI-powered consulting services to accelerate business transformation and operational intelligence.",
+    image: AUTONOMY,
+    mask: "bg-gradient-to-t tablet:bg-black/50 from-black to-transparent absolute inset-0"
   },
   {
-      id: "1",
-      title: "Autonomy at Its Core",
-      heading: "Leadership in Autonomy",
-      description: "At CST we manage and provide a broad range of industry specific expertise with cutting edge solutions that include: Low-code software development, AI models and frameworks, Advanced AI solutions, full-stack development, Networking, Cybersecurity, Cloud and Cloud hosting services.",
-      image: AUTONOMY,
-      mask: "bg-gradient-to-t tablet:bg-none from-black to-transparent absolute inset-0"
+    id: "1",
+    title: "Cybersecurity",
+    heading: "Defend, Detect, and Respond at Scale",
+    description: "Delivering multi-layered cybersecurity solutions including network security, endpoint protection, threat detection, identity management, and operational technology security for enterprise resilience.",
+    image: FOCUSONDEEPTECH,
+    mask: "bg-gradient-to-t tablet:bg-black/50 from-black to-transparent absolute inset-0"
   },
   {
-      id: "2",
-      title: "Focus on Deep Tech",
-      heading: "The Importance of End-to-End Innovation",
-      description: "We're redefining world-class service for the digital age. CST delivers cutting-edge products and bold innovation, shaping how the world connects with information.",
-      image: FOCUSONDEEPTECH,
-      mask: "bg-gradient-to-t from-black tablet:via-[#0a0a0aa6] to-transparent tablet:to-[#000000f1] absolute inset-0"
+    id: "2",
+    title: "Cloud Services",
+    heading: "Cloud-Native, Scalable, and Secure",
+    description: "Offering end-to-end cloud strategy, deployment, and management services to modernize enterprise infrastructure with secure, resilient, and scalable cloud architectures.",
+    image: AUTONOMY,
+    mask: "bg-gradient-to-t tablet:bg-black/50 from-black to-transparent absolute inset-0"
   },
+  {
+    id: "3",
+    title: "Software Development",
+    heading: "Modern Software for Enterprise and Beyond",
+    description: "Building robust, scalable, and low-code enterprise software solutions — from mobile and web apps to mission-critical backend systems — tailored to business-specific challenges.",
+    image: FOCUSONDEEPTECH,
+    mask: "bg-gradient-to-t tablet:bg-black/50 from-black to-transparent absolute inset-0"
+  },
+  {
+    id: "4",
+    title: "Enterprise Network",
+    heading: "High-Performance, Secure Enterprise Networks",
+    description: "Designing and deploying enterprise-grade, cloud-integrated, secure network infrastructures with advanced monitoring, threat defense, and operational technology support.",
+    image: AUTONOMY,
+    mask: "bg-gradient-to-t tablet:bg-black/50 from-black to-transparent absolute inset-0"
+  }
 ];
+
 
 export default function Home() {
   return (
     <>
       <div data-id="who-we-are">
         <Hero />
-        <Special tabData={tabData} className="h-[400vh]" progressMultiplierHorizontal={12} progressMultiplierVertical={{small: 4, default: 7}}/>
+        <Special tabData={tabData} className="h-[500vh]" progressMultiplierHorizontal={17} progressMultiplierVertical={{small: 4, default: 7}}/>
       </div>
       <div data-id="what-we-do">
         <WhatWeDo />
