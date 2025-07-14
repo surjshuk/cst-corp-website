@@ -41,4 +41,6 @@ export const PrismaCloudBenefits: Benefit[] = [
     text: "Scalable protection with no impact on workload performance.",
     position: "left",
   },
-];
+] 
+
+
