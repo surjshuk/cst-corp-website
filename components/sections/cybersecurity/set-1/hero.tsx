@@ -1,24 +1,29 @@
 import React from "react";
+import Image, { StaticImageData } from "next/image";
 
-type HeroProps = {
+type CloudServiceHeroProps = {
   title: string;
-  description: string;
+  imageSrc: StaticImageData;
 };
 
-export const Hero: React.FC<HeroProps> = ({
+export const Hero: React.FC<CloudServiceHeroProps> = ({
   title,
-  description,
+  imageSrc,
 }) => {
   return (
-    <div className="grid grid-cols-2 gap-72 p-12">
-      <div>
-        <h1 className="text-[80px] font-normal leading-none text-black w-[552px]">
+    <div className="relative w-full h-[670px] overflow-hidden">
+      <Image
+        src={imageSrc}
+        alt={title}
+        fill
+        className="object-cover"
+        priority
+      />
+      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute top-0 left-0 w-[640px] p-12">
+        <h1 className="text-white text-[80px] font-normal leading-none max-w-5xl">
           {title}
         </h1>
-      </div>
-      <div className="pt-28 space-y-4">
-        <h2 className="text-[50px]">Overview</h2>
-        <p className="text-[20px] w-[317px]">{description}</p>
       </div>
     </div>
   );

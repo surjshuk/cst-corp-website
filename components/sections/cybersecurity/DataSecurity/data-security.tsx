@@ -1,8 +1,8 @@
-import { Hero } from "../set-2/hero";
-import { Keyfeatures } from "../set-2/key-features";
+import { Hero } from "../set-1/hero";
 import { PLACEHOLDER } from "@/app/assets";
 import { PrismaCloud, PrismaCloudBenefits } from "./data";
-import { Benefits } from "../set-2/benefits";
+import { Benefits } from "../set-1/benefits";
+import { KeyFeaturesSection } from "../set-1/key-features";
 
 
 
@@ -17,12 +17,10 @@ export const DataSecurity = () => {
               title="Prisma Cloud by Palo Alto Networks"
               imageSrc={PLACEHOLDER}
             />
-            <Keyfeatures 
+            <KeyFeaturesSection 
               features={PrismaCloud} 
-              overview="CrowdStrike Falcon for Cloud Workloads provides next-generation protection for cloud workloads across public cloud environments. The platform leverages the power of the CrowdStrike Falcon endpoint protection platform, using a lightweight agent to secure workloads from threats and vulnerabilities in real time. It delivers workload security through a cloud-native architecture, integrating with AWS, Azure, and Google Cloud."
             />
             <Benefits
-              imageSrc={PLACEHOLDER}
               benefits={PrismaCloudBenefits}
             />
         </>

@@ -1,42 +1,40 @@
 import { Feature } from "@/types/declaration";
 import React from "react";
+import Image from "next/image";
 
 type KeyfeaturesProps = {
-  sectionTitle: string;
-  overview: string;
   features: Feature[];
 };
 
-export const Keyfeatures: React.FC<KeyfeaturesProps> = ({
-  sectionTitle,
-  overview,
-  features,
-}) => {
+export const Keyfeatures: React.FC<KeyfeaturesProps> = ({ features }) => {
   return (
-    <div className="p-12 space-y-12">
-      <div className="max-w-5xl">
-        <h2 className="text-[50px] mb-4">Overview</h2>
-        <p className="text-xl">{overview}</p>
-      </div>
+    <div className=" p-8 relative z-10 bg-background">
+        <h3 className="text-[20px] text-primary">Key features</h3>
 
-      <div className="">
-        <h2 className="text-[80px] mb-8">
-          {sectionTitle}
-        </h2>
+        <div className="grid grid-cols-2 gap-3">
+            {features.map((feature, index) => (
+                <div key={index} className="relative overflow-hidden h-[427px]">
+                <Image
+                    src={feature.image}
+                    alt={feature.title}
+                    fill
+                    className="object-cover z-0"
+                    priority
+                />
 
-        <div className="grid grid-cols-2 gap-x-12 gap-y-10">
-          {features.map((feature, index) => (
-            <div key={index}>
-              <h4 className="text-3xl font-normal text-black mb-2">
-                {feature.title}
-              </h4>
-              <p className="text-xl leading-relaxed text-black">
-                {feature.description}
-              </p>
-            </div>
-          ))}
+                <div className="absolute inset-0 bg-black/60 z-5" />
+
+                <div className="relative px-6 py-8 w-[427px]">
+                    <h4 className="text-[30px] font-normal leading-normal text-primary">
+                    {feature.title}
+                    </h4>
+                    <p className="text-[20px] font-normal leading-normal text-white">
+                    {feature.description}
+                    </p>
+                </div>
+                </div>
+            ))}  
         </div>
-      </div>
     </div>
   );
 };

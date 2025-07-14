@@ -252,7 +252,7 @@ const NavItem = ({ href, label, active, subLinks = [], activeSection, handleSubL
         <div
             className={`
                 flex flex-col items-start relative
-                transition-all duration-1000 ease-in-out overflow-hidden
+                transition-all duration-1000 ease-in-out overflow-clip w-40 text-nowrap
                 ${
                     active ? "max-h-[300px] opacity-100 translate-y-0 pt-3 pb-6" : "max-h-0 opacity-0 -translate-y-4"
                 }
