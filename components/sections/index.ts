@@ -22,3 +22,7 @@ export * from "./culture/share-dialog"
 export * from "./cybersecurity/CloudSecurity/cloud-security";
 export * from "./cybersecurity/DataSecurity/data-security";
 export * from "./cybersecurity/EmailSecurity/email-security";
+
+export * from "./software-development/Appian";
+export * from "./software-development/PowerBIAndPowerAutomate";
+export * from "./software-development/OutSystems";
