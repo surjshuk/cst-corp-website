@@ -38,7 +38,7 @@ export const Feature: React.FC<CollapsibleSectionProps> = ({
       className="space-y-20 px-5 pt-20 pb-7 tablet:space-y-20 tablet:px-12 tablet:pb-12 laptop:px-20 laptop:pt-40 laptop:pb-20"
     >
       <div className="space-y-3.5 max-w-[576px]">
-        <h1 className="text-[28px] text-[#0059FF] leading-tight tablet:text-5xl laptop:text-[80px] font-normal font-wayray">
+        <h1 className="text-[28px] text-primary leading-tight tablet:text-5xl laptop:text-[80px] font-normal font-wayray">
           {title}
         </h1>
         <p className="mt-[30px] text-xs tablet:text-[30px] text-black font-wayray font-normal leading-normal">

@@ -12,6 +12,7 @@ import {
   aiConsultingFeatures,
   industriesFeatures,
   ethicalSecurityFeatures,
+  digitalTwinTypes,
 } from "@/components/sections/AI/tabData"; // Adjust this import path based on your project structure
 import { PLACEHOLDER } from "../assets";
 import { Feature } from "@/components/sections/AI/feature";
@@ -22,52 +23,53 @@ import { AIBG2 } from "../assets/index";
 export default function Home() {
   return (
     <>
-      <div data-id="Solutions">
-        <Solutions />
-        <AIScroll
-          tabData={solutionsTabData}
-          className="h-[400vh]"
-          imageSrc={mainBG2}
-          mask="black/80"
-        />
-      </div>
+      <div id="generic-ai">
+        <div data-id="generic-ai">
+          <Solutions />
+          <AIScroll
+            tabData={solutionsTabData}
+            className="h-[400vh]"
+            imageSrc={mainBG2}
+            mask="black/80"
+            />  
 
-      <div data-id="Services">
-        <Overview
-          title="Services"
-          description={[
-            "Our comprehensive AI services support organizations at every stage of their AI journey, from strategy to ongoing optimization. We focus on delivering practical, high-impact solutions that align with your business objectives."
-          ]}
-        />
-        <AIScroll
-          tabData={servicesTabData}
-          className="h-[400vh]"
-          imageSrc={PLACEHOLDER}
-          mask="black/80"
+        </div>
 
-        />
-      </div>
+        <div data-id="generic-ai">
+          <Overview
+            title="Services"
+            description={[
+              "Our comprehensive AI services support organizations at every stage of their AI journey, from strategy to ongoing optimization. We focus on delivering practical, high-impact solutions that align with your business objectives."
+            ]}
+            />
 
-      <div data-id="Industries">
+
+          <AIScroll
+            tabData={servicesTabData}
+            className="h-[400vh]"
+            imageSrc={PLACEHOLDER}
+            mask="black/80"
+            
+            />
+
         <Feature
           title="Industries We Serve"
           intro="Our AI solutions are versatile, delivering transformative results across a wide range of industries. We’ve successfully implemented projects in sectors including:"
           features={industriesFeatures}
           concludingNote="Our flexible consulting and product approach allows us to tailor AI solutions to the unique challenges of any industry, ensuring measurable value and business impact."
-        />  
-       
-      </div>
+          />  
+        
 
-      <div data-id="EthicalSecurity">
-          <Feature
-            title="Ensuring Ethical and Secure Deployment"
-            intro="We are committed to responsible AI deployment, enforcing strong security and ethical guardrails to mitigate risks. Our secure frameworks ensure:"
-            features={ethicalSecurityFeatures}
-            concludingNote="This flexible approach enables us to deliver AI systems that remain trustworthy, compliant, and operationally safe for high-integrity use cases."
+        <Feature
+          title="Ensuring Ethical and Secure Deployment"
+          intro="We are committed to responsible AI deployment, enforcing strong security and ethical guardrails to mitigate risks. Our secure frameworks ensure:"
+          features={ethicalSecurityFeatures}
+          concludingNote="This flexible approach enables us to deliver AI systems that remain trustworthy, compliant, and operationally safe for high-integrity use cases."
           />
-      </div>
+        </div>
 
-      <div data-id="EnterpriseSuccess">
+      </div>
+      <div data-id="ai-governance" id="ai-governance">
         <Overview
           title="Driving Enterprise Success in the Age of Intelligence"
           description={[
@@ -81,9 +83,9 @@ export default function Home() {
           imageSrc={AIBG2}
           mask="black/80"
         />
-      </div>
 
-      <div data-id="AIConsulting">
+      </div>
+      <div data-id="ai-consulting" id="ai-consulting">
         <Feature 
           title="Monetizing AI Consulting Effectively"
           intro="To deliver maximum value to clients and ensure sustainable growth, AI consulting must be strategically monetized. Our approach combines innovative pricing models, scalable offerings, and client-centric strategies to drive impactful results:"
@@ -92,25 +94,23 @@ export default function Home() {
         />
       </div>
 
-      <div data-id="PythiaAI" className="mt-[100px] mb-[50px]" >
-      <Overview
-        title="Pythia AI"
-        description={[
-          "PythiaAI is an advanced predictive maintenance platform for oil and gas rig equipment, such as mud pumps, top drives, and diesel generators.",
-          "Using Electronic Drilling Recorder (EDR) data and optional sensors, it analyzes real-time data streams — pressure, vibration, torque, flow, and temperature — to detect anomalies and predict failures.",
-          "PythiaAI provides precise fault detection, accurate Remaining Useful Life (RUL) modeling, and actionable guidance, empowering maintenance teams with exceptional operational foresight."
-        ]}
-      />
+      <div data-id="pythia-ai" id="pythia-ai" className="mt-[100px] mb-[50px]" >
+        <Overview
+          title="Pythia AI"
+          description={[
+            "PythiaAI is an advanced predictive maintenance platform for oil and gas rig equipment, such as mud pumps, top drives, and diesel generators.",
+            "Using Electronic Drilling Recorder (EDR) data and optional sensors, it analyzes real-time data streams — pressure, vibration, torque, flow, and temperature — to detect anomalies and predict failures.",
+            "PythiaAI provides precise fault detection, accurate Remaining Useful Life (RUL) modeling, and actionable guidance, empowering maintenance teams with exceptional operational foresight."
+          ]}
+        />
         <AIScroll
           tabData={pythiaAITabData}
-          className="h-[400vh]"
+          className="h-[600vh]"
           imageSrc={mainBG4}
           mask="black/80"
         />
-      </div>
 
-      <div data-id="MonitoringDetection">
-         <Overview
+        <Overview
           title="Monitoring and Detection"
           description={[
             "PythiaAI uses advanced AI to detect failure modes in oil and gas rig equipment. For mud pumps, it identifies seal leaks, cavitation, and piston wear. For top drives, it monitors gearbox wear, bearing fatigue, shaft misalignment, over-torque/over-speed, and hydraulic/electrical issues. For diesel generators, it tracks engine parameters and load imbalances to prevent outages. In high-risk scenarios, adding vibration, acoustic, or thermal sensors enhances fault detection for bearings, gearboxes, and injectors when EDR data is insufficient.",
@@ -123,6 +123,31 @@ export default function Home() {
           className="h-[400vh]"
           imageSrc={mainBG1}
           mask="black/80"
+        />
+      </div>
+
+      <div data-id="ai-twin" id="ai-twin">
+        <Overview
+          title="AI Digital Twin Technology"
+          description={[
+            "A Digital Twin is a real-time, AI-enhanced virtual model of a physical object, system, or process. By continuously receiving data from sensors via IoT and processing it through AI algorithms, digital twins replicate the current state and behavior of assets throughout their operational lifecycle.",
+            "Unlike traditional simulations, digital twins are dynamic, updating in real-time to mirror the physical counterpart. This allows organizations to monitor, predict, and optimize performance remotely — improving decision-making, maintenance strategies, and operational efficiency."
+          ]}
+        />
+        <Feature
+          title="Types of Digital Twins"
+          intro="Digital twins come in various forms, each addressing specific levels of complexity and operational scope:"
+          features={digitalTwinTypes}
+          concludingNote="Each type plays a vital role in building a connected, AI-driven operational environment capable of proactive management and optimization."
+        />
+        <Overview
+          title="Benefits of Digital Twin Technology"
+          description={[
+            "Enhances real-time performance monitoring and proactive issue resolution, minimizing downtime.",
+            "Leverages predictive analytics to detect potential failures before they occur, reducing maintenance costs.",
+            "Enables remote oversight of critical, hazardous, or distributed assets, increasing operational safety and efficiency.",
+            "Speeds up production cycles and facility design by enabling virtual prototyping and iterative testing before physical implementation."
+          ]}
         />
       </div>
     </>

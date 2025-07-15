@@ -14,7 +14,7 @@ export const Overview: React.FC<OverviewProps> = ({ title, description }) => {
       top={true}
     >
       <div className="space-y-10 tablet:space-y-20 laptop:space-y-24">
-        <h1 className="text-[28px] leading-tight text-[#0059FF] tablet:text-5xl tablet:leading-[105%] laptop:text-7xl font-wayray">
+        <h1 className="text-[28px] leading-tight text-primary tablet:text-5xl tablet:leading-[105%] laptop:text-7xl font-wayray">
           {title}
         </h1>
 

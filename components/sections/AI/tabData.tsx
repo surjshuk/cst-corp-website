@@ -730,3 +730,10 @@ export const ethicalSecurityFeatures: Feature[] = [
       "Maintains secure integrations with third-party systems, enforces strict data protection protocols, and ensures compliance with privacy and regulatory frameworks.",
   },
 ];
+
+export const digitalTwinTypes = [
+  { title: "Component Twins", description: "Model a single component, like a motor in a wind turbine, helping analyze and predict individual element behavior." },
+  { title: "Asset Twins", description: "Represent multiple components within a system, capturing interactions and performance for informed operational decisions." },
+  { title: "Process Twins", description: "Digitally simulate entire processes or environments to understand how systems and assets interact dynamically." },
+  { title: "System Twins", description: "Provide a high-level view of multiple interconnected systems, enabling coordinated optimization and control." }
+];

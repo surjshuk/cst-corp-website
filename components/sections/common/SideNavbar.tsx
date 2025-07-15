@@ -8,10 +8,16 @@ import { useEffect, useState } from "react";
 
 const cultureSections: Record<string, number> = {
     mission: 0,
-    team: 1,
-    values: 2,
-    jobs: 3,
-    location: 4
+    values: 1,
+    location: 2
+}
+
+const aiSections: Record<string, number> = {
+    "generia-ai":  0,
+    "ai-governance": 1,
+    "ai-consulting": 2,
+    "pythia-ai": 3,
+    "ai-twin": 4
 }
 
 const homeSections: Record<string, number> = {
@@ -21,11 +27,36 @@ const homeSections: Record<string, number> = {
     "our-team": 3,
 }
 
+const softwareSections: Record<string, number> = {
+  "appian": 0,
+  "outsystems": 1,
+  "power-bi-and-power-automate": 2,
+};
+
+const cybersecuritySections: Record<string, number> = {
+  "cloud-security": 0,
+  "data-security": 1,
+  "email-security": 2,
+  "endpoint-security": 3,
+  "identity-and-access-managemenet(IAM)": 4,
+  "network-security": 5,
+  "operational-technology-security": 6,
+  "threat-detection-and-response(TDR)": 7,
+};
+
+const thresholdMap: Record<string, number> = {
+  "/culture": 0.4,
+  "/ai-innovation": 0.05,
+  "/cybersecurity": 0.2,
+  "/software-development": 0.1,
+  "/": 0.1,  // default home
+  // add others as needed
+};
+
 const SideNavbar = () => {
     const [activeRoute, setActiveRoute] = useState("/");
     const [activeSection, setActiveSection] = useState({id: "", index: 0});
     const [sidebarVisible, setSidebarVisible] = useState<boolean>(false);
-    const [jobsCount, setJobsCount] = useState<number | string>("");
     
     const router = usePathname();
 
@@ -88,22 +119,9 @@ const SideNavbar = () => {
         setActiveSection({id, index}); // Update the active section immediately
     };
 
-    useEffect(() => {
-        const getTotalJobsCount = async () => {
-            try {
-                const response = await fetch(`/api/jobs/total`);
-                const data: { total_jobs: number } = await response.json();
-                setJobsCount(data.total_jobs || "");
-              } catch (error) {
-                console.error("Failed to fetch total job count:", error);
-              }
-        }    
-        
-        getTotalJobsCount();
-    }, [])
-
       useEffect(() => {
-        const thresholdValue = activeRoute === "/culture" ? 0.4 : 0.2;
+       const thresholdValue = thresholdMap[activeRoute] ?? 0.2;
+
 
         // Create an observer that sets the active tab when a section is at least 60% visible
         const observer = new IntersectionObserver(
@@ -113,10 +131,17 @@ const SideNavbar = () => {
                 // setActiveTab(entry.target.getAttribute("data-id"));
                 const dataId = entry.target.getAttribute("data-id") || ""
 
-                if (activeRoute == "/culture") {
-                    setActiveSection({id: dataId, index: cultureSections[dataId]})
+                console.log("Active section:", dataId);
+                if (activeRoute === "/culture") {
+                setActiveSection({ id: dataId, index: cultureSections[dataId] });
+                } else if (activeRoute === "/ai-innovation") {
+                setActiveSection({ id: dataId, index: aiSections[dataId] });
+                } else if (activeRoute === "/cybersecurity") {
+                setActiveSection({ id: dataId, index: cybersecuritySections[dataId] });
+                } else if (activeRoute === "/software-development") {
+                setActiveSection({ id: dataId, index: softwareSections[dataId] ?? 0 });
                 } else {
-                    setActiveSection({id: dataId, index: homeSections[dataId]})
+                setActiveSection({ id: dataId, index: homeSections[dataId] });
                 }
               }
             });
@@ -181,7 +206,7 @@ const SideNavbar = () => {
                             href="/ai-innovation" 
                             label="AI" 
                             active={activeRoute === "/ai-innovation"} 
-                            subLinks={["overview", "ai-consulting", "ai-predictive-pythia-ai", "ai-twin", "ai-anabled-medicines-inventory", "oil-rig-project", "saferig"]}
+                            subLinks={["generic-ai", "ai-governance", "ai-consulting", "pythia-ai", "ai-twin"]}
                             activeSection={activeSection}
                             handleSubLinkClick={handleSubLinkClick}
 
@@ -190,12 +215,12 @@ const SideNavbar = () => {
                             href="/cybersecurity" 
                             label="Cybersecurity" 
                             active={activeRoute === "/cybersecurity"} 
-                            subLinks={["cloud-security", "data-security", "email-security", "endpoint-security", "identity-and-access-managemenet(IAM)", "network-security", "operational-technology-security(OT)", "threat-detection-and-response(TDR)"]}
+                            subLinks={["cloud-security", "data-security", "email-security", "endpoint-security", "identity-and-access-managemenet(IAM)", "network-security", "operational-technology-security", "threat-detection-and-response(TDR)"]}
                             activeSection={activeSection}
                             handleSubLinkClick={handleSubLinkClick}
 
                         /> 
-                        <NavItem 
+                        {/* <NavItem 
                             href="/cloud-services" 
                             label="Cloud Services" 
                             active={activeRoute === "/cloud-services"} 
@@ -203,17 +228,17 @@ const SideNavbar = () => {
                             activeSection={activeSection}
                             handleSubLinkClick={handleSubLinkClick}
 
-                        /> 
+                        />  */}
                         <NavItem 
                             href="/software-development" 
                             label="Software Development" 
                             active={activeRoute === "/software-development"} 
-                            subLinks={[]}
+                            subLinks={["appian", "outsystems", "power-bi-and-power-automate"]}
                             activeSection={activeSection}
                             handleSubLinkClick={handleSubLinkClick}
 
                         /> 
-                        <NavItem 
+                        {/* <NavItem 
                             href="/enterprise-network" 
                             label="Enterprise Network" 
                             active={activeRoute === "/enterprise-network"} 
@@ -221,7 +246,7 @@ const SideNavbar = () => {
                             activeSection={activeSection}
                             handleSubLinkClick={handleSubLinkClick}
 
-                        /> 
+                        />  */}
                         <NavItem
                             href="/culture"
                             label="Culture"
@@ -229,7 +254,6 @@ const SideNavbar = () => {
                             subLinks={["mission", "values", "location"]}
                             activeSection={activeSection}
                             handleSubLinkClick={handleSubLinkClick}
-                            badge={jobsCount}
                         />
                     </div>
 
