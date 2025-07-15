@@ -1,619 +1,732 @@
-import {
-    INDUSTRIESBG,
-    SERVICESBG,
-    SOLUTIONSBG,
-    ENTERPRISEBG,
-    PYTHIAAI,
-    MONITORING,
-  } from "@/app/assets";
+import { Feature } from "@/types/declaration";
 
-  
-  // Reusable content template
-  // const defaultContent = {
-  //   titleClass: "text-3xl font-bold",
-  //   subtitleClass: "text-xl text-gray-300",
-  //   bulletsClass: "list-disc pl-5 text-base",
-  //   paragraphClass: "text-sm max-w-[550px]",
-  //   wrapperClass: "bg-opacity-50 p-4",
-  //   contentClass: "flex flex-col gap-4",
-  //   layout: "left",
-  // };
-
-  export const solutionsTabData = [
-    {
-      id: "0",
-      tabTitle: "",
-      contentTitle: "Our AI solutions are built to foster innovation and give businesses a competitive edge. Each solution leverages advanced machine learning and analytics to produce real, measurable outcomes.",
-      subtitle: "",
-      bullets: [],
-      paragraph: "",
-      contentTitleClass: "w-[573px] h-[300px] text-[50px]  text-primary",
-      subtitleClass: "w-[555px] h-[99px] text-[30px] text-gray-200 italic",
-      bulletsClass: "list-disc pl-6 text-[23px] space-y-[22px] text-white",
-      paragraphClass: "absolute bottom-0 right-0 w-[681px] h-[198px] text-[30px] max-w-[681px] leading-loose",
-      wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-      contentClass: "flex flex-col gap-6 p-6 relative", // Added relative for positioning
-      image: SOLUTIONSBG,
-      mask: "",
-      layout: "left"
-    } ,
-    {
-
-
-            id: "1",
-            tabTitle: "",
-            contentTitle: "AI-Driven Analytics Platform",
-            subtitle: "Leverages advanced AI to process data and provide actionable insights for business optimization.",
-            bullets: ["Data-Driven Decisions", "Real-Time Insights", "Scalable Solutions", "Improved Efficiency"],
-            paragraph: "Our AI-driven analytics platform uses cutting-edge algorithms to process vast amounts of data, delivering real-time insights that empower businesses to make informed decisions. This solution scales with your needs, enhancing efficiency and driving growth while minimizing operational risks.",
-            contentTitleClass: "w-[573px] h-[110px] text-[70px] text-primary",
-            subtitleClass: "w-[573px] h-[110px] text-[35px] text-gray-200 mt-[70px]",
-            bulletsClass: "list-disc pl-6 text-[25px] space-y-[22px] text-white mt-[60px] overflow-hidden",
-            paragraphClass: "absolute bottom-[246px] right-[30px] max-w-[881px] w-full max-h-[398px] h-auto text-[30px] leading-loose overflow-wrap-break-word",
-            wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-            contentClass: "flex flex-col",
-            layout: "left"
-
-          
-
-          
+// Optimized Solutions Data - matches Special component structure
+export const solutionsTabData = [
+  {
+    id: "0",
+    title: "Overview",
+    heading: "AI Solutions for Business Innovation",
+    description: [
+      {
+        subheading: "Our Approach",
+        subdescription: [
+          { key: "Innovation", value: "Advanced machine learning and analytics" },
+          { key: "Impact", value: "Real, measurable business outcomes" },
+          { key: "Advantage", value: "Competitive edge through AI" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "1",
+    title: "AI Analytics",
+    heading: "AI-Driven Analytics Platform",
+    description: [
+      {
+        subheading: "Core Features",
+        subdescription: [
+          { key: "Decision Making", value: "Data-driven insights for optimization" },
+          { key: "Real-Time", value: "Live analytics and monitoring" },
+          { key: "Scalability", value: "Grows with your business needs" }
+        ]
       },
-      
-
-    {
-        id: "2",
-        tabTitle: "",
-        contentTitle: "Drone-Based Infrastructure Monitoring",
-        subtitle: "Combines drone technology with AI analytics to inspect and monitor critical infrastructure.",
-        bullets: ["Enhances Safety", "Ensures Compliance", " Cuts Inspection time and cose"],
-        paragraph: "CST can deploy advanced drones equipped with high-resolution cameras and AI algorithms to monitor critical infrastructure. Our solution detects issues such as structural damage or operational inefficiencies with high precision, reducing inspection costs and time while improving safety. Drone-based inspections can significantly lower operational expenses compared to traditional methods, aligning with modern safety and compliance standards.",
-        contentTitleClass: "max-w-[573px] w-full h-auto text-[70px] md:text-[70px] text-primary",
-        subtitleClass: "max-w-[573px] w-full h-auto text-[35px] md:text-[35px] text-gray-200 mt-[40px]",
-        bulletsClass: "list-disc pl-6 text-[25px] md:text-[25px] space-y-[30px] text-white mt-[40px]",
-        paragraphClass: "absolute bottom-[49px] right-[30px] max-w-[881px] w-full h-auto text-[30px] leading-loose overflow-wrap-break-word",
-        wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-        contentClass: "flex flex-col",
-        layout: "left"
+      {
+        subheading: "Benefits",
+        subdescription: [
+          { key: "Efficiency", value: "Streamlined operations and reduced risks" },
+          { key: "Growth", value: "Enhanced performance and revenue" },
+          { key: "Intelligence", value: "Cutting-edge algorithmic processing" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "2",
+    title: "Drone Monitoring",
+    heading: "Drone-Based Infrastructure Monitoring",
+    description: [
+      {
+        subheading: "Technology",
+        subdescription: [
+          { key: "AI Integration", value: "Advanced algorithms for analysis" },
+          { key: "High-Resolution", value: "Precision cameras and sensors" },
+          { key: "Automation", value: "Autonomous monitoring systems" }
+        ]
       },
-      
-
-    {
-
+      {
+        subheading: "Advantages",
+        subdescription: [
+          { key: "Safety", value: "Enhanced worker protection" },
+          { key: "Compliance", value: "Meets modern standards" },
+          { key: "Cost Efficiency", value: "Reduced inspection time and costs" }
+        ]
+      }
+    ]
+  },
+  {
     id: "3",
-    tabTitle: "",
-    contentTitle: " Custom AI Solutions ",
-    subtitle: " Develop tailored AI models to address specific business challenges, from automation to data insights  ",
-    bullets: ["Unlocks efficiencies", "Scalable solutions that foster growth"],
-    paragraph: "We specialize in building bespoke AI models tailored to your unique business needs. Whether it’s automating processes, enhancing decision-making with predictive analytics, or leveraging computer vision for quality control, our solutions integrate seamlessly into your operations. Our agile development process ensures rapid deployment and scalability, empowering your organization to stay ahead in a dynamic market.",
-    contentTitleClass: "w-[573px] h-[110px] text-[70px] text-primary",
-    subtitleClass: "w-[573px] h-[110px] text-[35px] text-gray-200 mt-[70px]",
-    bulletsClass: "list-disc pl-6 text-[25px] space-y-[22px] text-white mt-[60px] overflow-hidden",
-    paragraphClass: "absolute bottom-[246px] right-[30px] max-w-[881px] w-full max-h-[398px] h-auto text-[30px] leading-loose overflow-wrap-break-word",
-    wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-    contentClass: "flex flex-col",
-    layout: "left"
-
-    },
-
-    {
-
-        id: "4 ",
-        tabTitle: "",
-        contentTitle: " Custom AI Solutions ",
-        subtitle: " ",
-        bullets: [" Predictive Analytics: Optimizing production processes and forecasting operational risks. ", " Computer Vision: Enhancing safety monitoring and quality control through image and video analysis. ", " Automation: Streamlining routine tasks to improve efficiency and reduce costs. ", "  Data-Driven Insights: Leveraging machine learning to extract actionable insights from complex datasets."],
-        paragraph: "",
-        contentTitleClass: "w-[573px] h-[110px] text-[70px] text-primary",
-        subtitleClass: "w-[573px] h-[110px] text-[35px] text-gray-200 mt-[70px]",
-        bulletsClass: "list-disc pl-6 text-[25px] space-y-[22px] text-white mt-[60px] overflow-hidden",
-        paragraphClass: "absolute bottom-[246px] right-[30px] max-w-[881px] w-full max-h-[398px] h-auto text-[30px] leading-loose overflow-wrap-break-word",
-        wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-        contentClass: "flex flex-col",
-        layout: "left"
-      }
-
-  ];
-  
-  
-  export const servicesTabData = [
-    {
-        id: " 0",
-            tabTitle: "Consulting and Advisory",
-            contentTitle: "Strategic guidance to identify AI opportunities and develop a tailored roadmap.",
-            subtitle: "  Our team of AI experts collaborates with you to understand your business challenges and opportunities. We develop a strategic AI roadmap, identifying high-impact use cases such as process automation or predictive analytics, ensuring alignment with your long-term goals. Our advisory services draw on deep industry knowledge to maximize ROI. ",
-            bullets: [],
-            paragraph: " Aligns AI initiatives with business goals for maximum impact.",
-            contentTitleClass: "w-[673px] h-[110px] text-[60px] text-primary",
-            subtitleClass: "absolute bottom-[100px] left-[70px] max-w-[750px] w-full max-h-[398px] h-auto text-[25px] leading-loose overflow-wrap-break-word",
-            bulletsClass: "list-disc pl-6 text-[25px] space-y-[22px] text-white mt-[60px] overflow-hidden",
-            paragraphClass: "absolute bottom-[246px] right-[30px] max-w-[881px] w-full max-h-[398px] h-auto text-[30px] leading-loose overflow-wrap-break-word",
-            
-            wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-            contentClass: "flex flex-col",
-            image: SERVICESBG,
-            mask: "",
-            layout: "left"
-      },
-      
-    {
-
-      id: " 1",
-            tabTitle:"Development and Integration" ,
-            contentTitle:"Custom AI model development and seamless integration into existing systems.",
-            
-            subtitle: "We design, build, and deploy custom AI solutions tailored to your specific requirements. From machine learning models to computer vision applications, our development process ensures robust, scalable solutions. We integrate these systems seamlessly into your existing workflows, minimizing disruption and accelerating time-to-value." ,
-            bullets: [],
-            paragraph:  "Custom AI model development and seamless integration into existing systems."  ,
-            contentTitleClass: "w-[673px] h-[110px] text-[60px] text-primary",
-            subtitleClass: "absolute bottom-[100px] left-[70px] max-w-[750px] w-full max-h-[398px] h-auto text-[25px] leading-loose overflow-wrap-break-word",
-            bulletsClass: "list-disc pl-6 text-[25px] space-y-[22px] text-white mt-[60px] overflow-hidden",
-            paragraphClass: "absolute bottom-[275px] right-[150px] max-w-[279px] w-full max-h-[118px] h-auto text-[30px] leading-loose overflow-wrap-break-word",
-            wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-            contentClass: "flex flex-col",
-            image: SERVICESBG,
-            mask: "",
-            layout: "left"
-    },
-    {
-
-      id: " 2",
-            tabTitle:"Support and Maintainance",
-            contentTitle:"Ongoing monitoring, updates, and optimization of AI systems",
-            
-            subtitle: "Our managed AI services provide continuous monitoring, updates, and optimization to keep your AI systems performing at their peak. We proactively address issues, adapt to changing needs, and ensure your solutions remain aligned with business objectives, delivering sustained value over time.",
-            bullets: [],
-            paragraph: "Ensures long-term performance and adaptability of AI solutions.",
-            contentTitleClass: "w-[673px] h-[110px] text-[60px] text-primary",
-            subtitleClass: "absolute bottom-[100px] left-[70px] max-w-[750px] w-full max-h-[398px] h-auto text-[25px] leading-loose overflow-wrap-break-word",
-            bulletsClass: "list-disc pl-6 text-[25px] space-y-[22px] text-white mt-[60px] overflow-hidden",
-            paragraphClass: "absolute bottom-[275px] right-[150px] max-w-[279px] w-full max-h-[118px] h-auto text-[30px] leading-loose overflow-wrap-break-word",
-            wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-            contentClass: "flex flex-col",
-            image: SERVICESBG,
-            mask: "",
-            layout: "left"
-    }
-  ];
-  
-  
-  // Industries
-  
-//   export const industriesTabData = [
-//     {
-//       id: "0",
-//       tabTitle: "Manufacturing",
-//       contentTitle: "Smart Factories",
-//       subtitle: "AI in Manufacturing",
-//       bullets: ["Workflow optimization", "Automated inspection", "Resource tracking"],
-//       paragraph: "Our managed AI services provide continuous monitoring, updates, and optimization to keep your AI systems performing at their peak. We proactively address issues, adapt to changing needs, and ensure your solutions remain aligned with business objectives, delivering sustained value over time.",
-//       contentTitleClass: "w-[573px] h-[110px] text-[50px] font-extrabold text-primary",
-//       subtitleClass: "w-[555px] h-[99px] text-[30px] text-gray-200 italic",
-//       bulletsClass: "list-disc pl-6 text-[23px] space-y-[22px] text-white font-medium",
-//       paragraphClass: "absolute bottom-0 right-0 w-[681px] h-[198px] text-[30px] max-w-[681px] leading-loose",
-//       wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-//       contentClass: "flex flex-col gap-6 p-6 relative",
-//       image: INDUSTRIESBG,
-//       mask: "",
-//       layout: "left"
-//     },
-//     {
-//       id: "1",
-//       tabTitle: "Agriculture",
-//       contentTitle: "Precision Farming",
-//       subtitle: "Drone Agriculture",
-//       bullets: ["Soil analysis", "Pest detection", "Yield optimization"],
-//       paragraph: "Use drones and AI to make agriculture more efficient and data-driven. Ut enim ad minim veniam, quis nostrud exercitation.",
-//       contentTitleClass: "w-[573px] h-[110px] text-[50px] font-extrabold text-primary",
-//       subtitleClass: "w-[555px] h-[99px] text-[30px] text-gray-200 italic",
-//       bulletsClass: "list-disc pl-6 text-[23px] space-y-[22px] text-white font-medium",
-//       paragraphClass: "absolute bottom-0 right-0 w-[681px] h-[198px] text-[30px] max-w-[681px] leading-loose",
-//       wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-//       contentClass: "flex flex-col gap-6 p-6 relative",
-//       image: INDUSTRIESBG,
-//       mask: "",
-//       layout: "left"
-//     },
-//     {
-//       id: "2",
-//       tabTitle: "Energy",
-//       contentTitle: "Infrastructure Monitoring",
-//       subtitle: "Energy Sector AI",
-//       bullets: ["Power line scans", "Thermal imaging", "Outage prediction"],
-//       paragraph: "AI-powered drones help inspect and maintain critical infrastructure. Excepteur sint occaecat cupidatat non proident.",
-//       contentTitleClass: "w-[573px] h-[110px] text-[50px] font-extrabold text-primary",
-//       subtitleClass: "w-[555px] h-[99px] text-[30px] text-gray-200 italic",
-//       bulletsClass: "list-disc pl-6 text-[23px] space-y-[22px] text-white font-medium",
-//       paragraphClass: "absolute bottom-0 right-0 w-[681px] h-[198px] text-[30px] max-w-[681px] leading-loose",
-//       wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-//       contentClass: "flex flex-col gap-6 p-6 relative",
-//       video: "/videos/energy-demo.mp4",
-//       mask: "",
-//       layout: "left"
-//     },
-//     {
-//       id: "3",
-//       tabTitle: "Construction",
-//       contentTitle: "Site Surveys",
-//       subtitle: "Construction Drones",
-//       bullets: ["Progress tracking", "3D mapping", "Safety monitoring"],
-//       paragraph: "Accelerate site operations and documentation using aerial intelligence. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.",
-//       contentTitleClass: "w-[573px] h-[110px] text-[50px] font-extrabold text-primary",
-//       subtitleClass: "w-[555px] h-[99px] text-[30px] text-gray-200 italic",
-//       bulletsClass: "list-disc pl-6 text-[23px] space-y-[22px] text-white font-medium",
-//       paragraphClass: "absolute bottom-0 right-0 w-[681px] h-[198px] text-[30px] max-w-[681px] leading-loose",
-//       wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-//       contentClass: "flex flex-col gap-6 p-6 relative",
-//       image: INDUSTRIESBG,
-//       mask: "",
-//       layout: "left"
-//     }
-//   ];
-  
-  
-  // Enterprise Success
-  export const enterpriseSuccessTabData = [
-    {
-      id: "0",
-      tabTitle: "Accelerated AI Adoption",
-      contentTitle: "Accelerated AI Adoption",
-      subtitle: "",
-      bullets: [],
-      paragraph: "Organizations across sectors—finance, healthcare, manufacturing, and beyond—are integrating AI to drive competitive advantage. However, many lack the in-house expertise to implement AI effectively. AI consultants bridge this gap, enabling seamless adoption and ensuring alignment with business objectives.",
-      contentTitleClass: "w-[573px] h-[110px] text-[80px]  font-extrabold text-primary",
-      subtitleClass: "w-[555px] h-[99px] text-[30px] text-gray-200 italic",
-      bulletsClass: "list-disc pl-6 text-[23px] space-y-[22px] text-white font-medium",
-      paragraphClass: "absolute bottom-8 right-6 w-[90%] max-w-[640px] text-[30px] leading-loose text-white",
-      wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-      contentClass: "flex flex-col gap-6 p-6 relative",
-      image: ENTERPRISEBG,
-      mask: "",
-      layout: "left"
-    },
-    {
-      id: "1",
-      tabTitle: "Navigating Complexity",
-      contentTitle: "Navigating Complexity",
-      subtitle: "",
-      bullets: [],
-      paragraph: "As AI technologies advance—encompassing generative AI, reinforcement learning, and edge computing—specialized knowledge is essential to address technical, operational, and ethical challenges. Consultants provide the expertise needed to deploy cutting-edge solutions responsibly.",
-      contentTitleClass: "w-[573px] h-[110px] text-[80px]  font-extrabold text-primary",
-      subtitleClass: "w-[555px] h-[99px] text-[30px] text-gray-200 italic",
-      bulletsClass: "list-disc pl-6 text-[23px] space-y-[22px] text-white font-medium",
-      paragraphClass: "absolute bottom-8 right-6 w-[90%] max-w-[640px] text-[30px] leading-loose text-white",
-      wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-      contentClass: "flex flex-col gap-6 p-6 relative",
-      image: ENTERPRISEBG,
-      mask: "",
-      layout: "left"
-    },
-    {
-      id: "2",
-      tabTitle: "Regulatory Compliance",
-      contentTitle: "Regulatory Compliance",
-      subtitle: "",
-      bullets: [],
-      paragraph: "With the rise of AI regulations, such as the EU AI Act, enterprises face increasing scrutiny over AI governance. AI consultants ensure compliance, mitigate risks, and embed ethical principles, safeguarding brand reputation and stakeholder trust.",
-      contentTitleClass: "w-[573px]  h-[110px] text-[80px]  font-extrabold text-primary",
-      subtitleClass: "w-[555px] h-[99px] text-[30px] text-gray-200 italic",
-      bulletsClass: "list-disc pl-6 text-[23px] space-y-[22px] text-white font-medium",
-      paragraphClass: "absolute bottom-8 right-6 w-[90%] max-w-[640px] text-[30px] leading-loose text-white",
-      wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-      contentClass: "flex flex-col gap-6 p-6 relative",
-      image: ENTERPRISEBG,
-      mask: "",
-      layout: "left"
-    },
-    {
-      id: "3",
-      tabTitle: "Economic Transformation",
-      contentTitle: "Economic Transformation",
-      subtitle: "",
-      bullets: [],
-      paragraph: "AI is projected to contribute $15.7 trillion to the global economy by 2030, according to PwC. Consultants play a pivotal role in translating this potential into tangible outcomes, from cost optimization to revenue growth.",
-      contentTitleClass: "w-[573px] h-[110px] text-[80px]  font-extrabold text-primary",
-      subtitleClass: "w-[555px] h-[99px] text-[30px] text-gray-200 italic",
-      bulletsClass: "list-disc pl-6 text-[23px] space-y-[22px] text-white font-medium",
-      paragraphClass: "absolute bottom-8 right-6 w-[90%] max-w-[640px] text-[30px] leading-loose text-white",
-      wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-      contentClass: "flex flex-col gap-6 p-6 relative",
-      image: ENTERPRISEBG,
-      mask: "",
-      layout: "left"
-    },
-    {
-        id: "4",
-        tabTitle: "Tailored Solutions",
-        contentTitle: "Tailored Solutions",
-        subtitle: "",
-        bullets: [],
-        paragraph: "Generic AI tools often fail to address unique enterprise needs. AI consulting delivers customized solutions, enabling organizations to unlock value in areas such as supply chain optimization, customer experience enhancement, and predictive analytics.",
-        contentTitleClass: "w-[573px] h-[110px] text-[80px]  font-extrabold text-primary",
-      subtitleClass: "w-[555px] h-[99px] text-[30px] text-gray-200 italic",
-      bulletsClass: "list-disc pl-6 text-[23px] space-y-[22px] text-white font-medium",
-      paragraphClass: "absolute bottom-8 right-6 w-[90%] max-w-[640px] text-[30px] leading-loose text-white",
-      wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-      contentClass: "flex flex-col gap-6 p-6 relative",
-      image: ENTERPRISEBG,
-      mask: "",
-      layout: "left"
-      }
-  ];
-  
-  
-  // AI Consulting
-  export const aiConsultingTabData = [
-    {
-      id: "0",
-      tabTitle: "Strategy",
-      contentTitle: "AI Strategy Consulting",
-      subtitle: "Monetizing AI",
-      bullets: ["Strategic planning", "Revenue optimization", "AI implementation"],
-      paragraph: "Lay the foundation with strong strategic alignment for monetizing AI. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      titleClass: "text-4xl font-extrabold text-primary tablet:text-5xl",
-      subtitleClass: "text-2xl text-gray-200 italic",
-      bulletsClass: "list-disc pl-6 text-lg space-y-2 text-white font-medium",
-      paragraphClass: "text-base max-w-md leading-loose font-light",
-      wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-      contentClass: "flex flex-col gap-6 p-6",
-      image: INDUSTRIESBG,
-      mask: "",
-      layout: "left"
-    },
-    {
-      id: "1",
-      tabTitle: "Implementation",
-      contentTitle: "Implementation Services",
-      subtitle: "Expert Advice",
-      bullets: ["Agile delivery", "MVPs", "Continuous iteration"],
-      paragraph: "Go from prototype to product with expert guidance. Ut enim ad minim veniam, quis nostrud exercitation.",
-      titleClass: "text-4xl font-extrabold text-primary tablet:text-5xl",
-      subtitleClass: "text-2xl text-gray-200 italic",
-      bulletsClass: "list-disc pl-6 text-lg space-y-2 text-white font-medium",
-      paragraphClass: "text-base max-w-md leading-loose font-light",
-      wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-      contentClass: "flex flex-col gap-6 p-6",
-      image: INDUSTRIESBG,
-      mask: "",
-      layout: "left"
-    },
-    {
-      id: "2",
-      tabTitle: "Optimization",
-      contentTitle: "Optimization Techniques",
-      subtitle: "Maximizing Value",
-      bullets: ["Latency reduction", "Model tuning", "Pipeline refactor"],
-      paragraph: "Refine and optimize to hit peak system performance. Excepteur sint occaecat cupidatat non proident.",
-      titleClass: "text-4xl font-extrabold text-primary tablet:text-5xl",
-      subtitleClass: "text-2xl text-gray-200 italic",
-      bulletsClass: "list-disc pl-6 text-lg space-y-2 text-white font-medium",
-      paragraphClass: "text-base max-w-md leading-loose font-light",
-      wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-      contentClass: "flex flex-col gap-6 p-6",
-      video: "/videos/optimization-demo.mp4",
-      mask: "",
-      layout: "left"
-    },
-    {
-      id: "3",
-      tabTitle: "Governance",
-      contentTitle: "Governance",
-      subtitle: "Trust & Ethics",
-      bullets: ["Bias auditing", "Data governance", "Compliance"],
-      paragraph: "Ensure AI systems align with ethical and legal standards. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.",
-      titleClass: "text-4xl font-extrabold text-primary tablet:text-5xl",
-      subtitleClass: "text-2xl text-gray-200 italic",
-      bulletsClass: "list-disc pl-6 text-lg space-y-2 text-white font-medium",
-      paragraphClass: "text-base max-w-md leading-loose font-light",
-      wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-      contentClass: "flex flex-col gap-6 p-6",
-      image: INDUSTRIESBG,
-      mask: "",
-      layout: "left"
-    }
-  ];
-  
-  
-  
-  export const monitoringDetectionTabData = [
-    {
-      id: "0",
-      tabTitle: "Threat Detection",
-      contentTitle: "Threat Detection",
-      subtitle: "Stay Alert",
-      bullets: ["Anomaly detection", "Real-time alerts", "Behavioral AI"],
-      paragraph: "Proactively detect potential threats with AI monitoring. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      titleClass: "text-4xl font-extrabold text-primary tablet:text-5xl",
-      subtitleClass: "text-2xl text-gray-200 italic",
-      bulletsClass: "list-disc pl-6 text-lg space-y-2 text-white font-medium",
-      paragraphClass: "text-base max-w-md leading-loose",
-      wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-      contentClass: "flex flex-col gap-6 p-6",
-      image: MONITORING,
-      mask: "",
-      layout: "left"
-    },
-    {
-      id: "1",
-      tabTitle: "Surveillance",
-      contentTitle: "Surveillance",
-      subtitle: "Eyes Everywhere",
-      bullets: ["Video feeds", "Object tracking", "Zone alerts"],
-      paragraph: "Continuous surveillance using autonomous monitoring systems. Ut enim ad minim veniam, quis nostrud exercitation.",
-      titleClass: "text-4xl font-extrabold text-primary tablet:text-5xl",
-      subtitleClass: "text-2xl text-gray-200 italic",
-      bulletsClass: "list-disc pl-6 text-lg space-y-2 text-white font-medium",
-      paragraphClass: "text-base max-w-md leading-loose",
-      wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-      contentClass: "flex flex-col gap-6 p-6",
-      image: MONITORING,
-      mask: "",
-      layout: "left"
-    },
-    {
-      id: "2",
-      tabTitle: "Incident Logging",
-      contentTitle: "Incident Logging",
-      subtitle: "Smart History",
-      bullets: ["Event timeline", "Evidence capture", "Cloud logging"],
-      paragraph: "Document and retrieve incidents with structured logs. Excepteur sint occaecat cupidatat non proident.",
-      titleClass: "text-4xl font-extrabold text-primary tablet:text-5xl",
-      subtitleClass: "text-2xl text-gray-200 italic",
-      bulletsClass: "list-disc pl-6 text-lg space-y-2 text-white font-medium",
-      paragraphClass: "text-base max-w-md leading-loose",
-      wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-      contentClass: "flex flex-col gap-6 p-6",
-      image: MONITORING,
-      mask: "",
-      layout: "left"
-    },
-    {
-      id: "3",
-      tabTitle: "Response Automation",
-      contentTitle: "Response Automation",
-      subtitle: "Act Instantly",
-      bullets: ["Automated workflows", "Escalation rules", "Fail-safes"],
-      paragraph: "Trigger rapid responses without human delays. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.",
-      titleClass: "text-4xl font-extrabold text-primary tablet:text-5xl",
-      subtitleClass: "text-2xl text-gray-200 italic",
-      bulletsClass: "list-disc pl-6 text-lg space-y-2 text-white font-medium",
-      paragraphClass: "text-base max-w-md leading-loose",
-      wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-      contentClass: "flex flex-col gap-6 p-6",
-      image: MONITORING,
-      mask: "",
-      layout: "left"
-    }
-  ];
-  
-  
-  
-  export const pythiaAITabData = [
-
-        {
-            id: "0",
-            tabTitle: "",
-            contentTitle: "Real-Time Anomaly Detection",
-            subtitle: "Learns asset behavior from historical and live data to identify anomalies.",
-            bullets: [
-              "Uses AI models to track degradation and estimate Remaining Useful Life (RUL).",
-              "Failure Prediction & RUL Estimation"
-            ],
-            paragraph: "Pythia AI combines multiple tools into one intuitive interface. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            titleClass: "text-[50px] text-[#0059FF] text-left max-w-[500px]",
-            subtitleClass: "text-[35px] text-white text-left max-w-[500px]",
-            bulletsClass: "list-disc pl-6 text-[30px] text-white space-y-6 text-left max-w-[500px]",
-            paragraphClass: "text-[30px] text-white text-left max-w-[681px] h-[198px] absolute right-0 bottom-0 pr-6 pb-6",
-            wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-            contentClass: "flex flex-col gap-6 p-6 relative",
-            image: PYTHIAAI,
-            mask: "",
-            layout: "left"
-          },
-    {
-      id: "1",
-      tabTitle: "",
-      contentTitle: "Failure Prediction & RUL Estimation",
-      subtitle: "Smart Insights",
-      bullets: ["Forecasting", "Pattern recognition", "Custom reports"],
-      paragraph: "Use AI-driven analytics to fuel decision-making. Ut enim ad minim veniam, quis nostrud exercitation.",
-      titleClass: "text-[50px] text-[#0059FF] text-left",
-        subtitleClass: "text-[35px] text-white text-left",
-        bulletsClass: "list-disc pl-6 !text-[30px] text-white space-y-[22px] text-left",
-        paragraphClass: "text-[30px] text-white text-right max-w-[681px] h-[198px] absolute right-0 bottom-0 pr-6 pb-6",
-        wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-        contentClass: "flex flex-col gap-6 p-6 relative",  
-      image: PYTHIAAI,
-      mask: "",
-      layout: "left"
-    },
-    {
-      id: "2",
-      tabTitle: "",
-      contentTitle: "Physics-Simulated Fault Signatures",
-      subtitle: "Plug & Play",
-      bullets: ["CRM systems", "IoT", "ERP tools"],
-      paragraph: "Connect Pythia to your business stack with ease. Excepteur sint occaecat cupidatat non proident.",
-      titleClass: "text-4xl font-extrabold text-primary tablet:text-5xl",
-      subtitleClass: "text-2xl text-gray-200 italic",
-      bulletsClass: "list-disc pl-6 text-lg space-y-2 text-white font-medium",
-      paragraphClass: "text-base max-w-md leading-loose font-light",
-      wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-      contentClass: "flex flex-col gap-6 p-6",
-      image: PYTHIAAI,
-      mask: "",
-      layout: "left"
-    },
-    {
-      id: "3",
-      tabTitle: "",
-      contentTitle: "Prescriptive Guidance",
-      subtitle: "Built-in Trust",
-      bullets: ["Encryption", "Audit trails", "Access control"],
-      paragraph: "Enterprise-grade security ensures data stays protected. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.",
-      titleClass: "text-4xl font-extrabold text-primary tablet:text-5xl",
-      subtitleClass: "text-2xl text-gray-200 italic",
-      bulletsClass: "list-disc pl-6 text-lg space-y-2 text-white font-medium",
-      paragraphClass: "text-base max-w-md leading-loose font-light",
-      wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-      contentClass: "flex flex-col gap-6 p-6",
-      image: PYTHIAAI,
-      mask: "",
-      layout: "left"
-    },
-    {
-        id: "4",
-        tabTitle: "",
-        contentTitle: "Alert Validator (Human-in-the-Loop)",
-        subtitle: "Built-in Trust",
-        bullets: ["Encryption", "Audit trails", "Access control"],
-        paragraph: "Enterprise-grade security ensures data stays protected. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.",
-        titleClass: "text-4xl font-extrabold text-primary tablet:text-5xl",
-        subtitleClass: "text-2xl text-gray-200 italic",
-        bulletsClass: "list-disc pl-6 text-lg space-y-2 text-white font-medium",
-        paragraphClass: "text-base max-w-md leading-loose font-light",
-        wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-        contentClass: "flex flex-col gap-6 p-6",
-        image: PYTHIAAI,
-        mask: "",
-        layout: "left"
+    title: "Custom AI",
+    heading: "Custom AI Solutions",
+    description: [
+      {
+        subheading: "Specialization",
+        subdescription: [
+          { key: "Bespoke Models", value: "Tailored to your unique needs" },
+          { key: "Integration", value: "Seamless operational deployment" },
+          { key: "Scalability", value: "Rapid deployment and growth" }
+        ]
       },
       {
-        id: "5",
-        tabTitle: "",
-        contentTitle: "Security",
-        subtitle: "Built-in Trust",
-        bullets: ["Encryption", "Audit trails", "Access control"],
-        paragraph: "Enterprise-grade security ensures data stays protected. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.",
-        titleClass: "text-4xl font-extrabold text-primary tablet:text-5xl",
-      subtitleClass: "text-2xl text-gray-200 italic",
-      bulletsClass: "list-disc pl-6 text-lg space-y-2 text-white font-medium",
-      paragraphClass: "text-base max-w-md leading-loose font-light",
-      wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-      contentClass: "flex flex-col gap-6 p-6",
-        image: PYTHIAAI,
-        mask: "",
-        layout: "left"
+        subheading: "Applications",
+        subdescription: [
+          { key: "Automation", value: "Process optimization and efficiency" },
+          { key: "Analytics", value: "Predictive insights and forecasting" },
+          { key: "Vision", value: "Quality control and monitoring" }
+        ]
+      }
+    ]
+  }
+];
+
+// Optimized Services Data
+export const servicesTabData = [
+  {
+    id: "0",
+    title: "Consulting",
+    heading: "Strategic AI Consulting & Advisory",
+    description: [
+      {
+        subheading: "Strategic Planning",
+        subdescription: [
+          { key: "Roadmap", value: "Tailored AI implementation strategy" },
+          { key: "Opportunities", value: "High-impact use case identification" },
+          { key: "ROI Focus", value: "Maximum return on investment" }
+        ]
       },
       {
-        id: "6",
-        tabTitle: "",
-        contentTitle: "Safety Vision (Optional Add-On)",
-        subtitle: "Built-in Trust",
-        bullets: ["Encryption", "Audit trails", "Access control"],
-        paragraph: "Enterprise-grade security ensures data stays protected. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.",
-        titleClass: "text-4xl font-extrabold text-primary tablet:text-5xl",
-      subtitleClass: "text-2xl text-gray-200 italic",
-      bulletsClass: "list-disc pl-6 text-lg space-y-2 text-white font-medium",
-      paragraphClass: "text-base max-w-md leading-loose font-light",
-      wrapperClass: "bg-black bg-opacity-60 rounded-lg shadow-lg",
-      contentClass: "flex flex-col gap-6 p-6",
-        image: PYTHIAAI,
-        mask: "",
-        layout: "left"
+        subheading: "Business Alignment",
+        subdescription: [
+          { key: "Goals", value: "AI initiatives aligned with objectives" },
+          { key: "Expertise", value: "Deep industry knowledge application" },
+          { key: "Impact", value: "Measurable business transformation" }
+        ]
       }
-  ];
+    ]
+  },
+  {
+    id: "1",
+    title: "Development",
+    heading: "AI Development & Integration",
+    description: [
+      {
+        subheading: "Custom Solutions",
+        subdescription: [
+          { key: "Machine Learning", value: "Advanced model development" },
+          { key: "Computer Vision", value: "Visual recognition systems" },
+          { key: "Integration", value: "Seamless workflow incorporation" }
+        ]
+      },
+      {
+        subheading: "Implementation",
+        subdescription: [
+          { key: "Scalability", value: "Robust, enterprise-grade solutions" },
+          { key: "Efficiency", value: "Minimal disruption deployment" },
+          { key: "Time-to-Value", value: "Accelerated business impact" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "2",
+    title: "Support",
+    heading: "AI Support & Maintenance",
+    description: [
+      {
+        subheading: "Ongoing Services",
+        subdescription: [
+          { key: "Monitoring", value: "Continuous system performance tracking" },
+          { key: "Updates", value: "Regular optimization and improvements" },
+          { key: "Adaptation", value: "Evolving with business needs" }
+        ]
+      },
+      {
+        subheading: "Long-term Value",
+        subdescription: [
+          { key: "Performance", value: "Sustained peak AI system operation" },
+          { key: "Alignment", value: "Continued business objective matching" },
+          { key: "Support", value: "Proactive issue resolution" }
+        ]
+      }
+    ]
+  }
+];
 
+// Optimized Enterprise Success Data
+export const enterpriseSuccessTabData = [
+  {
+    id: "0",
+    title: "AI Adoption",
+    heading: "Accelerated AI Adoption",
+    description: [
+      {
+        subheading: "Market Reality",
+        subdescription: [
+          { key: "Cross-Sector", value: "Finance, healthcare, manufacturing adoption" },
+          { key: "Expertise Gap", value: "Limited in-house AI capabilities" },
+          { key: "Competitive Edge", value: "AI-driven business advantage" }
+        ]
+      },
+      {
+        subheading: "Solution",
+        subdescription: [
+          { key: "Expertise Bridge", value: "Consultants fill knowledge gaps" },
+          { key: "Implementation", value: "Seamless AI integration" },
+          { key: "Alignment", value: "Business objective focus" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "1",
+    title: "Complexity",
+    heading: "Navigating AI Complexity",
+    description: [
+      {
+        subheading: "Advanced Technologies",
+        subdescription: [
+          { key: "Generative AI", value: "Cutting-edge AI applications" },
+          { key: "Edge Computing", value: "Distributed AI processing" },
+          { key: "Reinforcement Learning", value: "Advanced decision systems" }
+        ]
+      },
+      {
+        subheading: "Expert Guidance",
+        subdescription: [
+          { key: "Technical", value: "Complex implementation support" },
+          { key: "Operational", value: "Business process integration" },
+          { key: "Ethical", value: "Responsible AI deployment" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "2",
+    title: "Compliance",
+    heading: "Regulatory Compliance",
+    description: [
+      {
+        subheading: "Regulatory Landscape",
+        subdescription: [
+          { key: "EU AI Act", value: "Comprehensive AI regulation compliance" },
+          { key: "Governance", value: "AI oversight and risk management" },
+          { key: "Scrutiny", value: "Increased regulatory attention" }
+        ]
+      },
+      {
+        subheading: "Risk Mitigation",
+        subdescription: [
+          { key: "Compliance", value: "Regulatory requirement adherence" },
+          { key: "Ethics", value: "Responsible AI principles" },
+          { key: "Trust", value: "Stakeholder confidence protection" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "3",
+    title: "Economic Impact",
+    heading: "Economic Transformation",
+    description: [
+      {
+        subheading: "Market Potential",
+        subdescription: [
+          { key: "Global Impact", value: "$15.7 trillion by 2030 (PwC)" },
+          { key: "Transformation", value: "Economic paradigm shift" },
+          { key: "Opportunity", value: "Unprecedented value creation" }
+        ]
+      },
+      {
+        subheading: "Consultant Role",
+        subdescription: [
+          { key: "Translation", value: "Potential to tangible outcomes" },
+          { key: "Optimization", value: "Cost reduction and efficiency" },
+          { key: "Growth", value: "Revenue generation and expansion" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "4",
+    title: "Tailored Solutions",
+    heading: "Customized AI Solutions",
+    description: [
+      {
+        subheading: "Beyond Generic",
+        subdescription: [
+          { key: "Limitation", value: "Generic tools miss unique needs" },
+          { key: "Customization", value: "Tailored enterprise solutions" },
+          { key: "Specificity", value: "Industry-focused applications" }
+        ]
+      },
+      {
+        subheading: "Value Areas",
+        subdescription: [
+          { key: "Supply Chain", value: "Optimization and efficiency" },
+          { key: "Customer Experience", value: "Enhanced satisfaction" },
+          { key: "Predictive Analytics", value: "Future-focused insights" }
+        ]
+      }
+    ]
+  }
+];
 
+// Optimized Pythia AI Data
+export const pythiaAITabData = [
+  {
+    id: "0",
+    title: "Anomaly Detection",
+    heading: "Real-Time Anomaly Detection",
+    description: [
+      {
+        subheading: "Learning Capabilities",
+        subdescription: [
+          { key: "Historical Data", value: "Learn from past asset behavior" },
+          { key: "Live Monitoring", value: "Real-time performance tracking" },
+          { key: "Pattern Recognition", value: "Identify unusual behaviors" }
+        ]
+      },
+      {
+        subheading: "AI Integration",
+        subdescription: [
+          { key: "Machine Learning", value: "Advanced detection algorithms" },
+          { key: "Predictive Models", value: "Future failure forecasting" },
+          { key: "Unified Interface", value: "Intuitive system management" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "1",
+    title: "Failure Prediction",
+    heading: "Failure Prediction & RUL Estimation",
+    description: [
+      {
+        subheading: "Predictive Analytics",
+        subdescription: [
+          { key: "Degradation Tracking", value: "Monitor asset deterioration" },
+          { key: "RUL Estimation", value: "Remaining Useful Life calculation" },
+          { key: "Forecasting", value: "Future performance prediction" }
+        ]
+      },
+      {
+        subheading: "Decision Support",
+        subdescription: [
+          { key: "Pattern Analysis", value: "Complex behavior recognition" },
+          { key: "Custom Reports", value: "Tailored insights delivery" },
+          { key: "Smart Insights", value: "AI-driven recommendations" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "2",
+    title: "Fault Signatures",
+    heading: "Physics-Simulated Fault Signatures",
+    description: [
+      {
+        subheading: "Simulation Technology",
+        subdescription: [
+          { key: "Physics-Based", value: "Accurate fault modeling" },
+          { key: "Signature Analysis", value: "Unique failure patterns" },
+          { key: "Validation", value: "Real-world correlation" }
+        ]
+      },
+      {
+        subheading: "Integration",
+        subdescription: [
+          { key: "Plug & Play", value: "Easy system integration" },
+          { key: "Business Stack", value: "CRM, IoT, ERP connectivity" },
+          { key: "Seamless", value: "Minimal setup requirements" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "3",
+    title: "Prescriptive Guidance",
+    heading: "Prescriptive Guidance System",
+    description: [
+      {
+        subheading: "Action Recommendations",
+        subdescription: [
+          { key: "Maintenance", value: "Optimal timing suggestions" },
+          { key: "Resource Planning", value: "Efficient allocation guidance" },
+          { key: "Cost Optimization", value: "Financial impact analysis" }
+        ]
+      },
+      {
+        subheading: "Decision Support",
+        subdescription: [
+          { key: "Priority Matrix", value: "Risk-based task ordering" },
+          { key: "Impact Assessment", value: "Consequence evaluation" },
+          { key: "Strategic Planning", value: "Long-term optimization" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "4",
+    title: "Alert Validation",
+    heading: "Alert Validator (Human-in-the-Loop)",
+    description: [
+      {
+        subheading: "Validation Process",
+        subdescription: [
+          { key: "Human Oversight", value: "Expert validation integration" },
+          { key: "False Positive", value: "Reduced alert fatigue" },
+          { key: "Learning Loop", value: "Continuous improvement cycle" }
+        ]
+      },
+      {
+        subheading: "Quality Assurance",
+        subdescription: [
+          { key: "Accuracy", value: "Verified alert reliability" },
+          { key: "Confidence", value: "Trusted decision support" },
+          { key: "Feedback", value: "System learning enhancement" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "5",
+    title: "Security",
+    heading: "Enterprise Security Framework",
+    description: [
+      {
+        subheading: "Security Features",
+        subdescription: [
+          { key: "Encryption", value: "Data protection at rest and transit" },
+          { key: "Audit Trails", value: "Comprehensive activity logging" },
+          { key: "Access Control", value: "Role-based permissions" }
+        ]
+      },
+      {
+        subheading: "Enterprise Grade",
+        subdescription: [
+          { key: "Compliance", value: "Industry standard adherence" },
+          { key: "Protection", value: "Multi-layer security approach" },
+          { key: "Trust", value: "Built-in security framework" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "6",
+    title: "Safety Vision",
+    heading: "Safety Vision (Optional Add-On)",
+    description: [
+      {
+        subheading: "Computer Vision",
+        subdescription: [
+          { key: "Safety Monitoring", value: "Real-time hazard detection" },
+          { key: "Compliance", value: "Safety regulation adherence" },
+          { key: "Prevention", value: "Proactive risk mitigation" }
+        ]
+      },
+      {
+        subheading: "Advanced Features",
+        subdescription: [
+          { key: "Object Detection", value: "Automated safety scanning" },
+          { key: "Behavior Analysis", value: "Unsafe action identification" },
+          { key: "Alert System", value: "Immediate notification delivery" }
+        ]
+      }
+    ]
+  }
+];
 
-  
+// Optimized AI Consulting Data
+export const aiConsultingTabData = [
+  {
+    id: "0",
+    title: "Strategy",
+    heading: "AI Strategy Consulting",
+    description: [
+      {
+        subheading: "Strategic Foundation",
+        subdescription: [
+          { key: "Planning", value: "Comprehensive AI roadmap development" },
+          { key: "Monetization", value: "Revenue optimization strategies" },
+          { key: "Implementation", value: "Structured deployment approach" }
+        ]
+      },
+      {
+        subheading: "Business Alignment",
+        subdescription: [
+          { key: "Objectives", value: "Strategic goal synchronization" },
+          { key: "ROI Focus", value: "Investment return maximization" },
+          { key: "Competitive Edge", value: "Market advantage creation" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "1",
+    title: "Implementation",
+    heading: "AI Implementation Services",
+    description: [
+      {
+        subheading: "Development Process",
+        subdescription: [
+          { key: "Agile Delivery", value: "Iterative development approach" },
+          { key: "MVP Focus", value: "Minimum viable product strategy" },
+          { key: "Iteration", value: "Continuous improvement cycles" }
+        ]
+      },
+      {
+        subheading: "Expert Guidance",
+        subdescription: [
+          { key: "Prototype", value: "Concept to proof-of-concept" },
+          { key: "Production", value: "Scalable solution deployment" },
+          { key: "Support", value: "Comprehensive technical assistance" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "2",
+    title: "Optimization",
+    heading: "AI System Optimization",
+    description: [
+      {
+        subheading: "Performance Enhancement",
+        subdescription: [
+          { key: "Latency", value: "Response time reduction" },
+          { key: "Model Tuning", value: "Accuracy optimization" },
+          { key: "Pipeline", value: "Workflow refactoring" }
+        ]
+      },
+      {
+        subheading: "Value Maximization",
+        subdescription: [
+          { key: "Efficiency", value: "Resource utilization optimization" },
+          { key: "Performance", value: "Peak system capability" },
+          { key: "Scalability", value: "Growth-ready architecture" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "3",
+    title: "Governance",
+    heading: "AI Governance & Ethics",
+    description: [
+      {
+        subheading: "Ethical Framework",
+        subdescription: [
+          { key: "Bias Auditing", value: "Fairness assessment and correction" },
+          { key: "Data Governance", value: "Privacy and security compliance" },
+          { key: "Compliance", value: "Regulatory requirement adherence" }
+        ]
+      },
+      {
+        subheading: "Trust & Standards",
+        subdescription: [
+          { key: "Ethics", value: "Responsible AI implementation" },
+          { key: "Legal", value: "Regulatory compliance assurance" },
+          { key: "Transparency", value: "Explainable AI systems" }
+        ]
+      }
+    ]
+  }
+];
 
+// Optimized Monitoring Detection Data
+export const monitoringDetectionTabData = [
+  {
+    id: "0",
+    title: "Threat Detection",
+    heading: "AI-Powered Threat Detection",
+    description: [
+      {
+        subheading: "Detection Capabilities",
+        subdescription: [
+          { key: "Anomaly Detection", value: "Unusual pattern identification" },
+          { key: "Real-Time Alerts", value: "Immediate threat notifications" },
+          { key: "Behavioral AI", value: "Learning-based threat recognition" }
+        ]
+      },
+      {
+        subheading: "Proactive Security",
+        subdescription: [
+          { key: "Prevention", value: "Threat prevention before impact" },
+          { key: "Monitoring", value: "Continuous security surveillance" },
+          { key: "Response", value: "Automated threat mitigation" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "1",
+    title: "Surveillance",
+    heading: "Intelligent Surveillance Systems",
+    description: [
+      {
+        subheading: "Monitoring Technology",
+        subdescription: [
+          { key: "Video Feeds", value: "Multi-camera surveillance integration" },
+          { key: "Object Tracking", value: "Automated target following" },
+          { key: "Zone Alerts", value: "Perimeter breach detection" }
+        ]
+      },
+      {
+        subheading: "Autonomous Systems",
+        subdescription: [
+          { key: "Continuous", value: "24/7 monitoring capability" },
+          { key: "Intelligent", value: "AI-driven analysis and alerts" },
+          { key: "Comprehensive", value: "Multi-point surveillance coverage" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "2",
+    title: "Incident Logging",
+    heading: "Smart Incident Management",
+    description: [
+      {
+        subheading: "Documentation System",
+        subdescription: [
+          { key: "Event Timeline", value: "Chronological incident tracking" },
+          { key: "Evidence Capture", value: "Automated proof collection" },
+          { key: "Cloud Logging", value: "Secure, scalable storage" }
+        ]
+      },
+      {
+        subheading: "Smart History",
+        subdescription: [
+          { key: "Retrieval", value: "Efficient incident search" },
+          { key: "Analysis", value: "Pattern recognition in events" },
+          { key: "Reporting", value: "Structured documentation output" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "3",
+    title: "Response Automation",
+    heading: "Automated Response Systems",
+    description: [
+      {
+        subheading: "Instant Response",
+        subdescription: [
+          { key: "Workflows", value: "Automated response procedures" },
+          { key: "Escalation", value: "Severity-based alert routing" },
+          { key: "Fail-safes", value: "Backup response mechanisms" }
+        ]
+      },
+      {
+        subheading: "Rapid Action",
+        subdescription: [
+          { key: "Speed", value: "Immediate response without delays" },
+          { key: "Reliability", value: "Consistent response execution" },
+          { key: "Efficiency", value: "Optimized resource allocation" }
+        ]
+      }
+    ]
+  }
+];
+
+export const aiConsultingFeatures: Feature[] = [
+  {
+    title: "Niche Specialization",
+    description:
+      "By focusing on high-impact industries such as healthcare (e.g., AI-driven diagnostics) or finance (e.g., fraud detection), we deliver tailored solutions that address sector-specific challenges. This expertise commands premium pricing and fosters long-term client relationships.",
+  },
+  {
+    title: "Retainer-Based Engagements",
+    description:
+      "Long-term partnerships ensure continuous value delivery through services like AI model maintenance, performance optimization, and strategic advisory. Retainers provide predictable revenue while supporting clients’ evolving AI needs.",
+  },
+  {
+    title: "Corporate Training Programs",
+    description:
+      "We empower client teams with AI literacy through workshops and certifications, ensuring sustainable adoption. Tailored training on tools like predictive analytics platforms enhances workforce capability and drives organizational transformation.",
+  },
+  {
+    title: "Proprietary AI Frameworks",
+    description:
+      "Licensing reusable AI models or methodologies, such as compliance auditing tools, creates high-margin revenue streams while positioning us as thought leaders in the AI space.",
+  },
+  {
+    title: "Outcome-Based Pricing",
+    description:
+      "Aligning fees with measurable business outcomes—such as cost savings or revenue uplift—demonstrates our commitment to client success. For example, we may share in the financial benefits of an AI-optimized supply chain, reinforcing trust and accountability.",
+  },
+  {
+    title: "Productized Consulting Packages",
+    description:
+      "Standardized offerings, such as AI readiness assessments or rapid chatbot deployments, enable scalability without compromising quality. These packages make AI accessible to enterprises of all sizes while streamlining delivery.",
+  },
+  {
+    title: "AI-as-a-Service (AIaaS) Partnerships",
+    description:
+      "By integrating consulting with leading cloud AI platforms (e.g., AWS SageMaker, Microsoft Azure AI), we deliver end-to-end solutions while leveraging partner ecosystems for additional revenue streams.",
+  },
+  {
+    title: "Data Strategy Integration",
+    description:
+      "Combining AI consulting with data governance and engineering services ensures robust AI performance. Comprehensive packages that include data pipeline development and AI deployment maximize client value and revenue potential.",
+  },
+];
+
+export const industriesFeatures: Feature[] = [
+  {
+    title: "Oil and Gas",
+    description:
+      "Enhancing operational efficiency and safety through predictive maintenance, real-time infrastructure monitoring, and AI-optimized rig operations.",
+  },
+  {
+    title: "Manufacturing",
+    description:
+      "Optimizing production processes, predictive maintenance, and quality control with AI-driven visual and sensor-based analytics.",
+  },
+  {
+    title: "Healthcare",
+    description:
+      "Improving patient outcomes and operational efficiency with predictive analytics, diagnostics automation, and hospital asset management.",
+  },
+  {
+    title: "Finance",
+    description:
+      "Streamlining risk assessment, credit scoring, and fraud detection with advanced machine learning and AI-based decision systems.",
+  },
+  {
+    title: "Retail",
+    description:
+      "Personalizing customer experiences, automating demand forecasting, and optimizing supply chains with AI-driven recommendations and insights.",
+  },
+  {
+    title: "Transportation",
+    description:
+      "Enhancing logistics, fleet management, and route optimization using real-time AI analytics and predictive maintenance systems.",
+  },
+];
+
+export const ethicalSecurityFeatures: Feature[] = [
+  {
+    title: "Topical Relevance",
+    description:
+      "Ensures AI applications remain strictly focused on their intended topics and use cases, preventing inappropriate or off-topic outputs while maintaining context accuracy.",
+  },
+  {
+    title: "Safety and Credibility",
+    description:
+      "Guarantees AI-generated insights are accurate, sourced from credible data sets, and maintain consistent reliability standards for high-stakes operational environments.",
+  },
+  {
+    title: "Security",
+    description:
+      "Maintains secure integrations with third-party systems, enforces strict data protection protocols, and ensures compliance with privacy and regulatory frameworks.",
+  },
+];
