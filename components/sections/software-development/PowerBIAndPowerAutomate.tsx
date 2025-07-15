@@ -1,8 +1,9 @@
 import { SubHero } from "./components/subhero";
-import { PLACEHOLDER } from "@/app/assets";
+
 import Special from "./components/Special";
 import { KeyFeaturesSection } from "./components/key-features";
 import { powerBiData,powerBiFeatures } from "./data";
+import { mainBG4 } from "@/app/assets/index";
 
 export const PowerBIAndPowerAutomate = () => {
   return (
@@ -13,7 +14,7 @@ export const PowerBIAndPowerAutomate = () => {
         Here’s how Power BI and Power Automate deliver industry-specific value in banking, healthcare, energy, retail, government, and manufacturing"
       />
 
-      <Special tabData={powerBiData} className={"h-[600vh]"} imageSrc={PLACEHOLDER} mask="black/50"/>
+      <Special tabData={powerBiData} className={"h-[600vh]"} imageSrc={mainBG4} mask="black/70"/>
       <KeyFeaturesSection features={powerBiFeatures} title="powerBi" />
     </>
   );

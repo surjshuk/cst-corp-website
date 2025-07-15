@@ -1,8 +1,6 @@
 import { prismaFeatures , casbPaloAltoBenefits,idaasIBMFeatures ,casbPaloAltoFeatures , casbTrendMicroFeatures ,casbTrendMicroBenefits, casbProofPointBenefits , casbProofPointFeatures   ,idaasOktaFeatures   , idaasMicrosoftFeatures, idaasGoogleFeatures, idaasDuoSecFeatures, fortiDLPBenefits, dlpCiscoBenefits, dlpPaloAltoFeatures, dlpPaloAltoBenefits, dlpTrendMicroFeatures, dlpCiscoFeatures, dlpVersaFeatures, dlpVersaBenefits, dlpTrendMicroBenefits, segProofPointFeatures, segProofPointBenefits, segBarracudaFeatures, segBarracudaBenefits, segCiscoFeatures, segCiscoBenefits, segFortinetFeatures, segFortinetBenefits, segTrendMicroFeatures, segTrendMicroBenefits, segSecurenceFeatures, segSecurenceBenefits, spamProofpointBenefits, spamProofpointFeatures, emailProofpointFeatures, emailProofpointBenefits, dataProofpointFeatures, edrCrowdStrikeFeatures, edrCrowdStrikeBenefits, mdmSentinelFeatures, mdmSentinelBenefits, appVMwareFeatures, appVMwareBenefits, patchMicrosoftFeatures, pathMicrosoftBenefits } from "@/lib/data";
 import { KeyFeaturesSection } from "../set-1/key-features";
 import { Benefits } from "../set-1/benefits";
-
-import { CYBERSECURITY } from "@/app/assets";
 import { Hero } from "../set-1/hero";
 import { SubHero } from "../set-1/subhero";
  import { awsFeatures } from "@/lib/data";
@@ -31,6 +29,7 @@ import { saseVersaFeatures   } from "@/lib/data";
 import { casbMicrosoftFeatures   } from "@/lib/data";
 import {  casbCloudLockBenefits } from "@/lib/data";
 import { casbCloudLockFeatures   } from "@/lib/data";
+import {  AIBG2, CSPM, CWPP, cyberSecBG1, cyberSecBG2, cyberSecBG3, development, DLP, ENCRYPTION, mainBG3, SASE, SERVER } from "@/app/assets/index";
 
 
 
@@ -49,7 +48,7 @@ export const CloudSecurity = () => {
 
 
  {/* Cloud Security Posture Management (CSPM) */}
-            <Hero title="Cloud Security Posture Management (CSPM)" imageSrc={CYBERSECURITY}/>
+            <Hero title="Cloud Security Posture Management (CSPM)" imageSrc={CSPM}/>
             <SubHero
               title="Prisma Cloud by Palo Alto Networks"
               description="Prisma Cloud is a comprehensive Cloud Security Posture Management (CSPM) solution by Palo Alto Networks, designed to safeguard cloud environments across multiple public clouds, including AWS, Azure, Google Cloud, and more. It provides organizations with visibility, compliance, and risk management capabilities to ensure the security of cloud-native applications, infrastructure, and data."
@@ -98,7 +97,7 @@ export const CloudSecurity = () => {
 
  {/* Cloud Workload Protection Platforms (CWPP) */}
 
-            <Hero title="Cloud Workload Protection Platforms (CWPP)" imageSrc={CYBERSECURITY}/>
+            <Hero title="Cloud Workload Protection Platforms (CWPP)" imageSrc={CWPP}/>
             <SubHero
               title="Prisma Cloud by Palo Alto Networks"
               description=" Prisma Cloud, a comprehensive cloud-native security platform, provides robust cloud workload protection for hybrid and multi-cloud environments. It combines a wide range of security capabilities to protect cloud-native applications and infrastructure. The platform is designed to ensure visibility, compliance, and security across workloads, containers, serverless functions, and virtual machines (VMs) in public, private, and hybrid cloud environments. "
@@ -157,7 +156,7 @@ export const CloudSecurity = () => {
       
 
 {/* Secure Access Service Edge (SASE) */}
-        <Hero title="Secure Access Service Edge (SASE)" imageSrc={CYBERSECURITY}/>
+        <Hero title="Secure Access Service Edge (SASE)" imageSrc={SASE}/>
             
             <SubHero
               title="Cisco Umbrella"
@@ -208,7 +207,7 @@ export const CloudSecurity = () => {
         
         {/* Cloud Access Security Brokers (CASB) */}
 
-             <Hero title="Cloud Access Security Brokers (CASB)" imageSrc={CYBERSECURITY}/>
+             <Hero title="Cloud Access Security Brokers (CASB)" imageSrc={cyberSecBG2}/>
              <SubHero
               title=" Microsoft Defender - CASB "
               description="Microsoft Defender for Cloud Apps, formerly known as Microsoft Cloud App Security, is a robust CASB solution that provides comprehensive visibility and control over your cloud applications. Integrated with Microsoft 365, Defender for Cloud Apps enables organizations to secure their cloud environments by discovering, monitoring, and controlling the use of cloud applications."
@@ -257,7 +256,7 @@ export const CloudSecurity = () => {
 
  {/* Identity as a Service (IDaaS) */}
 
-      <Hero title="Identity as a Service (IDaaS)" imageSrc={CYBERSECURITY}/>
+      <Hero title="Identity as a Service (IDaaS)" imageSrc={cyberSecBG3}/>
  
             <SubHero
               title=" Okta (IDaaS)"
@@ -301,7 +300,7 @@ export const CloudSecurity = () => {
 
 {/* Data Loss Prevention (DLP)  DATA SECURITY */}
 
-    <Hero title="Data Loss Prevention (DLP)" imageSrc={CYBERSECURITY}/>
+    <Hero title="Data Loss Prevention (DLP)" imageSrc={DLP}/>
             <SubHero
               title=" FortiDLP"
               description="Fortinet's FortiDLP is a comprehensive data loss prevention solution that provides organizations with real-time protection to safeguard sensitive data across endpoints, networks, and the cloud. It leverages Fortinet’s advanced security fabric architecture, enabling seamless integration with FortiGate firewalls, FortiMail, FortiWeb, and other Fortinet products."
@@ -362,7 +361,7 @@ export const CloudSecurity = () => {
              <Benefits benefits={dlpTrendMicroBenefits} />
 
             {/* Secure Email Gateways (SEGs) */}
-            <Hero title="Secure Email Gateways (SEGs)" imageSrc={CYBERSECURITY}/>
+            <Hero title="Secure Email Gateways (SEGs)" imageSrc={cyberSecBG1}/>
             
             <SubHero
               title="Proofpoint"
@@ -421,7 +420,7 @@ export const CloudSecurity = () => {
              <Benefits benefits={segSecurenceBenefits} />
 
 {/* Spam Filters */}
-<Hero title="Spam Filters" imageSrc={CYBERSECURITY}/>
+<Hero title="Spam Filters" imageSrc={development}/>
 
             <SubHero
               title="Proofpoint"
@@ -435,7 +434,7 @@ export const CloudSecurity = () => {
              Email Encryption
 
 {/* Email Encryption */}
-<Hero title="Email Encryption" imageSrc={CYBERSECURITY}/>
+<Hero title="Email Encryption" imageSrc={ENCRYPTION}/>
 
             <SubHero
               title="Proofpoint"
@@ -447,7 +446,7 @@ export const CloudSecurity = () => {
              <Benefits benefits={emailProofpointBenefits} />
 
 {/* Data Loss Prevention for Email */}
-<Hero title="Data Loss Prevention (DLP) for Email" imageSrc={CYBERSECURITY}/>
+<Hero title="Data Loss Prevention (DLP) for Email" imageSrc={DLP}/>
 
             <SubHero
               title="Proofpoint"
@@ -458,7 +457,7 @@ export const CloudSecurity = () => {
 
              
 {/* Endpoint Protection Platforms (EPP)*/}
-<Hero title="Data Loss Prevention (DLP) for Email" imageSrc={CYBERSECURITY}/>
+<Hero title="Data Loss Prevention (DLP) for Email" imageSrc={cyberSecBG3}/>
 
             <SubHero
               title="Trend Micro Endpoint Protection Platform"
@@ -468,7 +467,7 @@ export const CloudSecurity = () => {
              <KeyFeaturesSection features={dataProofpointFeatures} />
 
 {/* Endpoint Detection and Response (EDR) */}
-<Hero title="Endpoint Detection and Response (EDR)" imageSrc={CYBERSECURITY}/>
+<Hero title="Endpoint Detection and Response (EDR)" imageSrc={cyberSecBG2}/>
 
             <SubHero
               title="CrowdStrike Falcon Insight"
@@ -480,7 +479,7 @@ export const CloudSecurity = () => {
              <Benefits benefits={edrCrowdStrikeBenefits} />
 
 {/* Mobile Device Management (MDM)  */}
-<Hero title=" Mobile Device Management (MDM)" imageSrc={CYBERSECURITY}/>
+<Hero title=" Mobile Device Management (MDM)" imageSrc={AIBG2}/>
 
             <SubHero
               title="SentinelOne Singularity Mobile"
@@ -494,7 +493,7 @@ export const CloudSecurity = () => {
             
 
 {/* Application Whitelisting */}
-<Hero title=" Application Whitelisting" imageSrc={CYBERSECURITY}/>
+<Hero title=" Application Whitelisting" imageSrc={SERVER}/>
 
             <SubHero
               title="VMware Carbon Black"
@@ -507,7 +506,7 @@ export const CloudSecurity = () => {
 
              
 {/* Patch Management */}
-<Hero title=" Patch Management" imageSrc={CYBERSECURITY}/>
+<Hero title=" Patch Management" imageSrc={mainBG3}/>
 
             <SubHero
               title="Microsoft Endpoint Configuration Manager (MECM)"

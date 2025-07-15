@@ -1,6 +1,7 @@
 import { Locations, Section, Values } from "@/components/sections";
 import Image from "next/image";
-import { HIGHLIGHT } from "../assets";
+
+import { cyberSecBG3 } from "../assets/index";
 
 const page = () => {
   return (
@@ -16,7 +17,7 @@ const page = () => {
         />
         <section className="relative h-screen z-10">
           <Image
-              src={HIGHLIGHT}
+              src={cyberSecBG3}
               alt="highlight"
               fill
               priority

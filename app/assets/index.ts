@@ -31,3 +31,30 @@ export { default as PYTHIAAI } from "./images/backgrounds/AI/pythiaAI.png";
 export { default as MONITORING } from "./images/backgrounds/AI/monitoring.png";
 
 export { default as CYBERSECURITY } from "./images/backgrounds/cybersecurity.png";
+
+export { default as AIBG1 } from "./images/backgrounds/AIBG1.png";
+export { default as AIBG2 } from "./images/backgrounds/AIBG2.png";
+
+
+export { default as mainBG1 } from "./images/backgrounds/mainBG1.png";
+export { default as mainBG2 } from "./images/backgrounds/mainBG2.png";
+export { default as mainBG3 } from "./images/backgrounds/mainBG3.png";
+export { default as mainBG4 } from "./images/backgrounds/mainBG4.png";
+
+export { default as cyberSecBG1 } from "./images/backgrounds/cyberSecBG1.png";
+export { default as cyberSecBG2 } from "./images/backgrounds/cyberSecBG2.png";
+export { default as cyberSecBG3 } from "./images/backgrounds/cyberSecBG3.png";
+
+export { default as rangerGeospatial } from "./images/backgrounds/ranger-geospatial.jpg";
+export { default as cloud } from "./images/backgrounds/cloud.png";
+export { default as development } from "./images/backgrounds/development.png";
+
+export { default as CSPM } from "./images/backgrounds/cspmBG.jpg";
+
+export { default as CWPP } from "./images/backgrounds/cwppBG.jpg";
+export { default as SASE } from "./images/backgrounds/saseBG.jpg";
+export { default as DLP } from "./images/backgrounds/dlpBG.jpg";
+
+export { default as ENCRYPTION } from "./images/backgrounds/encryption2BG.jpg";
+export { default as SERVER } from "./images/backgrounds/server3BG.jpg";
+

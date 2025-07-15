@@ -1,3 +1,5 @@
+
+
 "use client";
 
 // Component imports
@@ -19,6 +21,8 @@ import {
 import { PLACEHOLDER } from "../assets";
 import { Feature } from "@/components/sections/AI/feature";
 import { Overview } from "@/components/sections/AI/overview";
+import {  mainBG1, mainBG2, mainBG4 } from "../assets/index";
+import { AIBG2 } from "../assets/index";
 
 export default function Home() {
   return (
@@ -28,7 +32,7 @@ export default function Home() {
         <AIScroll
           tabData={solutionsTabData}
           className="h-[400vh]"
-          imageSrc={PLACEHOLDER}
+          imageSrc={mainBG2}
           mask="black/80"
         />
       </div>
@@ -79,7 +83,7 @@ export default function Home() {
         <AIScroll
           tabData={enterpriseSuccessTabData}
           className="h-[400vh]"
-          imageSrc={PLACEHOLDER}
+          imageSrc={AIBG2}
           mask="black/80"
         />
       </div>
@@ -105,7 +109,7 @@ export default function Home() {
         <AIScroll
           tabData={pythiaAITabData}
           className="h-[400vh]"
-          imageSrc={PLACEHOLDER}
+          imageSrc={mainBG4}
           mask="black/80"
         />
       </div>
@@ -122,10 +126,11 @@ export default function Home() {
         <AIScroll
           tabData={monitoringDetectionTabData}
           className="h-[400vh]"
-          imageSrc={PLACEHOLDER}
+          imageSrc={mainBG1}
           mask="black/80"
         />
       </div>
     </>
   );
 }
+

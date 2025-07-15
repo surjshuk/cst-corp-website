@@ -60,12 +60,12 @@ const partners: Partner[] = [
     videoUrl: "https://s3.ap-south-1.amazonaws.com/bucket.bramer.web/web-assets/videos/hardware.mp4",
   },
   {
-    name: "DLTS",
+    name: "DTLS",
     logo: undefined, // add logo path or import when available
     website: "https://dlts.tech",
     color: "#0059FF",
     description:
-      "DLTS is a specialized technology innovation lab delivering AI-powered industrial, healthcare, and enterprise automation systems. Backed by CST Corp (Houston, USA), DLTS builds sovereign, scalable, and mission-critical solutions for defense, energy, and public sector organizations. Its core expertise spans AI software engineering, cybersecurity, edge computing, and predictive analytics.",
+      "DTLS is a specialized technology innovation lab delivering AI-powered industrial, healthcare, and enterprise automation systems. Backed by CST Corp (Houston, USA), DLTS builds sovereign, scalable, and mission-critical solutions for defense, energy, and public sector organizations. Its core expertise spans AI software engineering, cybersecurity, edge computing, and predictive analytics.",
     services: [
       {
         title: "SafeRig – AI-Powered Oil Rig Hazard Detection Platform",
