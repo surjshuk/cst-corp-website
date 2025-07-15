@@ -1,13 +1,8 @@
-
-
 "use client";
 
-// Component imports
 import AIScroll from "@/components/sections/common/AIScroll";
 import Solutions from "@/components/sections/AI/solutions";
 
-
-// tabData imports or inline declarations (make sure they're available in this file or imported from separate `tabData.ts`)
 import {
   servicesTabData,
   enterpriseSuccessTabData,

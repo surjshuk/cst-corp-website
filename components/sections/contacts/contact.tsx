@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 const inquiries = [
-    { type: "General Inquiries", email: "contact@cst-corp.net" },
-    { type: "Job Inquiries", email: "hr@cst-corp.net" },
-    { type: "PR Inquiries", email: "pr@cst-corp.net" },
+    { type: "General Inquiries", email: "RFPteam@cstcorp.net" },
+    { type: "Sales Inquiries", email: "sales@cstcorp.net" },
+    { type: "Office Number", email: "(713) 263-1300" },
 ];
 
 export const Contact = () => {
@@ -15,10 +15,10 @@ export const Contact = () => {
                 <h2 className=" mb-3 text-[28px] leading-tight tablet:font-medium tablet:text-5xl">Locations</h2>
                 <div className="space-y-6">
                     <div className="flex gap-24 font-medium">
-                        <span className="text-sm">India</span>
+                        <span className="text-sm">Texas</span>
                         <div className="space-y-1.5">
-                            <p className="text-[10px] tablet:text-sm text-primary">R&D center</p>
-                            <p className="text-[10px] tablet:text-sm">12210 Bedford St. Houston, TX 77031</p>
+                            <p className="text-[10px] tablet:text-sm text-primary">HQ</p>
+                            <p className="text-[10px] tablet:text-sm">12210 Bedford Street. Houston, TX 77031</p>
                         </div>
                     </div>
                 </div>

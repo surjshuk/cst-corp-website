@@ -24,7 +24,7 @@ interface Partner {
 
 const partners: Partner[] = [
   {
-    name: "Bramer",
+    name: "",
     logo: BRAMERLOGO,
     website: "https://bramer.in",
     color: "#ff1e31",
@@ -57,7 +57,7 @@ const partners: Partner[] = [
           "Design autonomous aerial and ground systems for crop health monitoring, precision spraying, soil analysis, and yield prediction. AI-driven analytics deliver actionable insights for farm management, disease detection, and optimized resource allocation across large agricultural estates.",
       },
     ],
-    videoUrl: "https://s3.ap-south-1.amazonaws.com/bucket.bramer.web/web-assets/videos/hardware.mp4",
+    videoUrl: "https://s3.ap-south-1.amazonaws.com/bucket.bramer.web/web-assets/videos/bramer-oil-and-gas-and-inspection.mp4",
   },
   {
     name: "DTLS",
@@ -155,18 +155,18 @@ export const Partners: React.FC = () => {
 
           {/* Media */}
           {partner.videoUrl ? (
-            <div className="overflow-hidden w-full max-w-[1105px] ml-auto rounded-xl shadow-lg">
+            <div className="overflow-hidden w-full max-w-[1105px] ml-auto shadow-lg">
               <video
                 src={partner.videoUrl}
                 autoPlay
                 muted
                 loop
                 playsInline
-                className="w-full h-auto object-cover rounded-xl"
+                className="w-full h-auto object-cover rounded-sm"
               />
             </div>
           ) : (
-            <div className="overflow-hidden w-full max-w-[1105px] ml-auto rounded-xl shadow-lg">
+            <div className="overflow-hidden w-full max-w-[1105px] ml-auto shadow-lg">
               {partner.imageSrc && (
                 <Image
                   src={partner.imageSrc}

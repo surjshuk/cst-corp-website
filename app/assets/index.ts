@@ -1,5 +1,4 @@
 export { default as LOGO } from "./images/icons/logo.png";
-export { default as LOGOWITHTITLE } from "./images/icons/logo-full-red.svg";
 export { default as BRO } from "./images/icons/bro.png";
 export { default as IDEX } from "./images/icons/idex.png";
 export { default as MOD } from "./images/icons/ministry-of-defence.png";

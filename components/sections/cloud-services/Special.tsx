@@ -3,21 +3,11 @@
 import Image, { StaticImageData } from "next/image";
 import { useEffect, useState, useRef } from "react";
 
-interface SubDescriptionItem {
-  key: string;
-  value: string;
-}
-
-interface DescriptionItem {
-  subheading: string;
-  subdescription: SubDescriptionItem[];
-}
-
-interface Tab {
+export interface Tab {
   id: string;
   title: string;
   heading: string;
-  description: DescriptionItem[];
+  description: string[];
 }
 
 interface SpecialProps {
@@ -102,7 +92,7 @@ const Special = ({ tabData, className, mask, imageSrc, progressMultiplierHorizon
       >
         {/* Tab Navigation */}
         <div className="relative w-fit ml-auto z-20 p-5 tablet:px-12 tablet:py-10 laptop:ml-0 laptop:px-20 laptop:py-10">
-          <div className={`grid grid-cols-1 justify-center items-center laptop:gap-10 laptop:grid-cols-7`}>
+          <div className={`grid grid-cols-1 justify-center items-center laptop:gap-10 laptop:grid-cols-6`}>
             {tabData.map((tab, index) => (
               <button
                 key={tab.id}
@@ -155,26 +145,22 @@ const Special = ({ tabData, className, mask, imageSrc, progressMultiplierHorizon
             {mask && <div className={`bg-${mask} absolute inset-0`} />}
             
             <div
-              className={`z-20 flex-col bottom-12 absolute space-y-4 tablet:space-y-16 px-5 py-10 tablet:px-12 laptop:px-20 laptop:pt-36 laptop:pb-12 laptop:inset-0 laptop:flex laptop:justify-between ${
+              className={`z-20 grid grid-cols-2 bottom-12 absolute space-y-4 tablet:space-y-16 px-5 py-10 tablet:px-12 laptop:px-20 laptop:pt-36 laptop:pb-12 laptop: inset-0 laptop:justify-between ${
                 activeTab === index ? "opacity-100 animate-fadeIn" : "opacity-0 animate-fadeOut"
               }`}
             >
-              <h4 className="text-[50px] text-wrap">
+              <h4 className="text-3xl tablet:text-[50px] leading-normal text-wrap">
                 {tab.heading}
               </h4>
 
-              <div className="space-y-5 tablet:space-y-4 laptop:flex laptop:space-y-0 gap-4">
-                {tab.description.map((descItem, index) => (
-                  <div key={index} className="laptop:w-1/4 space-y-2">
-                    <p className="text-sm font-semibold">{descItem.subheading}</p>
-                    <ul className="space-y-1">
-                      {descItem.subdescription.map((item, idx) => (
-                        <li key={idx} className="text-xs tablet:text-sm">
-                          <strong>{item.key}:</strong> {item.value}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+              <div className="flex flex-col justify-end space-y-4">
+                {tab.description.map((para, idx) => (
+                  <p
+                    key={idx}
+                    className="text-sm tablet:text-lg laptop:text-xl text-white font-wayray font-normal leading-normal"
+                  >
+                    {para}
+                  </p>
                 ))}
               </div>
             </div>
