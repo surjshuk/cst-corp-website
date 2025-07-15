@@ -56,4 +56,4 @@ export { default as DLP } from "./images/backgrounds/dlpBG.jpg";
 
 export { default as ENCRYPTION } from "./images/backgrounds/encryption2BG.jpg";
 export { default as SERVER } from "./images/backgrounds/server3BG.jpg";
-
+export { default as DLTS } from "./images/icons/DLTS-logo.jpeg";

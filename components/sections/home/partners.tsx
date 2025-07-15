@@ -1,7 +1,7 @@
 "use client"
 import type React from "react"
 import Image from "next/image"
-import { BRAMERLOGO, PLUS } from "@/app/assets"
+import { BRAMERLOGO, DLTS, PLUS } from "@/app/assets"
 import type { StaticImageData } from "next/image"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
 import { useState } from "react"
@@ -15,7 +15,6 @@ interface Partner {
   name: string
   logo?: StaticImageData
   website: string
-  color: string
   description: string
   services: Service[]
   videoUrl?: string
@@ -27,7 +26,6 @@ const partners: Partner[] = [
     name: "",
     logo: BRAMERLOGO,
     website: "https://bramer.in",
-    color: "#ff1e31",
     description:
       "At Bramer, we are dedicated to engineering advanced autonomous systems that drive operational efficiency and deliver actionable intelligence across critical domains.",
     services: [
@@ -61,9 +59,8 @@ const partners: Partner[] = [
   },
   {
     name: "DTLS",
-    logo: undefined, // add logo path or import when available
+    logo: DLTS, // add logo path or import when available
     website: "https://dlts.tech",
-    color: "#0059FF",
     description:
       "DTLS is a specialized technology innovation lab delivering AI-powered industrial, healthcare, and enterprise automation systems. Backed by CST Corp (Houston, USA), DLTS builds sovereign, scalable, and mission-critical solutions for defense, energy, and public sector organizations. Its core expertise spans AI software engineering, cybersecurity, edge computing, and predictive analytics.",
     services: [
@@ -109,12 +106,12 @@ export const Partners: React.FC = () => {
               href={partner.website}
               target="_blank"
               rel="noopener noreferrer"
-              className={`flex items-center gap-1 laptop:gap-3 hover:underline decoration-[${partner.color}]`}
+              className={`flex items-center gap-1 laptop:gap-3 hover:underline`}
             >
               {partner.logo ? (
-                <Image src={partner.logo} alt={`${partner.name} logo`} height={40} className="object-contain h-6 laptop:h-10" />
+                <Image src={partner.logo} alt={`${partner.name} logo`} height={40} className="object-contain h-6 laptop:h-10 w-fit" />
               ) : null}
-              <h3 className={`text-[${partner.color}] text-lg leading-tight tablet:text-xl tablet:leading-[105%] laptop:text-3xl font-medium`}>{partner.name}</h3>
+              <h3 className={`text-black text-lg leading-tight tablet:text-xl tablet:leading-[105%] laptop:text-3xl font-medium`}>{partner.name}</h3>
             </a>
           </div>
 
