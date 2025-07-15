@@ -17,7 +17,8 @@ const cultureSections: Record<string, number> = {
 const homeSections: Record<string, number> = {
     "who-we-are": 0,
     "what-we-do": 1,
-    achievements: 2
+    "our-partners": 2,
+    "our-teams": 3,
 }
 
 const SideNavbar = () => {
@@ -170,8 +171,8 @@ const SideNavbar = () => {
                             subLinks={[
                                 "who-we-are",
                                 "what-we-do",
-                                "partners",
-                                "team",
+                                "our-partners",
+                                "our-team",
                             ]}
                             activeSection={activeSection}
                             handleSubLinkClick={handleSubLinkClick}

@@ -102,7 +102,7 @@ const Special = ({ tabData, className, mask, imageSrc, progressMultiplierHorizon
       >
         {/* Tab Navigation */}
         <div className="relative w-fit ml-auto z-20 p-5 tablet:px-12 tablet:py-10 laptop:ml-0 laptop:px-20 laptop:py-10">
-          <div className={`grid grid-cols-1 justify-center items-center laptop:gap-10 laptop:grid-cols-5`}>
+          <div className={`grid grid-cols-1 justify-center items-center laptop:gap-10 laptop:grid-cols-6`}>
             {tabData.map((tab, index) => (
               <button
                 key={tab.id}

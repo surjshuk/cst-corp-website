@@ -12,20 +12,20 @@ export const SubHero: React.FC<HeroProps> = ({
   position = "right",
 }) => {
   return (
-    <div className="grid grid-cols-2 gap-72 px-20 py-24">
+    <div className="grid grid-cols-1 laptop:grid-cols-2 gap-72 p-5 laptop:px-20 laptop:py-24">
       <div
         className={`space-y-2.5 ${
-          position === "left" ? "col-start-1" : "col-start-2"
+          position === "left" ? "laptop:col-start-1" : "laptop:col-start-2"
         }`}
       >
         <div>
-          <h1 className="text-[50px] font-normal leading-none text-black w-[552px]">
+          <h1 className="text-[50px] font-normal leading-none text-black laptop:w-[552px]">
             {title}
           </h1>
         </div>
         <div className="space-y-4">
-          <h2 className="text-[30px]">Overview</h2>
-          <p className="text-[20px] w-[317px]">{description}</p>
+          <h2 className="text-lg laptop:text-[30px]">Overview</h2>
+          <p className="text-sm aptop:text-[20px] laptop:w-[317px]">{description}</p>
         </div>
       </div>
     </div>

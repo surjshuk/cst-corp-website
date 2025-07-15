@@ -9,6 +9,7 @@ export { default as ARROWUP } from "./images/icons/fontisto_arrow-up.svg";
 export { default as ARROWDOWN } from "./images/icons/subway_down-2.svg";
 export { default as PLUS } from "./images/icons/bytesize_plus.svg";
 export { default as INPUT } from "./images/icons/input.svg";
+export { default as BRAMERLOGO } from "./images/icons/bramer-logo.svg";
 
 export { default as RANGERBLACKSTUDIO } from "./images/backgrounds/ranger-studio-dark-background.jpg";
 export { default as AUTONOMY } from "./images/backgrounds/autonomy.png";
@@ -28,3 +29,5 @@ export { default as SOLUTIONSBG } from "./images/backgrounds/AI/solutionsBG.png"
 export { default as ENTERPRISEBG } from "./images/backgrounds/AI/enterpriseBG.png";
 export { default as PYTHIAAI } from "./images/backgrounds/AI/pythiaAI.png";
 export { default as MONITORING } from "./images/backgrounds/AI/monitoring.png";
+
+export { default as CYBERSECURITY } from "./images/backgrounds/cybersecurity.png";

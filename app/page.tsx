@@ -1,4 +1,4 @@
-import { Team, WhatWeDo } from "@/components/sections"
+import { Partners, Team, WhatWeDo } from "@/components/sections"
 import Special from "@/components/sections/common/Special"
 import Hero from "@/components/sections/home/Hero"
 import { AUTONOMY, FOCUSONDEEPTECH } from "@/app/assets";
@@ -51,14 +51,17 @@ const tabData = [
 export default function Home() {
   return (
     <>
-      <div data-id="who-we-are">
+      <div data-id="who-we-are" id="who-we-are">
         <Hero />
         <Special tabData={tabData} className="h-[500vh]" progressMultiplierHorizontal={17} progressMultiplierVertical={{small: 4, default: 7}}/>
       </div>
       <div data-id="what-we-do">
         <WhatWeDo />
       </div>
-      <div data-id="achievements">
+      <div data-id="our-partners">
+        <Partners />
+      </div>
+      <div data-id="our-team">
         <Team />
       </div>
     </>

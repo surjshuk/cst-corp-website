@@ -19,9 +19,9 @@ export const Hero: React.FC<CloudServiceHeroProps> = ({
         className="object-cover"
         priority
       />
-      <div className="absolute inset-0 bg-black/50"></div>
-      <div className="absolute top-0 left-0 w-[640px] p-12">
-        <h1 className="text-white text-[80px] font-normal leading-none max-w-5xl">
+      <div className="absolute inset-0 bg-black/70"></div>
+      <div className="absolute top-0 left-0 laptop:w-[640px] p-5 laptop:p-12">
+        <h1 className="text-white text-6xl laptop:text-7xl font-normal leading-none max-w-5xl text-wrap">
           {title}
         </h1>
       </div>

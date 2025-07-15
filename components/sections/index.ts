@@ -10,6 +10,7 @@ export * from "./home/Hero";
 export * from "./home/what-we-do"
 export * from "./home/team"
 export * from "./home/Achievements"
+export * from "./home/partners";
 
 export * from "./contacts/contact"
 
