@@ -18,7 +18,7 @@ const homeSections: Record<string, number> = {
     "who-we-are": 0,
     "what-we-do": 1,
     "our-partners": 2,
-    "our-teams": 3,
+    "our-team": 3,
 }
 
 const SideNavbar = () => {
@@ -161,7 +161,7 @@ const SideNavbar = () => {
                     <Image src={LOGO} alt="bramer-logo" className="w-fit h-[52px]" />
                 </figure>
                 
-                <nav className="h-[93%] flex flex-col justify-between pt-16 tablet:pt-4">
+                <nav className="h-[93%] flex flex-col justify-between pt-16 tablet:pt-4 pb-0 laptop:pb-10">
                     <div className="flex flex-col gap-4">
 
                         <NavItem
@@ -224,9 +224,9 @@ const SideNavbar = () => {
                         /> 
                         <NavItem
                             href="/culture"
-                            label="Culture & Jobs"
+                            label="Culture"
                             active={activeRoute === "/culture"}
-                            subLinks={["mission", "team", "values", "jobs", "location"]}
+                            subLinks={["mission", "values", "location"]}
                             activeSection={activeSection}
                             handleSubLinkClick={handleSubLinkClick}
                             badge={jobsCount}
@@ -253,7 +253,7 @@ const NavItem = ({ href, label, active, subLinks = [], activeSection, handleSubL
         <div
             className={`
                 flex flex-col items-start relative
-                transition-all duration-1000 ease-in-out overflow-clip w-40 text-nowrap
+                transition-all duration-1000 ease-in-out overflow-clip w-40 text-left
                 ${
                     active ? "max-h-[300px] opacity-100 translate-y-0 pt-3 pb-6" : "max-h-0 opacity-0 -translate-y-4"
                 }
@@ -263,7 +263,7 @@ const NavItem = ({ href, label, active, subLinks = [], activeSection, handleSubL
                <button
                     key={id}
                     onClick={() => handleSubLinkClick(id, index)}
-                    className={`relative text-xs leading-7 tablet:text-[14px] tablet:leading-[30px] tablet:pl-5 
+                    className={`relative text-xs leading-1 tablet:text-[14px] tablet:leading-[16    px] tablet:pl-5 text-left py-1 tablet:py-2
                         ${(activeSection.id === id || activeSection.index === index )? "text-black " : "text-secondary "}
                 `}
                 >

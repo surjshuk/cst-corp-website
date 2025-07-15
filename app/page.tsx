@@ -51,7 +51,7 @@ const tabData = [
 export default function Home() {
   return (
     <>
-      <div data-id="who-we-are" id="who-we-are">
+      <div data-id="who-we-are">
         <Hero />
         <Special tabData={tabData} className="h-[500vh]" progressMultiplierHorizontal={17} progressMultiplierVertical={{small: 4, default: 7}}/>
       </div>
