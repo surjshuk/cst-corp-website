@@ -46,6 +46,8 @@ export const CloudSecurity = () => {
               <h2 className="text-[80px] text-primary p-16">Cloud Security Posture Management (CSPM)</h2>
             </div> */}
 
+<div id="cloud-security" data-id="cloud-security" >
+
 
  {/* Cloud Security Posture Management (CSPM) */}
             <Hero title="Cloud Security Posture Management (CSPM)" imageSrc={CSPM}/>
@@ -198,7 +200,7 @@ export const CloudSecurity = () => {
              <KeyFeaturesSection features={barracudaFeatures} />
 
              <SubHero
-              title=" Versa SASE "
+              title=" Versa SASE "     
               description="Versa SASE is a comprehensive, cloud-delivered SASE platform that offers SD-WAN, ZTNA, secure web gateway, cloud firewall, and more in a single, integrated solution."
 
             />
@@ -298,7 +300,10 @@ export const CloudSecurity = () => {
             />
              <KeyFeaturesSection features={idaasDuoSecFeatures} />
 
+</div>
 {/* Data Loss Prevention (DLP)  DATA SECURITY */}
+
+<div id="data-security" data-id="data-security">
 
     <Hero title="Data Loss Prevention (DLP)" imageSrc={DLP}/>
             <SubHero
@@ -359,6 +364,10 @@ export const CloudSecurity = () => {
              <KeyFeaturesSection features={dlpTrendMicroFeatures} />
 
              <Benefits benefits={dlpTrendMicroBenefits} />
+</div>
+
+<div id ="email-security" data-id="email-security">
+
 
             {/* Secure Email Gateways (SEGs) */}
             <Hero title="Secure Email Gateways (SEGs)" imageSrc={cyberSecBG1}/>
@@ -419,6 +428,7 @@ export const CloudSecurity = () => {
 
              <Benefits benefits={segSecurenceBenefits} />
 
+
 {/* Spam Filters */}
 <Hero title="Spam Filters" imageSrc={development}/>
 
@@ -431,7 +441,6 @@ export const CloudSecurity = () => {
 
              <Benefits benefits={spamProofpointBenefits} />
 
-             Email Encryption
 
 {/* Email Encryption */}
 <Hero title="Email Encryption" imageSrc={ENCRYPTION}/>
@@ -455,7 +464,19 @@ export const CloudSecurity = () => {
             />
              <KeyFeaturesSection features={dataProofpointFeatures} />
 
-             
+</div>
+  
+
+
+
+
+
+
+
+
+
+
+<div id="endpoint-security" data-id="endpoint-security"> 
 {/* Endpoint Protection Platforms (EPP)*/}
 <Hero title="Data Loss Prevention (DLP) for Email" imageSrc={cyberSecBG3}/>
 
@@ -518,11 +539,8 @@ export const CloudSecurity = () => {
              <Benefits benefits={pathMicrosoftBenefits} />
 
 
-        
+</div>        
         </>
-
-
-
        
     );
 }

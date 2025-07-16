@@ -36,7 +36,7 @@ const softwareSections: Record<string, number> = {
 const cybersecuritySections: Record<string, number> = {
   "cloud-security": 0,
   "data-security": 1,
-  "email-security": 2,
+//   "email-security": 2,
   "endpoint-security": 3,
   "identity-and-access-managemenet(IAM)": 4,
   "network-security": 5,
@@ -47,7 +47,7 @@ const cybersecuritySections: Record<string, number> = {
 const thresholdMap: Record<string, number> = {
   "/culture": 0.4,
   "/ai-innovation": 0.05,
-  "/cybersecurity": 0.2,
+  "/cybersecurity": 0.02,
   "/software-development": 0.1,
   "/": 0.1,  // default home
   // add others as needed
@@ -215,7 +215,7 @@ const SideNavbar = () => {
                             href="/cybersecurity" 
                             label="Cybersecurity" 
                             active={activeRoute === "/cybersecurity"} 
-                            subLinks={["cloud-security", "data-security", "email-security", "endpoint-security", "identity-and-access-managemenet(IAM)", "network-security", "operational-technology-security", "threat-detection-and-response(TDR)"]}
+                            subLinks={["cloud-security", "data-security", "endpoint-security", "identity-and-access-managemenet(IAM)", "network-security", "operational-technology-security", "threat-detection-and-response(TDR)"]}
                             activeSection={activeSection}
                             handleSubLinkClick={handleSubLinkClick}
 
