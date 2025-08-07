@@ -5,8 +5,8 @@ export default function CustomersPage() {
     return (
         <>
             <CloudSecurity />
-            <DataSecurity />
-            <EmailSecurity />
+            {/* <DataSecurity /> */}
+            {/* <EmailSecurity /> */}
         </>
     );
 }

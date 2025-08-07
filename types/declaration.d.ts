@@ -13,3 +13,15 @@ export type Benefit = {
   text: string;
   position: "left" | "right";
 };
+
+
+export type UseCase = {
+  title: string;
+  link?: string; // Optional website link
+};
+
+
+type SubPoints = {
+  title:string;
+  description:string;
+}

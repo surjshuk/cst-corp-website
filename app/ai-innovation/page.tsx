@@ -31,7 +31,8 @@ export default function Home() {
             className="h-[400vh]"
             imageSrc={mainBG2}
             mask="black/80"
-            />  
+            progressMultiplierHorizontal={14} progressMultiplierVertical={{small: 4, default: 7}}
+          />  
 
         </div>
 
