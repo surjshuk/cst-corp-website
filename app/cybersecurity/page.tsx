@@ -1,4 +1,4 @@
-import { CloudSecurity, DataSecurity, EmailSecurity } from "@/components/sections";
+import { CloudSecurity } from "@/components/sections";
 
 
 export default function CustomersPage() {  

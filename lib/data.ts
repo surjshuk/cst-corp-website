@@ -3151,6 +3151,29 @@ export const paloAltoZtaPoints: SubPoints[] = [
 ];
 
 
+export const vmwareNetworkPoints: SubPoints[] = [
+  {
+    title: "Software-Defined Networking (SDN)",
+    description:
+      "NSX delivers dynamic routing, switching, and firewall capabilities, all managed centrally.",
+  },
+  {
+    title: "Micro-Segmentation",
+    description:
+      "Ensures granular security controls within the data center.",
+  },
+  {
+    title: "Multi-Cloud Support",
+    description:
+      "Seamlessly extends networking and security policies across public and private clouds.",
+  },
+  {
+    title: "Network Virtualization",
+    description:
+      "Decouples networking functions from physical devices for greater flexibility and efficiency.",
+  },
+];
+
 // operational technology 
 
 export const icsFeature: Feature[] = [
