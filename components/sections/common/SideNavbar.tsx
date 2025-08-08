@@ -33,6 +33,13 @@ const softwareSections: Record<string, number> = {
   "power-bi-and-power-automate": 2,
 };
 
+
+const cloudSections: Record<string, number> = {
+  "cloud-application": 0,
+  "cloud-license": 1,
+  "power-bi-and-power-automate": 2,
+};
+
 const cybersecuritySections: Record<string, number> = {
   "cloud-security": 0,
   "data-security": 1,
@@ -140,7 +147,10 @@ const SideNavbar = () => {
                 setActiveSection({ id: dataId, index: cybersecuritySections[dataId] });
                 } else if (activeRoute === "/software-development") {
                 setActiveSection({ id: dataId, index: softwareSections[dataId] ?? 0 });
-                } else {
+                }else if (activeRoute === "/cloud-services") {
+                setActiveSection({ id: dataId, index: cloudSections[dataId] ?? 0 });
+                }
+                else {
                 setActiveSection({ id: dataId, index: homeSections[dataId] });
                 }
               }
@@ -220,15 +230,15 @@ const SideNavbar = () => {
                             handleSubLinkClick={handleSubLinkClick}
 
                         /> 
-                        {/* <NavItem 
+                        <NavItem 
                             href="/cloud-services" 
                             label="Cloud Services" 
                             active={activeRoute === "/cloud-services"} 
-                            subLinks={[]}
+                            subLinks={["cloud-application","cloud-license"]}
                             activeSection={activeSection}
                             handleSubLinkClick={handleSubLinkClick}
 
-                        />  */}
+                        /> 
                         <NavItem 
                             href="/software-development" 
                             label="Software Development" 

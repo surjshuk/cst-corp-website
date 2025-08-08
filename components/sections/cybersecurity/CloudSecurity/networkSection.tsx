@@ -34,7 +34,7 @@ export const NetworkSection : React.FC<SubSectiontype> = ({ title,subtitle,descr
                 )}
                 <div className="space-y-4">
                   <h2 className="text-lg laptop:text-[30px]">Overview</h2>
-                  <p className="text-sm aptop:text-[20px] laptop:w-[317px]">{description}</p>
+                  <p className="text-sm  laptop:w-[317px]">{description}</p>
                 </div>
               </div>
             </div>
