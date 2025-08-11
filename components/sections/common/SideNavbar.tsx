@@ -13,18 +13,18 @@ const cultureSections: Record<string, number> = {
 }
 
 const aiSections: Record<string, number> = {
-    "generia-ai":  0,
-    "ai-governance": 1,
+    "overview":  0,
+    "ai-digital-twin": 1,
     "ai-consulting": 2,
-    "pythia-ai": 3,
-    "ai-twin": 4
+    "ai-governance": 3,
+    "industries-we-serve": 4
 }
 
 const homeSections: Record<string, number> = {
     "who-we-are": 0,
     "what-we-do": 1,
     "our-partners": 2,
-    "our-team": 3,
+    // "our-team": 3,
 }
 
 const softwareSections: Record<string, number> = {
@@ -37,7 +37,7 @@ const softwareSections: Record<string, number> = {
 const cloudSections: Record<string, number> = {
   "cloud-application": 0,
   "cloud-license": 1,
-  "power-bi-and-power-automate": 2,
+  "cloud-network": 2,
 };
 
 const cybersecuritySections: Record<string, number> = {
@@ -207,7 +207,7 @@ const SideNavbar = () => {
                                 "who-we-are",
                                 "what-we-do",
                                 "our-partners",
-                                "our-team",
+                            
                             ]}
                             activeSection={activeSection}
                             handleSubLinkClick={handleSubLinkClick}
@@ -216,7 +216,11 @@ const SideNavbar = () => {
                             href="/ai-innovation" 
                             label="AI" 
                             active={activeRoute === "/ai-innovation"} 
-                            subLinks={["generic-ai", "ai-governance", "ai-consulting", "pythia-ai", "ai-twin"]}
+                            subLinks={[ "overview",
+    "ai-digital-twin",
+    "ai-consulting",
+    "ai-governance",
+    "industries-we-serve"]}
                             activeSection={activeSection}
                             handleSubLinkClick={handleSubLinkClick}
 
@@ -234,7 +238,7 @@ const SideNavbar = () => {
                             href="/cloud-services" 
                             label="Cloud Services" 
                             active={activeRoute === "/cloud-services"} 
-                            subLinks={["cloud-application","cloud-license"]}
+                            subLinks={["cloud-application","cloud-license","cloud-network"]}
                             activeSection={activeSection}
                             handleSubLinkClick={handleSubLinkClick}
 
@@ -257,17 +261,19 @@ const SideNavbar = () => {
                             handleSubLinkClick={handleSubLinkClick}
 
                         />  */}
-                        <NavItem
+                        {/* <NavItem
                             href="/culture"
                             label="Culture"
                             active={activeRoute === "/culture"}
                             subLinks={["mission", "values", "location"]}
                             activeSection={activeSection}
                             handleSubLinkClick={handleSubLinkClick}
-                        />
+                        /> */}
+                    <NavItem href="/contacts" label="Contacts" active={activeRoute === "/contacts"} />
+
                     </div>
 
-                    <NavItem href="/contacts" label="Contacts" active={activeRoute === "/contacts"} />
+                    {/* <NavItem href="/contacts" label="Contacts" active={activeRoute === "/contacts"} /> */}
                 </nav>
             </aside>
         </>

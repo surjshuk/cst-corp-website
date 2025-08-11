@@ -3,8 +3,7 @@ import { Feature } from "../../AI/feature";
 export interface Tab {
   id: string;
   title: string;
-  heading: string;
-  description: string;
+  description?: string;
 }
 
 export const GoogleAiDesc:string[] = [
@@ -18,7 +17,7 @@ export const whatGoogleDesc:string[] =[
 
 
 
-export const GoogleTabData = [
+export const GoogleTabData:Tab[] = [
 {
     id: "0",
     title:'Key Benefits of Google AI and Machine Learning APIs',
@@ -118,7 +117,7 @@ export const AwsServiceDesc:string[] = [
 
 
 
-export const AwsTabData = [
+export const AwsTabData:Tab[] = [
 {
     id: "0",
     title:'Key Benefits of AWS AI Services',
