@@ -1,6 +1,6 @@
 "use client"
 
-import { ARROWDOWN } from "@/app/assets"
+import { ARROWDOWN } from "@/app/assets/"
 import { buttonVariants } from "@/components/ui/button"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
 import Image from "next/image"

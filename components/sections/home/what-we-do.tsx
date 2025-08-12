@@ -1,5 +1,5 @@
 
-import { cloud, cyberSecBG1, development, rangerGeospatial } from "@/app/assets/index";
+import { cloud, cyberSecBG1, development, rangerGeospatial } from "@/app/assets/";
 import Image from "next/image";
 
 const applications = [

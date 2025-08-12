@@ -1,7 +1,7 @@
 "use client"
 import type React from "react"
 import Image from "next/image"
-import { BRAMERLOGO, DLTS, PLUS } from "@/app/assets"
+import { BRAMERLOGO, DLTS, PLUS } from "@/app/assets/"
 import type { StaticImageData } from "next/image"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
 import { useState } from "react"

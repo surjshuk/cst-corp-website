@@ -1,4 +1,4 @@
-import { HIGHLIGHT } from "@/app/assets";
+import { HIGHLIGHT } from "@/app/assets/";
 import StickyWrapper from "../HOC/StickyWrapper";
 import Image from "next/image";
 

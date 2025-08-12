@@ -4,7 +4,7 @@ import "./globals.css"
 import SideNavbar from "@/components/sections/common/SideNavbar"
 import { Footer } from "@/components/sections"
 import Image from "next/image"
-import { LOGO } from "@/app/assets"
+import { LOGO } from "@/app/assets/"
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { Toaster } from "@/components/ui/toaster";
 

@@ -1,5 +1,5 @@
 import { Hero } from "../set-1/hero";
-import { PLACEHOLDER } from "@/app/assets";
+import { PLACEHOLDER } from "@/app/assets/";
 import { PrismaCloud, PrismaCloudBenefits } from "./data";
 import { Benefits } from "../set-1/benefits";
 import { KeyFeaturesSection } from "../set-1/key-features";

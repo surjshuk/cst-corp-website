@@ -2,7 +2,7 @@ import React from 'react'
 import { Subhero } from '../components/subhero'
 import { AwsDesc, AwsFeature, AwsServiceDesc, AwsTabData, GoogleAiDesc, GoogleFeature, GoogleTabData, whatGoogleDesc } from './data'
 import CloudSpecial from '../components/Special'
-import { cyberSecBG3 } from '@/app/assets'
+import { cyberSecBG3 } from '@/app/assets/'
 import Header from '../components/Header'
 import { KeyFeaturesSection } from '../components/KeyFeatures'
 

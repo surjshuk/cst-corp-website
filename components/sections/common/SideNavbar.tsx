@@ -1,6 +1,6 @@
 "use client";
 
-import { LOGO } from "@/app/assets";
+import { LOGO } from "@/app/assets/";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -38,6 +38,7 @@ const cloudSections: Record<string, number> = {
   "cloud-application": 0,
   "cloud-license": 1,
   "cloud-network": 2,
+  "cloud-storage": 3,
 };
 
 const cybersecuritySections: Record<string, number> = {
@@ -238,7 +239,7 @@ const SideNavbar = () => {
                             href="/cloud-services" 
                             label="Cloud Services" 
                             active={activeRoute === "/cloud-services"} 
-                            subLinks={["cloud-application","cloud-license","cloud-network"]}
+                            subLinks={["cloud-application","cloud-license","cloud-network","cloud-storage"]}
                             activeSection={activeSection}
                             handleSubLinkClick={handleSubLinkClick}
 

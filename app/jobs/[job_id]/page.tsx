@@ -1,5 +1,5 @@
 "use client";
-import { ARROWDOWN, ARROWUP } from "@/app/assets";
+import { ARROWDOWN, ARROWUP } from "@/app/assets/";
 import { JobApplicationForm } from "@/components/sections";
 import Image from "next/image";
 import { useEffect, useState } from "react";

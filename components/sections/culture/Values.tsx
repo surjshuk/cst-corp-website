@@ -1,5 +1,5 @@
 "use client"
-import { PLUS } from "@/app/assets";
+import { PLUS } from "@/app/assets/";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import Image from "next/image";
 import { useState } from "react";

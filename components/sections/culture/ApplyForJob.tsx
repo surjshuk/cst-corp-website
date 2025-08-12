@@ -16,7 +16,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import Image from "next/image";
-import { INPUT } from "@/app/assets";
+import { INPUT } from "@/app/assets/";
 import { Textarea } from "@/components/ui/textarea";
 
 // Type for the form data

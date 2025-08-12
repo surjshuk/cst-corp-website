@@ -1,6 +1,6 @@
 "use client";
 
-import { cyberSecBG1 } from "@/app/assets";
+import { cyberSecBG1 } from "@/app/assets/";
 import Image, { StaticImageData } from "next/image";
 import { useEffect, useState, useRef } from "react";
 

@@ -1,4 +1,4 @@
-import { PYTHIAAI } from '@/app/assets'
+import { PYTHIAAI } from '@/app/assets/'
 import Image from 'next/image'
 import React from 'react'
 

@@ -1,6 +1,6 @@
 "use client"
 import Special from "@/components/sections/main/Special"
-import { AUTONOMY, cyberSecBG1, cyberSecBG2, DEFENCEAPPLICATION, FOCUSONDEEPTECH, INSPECTION, mainBG1, mainBG2, mainBG3, mainBG4, PLACEHOLDER } from "./assets/index";
+import { AUTONOMY, cyberSecBG1, cyberSecBG2, DEFENCEAPPLICATION, FOCUSONDEEPTECH, INSPECTION, mainBG1, mainBG2, mainBG3, mainBG4, PLACEHOLDER } from "./assets/";
 import SpecialCarousel from "@/components/sections/main/SpecialCarousel";
 import { KeyFeaturesSection } from "@/components/sections/main/key-features";
 import { Feature } from "@/components/sections/AI/feature";
@@ -10,8 +10,45 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel"
+import * as Logos from "@/app/assets/logos/index"; // This imports everything from your index.tsx
+import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 
+type LogoItem = {
+  image: string | StaticImageData;
+  link: string;
+};
+
+const logosData: LogoItem[] = [
+  { image: Logos.Appian, link: "https://www.appian.com" },
+  { image: Logos.AzureMicrosoft, link: "https://azure.microsoft.com" },
+  { image: Logos.Barracuda, link: "https://www.barracuda.com" },
+  { image: Logos.Connectwise, link: "https://www.connectwise.com" },
+  { image: Logos.Cradlepoint, link: "https://www.cradlepoint.com" },
+  { image: Logos.CrowdStrike, link: "https://www.crowdstrike.com" },
+  { image: Logos.Darktrace, link: "https://www.darktrace.com" },
+  { image: Logos.Dell, link: "https://www.dell.com" },
+  { image: Logos.Fortinet, link: "https://www.fortinet.com" },
+  { image: Logos.HPE, link: "https://www.hpe.com" },
+  { image: Logos.IBM, link: "https://www.ibm.com" },
+  { image: Logos.Intermedia, link: "https://www.intermedia.com" },
+  { image: Logos.Kaseya, link: "https://www.kaseya.com" },
+  { image: Logos.Microsoft, link: "https://www.microsoft.com" },
+  { image: Logos.NetApp, link: "https://www.netapp.com" },
+  { image: Logos.Okta, link: "https://www.okta.com" },
+  { image: Logos.Outsystems, link: "https://www.outsystems.com" },
+  { image: Logos.PaloAltoNetworks, link: "https://www.paloaltonetworks.com" },
+  { image: Logos.SamsungKnox, link: "https://www.samsungknox.com" },
+  { image: Logos.SentinelOne, link: "https://www.sentinelone.com" },
+  { image: Logos.TrendMicro, link: "https://www.trendmicro.com" },
+  { image: Logos.Veeam, link: "https://www.veeam.com" },
+  { image: Logos.WorkspaceGoogle, link: "https://workspace.google.com" },
+  { image: Logos.Adobe, link: "https://www.adobe.com" },
+  { image: Logos.APC, link: "https://www.apc.com" },
+  { image: Logos.AWSAmazon, link: "https://amazon.in" },
+  { image: Logos.ZohoManageEngine, link: "https://www.manageengine.com" }
+];
 const tabData = [
   {
     id: "0",
@@ -228,27 +265,23 @@ export default function Home() {
         }),
       ]}>
             <CarouselContent>
-              <CarouselItem className="basis-1/3">
-                <div className="w-full h-[160px] bg-secondary"></div>
-              </CarouselItem>
-               <CarouselItem className="basis-1/3">
-                <div className="w-full h-[160px] bg-secondary"></div>
-              </CarouselItem>
-               <CarouselItem className="basis-1/3">
-                <div className="w-full h-[160px] bg-secondary"></div>
-              </CarouselItem>
-              
-               <CarouselItem className="basis-1/3">
-                <div className="w-full h-[160px] bg-secondary"></div>
-              </CarouselItem>
-               <CarouselItem className="basis-1/3">
-                <div className="w-full h-[160px] bg-secondary"></div>
-              </CarouselItem>
-               <CarouselItem className="basis-1/3">
-                <div className="w-full h-[160px] bg-secondary"></div>
-              </CarouselItem>
-
-            </CarouselContent>
+        {logosData.map((logo, index) => (
+          <CarouselItem
+            key={index}
+            className="basis-1/5  flex items-center justify-center"
+          >
+            <Link href={logo.link} target="_blank">
+              <Image
+                src={logo.image}
+                alt={`Logo ${index + 1}`}
+                className="object-contain"
+                width={200}
+                height={60}
+              />
+            </Link>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
             {/* <CarouselPrevious /> */}
             {/* <CarouselNext /> */}
           </Carousel>

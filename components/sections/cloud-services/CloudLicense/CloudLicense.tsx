@@ -4,7 +4,7 @@ import { Subhero } from '../components/subhero'
 import { awsLicenceData, awsLicenceDesc, awsLicenceFeature, msNewComerceData, msNewComerceDesc, msNewComerceFeature, whatawsLicenceDesc, whatNewComerceDesc } from './data'
 import CloudSpecial from '../components/Special'
 import { KeyFeaturesSection } from '../key-features'
-import { cyberSecBG3 } from '@/app/assets'
+import { cyberSecBG3 } from '@/app/assets/'
 
 const CloudLicense = () => {
   return (

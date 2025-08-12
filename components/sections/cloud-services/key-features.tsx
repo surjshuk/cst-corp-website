@@ -1,5 +1,5 @@
 "use client";
-import { PLUS } from "@/app/assets";
+import { PLUS } from "@/app/assets/";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { Feature } from "@/types/declaration";
 import Image from "next/image";
@@ -29,7 +29,7 @@ export const KeyFeaturesSection: React.FC<KeyFeaturesSectionProps> = ({ features
       <div className="space-y-3.5 laptop:space-y-5">
         {/* <h3 className="text-xs text-primary font-semibold tablet:text-sm">Key Features</h3> */}
         <h1 className="text-[28px] leading-tight laptop:text-[40px] w-11/12 laptop:w-7/12">
-        Why Chose {title}
+        {title}
         </h1>
       </div>
 

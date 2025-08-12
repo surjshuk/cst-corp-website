@@ -1,7 +1,7 @@
 import { Locations, Section, Values } from "@/components/sections";
 import Image from "next/image";
 
-import { cyberSecBG3 } from "../assets/index";
+import { cyberSecBG3 } from "../assets/";
 
 const page = () => {
   return (

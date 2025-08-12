@@ -1,6 +1,6 @@
 
 import Special from "./components/Special";
-import { mainBG2 } from "@/app/assets";
+import { mainBG2 } from "@/app/assets/";
 import { SubHero } from "./components/subhero";
 import { AppianData, AppianFeatures } from "./data";
 import { KeyFeaturesSection } from "./components/key-features";

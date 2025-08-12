@@ -1,4 +1,4 @@
-import { CHEVRONRIGHT, OURTEAM } from "@/app/assets";
+import { CHEVRONRIGHT, OURTEAM } from "@/app/assets/";
 import Image from "next/image";
 import Link from "next/link";
 

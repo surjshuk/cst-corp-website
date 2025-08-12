@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/api/jobs/[job_id]/route.js", "components/sections/common/Video.jsx", "components/sections/HOC/StickyWrapper.jtsx", "app/api/jobs/apply/aws.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/api/jobs/[job_id]/route.js", "components/sections/common/Video.jsx", "components/sections/HOC/StickyWrapper.jtsx", "app/api/jobs/apply/aws.js", "components/sections/cloud-services/subhero2tsx"],
   "exclude": ["node_modules"]
 }

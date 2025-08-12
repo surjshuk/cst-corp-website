@@ -3,7 +3,7 @@ import { SubHero } from "./components/subhero";
 import Special from "./components/Special";
 import { KeyFeaturesSection } from "./components/key-features";
 import { powerBiData,powerBiFeatures } from "./data";
-import { mainBG4 } from "@/app/assets/index";
+import { mainBG4 } from "@/app/assets/";
 
 export const PowerBIAndPowerAutomate = () => {
   return (

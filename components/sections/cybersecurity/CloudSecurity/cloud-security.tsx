@@ -29,7 +29,7 @@ import { saseVersaFeatures   } from "@/lib/data";
 import { casbMicrosoftFeatures   } from "@/lib/data";
 import {  casbCloudLockBenefits } from "@/lib/data";
 import { casbCloudLockFeatures   } from "@/lib/data";
-import {  AIBG2, CSPM, CWPP, cyberSecBG1, cyberSecBG2, cyberSecBG3, development, DLP, ENCRYPTION, mainBG3, SASE, SERVER } from "@/app/assets/index";
+import {  AIBG2, CSPM, CWPP, cyberSecBG1, cyberSecBG2, cyberSecBG3, development, DLP, ENCRYPTION, mainBG3, SASE, SERVER } from "@/app/assets/";
 import { UseCases } from "../set-1/usecases";
 import { SubSection } from "./subsection";
 import { NetworkSection } from "./networkSection";

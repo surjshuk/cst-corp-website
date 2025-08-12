@@ -3,7 +3,7 @@ import Special from "./components/Special";
 import { SubHero } from "./components/subhero";
 import { outSystemsData, outSystemsFeatures,outSystemsAnotherData,outSystemsAnotherFeatures } from "./data";
 import { KeyFeaturesSection } from "./components/key-features";
-import { mainBG1, mainBG3 } from "@/app/assets/index";
+import { mainBG1, mainBG3 } from "@/app/assets/";
 
 export const OutSystems = () => {
     return (
