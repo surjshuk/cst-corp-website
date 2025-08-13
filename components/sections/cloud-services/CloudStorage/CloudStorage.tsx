@@ -5,6 +5,7 @@ import { azureesc, azureFeature, azurTabs,dropDesc,dropFeature,dropTabs,googleDe
 import CloudSpecial from '../components/Special'
 import { KeyFeaturesSection } from '../key-features'
 import { cyberSecBG3 } from '@/app/assets/'
+import { SubheroVm } from '../components/subheroVM'
 
 const CloudStorage = () => {
   return (
@@ -15,9 +16,10 @@ const CloudStorage = () => {
           
             description={azureesc}
             />
-             <Subhero
-            subtitle='What is Microsoft Azure?'
-            description={whyAzure}   
+             <SubheroVm
+            intro='What is Microsoft Azure?'
+            data={whyAzure}   
+            border= {false}
             position='left'  />
 
               
@@ -31,11 +33,11 @@ const CloudStorage = () => {
   description={s3esc}
 />
 
-<Subhero
-  subtitle='What is Amazon S3?'
-  description={whyS3}
-  position='left'
-/>
+ <SubheroVm
+            intro='What is Amazon S3?'
+            data={whyS3}   
+            border= {false}
+            position='left'  />
 
 <CloudSpecial
   tabData={s3Tabs}
@@ -58,11 +60,12 @@ const CloudStorage = () => {
   description={googleDesc}
 />
 
-<Subhero
-  subtitle='What is Google Drive?'
-  description={whyGoogle}
-  position='left'
-/>
+
+ <SubheroVm
+            intro='What is Google Drive?'
+            data={whyGoogle}   
+            border= {false}
+            position='left'  />
 
 <CloudSpecial
   tabData={googleTabs}
@@ -86,11 +89,13 @@ const CloudStorage = () => {
   description={dropDesc}
 />
 
-<Subhero
-  subtitle='What is Dropbox File Storage?'
-  description={whyDrop}
-  position='left'
-/>
+
+
+ <SubheroVm
+            intro='What is Dropbox File Storage?'
+            data={whyDrop}   
+            border= {false}
+            position='left'  />
 
 <CloudSpecial
   tabData={dropTabs}
@@ -112,11 +117,12 @@ const CloudStorage = () => {
   description={veemDesc}
 />
 
-<Subhero
-  subtitle='What is Veeam Backup as a Service (BaaS)?'
-  description={whyVeem}
-  position='left'
-/>
+
+ <SubheroVm
+            intro='What is Veeam Backup as a Service (BaaS)?'
+            data={whyVeem}   
+            border= {false}
+            position='left'  />
 
 <CloudSpecial
   tabData={veemTabs}

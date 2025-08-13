@@ -12,11 +12,15 @@ export const azureesc:string[] =[
 ]
 
 
-export const whyAzure:string[] = [
-   `Microsoft Azure is a comprehensive cloud platform offering over 200 products and services to help organizations innovate and solve their business challenges. From infrastructure-as-a-service (IaaS) to platform-as-a-service (PaaS) and software-as-a-service (SaaS), Azure enables businesses to operate with agility, scalability, and cost-efficiency.`,
-   `With Azure, businesses can develop and deploy applications, manage databases, leverage artificial intelligence, analyze big data, and much more. Designed to integrate seamlessly with existing IT environments, Azure supports a wide range of programming languages, frameworks, and operating systems.`
-]
 
+export const whyAzure = 
+  {
+    description:[
+     `Microsoft Azure is a comprehensive cloud platform offering over 200 products and services to help organizations innovate and solve their business challenges. From infrastructure-as-a-service (IaaS) to platform-as-a-service (PaaS) and software-as-a-service (SaaS), Azure enables businesses to operate with agility, scalability, and cost-efficiency.`,
+   `With Azure, businesses can develop and deploy applications, manage databases, leverage artificial intelligence, analyze big data, and much more. Designed to integrate seamlessly with existing IT environments, Azure supports a wide range of programming languages, frameworks, and operating systems.`
+
+    ],
+  }
 
 
 export const azurTabs:Tab[] = [
@@ -107,10 +111,11 @@ export const s3esc: string[] = [
   `Whether you're archiving historical data, building data lakes for analytics, or delivering high-performance content worldwide, Amazon S3 delivers the flexibility and performance to meet your business needs. Backed by Amazon Web Services’ (AWS) global infrastructure, Amazon S3 offers a robust and future-proof foundation for your cloud storage strategy.`
 ];
 
-export const whyS3: string[] = [
+export const whyS3 = {
+  description: [
   `Amazon S3 (Simple Storage Service) is a cloud-based object storage solution designed to store and manage data of any size, from small files to large datasets. Built on AWS's global network, Amazon S3 allows businesses to store and retrieve data from anywhere in the world, making it an ideal solution for applications like web hosting, data analytics, backup and disaster recovery, and media distribution.`,
   `With its cost-effective pricing model, advanced security features, and unmatched durability (99.999999999% or "11 nines"), Amazon S3 has become the go-to choice for organizations seeking reliable and scalable cloud storage.`
-];
+]};
 
 export const s3Tabs: Tab[] = [
   { id: "0", title: "Key Benefits of Amazon S3" },
@@ -145,10 +150,12 @@ export const googleDesc: string[] = [
 `In today’s fast-paced digital landscape, businesses and individuals need a reliable, secure, and versatile solution to store, access, and collaborate on their files. Google Drive is more than just a cloud storage platform—it’s an all-in-one solution designed to revolutionize how teams work together, share resources, and maintain seamless access to critical files from any location.`,
 `Powered by Google’s cutting-edge infrastructure, Google Drive offers unparalleled reliability, top-tier security, and integration with a suite of productivity tools, making it a cornerstone for businesses, creative teams, and individuals aiming to enhance productivity and collaboration.`];
 
-export const whyGoogle: string[] = [
+export const whyGoogle = {
+  description: [
   `Google Drive is a cloud-based file storage and synchronization service that enables users to store, share, and collaborate on files in real time. It’s part of the broader Google Workspace ecosystem (formerly G Suite) and integrates seamlessly with popular tools like Google Docs, Sheets, Slides, Gmail, and more.`,
   `With Google Drive, users can securely upload and organize files, access them from any device, and collaborate with team members in a shared workspace. Whether it’s documents, videos, images, or large project files, Google Drive ensures your data is safe, accessible, and always up to date.`
-];
+]
+}
 
 
 
@@ -255,9 +262,12 @@ export const dropDesc: string[] = [
 `Whether you’re a growing business, a remote team, or an individual with high-performance needs, Dropbox delivers scalable and feature-rich solutions to help you store, organize, and collaborate on files with confidence.`
 ]
 
-export const whyDrop: string[] = [
-`Dropbox File Storage is a cloud-based file storage and management platform that allows users to store all their important documents, images, videos, and more in one secure location. Dropbox combines advanced synchronization, powerful collaboration tools, and enterprise-grade security into an easy-to-use solution that integrates seamlessly into your existing workflows. It’s designed to help you manage your files and keep your team productive, whether you’re in the office, working remotely, or on the go.`];
 
+
+export const whyDrop = {
+  description: [
+`Dropbox File Storage is a cloud-based file storage and management platform that allows users to store all their important documents, images, videos, and more in one secure location. Dropbox combines advanced synchronization, powerful collaboration tools, and enterprise-grade security into an easy-to-use solution that integrates seamlessly into your existing workflows. It’s designed to help you manage your files and keep your team productive, whether you’re in the office, working remotely, or on the go.`]
+  }
 
 
 
@@ -362,10 +372,12 @@ export const veemDesc: string[] = [
 `In today’s data-driven world, ensuring the safety and accessibility of your business-critical data is more important than ever. Veeam Backup as a Service (BaaS) is a comprehensive, cloud-based data protection solution that empowers businesses to safeguard their data with unmatched reliability, flexibility, and simplicity. Whether your data resides on-premises, in the cloud, or across hybrid environments, Veeam BaaS delivers the tools and expertise you need to ensure data availability, recoverability, and compliance.`,
 `Designed for businesses of all sizes, Veeam Backup as a Service eliminates the complexity of traditional backup management by leveraging the power of the cloud and Veeam’s industry-leading backup technology. With Veeam BaaS, you gain peace of mind knowing your data is protected from cyber threats, accidental deletion, hardware failures, and natural disasters—while enabling seamless recovery when it matters most`]
 
-export const whyVeem: string[] = [
+export const whyVeem = {
+  description: [
 `Veeam Backup as a Service (BaaS) is a managed cloud-based solution that provides businesses with end-to-end data protection and recovery. Delivered through trusted Veeam service providers, BaaS allows organizations to offload the management, monitoring, and maintenance of their backup infrastructure, enabling them to focus on core business priorities while maintaining confidence in their data protection strategy.`,
 `With Veeam BaaS, businesses benefit from robust, scalable, and highly secure backups for all types of workloads, including virtual machines (VMs), physical servers, databases, SaaS applications like Microsoft 365, and more. This service is tailored to meet your unique needs, whether you're looking to protect data for compliance, minimize downtime, or defend against ransomware attacks.`
 ]
+}
 
 export const veemTabs:Tab[] = [
 {

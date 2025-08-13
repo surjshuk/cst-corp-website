@@ -7,6 +7,8 @@ import Image from "next/image"
 import { LOGO } from "@/app/assets/"
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { Toaster } from "@/components/ui/toaster";
+import { Analytics } from '@vercel/analytics/next';
+ 
 
 
 // const inter = Inter({ subsets: ["latin"] })
@@ -78,6 +80,7 @@ export default function RootLayout({
           </main>
         </div>
         <Toaster />
+         <Analytics />
       </body>
       <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS_GID || "G-XYZ"} />  
     </html>

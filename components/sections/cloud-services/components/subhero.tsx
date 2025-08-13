@@ -1,7 +1,7 @@
 import React from 'react'
 
 type Subherotype = {
-  subtitle:string;
+  subtitle?:string;
   intro?:string;
   description:string[];
   position?: "left" | "right";
@@ -25,7 +25,7 @@ export const Subhero : React.FC<Subherotype> = ({subtitle,description,intro,posi
                 {subtitle && (
 
                   <div>
-                  <h1 className="text-[50px] font-normal leading-none text-black laptop:w-[400px]">
+                  <h1 className="text-[50px] font-normal leading-none text-black laptop:w-[500px]">
                     {subtitle}
                   </h1>
                 </div>

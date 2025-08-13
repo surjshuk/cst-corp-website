@@ -2,22 +2,23 @@ import React from 'react'
 
 type Data = {
   description:string[];
-  points:string[]
+  points?:string[]
 }
 type Subherotype = {
   subtitle?:string;
   intro?:string;
   data:Data;
   position?: "left" | "right";
+  border?:boolean
 };
 
 
 
 
 
-export const SubheroVm : React.FC<Subherotype> = ({subtitle,data,intro,position="right"}) =>  {
+export const SubheroVm : React.FC<Subherotype> = ({subtitle,data,intro,position="right", border=true}) =>  {
   return (
-    <div className='m-5  border-b border-black py-28'>
+    <div className={`m-5  ${border? "border-b":"border-none" } border-black py-28`}>
 
         <div>
             <div className="grid grid-cols-1 laptop:grid-cols-2  laptop:px-20 laptop:py-8 ">
@@ -29,7 +30,7 @@ export const SubheroVm : React.FC<Subherotype> = ({subtitle,data,intro,position=
                 {subtitle && (
 
                   <div>
-                  <h1 className="text-[50px] font-normal leading-none text-black laptop:w-[400px]">
+                  <h1 className="text-[50px] font-normal leading-none text-black laptop:w-[500px]">
                     {subtitle}
                   </h1>
                 </div>
@@ -46,7 +47,7 @@ export const SubheroVm : React.FC<Subherotype> = ({subtitle,data,intro,position=
                   ))} */}
                     <ul className="text-xs text-black list-disc ps-5 leading-tight laptop:w-[500px]">
 
-                    {data.points.map((point,i)=>(
+                    {data.points && data.points.map((point,i)=>(
                       <li key={i}>{point}</li>
                     ))}
                     </ul>

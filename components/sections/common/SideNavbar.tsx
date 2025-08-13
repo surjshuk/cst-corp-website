@@ -17,7 +17,8 @@ const aiSections: Record<string, number> = {
     "ai-digital-twin": 1,
     "ai-consulting": 2,
     "ai-governance": 3,
-    "industries-we-serve": 4
+    "industries-we-serve": 4,
+    
 }
 
 const homeSections: Record<string, number> = {
@@ -39,6 +40,13 @@ const cloudSections: Record<string, number> = {
   "cloud-license": 1,
   "cloud-network": 2,
   "cloud-storage": 3,
+  "productivity-suite": 4,
+  "saas":5,
+  "unified-communication":6,
+};
+
+const enterpriseSections: Record<string, number> = {
+  "data-center": 0,
 };
 
 const cybersecuritySections: Record<string, number> = {
@@ -150,6 +158,8 @@ const SideNavbar = () => {
                 setActiveSection({ id: dataId, index: softwareSections[dataId] ?? 0 });
                 }else if (activeRoute === "/cloud-services") {
                 setActiveSection({ id: dataId, index: cloudSections[dataId] ?? 0 });
+                }else if( activeRoute ===  "/enterprise-network"){
+                setActiveSection({ id: dataId, index: enterpriseSections[dataId] ?? 0 });
                 }
                 else {
                 setActiveSection({ id: dataId, index: homeSections[dataId] });
@@ -239,7 +249,7 @@ const SideNavbar = () => {
                             href="/cloud-services" 
                             label="Cloud Services" 
                             active={activeRoute === "/cloud-services"} 
-                            subLinks={["cloud-application","cloud-license","cloud-network","cloud-storage"]}
+                            subLinks={["cloud-application","cloud-license","cloud-network","cloud-storage","productivity-suite","saas","unified-communication"]}
                             activeSection={activeSection}
                             handleSubLinkClick={handleSubLinkClick}
 
@@ -253,15 +263,15 @@ const SideNavbar = () => {
                             handleSubLinkClick={handleSubLinkClick}
 
                         /> 
-                        {/* <NavItem 
+                        <NavItem 
                             href="/enterprise-network" 
                             label="Enterprise Network" 
                             active={activeRoute === "/enterprise-network"} 
-                            subLinks={["cloud-security", "data-security", "email-security", "endpoint-security", "identity-and-access-managemenet(IAM)", "network-security", "operational-technology-security(OT)", "threat-detection-and-response(TDR)"]}
+                            subLinks={["data-center"]}
                             activeSection={activeSection}
                             handleSubLinkClick={handleSubLinkClick}
 
-                        />  */}
+                        /> 
                         {/* <NavItem
                             href="/culture"
                             label="Culture"
