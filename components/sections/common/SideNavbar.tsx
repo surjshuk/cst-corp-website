@@ -47,6 +47,9 @@ const cloudSections: Record<string, number> = {
 
 const enterpriseSections: Record<string, number> = {
   "data-center": 0,
+  "firewall":1,
+  "network-monitoring":2,
+  "network-storage":3
 };
 
 const cybersecuritySections: Record<string, number> = {
@@ -267,7 +270,7 @@ const SideNavbar = () => {
                             href="/enterprise-network" 
                             label="Enterprise Network" 
                             active={activeRoute === "/enterprise-network"} 
-                            subLinks={["data-center"]}
+                            subLinks={["data-center",  "firewall","network-monitoring", "network-storage"]}
                             activeSection={activeSection}
                             handleSubLinkClick={handleSubLinkClick}
 

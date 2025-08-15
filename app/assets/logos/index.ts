@@ -2,7 +2,7 @@ export { default as Appian } from "./Appian.com.png";
 export { default as AzureMicrosoft } from "./Azure.Microsoft.com.png";
 export { default as Barracuda } from "./barracuda.com.png";
 export { default as Connectwise } from "./connectwise.com.png";
-export { default as Cradlepoint } from "./cradlepoint.com.png";
+export { default as Cradlepoint } from "./Cradlepoint.com.png";
 export { default as CrowdStrike } from "./CrowdStrike.com.png";
 export { default as Darktrace } from "./Darktrace.com.png";
 export { default as Dell } from "./Dell.com.png";

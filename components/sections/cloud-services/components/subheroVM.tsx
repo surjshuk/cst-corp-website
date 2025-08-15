@@ -1,7 +1,7 @@
 import React from 'react'
 
 type Data = {
-  description:string[];
+  description?:string[];
   points?:string[]
 }
 type Subherotype = {
@@ -41,7 +41,7 @@ export const SubheroVm : React.FC<Subherotype> = ({subtitle,data,intro,position=
                     }
                     
                     <p className="text-xs leading-tight laptop:w-[500px]">
-                    {data.description[0]}</p>
+                    {data.description && data.description[0]}</p>
                   {/* {description.map((e,i)=>(
                       <p key={i} className="text-xs leading-tight laptop:w-[500px]">{e}</p>
                   ))} */}
@@ -51,7 +51,7 @@ export const SubheroVm : React.FC<Subherotype> = ({subtitle,data,intro,position=
                       <li key={i}>{point}</li>
                     ))}
                     </ul>
-                    <p className="text-xs leading-tight laptop:w-[500px]">{data.description[1]&& data.description[1] }</p>
+                    <p className="text-xs leading-tight laptop:w-[500px]">{data.description && data.description[1]&& data.description[1] }</p>
                 </div>
                 
               </div>
