@@ -12,7 +12,7 @@ export const SubHero: React.FC<HeroProps> = ({
   position = "right",
 }) => {
   return (
-    <div className="grid laptop:grid-cols-2 gap-24 p-5 laptop:px-20 laptop:py-24">
+    <div className="font-default grid laptop:grid-cols-2 gap-24 p-5 laptop:px-20 laptop:py-24">
       <div
         className={`space-y-2.5 ${
           position === "left" ? "laptop:col-start-1" : "laptop:col-start-2"

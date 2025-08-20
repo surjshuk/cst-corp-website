@@ -1,14 +1,15 @@
 import type { Metadata } from "next"
 import localFont from "next/font/local";
 import "./globals.css"
-import SideNavbar from "@/components/sections/common/SideNavbar"
+// import SideNavbar from "@/components/sections/common/SideNavbar"
 import { Footer } from "@/components/sections"
-import Image from "next/image"
-import { LOGO } from "@/app/assets/"
+// import Image from "next/image"
+// import { LOGO } from "@/app/assets/"
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { Toaster } from "@/components/ui/toaster";
 import { Analytics } from '@vercel/analytics/next';
- 
+import { ActiveSectionProvider } from "@/context/ActiveSectionContext";
+import Sidebar from "@/components/Sidenavbar";
 
 
 // const inter = Inter({ subsets: ["latin"] })
@@ -66,18 +67,22 @@ export default function RootLayout({
   
   return (
     <html lang="en" className="scroll-smooth">
+      
       <body className={`${myFont.className} w-full`}>
 
-        <div className="flex">
-          <header className="bg-white h-[51px] flex-center fixed w-full tablet:hidden z-20">
+        <div className="lg:flex block">
+          {/* <header className="bg-white h-[51px] flex-center fixed w-full tablet:hidden z-20">
             <Image src={LOGO} alt="Trulli" className="w-fit h-10"/>
-          </header> 
+          </header>  */}
           
-          <SideNavbar />
-          <main className="mt-12 tablet:mt-0 tablet:ml-40 laptop:ml-64 bg-background w-full">
-            {children}
-            <Footer />
-          </main>
+          {/* <SideNavbar /> */}
+          <ActiveSectionProvider>
+            <Sidebar/>
+            <main className=" bg-background w-full">
+              {children}
+              <Footer />
+            </main>
+          </ActiveSectionProvider>
         </div>
         <Toaster />
          <Analytics />

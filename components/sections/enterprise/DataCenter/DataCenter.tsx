@@ -1,52 +1,55 @@
 import React from 'react'
-import Header from '../../cloud-services/components/Header'
-import { Subhero } from '../../cloud-services/components/subhero'
-import CloudSpecial from '../../cloud-services/components/Special'
 import { broadcomBenefits, broadcomDesc, broadcomFeatures, ciscoDesc, ciscoTabData, dellDesc, dellFeature, dellTabData, fortinetBenefits, fortinetDesc, fortinetFeatures, hpeDesc, hpeFeature, hpeTabData, ibmDesc, ibmFeature, ibmTabData, ibmWhy, prismaBenefits, prismaDesc, prismaFeatures, vmwareBenefits, vmwareDesc, vmwareFeatures, whatIsBroadcom, whatIsFortinet, whatIsPrisma, whatIsVmware, whyCisco, whyDell, whyHPE } from './data'
-import { cyberSecBG3 } from '@/app/assets'
 import { cloudPaloFeature } from '../../cloud-services/CloudNetwork/data'
 import { KeyFeaturesSection } from '../../cloud-services/key-features'
+import Header from '../components/Header'
+import SubHeader from '../components/SubHeader'
+import Section from '@/components/Section'
+import MainCarousel from '../components/Special'
 
 const DataCenter = () => {
 
   return (
 
-    <div data-id="data-center" id='data-center'>
+    <Section data-id="data-center" id='data-center'>
 
       <Header title={"Data Center"}/> 
-       <Subhero
-      subtitle='Cisco Nexus Switches'
-      intro='The Industry-Leading Data Center Networking Solution for Performance, Scalability, and Flexibility'
+       <SubHeader
+      title='Cisco Nexus Switches'
+      subtitle='The Industry-Leading Data Center Networking Solution for Performance, Scalability, and Flexibility'
       description={ciscoDesc}
+       group='Data Center'
+      website='ssds'
+      position='right'
+
       />
-       <Subhero
-      subtitle='What are Cisco Nexus Switches?'
+       <SubHeader
+      title='What are Cisco Nexus Switches?'
       description={whyCisco}   
       position='left'  />
 
       
-        <CloudSpecial tabData={ciscoTabData} className="h-[400vh]" imageSrc={cyberSecBG3}  mask="black/80" progressMultiplierHorizontal={14}/>
+        <MainCarousel tabData={ciscoTabData} />
         
         <KeyFeaturesSection title="Key Features of Cisco Nexus Switches" features={cloudPaloFeature}/>
        
-      <Subhero
-  subtitle="HPE Data Center Networking"
-  intro="The Industry-Leading Solution for Performance, Scalability, and Flexibility"
+      <SubHeader
+  title="HPE Data Center Networking"
+  subtitle="The Industry-Leading Solution for Performance, Scalability, and Flexibility"
   description={hpeDesc}
+     group='Data Center'
+      website='ssds'
+      position='right'
 />
 
-<Subhero
-  subtitle="What is HPE Data Center Networking?"
+<SubHeader
+  title="What is HPE Data Center Networking?"
   description={whyHPE}
   position="left"
 />
 
-<CloudSpecial
+<MainCarousel
   tabData={hpeTabData}
-  className="h-[400vh]"
-  imageSrc={cyberSecBG3}   // reuse the same background image if needed
-  mask="black/80"
-  progressMultiplierHorizontal={14}
 />
 
 <KeyFeaturesSection
@@ -55,24 +58,24 @@ const DataCenter = () => {
 />
 
 
-<Subhero
-  subtitle="Dell EMC Data Center Networking"
-  intro="The Industry-Leading Solution for Performance, Scalability, and Flexibility"
+<SubHeader
+  title="Dell EMC Data Center Networking"
+  subtitle="The Industry-Leading Solution for Performance, Scalability, and Flexibility"
   description={dellDesc}
+     group='Data Center'
+      website='ssds'
+      position='right'
 />
 
-<Subhero
-  subtitle="What is Dell EMC Data Center Networking?"
+<SubHeader
+  title="What is Dell EMC Data Center Networking?"
   description={whyDell}
   position="left"
 />
 
-<CloudSpecial
+<MainCarousel
   tabData={dellTabData}
-  className="h-[400vh]"
-  imageSrc={cyberSecBG3}
-  mask="black/80"
-  progressMultiplierHorizontal={14}
+
 />
 
 <KeyFeaturesSection
@@ -82,24 +85,24 @@ const DataCenter = () => {
 
 
 
-<Subhero
-  subtitle="IBM Cloud Data Center Networking"
-  intro="Empowering Your Digital Transformation with Secure, High-Performance Connectivity"
+<SubHeader
+  title="IBM Cloud Data Center Networking"
+  subtitle="Empowering Your Digital Transformation with Secure, High-Performance Connectivity"
   description={ibmDesc}
+     group='Data Center'
+      website='ssds'
+      position='right'
 />
 
-<Subhero
-  subtitle="What is IBM Cloud Data Center Networking?"
+<SubHeader
+  title="What is IBM Cloud Data Center Networking?"
   description={ibmWhy}
   position="left"
 />
 
-<CloudSpecial
+<MainCarousel
   tabData={ibmTabData}
-  className="h-[400vh]"
-  imageSrc={cyberSecBG3}
-  mask="black/80"
-  progressMultiplierHorizontal={14}
+
 />
 
 <KeyFeaturesSection
@@ -107,24 +110,24 @@ const DataCenter = () => {
   features={ibmFeature}
 />
 
-<Subhero
-  subtitle='Fortinet Data Center Networking'
-  intro='FortiGate, FortiSwitch, and FortiLink Solutions'
+<SubHeader
+  title='Fortinet Data Center Networking'
+  subtitle='FortiGate, FortiSwitch, and FortiLink Solutions'
   description={fortinetDesc}
+     group='Data Center'
+      website='ssds'
+      position='right'
 />
 
-<Subhero
-  subtitle='What is Fortinet Data Center Networking?'
+<SubHeader
+  title='What is Fortinet Data Center Networking?'
   description={whatIsFortinet}
   position='left'
 />
 
-<CloudSpecial
+<MainCarousel
   tabData={fortinetBenefits}
-  className="h-[400vh]"
-  imageSrc={cyberSecBG3}
-  mask="black/80"
-  progressMultiplierHorizontal={14}
+
 />
 
 <KeyFeaturesSection
@@ -133,24 +136,24 @@ const DataCenter = () => {
 />
 
 
-<Subhero
-  subtitle='Palo Alto Networks Prisma SD-WAN'
-  intro='Enhancing Data Center Connectivity with Secure, High-Performance Networking'
+<SubHeader
+  title='Palo Alto Networks Prisma SD-WAN'
+  subtitle='Enhancing Data Center Connectivity with Secure, High-Performance Networking'
   description={prismaDesc}
+     group='Data Center'
+      website='ssds'
+      position='right'
 />
 
-<Subhero
-  subtitle='What is Prisma SD-WAN?'
+<SubHeader
+  title='What is Prisma SD-WAN?'
   description={whatIsPrisma}
   position='left'
 />
 
-<CloudSpecial
+<MainCarousel
   tabData={prismaBenefits}
-  className="h-[400vh]"
-  imageSrc={cyberSecBG3}
-  mask="black/80"
-  progressMultiplierHorizontal={14}
+
 />
 
 <KeyFeaturesSection
@@ -159,24 +162,24 @@ const DataCenter = () => {
 />
 
 
-<Subhero
-  subtitle='VMware by Broadcom'
-  intro='NSX, vSphere, and vSAN for Data Center Networking'
+<SubHeader
+  title='VMware by Broadcom'
+  subtitle='NSX, vSphere, and vSAN for Data Center Networking'
   description={vmwareDesc}
+     group='Data Center'
+      website='ssds'
+      position='right'
 />
 
-<Subhero
-  subtitle='What are VMware by Broadcom Data Center Solutions?'
+<SubHeader
+  title='What are VMware by Broadcom Data Center Solutions?'
   description={whatIsVmware}
   position='left'
 />
 
-<CloudSpecial
+<MainCarousel
   tabData={vmwareBenefits}
-  className="h-[400vh]"
-  imageSrc={cyberSecBG3}
-  mask="black/80"
-  progressMultiplierHorizontal={14}
+
 />
 
 <KeyFeaturesSection
@@ -185,24 +188,23 @@ const DataCenter = () => {
 />
 
 
-<Subhero
-  subtitle='Broadcom Data Center Switching Solutions'
-  intro='Tomahawk and StrataXGS Series'
+<SubHeader
+  title='Broadcom Data Center Switching Solutions'
+  subtitle='Tomahawk and StrataXGS Series'
   description={broadcomDesc}
+     group='Data Center'
+      website='ssds'
+      position='right'
 />
 
-<Subhero
-  subtitle="What are Broadcom's Data Center Switching Solutions?"
+<SubHeader
+  title="What are Broadcom's Data Center Switching Solutions?"
   description={whatIsBroadcom}
   position='left'
 />
 
-<CloudSpecial
+<MainCarousel
   tabData={broadcomBenefits}
-  className="h-[400vh]"
-  imageSrc={cyberSecBG3}
-  mask="black/80"
-  progressMultiplierHorizontal={14}
 />
 
 <KeyFeaturesSection
@@ -213,7 +215,7 @@ const DataCenter = () => {
 
 
 
-    </div>
+    </Section>
 
   )
 }

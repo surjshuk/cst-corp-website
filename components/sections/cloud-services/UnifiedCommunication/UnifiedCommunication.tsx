@@ -4,10 +4,11 @@ import { Subhero } from '../components/subhero'
 import { KeyFeaturesSection } from '../key-features'
 import { ciscoBenefits, ciscoDesc, ciscoFeature, contactCenterBenefits, contactCenterDesc, contactCenterFeature, intermediaArchivingDesc, intermediaArchivingFeatures, intermediaBackupDesc, intermediaBackupFeatures, intermediaContactCenterDesc, intermediaContactCenterFeatures, intermediaSipTrunkingDesc, intermediaSipTrunkingFeatures, intermediaUniteDesc, intermediaUniteFeatures, manageBenefits, manageDesc, manageFeature, rcContactCenterDesc, rcContactCenterFeatures, rcMessagingDesc, rcMessagingFeatures, rcMobileAppDesc, rcMobileAppFeatures, rcPhoneDesc, rcPhoneFeatures, rcVideoDesc, rcVideoFeatures, ringcentralVoipDesc, ringcentralVoipFeatures, teamsChatMessagingDesc, teamsChatMessagingFeature, teamsCollaborationToolsDesc, teamsCollaborationToolsFeature, teamsRoomsDesc, teamsRoomsFeature, teamsVideoConferencingDesc, teamsVideoConferencingFeature, teamsVoiceCallingDesc, teamsVoiceCallingFeature, teamsWebinarHostingDesc, teamsWebinarHostingFeature, vonageAIDesc, vonageAIFeatures, vonageMessagingDesc, vonageMessagingFeatures, vonageProgVoiceDesc, vonageProgVoiceFeatures, vonageVideoDesc, vonageVideoFeatures, vonageVoipDesc, vonageVoipFeatures, webexAdvancedFeatures, webexCallingBenefits, webexCallingDesc, webexCallingFeature, webexDesc, webexDevicesBenefits, webexDevicesDesc, webexDevicesFeature, webexEventsBenefits, webexEventsDesc, webexEventsFeature, webexMeetingsBenefits, webexMeetingsDesc, webexMeetingsFeature, webexMessagingBenefits, webexMessagingDesc, webexMessagingFeature } from './data'
 import { BenefitsUf } from '../components/benefitsUf'
+import Section from '@/components/Section'
 
 const UnifiedCommunication = () => {
   return (
-    <div data-id="unified-communication" id='unified-communication'>
+    <Section data-id="unified-communication" id='unified-communication'>
       <Header title={"Unified Communications as a Service"}/> 
        <Subhero
       subtitle='Cisco UCaaS'
@@ -284,7 +285,7 @@ subtitle='Vonage UCaaS'
   features={intermediaBackupFeatures}
 />
 
-    </div>
+    </Section>
   )
 }
 

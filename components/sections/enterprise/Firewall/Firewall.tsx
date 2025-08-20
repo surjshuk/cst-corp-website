@@ -1,27 +1,27 @@
 import React from 'react'
-import Header from '../../cloud-services/components/Header'
-import { Subhero } from '../../cloud-services/components/subhero'
 import CloudSpecial from '../../cloud-services/components/Special'
 import { KeyFeaturesSection } from '../../cloud-services/key-features'
-import { cyberSecBG3 } from '@/app/assets'
 import { barracudaBenefits, barracudaDeploy, barracudaDesc, barracudaFeatures, barracudaModelSpecs, ciscoDeploy, ciscoDesc, ciscoFeature, ciscoTabData, fortinetDeploy, fortinetDesc, fortinetFeature, fortinetTabData } from './data'
+import Header from '../components/Header'
+import SubHeader from '../components/SubHeader'
+import Section from '@/components/Section'
 
 const Firewall = () => {
   return (
-    <div data-id="firewall" id="firewall">
+    <Section data-id="firewall" id="firewall">
       <Header title={"Firewall"}/> 
 
-      <Subhero
-  subtitle="Cisco"
+      <SubHeader
+  title="Cisco"
   description={ciscoDesc}
+     group='Firewall'
+      website='ssds'
+      position='right'
 />
 
 <CloudSpecial
   tabData={ciscoTabData}
-  className="h-[400vh]"
-  imageSrc={cyberSecBG3} 
-  mask="black/80"
-  progressMultiplierHorizontal={14}
+  
 />
 
 <KeyFeaturesSection
@@ -35,17 +35,17 @@ const Firewall = () => {
   features={ciscoDeploy}
 />
 
-<Subhero
-  subtitle="Fortinet Firewalls"
+<SubHeader
+  title="Fortinet Firewalls"
   description={fortinetDesc}
+     group='Firewall'
+      website='ssds'
+      position='right'
 />
 
 <CloudSpecial
   tabData={fortinetTabData}
-  className="h-[400vh]"
-  imageSrc={cyberSecBG3}
-  mask="black/80"
-  progressMultiplierHorizontal={14}
+  
 />
 
 
@@ -60,18 +60,18 @@ const Firewall = () => {
   features={fortinetDeploy}
 />
 
-<Subhero
-  subtitle='Barracuda CloudGen Firewall'
+<SubHeader
+  title='Barracuda CloudGen Firewall'
   description={barracudaDesc}
+     group='Firewall'
+      website='ssds'
+      position='right'
 />
 
 
 <CloudSpecial
   tabData={barracudaBenefits}
-  className="h-[400vh]"
-  imageSrc={cyberSecBG3}
-  mask="black/80"
-  progressMultiplierHorizontal={14}
+
 />
 
 
@@ -85,13 +85,13 @@ const Firewall = () => {
   features={barracudaDeploy}
 />
 
-<Subhero
-  subtitle="Model Specifications"
+<SubHeader
+  title="Model Specifications"
   description={barracudaModelSpecs}
   position='left'
 />
 
-    </div>
+    </Section>
   )
 }
 

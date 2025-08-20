@@ -1,49 +1,55 @@
 import React from 'react'
-import { Subhero } from '../components/subhero'
+import { SubHeader } from '../components/SubHeader'
 import { AwsDesc, AwsFeature, AwsServiceDesc, AwsTabData, GoogleAiDesc, GoogleFeature, GoogleTabData, whatGoogleDesc } from './data'
 import CloudSpecial from '../components/Special'
-import { cyberSecBG3 } from '@/app/assets/'
 import Header from '../components/Header'
 import { KeyFeaturesSection } from '../components/KeyFeatures'
+import Section from '@/components/Section'
 
 
 const CloudApplication = () => {
   return (
     
-    <div data-id="cloud-application" id="cloud-application">
+    <Section data-id="cloud-application" id="cloud-application">
       <Header title={"Cloud Application Services"}/> 
-      <Subhero
-      subtitle='Google AI and Machine Learning APIs'
-      intro='Unlock the Power of Intelligent, Data-Driven Innovation'
+      <SubHeader
+      title='Google AI and Machine Learning APIs'
+      subtitle='Unlock the Power of Intelligent, Data-Driven Innovation'
       description={GoogleAiDesc}
+      group='Cloud Application Services'
+      website='ssds'
+      position='right'
       />
-       <Subhero
-      subtitle='What are Google AI and Macine Learning APIs?'
+       <SubHeader
+      title='What are Google AI and Macine Learning APIs?'
       description={whatGoogleDesc}   
       position='left'  />
 
 
-        <CloudSpecial tabData={GoogleTabData} className="h-[400vh]" imageSrc={cyberSecBG3}  mask="black/80" progressMultiplierHorizontal={14}/>
+        <CloudSpecial tabData={GoogleTabData} />
         
         <KeyFeaturesSection title="Key Google AI and Machine Learning APIs" features={GoogleFeature}/>
         
-         <Subhero
-      subtitle='AWS AI Services'
-      intro='Empowering Businesses with Scalable, Intelligent Solutions'
+         <SubHeader
+      title='AWS AI Services'
+      subtitle='Empowering Businesses with Scalable, Intelligent Solutions'
       description={AwsDesc}
+      group='Cloud Application Services'
+      website='ssds'
+      position='right'
       />
-       <Subhero
-      subtitle='What Are AWS AI Services?'
+       <SubHeader
+      title='What Are AWS AI Services?'
       description={AwsServiceDesc}   
       position='left'  />
 
       
-        <CloudSpecial tabData={AwsTabData} className="h-[400vh]" imageSrc={cyberSecBG3}  mask="black/80" progressMultiplierHorizontal={14}/>
+        <CloudSpecial tabData={AwsTabData} />
         
         <KeyFeaturesSection title="Key AWS AI Services" features={AwsFeature}/>
         
     
-    </div>
+    </Section>
   )
 }
 

@@ -23,7 +23,7 @@ export const KeyFeaturesSection: React.FC<KeyFeaturesSectionProps> = ({ features
 
   return (
     <section
-      className="space-y-20 px-5 pt-20 pb-7 tablet:space-y-20 tablet:px-12 tablet:pb-12 laptop:ml-0 laptop:px-20 laptop:pt-40 laptop:pb-20"
+      className="font-default space-y-20 px-5 pt-20 pb-7 tablet:space-y-20 tablet:px-12 tablet:pb-12 laptop:ml-0 laptop:px-20 laptop:pt-40 laptop:pb-20"
       id="key-features"
     >
       <div className="space-y-3.5 laptop:space-y-5">

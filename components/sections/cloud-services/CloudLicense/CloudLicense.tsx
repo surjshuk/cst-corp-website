@@ -1,46 +1,52 @@
 import React from 'react'
 import Header from '../components/Header'
-import { Subhero } from '../components/subhero'
+import { SubHeader } from '../components/SubHeader'
 import { awsLicenceData, awsLicenceDesc, awsLicenceFeature, msNewComerceData, msNewComerceDesc, msNewComerceFeature, whatawsLicenceDesc, whatNewComerceDesc } from './data'
 import CloudSpecial from '../components/Special'
 import { KeyFeaturesSection } from '../key-features'
-import { cyberSecBG3 } from '@/app/assets/'
+import Section from '@/components/Section'
 
 const CloudLicense = () => {
   return (
-    <div data-id="cloud-license" id="cloud-license">
+    <Section data-id="cloud-license" id="cloud-license">
       <Header title={"Cloud License"}/> 
-       <Subhero
+       <SubHeader
       subtitle='Microsoft New Commerce Experience (NCE)'
       description={msNewComerceDesc}
+      group='Cloud License'
+      website='ssds'
+      position='right'
       />
-       <Subhero
+       <SubHeader
       subtitle='What is the Microsoft New Commerce Experience (NCE)?'
       description={whatNewComerceDesc}   
       position='left'  />
 
 
-        <CloudSpecial tabData={msNewComerceData} className="h-[400vh]" imageSrc={cyberSecBG3}  mask="black/80" progressMultiplierHorizontal={14}/>
+        <CloudSpecial tabData={msNewComerceData} />
         
         <KeyFeaturesSection title="Key Benefits of the Microsoft NCE" features={msNewComerceFeature}/>
         
-       <Subhero
+       <SubHeader
       subtitle='Amazon AWS Marketplace for Flexible Cloud Licensing'
       description={awsLicenceDesc}
+      group='Cloud License'
+      website='ssds'
+      position='right'
       />
-       <Subhero
+       <SubHeader
       subtitle='What is the AWS Marketplace for Flexible Cloud Licensing ?'
       description={whatawsLicenceDesc}   
       position='left'  />
 
 
-        <CloudSpecial tabData={awsLicenceData} className="h-[400vh]" imageSrc={cyberSecBG3}  mask="black/80" progressMultiplierHorizontal={14}/>
+        <CloudSpecial tabData={awsLicenceData} />
         
         <KeyFeaturesSection title="Key Features of AWS Marketplace for Flexible Cloud Licensing" features={awsLicenceFeature}/>
         
 
 
-    </div>
+    </Section>
   )
 }
 

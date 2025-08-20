@@ -1,133 +1,79 @@
 "use client";
 
-import Image, { StaticImageData } from "next/image";
-import { useEffect, useState, useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef, useState } from "react";
+import { CloudSpecialType } from "../type";
+import { cyberSecBG1 } from "@/app/assets";
 
 
-
-interface Tab {
-  id: string;
-  title: string;
-  description?: string;
-}
-
-interface SpecialProps {
-  tabData: Tab[]; 
-  progressMultiplierHorizontal?: number; // Controls how progress translates to animation
-  threshold?: number; // Intersection observer threshold (default: 70%)
-  className: string;
-  mask?: string; // Optional mask class for background overlay
-  imageSrc?: StaticImageData; // Optional image source for background
-}
-
-const CloudSpecial = ({ tabData, className, mask, imageSrc, progressMultiplierHorizontal = 0}: SpecialProps) => {
-  const [activeTab, setActiveTab] = useState(0);
-  const sectionRef = useRef<HTMLElement>(null);
-  const componentRef = useRef<HTMLDivElement>(null);
-  const [scale, setScale] = useState(1);
-  const [progress, setProgress] = useState(0);
-
-  const totalSections: number = tabData.length
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (sectionRef.current) {
-        const { top, height } = sectionRef.current.getBoundingClientRect();
-        let progressValue = 0;
-        if (top < 0) {
-            progressValue = Math.abs(top) / ( height * 0.75)
-            setProgress(progressValue);
-        }
-
-        setActiveTab(Math.min(Math.floor(progressValue * totalSections), (totalSections - 1)))
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [totalSections]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        // Adjust scale based on intersection ratio
-        setScale(0.93 + entry.intersectionRatio * 0.05); // Scale from 0.95 to 1
-      },
-      { threshold: Array.from({ length: 101 }, (_, i) => i / 100) } // Steps from 0 to 1
-    );
-
-    const element = componentRef.current;
-    if (element) observer.observe(element);
-
-    return () => {
-      if (element) observer.unobserve(element);
-    };
-  }, []);
-
-  return (
-    <section ref={sectionRef} className={`text-white ${className} laptop:mt-40 `}>
-      <div
-        ref={componentRef}
-        className="z-10 sticky top-12 h-screen tablet:top-0 overflow-x-hidden"  
-        style={{
-          transform: `scale(${scale})`,
-          transition: "transform 0.1s ease-out", // Smooth transitions
-        }}
-      >
-        {/* Tab Navigation */}
-        <div className="relative w-fit ml-auto z-20 p-5 tablet:px-12 tablet:py-10 laptop:ml-0 laptop:px-20 laptop:py-10">
-          {/* Horizontal Progress Bar */}
-          <div
-            className="w-24 h-1.5 rounded-full bg-blue-500 relative transition-all duration-100 ease-linear laptop:block hidden"
-            style={{
-              transform: `translateX(${progress * 100 * (progressMultiplierHorizontal || 0)}%)`,
-            }}
-          />
-         
-        </div>
-
-        {/* Tab Content */}
-        {tabData.map((tab, index) => (
-          <div
-            className={`h-screen absolute top-0 w-full ${activeTab === index ? "" : "-z-10"}`}
-            key={`section-main-${tab.id}`}
-          >
-            {imageSrc ? 
-                <Image
-                  src={imageSrc}
-                  alt={`Image for ${tab.title}`}
-                  fill
-                  priority
-                  className="object-cover"
-                />
-                : 
-                null
-            }   
-
-            {mask && <div className={`bg-${mask} absolute inset-0`} />}
-            
-            <div
-              className={`z-20 flex-col absolute space-y-4 tablet:space-y-16 px-5 py-10 tablet:px-12 laptop:px-20 laptop:pt-36 laptop:pb-12 laptop:inset-0 laptop:flex laptop:justify-between ${
-                activeTab === index ? "opacity-100 animate-fadeIn" : "opacity-0 animate-fadeOut"
-              }`}
-            >
-              <h4 className={`${tab.id=="0"?"laptop:text-7xl text-6xl laptop:w-2/5":"laptop:text-4xl text-4xl laptop:w-1/2"} text-wrap laptop:w-1/2`}>
-                {tab.title}
-              </h4>
-              {tab.description && (
-
-                <div className="flex justify-end laptop:px-20">
-                    <div className="laptop:w-1/2">
-                        <p className="text-base">{tab.description}</p>
-                    </div>
-                </div>
-            )}
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
+ type MainCarouselProp = {
+  tabData: CloudSpecialType[]
 };
 
-export default CloudSpecial;
+ const  MainCarousel : React.FC<MainCarouselProp> =  ({tabData}) => {
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  const count = tabData.length;
+  const { scrollYProgress } = useScroll({
+    target: wrapperRef,
+    offset: ["start start", "end end"],
+  });
+  const [activeIndex, setActiveIndex] = useState(0);
+  scrollYProgress.on("change", (latest) => {
+    const step = 1 / count;
+    const idx = Math.min(count - 1, Math.floor(latest / step + 0.5));
+    setActiveIndex(idx);
+  });
+
+  const progress = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  const scale = useTransform(scrollYProgress, [0, 0.01, 0.95, 1], [0.95, 1, 1, 0.95]);
+
+
+  return (
+    <section
+      ref={wrapperRef}
+      style={{ height: `${count * 100}vh` }}
+      className="relative w-full "
+    >
+      <motion.div
+        className="sticky top-0 h-screen   w-full  overflow-hidden"
+        style={{
+         scale,
+          transition: "0.3s ease",
+        }}
+      >
+
+        {tabData.map((slide, i) => (
+          <div key={i} className="w-full bg-black h-full bg-cover bg-center bg-no-repeat"
+          style={{backgroundImage:`url(${slide.image?.src || cyberSecBG1.src})`}}>
+          <motion.div
+            
+            className="absolute inset-0  text-white"
+            style={{
+              
+              opacity: activeIndex === i ? 1 : 0,
+              transition: "opacity 0.5s ease",
+            }}
+            >
+              {/* <Image src={slide.image || cyberSecBG1} alt="" className="absolute w-full opacity-50 h-full"/> */}
+            <div className="flex flex-col justify-between w-full h-full relative z-10 xl:p-20 md:px-10 px-5 py-20">
+              <h2 className={`${i==0? "md:text-6xl text-sm" : "md:text-2xl text-sm"} 2xl:w-2/5 lg:w-[60%] md:w-[50%] w-[90%]  text-white`}>{slide.title}</h2>
+              <p className="text-sm opacity-80 md:w-2/5 w-[70%]  ms-auto" key={i}>{slide.description}</p>
+              
+            </div>
+          </motion.div>
+            </div>
+        ))}
+
+        {/* Progress bar */}
+        <div className="absolute bottom-8 left-0 right-0 mx-auto w-[calc(100%-5rem)] h-1 bg-white/25 rounded-full z-20">
+          <motion.div
+            className="h-full bg-blue-500 rounded-full"
+            style={{ width: progress }}
+          />
+        </div>
+      </motion.div>
+    </section>
+  );
+}
+
+export default MainCarousel

@@ -1,44 +1,51 @@
 import React from 'react'
 import Header from '../components/Header'
-import { Subhero } from '../components/subhero'
+import { SubHeader } from '../components/SubHeader'
 import CloudSpecial from '../components/Special'
 import { KeyFeaturesSection } from '../key-features'
 import { googleDesc, googleFeature, googleTabData, msDesc, msFeature, msTabData, whyGoogle, whyMs } from './data'
-import { cyberSecBG3 } from '@/app/assets'
+import Section from '@/components/Section'
 
 const ProductivitySuite = () => {
   return (
-    <div data-id="productivity-suite" id='productivity-suite'>
+    <Section data-id="productivity-suite" id='productivity-suite'>
       <Header title={"Productivity Suite"}/> 
-       <Subhero
-      subtitle='Microsoft Office 365'
+       <SubHeader
+      title='Microsoft Office 365'
       description={msDesc}
+      position='right'
+            group='Productivity Suite'
+            website='dsd'
+
       />
-       <Subhero
-      subtitle='What is Microsoft Office 365?'
+       <SubHeader
+      title='What is Microsoft Office 365?'
       description={whyMs}   
       position='left'  />
 
       
-        <CloudSpecial tabData={msTabData} className="h-[400vh]" imageSrc={cyberSecBG3}  mask="black/80" progressMultiplierHorizontal={14}/>
+        <CloudSpecial tabData={msTabData} />
         
         <KeyFeaturesSection title="Key Features of Microsoft Office 365" features={msFeature}/>
        
-         <Subhero
-      subtitle='Google Workspace '
+         <SubHeader
+      title='Google Workspace '
       description={googleDesc}
+       position='right'
+            group='Productivity Suite'
+            website='dsd'
       />
-       <Subhero
-      subtitle='What is Google Workspace?'
+       <SubHeader
+      title='What is Google Workspace?'
       description={whyGoogle}   
       position='left'  />
 
       
-        <CloudSpecial tabData={googleTabData} className="h-[400vh]" imageSrc={cyberSecBG3}  mask="black/80" progressMultiplierHorizontal={14}/>
+        <CloudSpecial tabData={googleTabData}/>
         
         <KeyFeaturesSection title="Key Features of Google Workspace" features={googleFeature}/>
        
-    </div>
+    </Section>
   )
 }
 

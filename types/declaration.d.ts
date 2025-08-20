@@ -25,3 +25,22 @@ type SubPoints = {
   title:string;
   description:string;
 }
+
+
+
+// vivek
+
+export type CollapisblePoint = {
+  title: string;
+  description?: string;
+  points?: string[];
+};
+
+export type ThreePoint = {
+  text: string;
+};
+
+export type point = {
+  title:string;
+  description:string;
+}

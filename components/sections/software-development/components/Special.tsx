@@ -91,7 +91,7 @@ const Special = ({ tabData, className, mask, imageSrc, progressMultiplierHorizon
   }, []);
 
   return (
-    <section ref={sectionRef} className={`text-white ${className}`}>
+    <section ref={sectionRef} className={`text-white font-default ${className}`}>
       <div
         ref={componentRef}
         className="z-10 sticky top-12 h-screen tablet:top-0"  

@@ -1,19 +1,22 @@
 import React from 'react'
-import { Subhero } from '../../cloud-services/components/subhero'
 import { nectusBenefits, nectusDesc, nectusFeatures, thousandEyesBenefits, thousandEyesDesc, thousandEyesFeatures } from './data'
 import { KeyFeaturesSection } from '../../cloud-services/key-features'
 import CloudSpecial from '../../cloud-services/components/Special'
-import { cyberSecBG3 } from '@/app/assets'
-import Header from '../../cloud-services/components/Header'
+import Header from '../components/Header'
+import SubHeader from '../components/SubHeader'
+import Section from '@/components/Section'
 
 const NetworkMonitoring = () => {
   return (
-    <div data-id="network-monitoring" id='network-monitoring'>
+    <Section data-id="network-monitoring" id='network-monitoring'>
         <Header title={"Network monitoring"}/> 
 
-      <Subhero
-  subtitle='Nectus Network Monitoring & Management'
+      <SubHeader
+  title='Nectus Network Monitoring & Management'
   description={nectusDesc}
+     group='Network monitoring'
+      website='ssds'
+      position='right'
 />
 
 <KeyFeaturesSection
@@ -23,15 +26,15 @@ const NetworkMonitoring = () => {
 
 <CloudSpecial
   tabData={nectusBenefits}
-  className="h-[400vh]"
-  imageSrc={cyberSecBG3}
-  mask="black/80"
-  progressMultiplierHorizontal={14}
+  
 />
 
-<Subhero
-  subtitle='ThousandEyes Network Monitoring'
+<SubHeader
+  title='ThousandEyes Network Monitoring'
   description={thousandEyesDesc}
+   group='Network monitoring'
+      website='ssds'
+      position='right'
 />
 
 <KeyFeaturesSection
@@ -41,14 +44,11 @@ const NetworkMonitoring = () => {
 
 <CloudSpecial
   tabData={thousandEyesBenefits}
-  className="h-[400vh]"
-  imageSrc={cyberSecBG3}
-  mask="black/80"
-  progressMultiplierHorizontal={14}
+  
 />
 
 
-    </div>
+    </Section>
   )
 }
 

@@ -60,3 +60,22 @@ export { default as DLTS } from "./images/icons/DLTS-logo.jpeg";
 
 
 
+export {default as cisconexus} from "./images/backgrounds/cisconexus.png"
+export {default as dellemc} from "./images/backgrounds/dellemc.png"
+export {default as ibmcloud} from "./images/backgrounds/ibmcloud.png"
+
+export {default as fortinet} from "./images/backgrounds/fortinet.png"
+
+export {default as prisma} from "./images/backgrounds/prisma.png"
+
+export {default as qnapcloud} from "./images/backgrounds/qnap.png"
+
+export {default as qnapEnterprise} from "./images/backgrounds/qnapEnterprise.png"
+export {default as qnapnas} from "./images/backgrounds/qnapnas.png"
+export {default as buffalplink} from "./images/backgrounds/buffalplink.png"
+export {default as buffalotera} from "./images/backgrounds/buffalotera.png"
+export {default as veeambackup} from "./images/backgrounds/veeambackup.png"
+export {default as veeamreplica} from "./images/backgrounds/veeamreplica.png"
+export {default as redhatopen} from "./images/backgrounds/redhatopen.png"
+export {default as ibmspectrum} from "./images/backgrounds/ibmspectrum.png"
+export {default as ibmobject} from "./images/backgrounds/ibmobject.png"

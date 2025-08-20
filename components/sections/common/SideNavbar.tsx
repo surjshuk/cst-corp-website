@@ -231,10 +231,11 @@ const SideNavbar = () => {
                             label="AI" 
                             active={activeRoute === "/ai-innovation"} 
                             subLinks={[ "overview",
-    "ai-digital-twin",
-    "ai-consulting",
-    "ai-governance",
-    "industries-we-serve"]}
+                                "ai-digital-twin",
+                                "ai-consulting",
+                                "ai-governance",
+                                "industries-we-serve"
+                            ]}
                             activeSection={activeSection}
                             handleSubLinkClick={handleSubLinkClick}
 
@@ -339,8 +340,5 @@ const NavItem = ({ href, label, active, subLinks = [], activeSection, handleSubL
 );
 
 export default SideNavbar;
-
-
-
 
                        

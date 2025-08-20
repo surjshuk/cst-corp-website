@@ -1,15 +1,15 @@
 import React from 'react'
-import Header from '../../cloud-services/components/Header'
-import { Subhero } from '../../cloud-services/components/subhero'
-import { cicoSwitchData, ciscoData, ciscoDesc, ciscoService } from './data'
+import { cicoSwitchData, ciscoData, ciscoDesc, ciscoService, fortinetData, fortinetDesc, fortinetService, fortinetSwitchData, merakData, merakiDesc, merakService } from './data'
 import { SubheroVm } from '../../cloud-services/components/subheroVM'
+import SubHeader from '../components/SubHeader'
+import Header from '../components/Header'
 
 const Routing = () => {
   return (
     
     <div>
       <Header title='Routing and Switching'/>
-        <Subhero
+        <SubHeader
       subtitle='Cisco Systems'
       description={ciscoDesc}
     />
@@ -18,7 +18,7 @@ const Routing = () => {
     data={ciscoData}
     />
     <SubheroVm
-    intro='Services'
+    intro='Switching Solutions'
     data={cicoSwitchData}
     position='left'
     />
@@ -26,6 +26,40 @@ const Routing = () => {
     subtitle='Services'
     data={ciscoService}
     />
+
+     <SubHeader
+      subtitle='Meraki (A Cisco Company)'
+      description={merakiDesc}
+    />
+    <SubheroVm
+    intro='Routing Solutions'
+    data={merakData}
+    />
+
+       <SubheroVm
+    subtitle='Services'
+    data={merakService}
+    />
+
+
+     <SubHeader
+      subtitle='Fortinet'
+      description={fortinetDesc}
+    />
+    <SubheroVm
+    intro='Routing Solutions'
+    data={fortinetData}
+    />
+    <SubheroVm
+    intro='Switching Solutions'
+    data={fortinetSwitchData}
+    position='left'
+    />
+     <SubheroVm
+    subtitle='Services'
+    data={fortinetService}
+    />
+
     </div>
   )
 }

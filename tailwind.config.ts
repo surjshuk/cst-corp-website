@@ -11,7 +11,9 @@ const config: Config = {
 	fontFamily: {
 		default: ["WayRayGrotesk", "sans-serif"]
 	},
-	screens: {
+	
+  	extend: {
+		screens: {
 		'mobile': '360px', // [360, 820)
 		'tablet': '820px', // [820, 1440)
 		'laptop': '1440px', // >=1440
@@ -19,7 +21,6 @@ const config: Config = {
 
 		'lg': '1024px',
 	},
-  	extend: {
   		colors: {
   			background: {
 				DEFAULT: '#f8f8f9',

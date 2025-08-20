@@ -29,7 +29,6 @@ const contactSchema = z.object({
 type ContactFormData = z.infer<typeof contactSchema>;
 
 const inquiries = [
-    { type: "General Inquiries", email: "RFPteam@cstcorp.net" },
     { type: "Sales Inquiries", email: "sales@cstcorp.net" },
     { type: "Office Number", email: "(713) 263-1300" },
 ];

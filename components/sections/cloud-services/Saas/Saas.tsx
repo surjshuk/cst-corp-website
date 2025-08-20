@@ -1,96 +1,102 @@
 import React from 'react'
 import Header from '../components/Header'
-import { Subhero } from '../components/subhero'
+import { SubHeader } from '../components/SubHeader'
 import CloudSpecial from '../components/Special'
 import { KeyFeaturesSection } from '../key-features'
 import { adobeDesc, adobeFeature, adobeTabData, hubDesc, hubFeature, hubTabData, ibmDesc, ibmFeature, ibmTabData, redhatDesc, redHatFeature, redHatTabData, saleData, saleDesc, saleFeature, whyAdobe, whyHub, whyIbm, whyRedHat } from './data'
-import { cyberSecBG3 } from '@/app/assets'
+import Section from '@/components/Section'
 
 const Saas = () => {
   return (
-    <div id="saas" data-id="saas">
+    <Section id="saas" data-id="saas">
       <Header title={"SaaS"}/> 
-       <Subhero
-      subtitle='Adobe Acrobat'
+       <SubHeader
+      title='Adobe Acrobat'
       description={adobeDesc}
+      position='right'
+            group='SaaS'
+            website='dsd'
       />
-       <Subhero
-      subtitle='What is Adobe Acrobat?'
+       <SubHeader
+      title='What is Adobe Acrobat?'
       description={whyAdobe}   
       position='left'  />
 
       
-        <CloudSpecial tabData={adobeTabData} className="h-[400vh]" imageSrc={cyberSecBG3}  mask="black/80" progressMultiplierHorizontal={14}/>
+        <CloudSpecial tabData={adobeTabData}/>
         
         <KeyFeaturesSection title="Key Features of Palo Alto Networks GlobalProtect Cloud Services" features={adobeFeature}/>
        
 
-        <Subhero
-      subtitle='IBM Enterprise Licensing Agreement'
+        <SubHeader
+      title='IBM Enterprise Licensing Agreement'
       description={ibmDesc}
+      position='right'
+            group='SaaS'
+            website='dsd'
       />
-       <Subhero
-      subtitle='What is the IBM Enterprise Licensing Agreement?'
+       <SubHeader
+      title='What is the IBM Enterprise Licensing Agreement?'
       description={whyIbm}   
       position='left'  />
 
       
-        <CloudSpecial tabData={ibmTabData} className="h-[400vh]" imageSrc={cyberSecBG3}  mask="black/80" progressMultiplierHorizontal={14}/>
+        <CloudSpecial tabData={ibmTabData} />
         
         <KeyFeaturesSection title="Key Features of the IBM Enterprise Licensing Agreement" features={ibmFeature}/>
        
 
- <Subhero
-      subtitle='Red Hat Linux'
-      intro='The Industry-Leading Enterprise Operating System for Performance, Security, and Scalability'
+ <SubHeader
+      title='Red Hat Linux'
+      subtitle='The Industry-Leading Enterprise Operating System for Performance, Security, and Scalability'
       description={redhatDesc}
       />
-       <Subhero
-      subtitle='What is Red Hat Linux?'
+       <SubHeader
+      title='What is Red Hat Linux?'
       description={whyRedHat}   
       position='left'  />
 
       
-        <CloudSpecial tabData={redHatTabData} className="h-[400vh]" imageSrc={cyberSecBG3}  mask="black/80" progressMultiplierHorizontal={14}/>
+        <CloudSpecial tabData={redHatTabData} />
         
         <KeyFeaturesSection title="Key Features of Red Hat Linux" features={redHatFeature}/>
        
 
 
- <Subhero
-      subtitle='HubSpot'
-      intro='The Industry-Leading CRM and Marketing Automation Platform for Growth, Efficiency, and Scalability'
+ <SubHeader
+      title='HubSpot'
+      subtitle='The Industry-Leading CRM and Marketing Automation Platform for Growth, Efficiency, and Scalability'
       description={hubDesc}
       />
-       <Subhero
-      subtitle='What is HubSpot?'
+       <SubHeader
+      title='What is HubSpot?'
       description={whyHub}   
       position='left'  />
 
       
-        <CloudSpecial tabData={hubTabData} className="h-[400vh]" imageSrc={cyberSecBG3}  mask="black/80" progressMultiplierHorizontal={14}/>
-        
+        <CloudSpecial tabData={hubTabData} />
+      
         <KeyFeaturesSection title="Key Features of HubSpot" features={hubFeature}/>
        
 
        
- <Subhero
-      subtitle='Salesforce'
-      intro='The Industry-Leading CRM and Cloud Platform for Sales, Marketing, and Customer Service'
+ <SubHeader
+      title='Salesforce'
+      subtitle='The Industry-Leading CRM and Cloud Platform for Sales, Marketing, and Customer Service'
       description={saleDesc}
       />
-       <Subhero
-      subtitle='What is Salesforce?'
+       <SubHeader
+      title='What is Salesforce?'
       description={whyHub}   
       position='left'  />
 
       
-        <CloudSpecial tabData={saleData} className="h-[400vh]" imageSrc={cyberSecBG3}  mask="black/80" progressMultiplierHorizontal={14}/>
+        <CloudSpecial tabData={saleData} />
         
         <KeyFeaturesSection title="Key Features of Salesforce" features={saleFeature}/>
        
 
-    </div>
+    </Section>
   )
 }
 

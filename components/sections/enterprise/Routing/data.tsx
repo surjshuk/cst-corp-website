@@ -35,3 +35,49 @@ export const ciscoService = {
 
 
 
+export const merakiDesc: string[] = [
+  `Meraki focuses on cloud-managed networking, offering easy-to-deploy, secure, and highly scalable solutions for organizations of all sizes. Its product line enables simplified networking without sacrificing performance or security.`];
+
+
+  export const merakData = {
+    points:[
+        `Meraki MX Series (Security Appliances with Routing): Meraki MX devices combine SD-WAN, advanced security features, and routing capabilities into a single platform. These solutions provide secure VPN, firewall protection, application-aware traffic shaping, and intrusion detection/prevention. They are managed via the Meraki Dashboard, making network management accessible from any location.`,
+        `Meraki MS Series (Cloud-Managed Switches): Meraki MS switches provide scalable, cloud-managed networking that integrates seamlessly with Meraki’s other products. These switches support Layer 2 and Layer 3 switching, PoE (Power over Ethernet), and Layer 3 routing, making them an excellent choice for both small and large deployments.`,
+        `Meraki MR Series (Wireless): While primarily focused on wireless, the MR Series integrates with Meraki’s switches and routers, providing seamless end-to-end network connectivity and centralized cloud management for Wi-Fi, switching, and routing.`
+    ]
+}
+
+
+export const merakService = {
+    points:[
+        `•	Meraki Dashboard: The cloud-based dashboard enables centralized management of all Meraki devices, including switches, routers, and access points. It offers a user-friendly interface with powerful features for network monitoring, configuration, and troubleshooting.`    
+    ]
+}
+
+
+
+
+export const fortinetDesc: string[] = [
+  `Fortinet provides integrated, high-performance security-driven networking solutions with a focus on security and operational simplicity.`
+];
+
+
+export const fortinetData = {
+    points:[
+        `FortiGate Next-Generation Firewalls (NGFW): FortiGate combines advanced security features such as threat prevention, secure SD-WAN, VPN, and intrusion prevention with robust routing capabilities. They are suitable for enterprises that need scalable, secure WAN and Internet routing across multiple locations.`,
+        `FortiWAN: FortiWAN optimizes wide-area networks (WAN) by providing secure SD-WAN services. It supports dynamic path selection, traffic shaping, and WAN acceleration, improving application performance while reducing costs.`
+    ]
+}
+
+
+export const fortinetSwitchData = {
+    points:[
+        `FortiSwitch: FortiSwitch is an integrated, high-performance network switch that integrates seamlessly with FortiGate firewalls for centralized security management. These switches support Power over Ethernet (PoE), Layer 2 and Layer 3 switching, and provide port-level security features to enhance network protection.`
+    ]
+}
+
+export const fortinetService = {
+    points:[
+        `FortiManager and FortiAnalyzer: FortiManager provides centralized management for FortiGate firewalls and FortiSwitches, while FortiAnalyzer offers network analytics and reporting to improve decision-making and troubleshooting.`
+    ]
+}
