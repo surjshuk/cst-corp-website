@@ -54,6 +54,9 @@ import { cyberSecBG1 } from "@/app/assets";
               transition: "opacity 0.5s ease",
             }}
             >
+              <div className="absolute top-0 left-0 bg-black/50 w-full h-full">
+
+              </div>
               {/* <Image src={slide.image || cyberSecBG1} alt="" className="absolute w-full opacity-50 h-full"/> */}
             <div className="flex flex-col justify-between w-full h-full relative z-10 xl:p-20 md:px-10 px-5 py-20">
               <h2 className={`${i==0? "md:text-6xl text-sm" : "md:text-2xl text-sm"} 2xl:w-2/5 lg:w-[60%] md:w-[50%] w-[90%]  text-white`}>{slide.title}</h2>

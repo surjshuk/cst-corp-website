@@ -79,3 +79,27 @@ export {default as veeamreplica} from "./images/backgrounds/veeamreplica.png"
 export {default as redhatopen} from "./images/backgrounds/redhatopen.png"
 export {default as ibmspectrum} from "./images/backgrounds/ibmspectrum.png"
 export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
+
+export {default as hpedata} from "./images/backgrounds/hpedata.png"
+export {default as speedupdev} from "./images/backgrounds/speedupdev.png"
+export {default as enhanceuser} from "./images/backgrounds/enhanceuser.png"
+export {default as unlockinsight} from "./images/backgrounds/unlockinsight.png"
+export {default as seamlessinteg} from "./images/backgrounds/seamlessinteg.png"
+export {default as driveinnova} from "./images/backgrounds/driveinnova.png"
+export {default as spc} from "./images/backgrounds/spc.png"
+// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
+// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
+// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
+// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
+// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
+// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
+// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
+// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
+// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
+// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
+// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
+
+
+
+
+

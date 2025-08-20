@@ -1,4 +1,6 @@
+import { driveinnova, enhanceuser, seamlessinteg, spc, speedupdev, unlockinsight } from "@/app/assets";
 import { Feature } from "../../AI/feature";
+import { CloudSpecialType } from "../type";
 
 export interface Tab {
   id: string;
@@ -17,38 +19,38 @@ export const whatGoogleDesc:string[] =[
 
 
 
-export const GoogleTabData:Tab[] = [
+export const GoogleTabData: CloudSpecialType[] = [
 {
-    id: "0",
-    title:'Key Benefits of Google AI and Machine Learning APIs',
-    },
-  {
-    id: "1",
+  title:'Key Benefits of Google AI and Machine Learning APIs',
+},
+{
+  
+  image:speedupdev,
     title:'Speed Up Development with Pre-Built Models',
     description:'Google’s AI and Machine Learning APIs come with pre-trained models that are ready to use, which allows businesses to get up and running quickly. Instead of spending months building machine learning models from the ground up, developers can leverage Google’s models that have been trained on vast datasets. This reduces development time, accelerates time to market, and helps you focus on delivering value to your customers.'
   },
   {
-    id: "2",
+  image:enhanceuser,  
     title:'Enhance User Experience with Intelligent Interactions',
     description:'With APIs like Natural Language Processing (NLP) and Speech-to-Text, businesses can enhance user engagement by adding voice, chat, and text-based interactions to applications. Google’s AI APIs allow businesses to create conversational agents, process customer queries in multiple languages, or analyze text data for sentiment, intent, and more. Whether you’re developing chatbots, virtual assistants, or customer support applications, these APIs help elevate your interactions to be more natural and intuitive.'
   },
   {
-    id: "3",
+    image:unlockinsight,
     title:'Unlock Insights from Data with Predictive Analytics',
     description:'Google’s Machine Learning APIs can be used to analyze and derive valuable insights from large datasets. By leveraging tools such as AutoML and BigQuery ML, businesses can unlock trends, make data-driven predictions, and identify actionable insights that may not be obvious at first glance. Predictive models can be used to forecast demand, identify fraud patterns, optimize supply chains, and personalize marketing efforts, ultimately helping businesses make more informed, data-driven decisions.'
   },
   {
-    id: "4",
+   image:seamlessinteg,
     title:'Seamless Integration Across Applications',
     description:'Google’s AI and ML APIs are built to seamlessly integrate with your existing applications, whether hosted in the cloud or on-premises. With powerful APIs like Vision, Translation, and Language, businesses can add intelligent features directly into their apps, websites, and mobile platforms. These APIs are highly scalable and can handle high volumes of requests, ensuring that your business can scale as demand grows without sacrificing performance or reliability.'
   },
     {
-    id: "5",
+    image:driveinnova,
     title:'Drive Innovation with Cutting-Edge AI Models',
     description:'Google is at the forefront of AI research, and businesses using Google’s APIs can access the latest advancements in AI and machine learning. From advanced image recognition with Google Vision to real-time translation via the Translation API, businesses can leverage the latest research and technology to develop innovative, intelligent applications that set them apart from the competition.'
   },
    {
-    id: "6",
+    image:spc,
     title:'Security, Privacy, and Compliance',
     description:'Google Cloud’s AI and ML services are designed with security and privacy in mind. All data processed by the APIs is protected by Google’s robust security infrastructure, and businesses can maintain control over how data is used and stored. Google complies with global industry standards and regulations, ensuring that businesses can rely on the platform for secure and compliant AI solutions'
   }

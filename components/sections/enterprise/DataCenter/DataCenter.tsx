@@ -6,6 +6,7 @@ import Header from '../components/Header'
 import SubHeader from '../components/SubHeader'
 import Section from '@/components/Section'
 import MainCarousel from '../components/Special'
+import { dellemc, fortinet, hpedata, prisma } from '@/app/assets'
 
 const DataCenter = () => {
 
@@ -50,6 +51,7 @@ const DataCenter = () => {
 
 <MainCarousel
   tabData={hpeTabData}
+  image={hpedata}
 />
 
 <KeyFeaturesSection
@@ -75,7 +77,7 @@ const DataCenter = () => {
 
 <MainCarousel
   tabData={dellTabData}
-
+  image={dellemc}
 />
 
 <KeyFeaturesSection
@@ -102,7 +104,6 @@ const DataCenter = () => {
 
 <MainCarousel
   tabData={ibmTabData}
-
 />
 
 <KeyFeaturesSection
@@ -127,7 +128,7 @@ const DataCenter = () => {
 
 <MainCarousel
   tabData={fortinetBenefits}
-
+image={fortinet}
 />
 
 <KeyFeaturesSection
@@ -153,7 +154,7 @@ const DataCenter = () => {
 
 <MainCarousel
   tabData={prismaBenefits}
-
+image={prisma}
 />
 
 <KeyFeaturesSection
