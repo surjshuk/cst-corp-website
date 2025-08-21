@@ -6,11 +6,11 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel"
-import { dtlsData, logosData, productData } from './data'
+import { logosData, productData } from './data'
 import Link from 'next/link'
 import Image from 'next/image'
 import { KeyFeaturesSection } from './components/key-features'
-import { BRAMERLOGO, DLTS } from '@/app/assets'
+import { BRAMERLOGO } from '@/app/assets'
 
 
 
