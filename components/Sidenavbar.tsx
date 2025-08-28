@@ -19,18 +19,23 @@ const navItems = [
     href: "/",
     sub: [
       { id: "who-we-are", label: "Who We Are" },
-      { id: "what-we-do", label: "What We Do" },
+      { id: "what-we-serve", label: "What We Serve" },
       { id: "our-partners", label: "Our Partners" },
+      { id: "our-vendors", label: "Our Vendors" },
+
     ],
   },
   {
-    label: "AI",
-    href: "/ai-innovation",
+    label: "Software Development",
+    href: "/software-development",
     sub: [
       { id: "overview", label: "Overview" },
       { id: "ai-digital-twin", label: "AI Digital Twin" },
       { id: "ai-consulting", label: "AI Consulting" },
       { id: "ai-governance", label: "AI Governance" },
+      { id: "appian", label: "Appian" },
+      { id: "outsystems", label: "Outsystems" },
+      { id: "power-bi-and-power-automate", label: "Power Bi and Power Automate" },
       { id: "industries-we-serve", label: "Industries We Serve" },
     ],
   },
@@ -61,15 +66,15 @@ const navItems = [
       { id: "unified-communication", label: "Unified Communication" },
     ],
   },
-  {
-    label: "Software Development",
-    href: "/software-development",
-    sub: [
-      { id: "appian", label: "Appian" },
-      { id: "outsystems", label: "Outsystems" },
-      { id: "power-bi-and-power-automate", label: "Power Bi and Power Automate" },
-    ],
-  },
+  // {
+  //   label: "Software Development",
+  //   href: "/software-development",
+  //   sub: [
+  //     { id: "appian", label: "Appian" },
+  //     { id: "outsystems", label: "Outsystems" },
+  //     { id: "power-bi-and-power-automate", label: "Power Bi and Power Automate" },
+  //   ],
+  // },
     {
     label: "Enterprise Network",
     href: "/enterprise-network",

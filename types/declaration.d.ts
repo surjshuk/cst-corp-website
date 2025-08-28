@@ -21,10 +21,6 @@ export type UseCase = {
 };
 
 
-type SubPoints = {
-  title:string;
-  description:string;
-}
 
 
 

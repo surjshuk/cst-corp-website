@@ -7,11 +7,6 @@ export type HeaderType = {
 }
 
 
-
-
-
-
-
 export type SubHeaderType = {
     title?:string;
     group?:string;
@@ -23,3 +18,7 @@ export type SubHeaderType = {
 }
 
 
+export type SubPoints = {
+  title:string;
+  description:string;
+}

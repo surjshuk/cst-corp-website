@@ -1,4 +1,4 @@
-import { driveinnova, enhanceuser, seamlessinteg, spc, speedupdev, unlockinsight } from "@/app/assets";
+import { driveinnova, enhanceuser, keygoogle, seamlessinteg, spc, speedupdev, unlockinsight } from "@/app/assets";
 import { Feature } from "../../AI/feature";
 import { CloudSpecialType } from "../type";
 
@@ -22,6 +22,7 @@ export const whatGoogleDesc:string[] =[
 export const GoogleTabData: CloudSpecialType[] = [
 {
   title:'Key Benefits of Google AI and Machine Learning APIs',
+  image:keygoogle,
 },
 {
   

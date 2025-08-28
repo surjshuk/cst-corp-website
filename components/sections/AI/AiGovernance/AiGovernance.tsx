@@ -2,7 +2,7 @@ import Section from '@/components/Section'
 import React from 'react'
 import { governanceBenifits, governanceData } from './data'
 import { ThreePoints } from '@/components/shared/ThreePoints'
-import Breaker from '../Breaker'
+import Breaker from '../components/Breaker'
 
 const AiGovernance = () => {
   return (

@@ -1,17 +1,7 @@
 import { AUTONOMY, cyberSecBG1, cyberSecBG2, mainBG3, mainBG4 } from "@/app/assets";
-import { MainSpecialType } from "./type";
+import { MainSpecialType } from "../type";
 
 export const mainTabData:MainSpecialType[] = [
-  {
-    heading: "AI Drone Technology",
-    image:AUTONOMY,
-    description: [
-      `Proprietary autonomous navigation for precise, independent flight.`,
-      `Advanced payloads including LiDAR and EO/IR for versatile mission capabilities.`,
-      `Real-time AI enabling GPS-denied operations and rapid decision-making.`,
-      `Applications in defense ISR, geospatial mapping, and safe industrial inspections.`
-    ]
-  },
   {
     heading: "Pythia AI",
      image:cyberSecBG1,
@@ -23,13 +13,23 @@ export const mainTabData:MainSpecialType[] = [
     ]
   },
   {
-    heading: "AI Digital Twin Technology",
-    image:cyberSecBG2,
+    heading: "SafeRig, AI-Powered Next Generation CCTV Solution",
+    image:mainBG4,
     description: [
-      `Creates virtual replicas of physical assets and systems.`,
-      `Predicts failures before they occur to reduce downtime.`,
-      `Optimizes efficiency and slashes operational costs.`,
-      `Drives innovation and future-proofs business processes.`
+      ` Offers an intelligent, automated, and real-time safety monitoring framework that can operate with minimum or no internet access.`,
+      `Real-time alerts for Safety Violations with centralized data and alert visualization. `,
+      `PPE compliance.  `,
+      `Reduce workplace accidents and legal liabilities`
+    ]
+  },
+  {
+    heading: "AI Drone Technology",
+    image:AUTONOMY,
+    description: [
+      `Proprietary autonomous navigation for precise, independent flight.`,
+      `Advanced payloads including LiDAR and EO/IR for versatile mission capabilities.`,
+      `Real-time AI enabling GPS-denied operations and rapid decision-making.`,
+      `Applications in defense ISR, geospatial mapping, and safe industrial inspections.`
     ]
   },
   {
@@ -44,13 +44,15 @@ export const mainTabData:MainSpecialType[] = [
     ]
   },
   {
-    heading: "SentinelOne: A Leader for 5 Consecutive Years",
-    image:mainBG4,
+    heading: "AI Digital Twin Technology",
+    image:cyberSecBG2,
     description: [
-      `Recognized as a Leader in the Magic Quadrant for five years in a row.`,
-      `SentinelOne Singularity serves as the core Endpoint Protection Platform (EPP) product.`,
-      `Supports cloud-delivered (including GovCloud), hybrid, and on-premises (including air-gapped) EPP management.`,
-      `Offers additional workspace security controls such as identity protection.`
+      `Creates virtual replicas of physical assets and systems.`,
+      `Predicts failures before they occur to reduce downtime.`,
+      `Optimizes efficiency and slashes operational costs.`,
+      `Drives innovation and future-proofs business processes.`
     ]
-  }
+  },
+  
+  
 ];

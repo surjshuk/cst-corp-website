@@ -110,7 +110,7 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElemen
                 <h2 className=" text-[28px] leading-tight tablet:font-medium tablet:text-5xl">Contact us</h2>
                 <div className="laptop:w-[582px] w-full my-6">
                     <form action="" className="space-y-12 ">
-                        <div className="flex md:flex-col flex-row gap-12 ">
+                        <div className="flex md:flex-row flex-col gap-12 ">
                             <div className="flex flex-col gap-2 w-full">
                                 <label htmlFor="firstName" className="font-medium w-full text-neutral-500 text-sm">First Name</label>
                                 <input

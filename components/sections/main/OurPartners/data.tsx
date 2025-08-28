@@ -1,6 +1,7 @@
 import * as Logos from "@/app/assets/logos/index"; // T
-import { LogoItem } from "./type";
+
 import { CollapisblePoint } from "@/types/declaration";
+import { LogoItem } from "../type";
 
 export const logosData: LogoItem[] = [
   { image: Logos.Appian, link: "https://www.appian.com" },

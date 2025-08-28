@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { SubHeaderType } from './type'
+import { SubHeaderType } from '../../type'
 
 
 export const Header: React.FC<SubHeaderType> = ({title,description }) => {

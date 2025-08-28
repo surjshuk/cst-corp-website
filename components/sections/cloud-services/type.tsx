@@ -8,11 +8,6 @@ export type HeaderType = {
 }
 
 
-
-
-
-
-
 export type SubHeaderType = {
     title?:string;
     group?:string;

@@ -1,5 +1,6 @@
 import { AUTONOMY, DEFENCEAPPLICATION, FOCUSONDEEPTECH, INSPECTION, mainBG1, mainBG2 , mainBG4, PLACEHOLDER } from "@/app/assets";
-import { MainCarouselType } from "./type";
+import { MainCarouselType } from "../type";
+
 
 export const carouseltabData:MainCarouselType[] = [
   {
