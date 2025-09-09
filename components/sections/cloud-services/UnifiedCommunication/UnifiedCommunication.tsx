@@ -5,10 +5,26 @@ import { KeyFeaturesSection } from '../key-features'
 import { ciscoBenefits, ciscoDesc, ciscoFeature, contactCenterBenefits, contactCenterDesc, contactCenterFeature, intermediaArchivingDesc, intermediaArchivingFeatures, intermediaBackupDesc, intermediaBackupFeatures, intermediaContactCenterDesc, intermediaContactCenterFeatures, intermediaSipTrunkingDesc, intermediaSipTrunkingFeatures, intermediaUniteDesc, intermediaUniteFeatures, manageBenefits, manageDesc, manageFeature, rcContactCenterDesc, rcContactCenterFeatures, rcMessagingDesc, rcMessagingFeatures, rcMobileAppDesc, rcMobileAppFeatures, rcPhoneDesc, rcPhoneFeatures, rcVideoDesc, rcVideoFeatures, ringcentralVoipDesc, ringcentralVoipFeatures, teamsChatMessagingDesc, teamsChatMessagingFeature, teamsCollaborationToolsDesc, teamsCollaborationToolsFeature, teamsRoomsDesc, teamsRoomsFeature, teamsVideoConferencingDesc, teamsVideoConferencingFeature, teamsVoiceCallingDesc, teamsVoiceCallingFeature, teamsWebinarHostingDesc, teamsWebinarHostingFeature, vonageAIDesc, vonageAIFeatures, vonageMessagingDesc, vonageMessagingFeatures, vonageProgVoiceDesc, vonageProgVoiceFeatures, vonageVideoDesc, vonageVideoFeatures, vonageVoipDesc, vonageVoipFeatures, webexAdvancedFeatures, webexCallingBenefits, webexCallingDesc, webexCallingFeature, webexDesc, webexDevicesBenefits, webexDevicesDesc, webexDevicesFeature, webexEventsBenefits, webexEventsDesc, webexEventsFeature, webexMeetingsBenefits, webexMeetingsDesc, webexMeetingsFeature, webexMessagingBenefits, webexMessagingDesc, webexMessagingFeature } from './data'
 import { BenefitsUf } from '../components/benefitsUf'
 import Section from '@/components/Section'
+import Index from '../components/Index'
 
 const UnifiedCommunication = () => {
   return (
     <Section data-id="unified-communication" id='unified-communication'>
+                  <Index
+        title="Unified Communications as a Service"
+        slug="cloud-services"
+        data = {[
+          {
+          header:"Unified Communications as a Service",
+        
+          subheader:[
+         `Cisco UCaaS`,
+        
+        ]},
+       
+        
+      ]}
+      />
       <Header title={"Unified Communications as a Service"}/> 
        <Subhero
       subtitle='Cisco UCaaS'

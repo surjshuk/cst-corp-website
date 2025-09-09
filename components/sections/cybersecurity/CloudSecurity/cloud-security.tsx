@@ -15,22 +15,65 @@ export const CloudSecurity = () => (
 
       <Index
         title="Cloud Security"
-        subheader={[
+        slug="cyber-security"
+        data = {[
+          {
+          header:"Cloud Security Posture Management (CSPM)",
+          section:"cspm",
+          subheader:[
           `Prisma Cloud by Palo Alto Networks`,
           `AWS Security Hub`,
           `Microsoft Defender for Cloud`,
           `Google Security Command Center`,
           `FortiCWP (Cloud Workload Protection)`,
           `Trend Micro Cloud One`
-        ]}
-        header ={[
-          `Cloud Security Posture Management (CSPM)`,
-          `Cloud Workload Protection Platforms (CWPP)`,
-          `Secure Access Service Edge (SASE)`,
-          `Cloud Access Security Brokers (CASB)`,
-          `Identity as a Service (IDaaS)`
+        ]},
+        {
+          header:"Cloud Workload Protection Platforms (CWPP)",
+          section:"cwpp",
+          subheader:[
+          `Prisma Cloud by Palo Alto Networks`,
+          `Trend Micro Cloud One`,
+          `Crowdstrike Falcon for Cloud Workloads`,
+          `Microsoft Defender for Cloud`,
+          `Google Cloud Security Command Center`,
+          `Trend Micro Cloud One`
+        ]},
+         {
+          header:"Secure Access Service Edge (SASE)",
+          section:"sase",
+          subheader:[
+          `Cisco Umbrella`,
+          `FortiSASE`,
+          `Palo Alto Prisma Access`,
+          `VMware SASE`,
+          `Barracuda SecureEdge`,
+          `Versa SASE`
+        ]},
+        {
+          header:"Cloud Access Security Brokers (CASB)",
+          section:"casb",
+          subheader:[
+          `Microsoft Defender - CASB`,
+          `Cisco Cloudlock - CASB`,
+          `Palo Alto Networks - CASB`,
+          `Trend Micro Cloud App Security - CASB`,
+          `Proofpoint - CASB`,
+         
+        ]},
+          {
+          header:"Identity as a Service (IDaaS)",
+          section:"idaas",
+          subheader:[
+          `Okta (IDaaS)`,
+          `Microsoft Azure AD (IDaaS)`,
+          `Google Workspace Identity (IDaaS)`,
+          `IBM Security Verify (IDaaS)`,
+          `Duo Security by Cisco (IDaaS)`,
+         
         ]}
         
+      ]}
       />
 
       <Header title="Cloud Security Posture Management (CSPM)"  />
@@ -285,7 +328,7 @@ export const CloudSecurity = () => (
         title=" Okta (IDaaS)"
         description="Okta is a leading provider of Identity and Access Management (IAM) services with a cloud-based platform designed to manage and secure user authentication and access across a variety of applications, devices, and services. As an Identity as a Service (IDaaS) provider, Okta delivers comprehensive security features including single sign-on (SSO), multi-factor authentication (MFA), lifecycle management, and more."
         group="Cloud Security" 
-        section="CASB"
+        section="IDaaS"
         position="right" />
       <CollapsiblePoints data={idaasOktaFeatures} />
 
@@ -293,7 +336,7 @@ export const CloudSecurity = () => (
         title=" Microsoft Azure AD (IDaaS)"
         description="Microsoft Azure Active Directory (Azure AD) is a comprehensive cloud-based identity and access management service that provides a suite of tools to securely manage users, devices, and applications within the cloud. Azure AD is part of Microsoft's cloud ecosystem, offering seamless integration with Microsoft 365, Windows 10, and thousands of third-party applications."
        group="Cloud Security" 
-        section="CASB"
+        section="IDaaS"
         position="right" />
       <CollapsiblePoints data={idaasMicrosoftFeatures} />
 
@@ -304,7 +347,7 @@ export const CloudSecurity = () => (
         title=" Google Workspace Identity (IDaaS)"
         description="Google Workspace Identity is Google’s identity and access management platform designed to offer secure authentication and access controls across the suite of Google Cloud services. It is part of Google Cloud’s comprehensive security architecture, providing businesses with the tools to manage user identities, devices, and applications in the cloud."
         group="Cloud Security" 
-        section="CASB"
+        section="IDaaS"
         position="right" />
       <CollapsiblePoints data={idaasGoogleFeatures} />
 
@@ -314,7 +357,7 @@ export const CloudSecurity = () => (
         title=" IBM Security Verify (IDaaS)"
         description="IBM Security Verify is a cloud-native identity and access management platform that helps organizations provide secure and seamless user access to applications and services while ensuring robust protection against identity-related risks. It supports a broad range of identity management capabilities such as authentication, identity governance, and user provisioning."
         group="Cloud Security" 
-        section="CASB"
+        section="IDaaS"
         position="right" />
       <CollapsiblePoints data={idaasIBMFeatures} />
 
@@ -322,7 +365,7 @@ export const CloudSecurity = () => (
         title="Duo Security by Cisco (IDaaS)"
         description="Duo Security, a Cisco company, offers a cloud-based IDaaS platform known for its simplicity and effectiveness in securing user identities and devices. It specializes in multi-factor authentication (MFA), device security, and secure access to cloud and on-premises applications, making it a popular choice for organizations looking to protect their digital assets."
         group="Cloud Security" 
-        section="CASB"
+        section="IDaaS"
         position="right"  />
       <CollapsiblePoints data={idaasDuoSecFeatures} />
 

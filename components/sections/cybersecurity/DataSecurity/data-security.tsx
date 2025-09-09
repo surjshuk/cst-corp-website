@@ -5,12 +5,34 @@ import { CollapsiblePoints } from "@/components/shared/CollapisblePoints";
 import { ThreePoints } from "@/components/shared/ThreePoints";
 import { dlpCiscoBenefits, dlpCiscoFeatures, dlpPaloAltoBenefits, dlpPaloAltoFeatures, dlpTrendMicroBenefits, dlpTrendMicroFeatures, dlpVersaBenefits, dlpVersaFeatures, idaasIBMFeatures } from "./data";
 import { fortiDLPBenefits } from "../CloudSecurity/data";
+import Index from "../components/Index";
 
 
 export const DataSecurity = () => {
     return (
         <>   
-             <Section id="data-security" data-id="data-security">
+             <Section id="data-security" >
+              
+      <Index
+        title="Data Security"
+      slug="cybersecurity"
+        data = {[
+   
+         {
+          header:"Data Loss Prevention (DLP)",
+          section:"dlp",
+          subheader:[
+          `FortiDLP`,
+          `Cisco Umbrella- DLP`,
+          `Palo Alto Prisma - DLP`,
+          `Versa Networks - DLP`,
+          `Microsoft Purview`,
+         
+        ]},
+        
+        
+      ]}
+      />
             
                   <Header title="Data Loss Prevention (DLP)"/>
                   <SubHeader

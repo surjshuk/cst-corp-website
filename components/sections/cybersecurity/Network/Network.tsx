@@ -5,11 +5,81 @@ import SubHeader from '../components/SubHeader'
 import Header from '../components/Header'
 import { CollapsiblePoints } from '@/components/shared/CollapisblePoints'
 import Section from '@/components/Section'
+import Index from '../components/Index'
 
 const Network = () => {
   return (
     <>
+
+      
         <Section id="network-security" data-id="network-security">
+
+            <Index
+        title="network security"
+          slug="cybersecurity"
+        data = {[
+      
+
+        {
+          header:"Firewall Solutions",
+          section:"Firewall Solutions",
+          subheader:[
+          `FortiGate (by Fortinet)`,
+          `Palo Alto Next-Generation Firewalls (NGFW)`,
+          `Cisco Firepower`,
+          `Barracuda Networks`,
+          
+        ]},
+
+          {
+          header:"Intrusion Detection and Prevention System (IDPS)",
+          section:"idps",
+          subheader:[
+          `FortiGate (Fortinet) – Intrusion Detection and Prevention Systems (IDPS)`,
+          `Palo Alto Networks – Threat Prevention`,
+          `Trend Micro – TippingPoint`,
+          `IBM QRadar – Intrusion Detection and Response`,
+          
+        ]},
+
+         {
+          header:"Virtual Private Network (VPN)",
+          section:"vpn",
+          subheader:[
+          `Cisco AnyConnect Secure Mobility Client`,
+          `FortiClient`,
+          `Palo Alto Networks GlobalProtect`,
+        
+        ]},
+
+        
+         {
+          header:"Network Access Control (NAC)",
+          section:"nac",
+          subheader:[
+          `Cisco Identity Services Engine (ISE)`,
+     
+        ]},
+
+
+           {
+          header:"Network Access Control (NAC)",
+          section:"nac",
+          subheader:[
+          `FortiNAC`,
+          `Aruba ClearPass Policy Manager`,
+          `Palo Alto Networks Prisma Access`,
+          `Cisco Enterprise Network Design`,
+          `Aruba Secure Wireless and Wired Designs`,
+          `Palo Alto Networks Zero Trust Architecture`,
+          `VMware Network and Security Solutions`,
+          
+     
+        ]},
+
+        
+      ]}
+  />
             
             <Header title="Firewall Solutions" />
             <SubHeader

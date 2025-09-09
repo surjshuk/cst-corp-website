@@ -4,6 +4,8 @@ export type HeaderType = {
     description?:string;
     points?: string[];
     position?:"left"|"right";
+    group?:string;
+    section?:string;
 }
 
 

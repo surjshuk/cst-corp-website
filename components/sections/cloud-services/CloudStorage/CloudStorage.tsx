@@ -6,10 +6,29 @@ import { KeyFeaturesSection } from '../key-features'
 import { SubheroVm } from '../components/subheroVM'
 import SubHeader from '../components/SubHeader'
 import Section from '@/components/Section'
+import Index from '../components/Index'
 
 const CloudStorage = () => {
   return (
     <Section id="cloud-storage" data-id="cloud-storage">
+            <Index
+        title="Cloud License"
+        slug="cloud-services"
+        data = {[
+          {
+          header:"Cloud Storage",
+        
+          subheader:[
+          `Microsoft Azure`,
+          `Amazon S3`,
+          `Google Drive`,
+          `Dropbox File Storage`,
+          `Veeam Backup as a Service (BaaS)`
+        ]},
+       
+        
+      ]}
+      />
       <Header title={"Cloud Storage"}/> 
       <SubHeader
             title='Microsoft Azure'

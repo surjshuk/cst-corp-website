@@ -4,11 +4,53 @@ import SubHeader from "../components/SubHeader";
 import { CollapsiblePoints } from "@/components/shared/CollapisblePoints";
 import { ThreePoints } from "@/components/shared/ThreePoints";
 import { dataProofpointFeatures, emailProofpointBenefits, emailProofpointFeatures, segBarracudaBenefits, segBarracudaFeatures, segCiscoBenefits, segCiscoFeatures, segFortinetBenefits, segFortinetFeatures, segProofPointBenefits, segProofPointFeatures, segSecurenceBenefits, segSecurenceFeatures, segTrendMicroBenefits, segTrendMicroFeatures, spamProofpointBenefits, spamProofpointFeatures } from "./data";
+import Index from "../components/Index";
 
 export const EmailSecurity = () => {
     return (
         <>   
              <Section id="email-security" data-id="email-security">
+                    <Index
+        title="Email Security"
+          slug="cybersecurity"
+        data = {[
+         {
+          header:"Secure Email Gateways (SEGs)",
+          section:"segs",
+          subheader:[
+          `Proofpoint`,
+          `Barracuda`,
+          `CISCO`,
+          `Fortinet`,
+          `Trend Micro`,
+          `Securence`
+         
+        ]},
+         {
+          header:"Spam Filters",
+          section:"Spam Filters",
+          subheader:[
+          `Proofpoint`,
+        
+        ]},
+        {
+          header:"Email Encryption",
+          section:"Email Encryption",
+          subheader:[
+          `Proofpoint`,
+        
+        ]},
+        {
+          header:"Data Loss Prevention (DLP) for Email",
+          section:"dlp",
+          subheader:[
+          `Proofpoint`,
+        
+        ]},
+        
+      ]}
+      />
+            
            
            
                  {/* Secure Email Gateways (SEGs) */}

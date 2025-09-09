@@ -6,7 +6,7 @@ import React, { useState } from 'react'
 
 type IndexData = {
   header: string;
-  section:string;
+  section?:string;
   subheader: string[];
 }
 
@@ -49,7 +49,7 @@ const Index: React.FC<IndexType> = ({ title, slug,data }) => {
 
               <ul className= {`${open===idx?"block opacity-100":" hidden opacity-0"} text-sm p-0 space-y-2 mt-2 transition-all duration-500`}>
                 {item.subheader.map((sub, i) => {
-                  const urlSlug = slugify(`${title}-${item.section}-${sub}`);
+                  const urlSlug = slugify(`${sub}`);
                   return (<li key={i}>
                     <Link
                       href={`/${slug}#${urlSlug}`}

@@ -5,10 +5,31 @@ import CloudSpecial from '../components/Special'
 import { KeyFeaturesSection } from '../key-features'
 import { adobeDesc, adobeFeature, adobeTabData, hubDesc, hubFeature, hubTabData, ibmDesc, ibmFeature, ibmTabData, redhatDesc, redHatFeature, redHatTabData, saleData, saleDesc, saleFeature, whyAdobe, whyHub, whyIbm, whyRedHat } from './data'
 import Section from '@/components/Section'
+import Index from '../components/Index'
 
 const Saas = () => {
   return (
     <Section id="saas" data-id="saas">
+                <Index
+        title="SaaS"
+        slug="cloud-services"
+        data = {[
+          {
+          header:"SaaS",
+        
+          subheader:[
+          `Adobe Acrobat`,
+          `IBM Enterprise Licensing Agreement`,
+          `Red Hat Linux`,
+          `HubSpot`,
+          `Salesforce`,
+   
+         
+        ]},
+       
+        
+      ]}
+      />
       <Header title={"SaaS"}/> 
        <SubHeader
       title='Adobe Acrobat'
@@ -50,6 +71,7 @@ const Saas = () => {
       title='Red Hat Linux'
       subtitle='The Industry-Leading Enterprise Operating System for Performance, Security, and Scalability'
       description={redhatDesc}
+      position='right'
       />
        <SubHeader
       title='What is Red Hat Linux?'
@@ -67,6 +89,7 @@ const Saas = () => {
       title='HubSpot'
       subtitle='The Industry-Leading CRM and Marketing Automation Platform for Growth, Efficiency, and Scalability'
       description={hubDesc}
+      position='right'
       />
        <SubHeader
       title='What is HubSpot?'
@@ -84,6 +107,7 @@ const Saas = () => {
       title='Salesforce'
       subtitle='The Industry-Leading CRM and Cloud Platform for Sales, Marketing, and Customer Service'
       description={saleDesc}
+      position='right'
       />
        <SubHeader
       title='What is Salesforce?'

@@ -8,11 +8,30 @@ import { KeyFeaturesSection } from '../key-features'
 import { Benefits } from '../components/benefits'
 import Section from '@/components/Section'
 import { SubheroVm } from '../components/subheroVM'
+import Index from '../components/Index'
 
 const CloudNetwork = () => {
 
   return (
     <Section data-id="cloud-network" id="cloud-network">
+      <Index
+        title="Cloud License"
+        slug="cloud-services"
+        data = {[
+          {
+          header:"Cloud Network",
+        
+          subheader:[
+          `Palo Alto Networks GlobalProtect Cloud Services`,
+          `FortiGate Cloud Security`,
+          `HPE Aruba Central`,
+          `Cisco Cloud Networking Solutions`
+
+        ]},
+       
+        
+      ]}
+      />
         <Header title={"Cloud Network"}/> 
        <SubHeader
       title='Palo Alto Networks GlobalProtect Cloud Services'

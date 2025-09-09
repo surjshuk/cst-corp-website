@@ -8,7 +8,9 @@ const slugify = (str: string) =>
   str.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)+/g, "");
 
 export const SubHeader: React.FC<SubHeaderType> = ({title,description,position,subtitle,section,group,website }) => {
-    const id = slugify(title || "") ;
+      // Use section + title to generate unique ID
+  const id = slugify(`${group || ""}-${section || ""}-${title || ""}`);
+
   return (
       <div id={id} className="lg:px-20 px-4 pt-8">
 
@@ -18,23 +20,23 @@ export const SubHeader: React.FC<SubHeaderType> = ({title,description,position,s
           </h1>
           <div className='flex items-center gap-4 md:mt-3 mt-2'>
             {group && 
-            <p className='text-primary text-sm'>
+            <p className='text-primary text-sm capitalize'>
                 {group}
             </p>
             }
             {
-                section &&  <li className='text-sm text-neutral-500'>
+                section &&  <li className='ms-3 text-sm text-neutral-500 uppercase'>
                 {section}
             </li>
             }
-             {
-                website &&  <Link href={website}>
+             
+                <Link href={website || ""}>
                 <li className='text-sm flex items-center gap-1 text-primary'>
                 Website 
                 <MoveUpRight size={14}/>
             </li>
                 </Link>
-            }
+            
           </div>
           <h2 className='text-2xl md:mt-7 mt-4'>{subtitle?subtitle:"Overview"}</h2>
           {description && 

@@ -6,13 +6,60 @@ import { CollapsiblePoints } from '@/components/shared/CollapisblePoints'
 import { ThreePoints } from '@/components/shared/ThreePoints'
 import { appVMwareBenefits, appVMwareFeatures, edrCrowdStrikeBenefits, edrCrowdStrikeFeatures, mdmSentinelBenefits, mdmSentinelFeatures, patchMicrosoftFeatures, pathMicrosoftBenefits } from './data'
 import { dataProofpointFeatures } from '../EmailSecurity/data'
+import Index from '../components/Index'
 
 const Endpoint = () => {
   return (
     <>
       <Section id="endpoint-security" data-id="endpoint-security">
+      <Index
+        title="Endpoint Security"
+         slug="cybersecurity"
+        data = {[
+         {
+          header:"Data Loss Prevention (DLP) For ERP",
+          section:"dlp",
+          subheader:[
+          `Trend Micro Endpoint Protection Platform`,
+          
+        ]},
+         {
+          header:"Endpoint Detection and Response (EDR)",
+          section:"edr",
+          subheader:[
+          `CrowdStrike Falcon Insight`,
+        
+        ]},
+        {
+          header:"Mobile Device Management (MDM)",
+          section:"MDM",
+          subheader:[
+          `SentinelOne Singularity Mobile`,
+        
+        ]},
+        {
+          header:"Application Whitelisting",
+          section:"Application Whitelisting",
+          subheader:[
+          `VMware Carbon Black`,
+        
+        ]},
+         {
+          header:"Patch Management",
+          section:"MECM",
+          subheader:[
+          `Microsoft Endpoint Configuration Manager (MECM)`,
+        
+        ]},
+        
+
+        
+        
+      ]}
+  />
+            
             {/* Endpoint Protection Platforms (EPP)*/}
-            <Header title="Data Loss Prevention (DLP) for Email"  />
+            <Header title="Data Loss Prevention (DLP) For ERP"  />
       
             <SubHeader
               title="Trend Micro Endpoint Protection Platform"

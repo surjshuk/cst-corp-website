@@ -5,10 +5,27 @@ import CloudSpecial from '../components/Special'
 import { KeyFeaturesSection } from '../key-features'
 import { googleDesc, googleFeature, googleTabData, msDesc, msFeature, msTabData, whyGoogle, whyMs } from './data'
 import Section from '@/components/Section'
+import Index from '../components/Index'
 
 const ProductivitySuite = () => {
   return (
     <Section data-id="productivity-suite" id='productivity-suite'>
+           <Index
+        title="Cloud License"
+        slug="cloud-services"
+        data = {[
+          {
+          header:"Productivity Suite",
+        
+          subheader:[
+          `Microsoft Office 365`,
+          `Google Workspace`,
+         
+        ]},
+       
+        
+      ]}
+      />
       <Header title={"Productivity Suite"}/> 
        <SubHeader
       title='Microsoft Office 365'

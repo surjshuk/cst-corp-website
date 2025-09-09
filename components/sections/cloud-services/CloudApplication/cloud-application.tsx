@@ -5,12 +5,29 @@ import CloudSpecial from '../components/Special'
 import Header from '../components/Header'
 import { KeyFeaturesSection } from '../components/KeyFeatures'
 import Section from '@/components/Section'
+import Index from '../components/Index'
 
 
 const CloudApplication = () => {
   return (
     
     <Section data-id="cloud-application" id="cloud-application">
+      <Index
+        title="Cloud Application"
+        slug="cloud-services"
+        data = {[
+          {
+          header:"Cloud Application Services",
+        
+          subheader:[
+          `Google AI and Machine Learning APIs`,
+          `AWS AI Services`,
+
+        ]},
+       
+        
+      ]}
+      />
       <Header title={"Cloud Application Services"}/> 
       <SubHeader
       title='Google AI and Machine Learning APIs'
