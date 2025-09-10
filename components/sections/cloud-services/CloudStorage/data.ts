@@ -1,5 +1,7 @@
 
+import { awdsecur, awsai, awscosteff, awsdata, awsstreaming, keyawss3, keydrive, keyveeam, msazure, msreach } from "@/app/assets";
 import { Feature } from "../../AI/feature";
+import { CloudSpecialType } from "../type";
 
 export interface Tab {
   id: string;
@@ -23,40 +25,40 @@ export const whyAzure =
   }
 
 
-export const azurTabs:Tab[] = [
+export const azurTabs:CloudSpecialType[] = [
 {
-    id: "0",
+    image:msazure,
     title:'Key Benefits of Microsoft Azure',
     },
   {
-    id: "1",
+    
     title:'Scalability and Flexibility',
     description:'Azure’s on-demand resources allow businesses to scale up or down based on their needs. Whether it’s expanding capacity during peak times or reducing it during slower periods, Azure ensures cost-efficiency without compromising performance.'
    },
   {
-    id: "2",
+    image:msreach,
     title:'Global Reach',
     description:`With data centers across more than 60 regions worldwide, Azure ensures low latency, high availability, and compliance with local regulations. This global footprint enables businesses to operate seamlessly and deliver services to customers anywhere in the world.`
     },{
-    id: "3",
+    
     title:'Seamless User Experience',
     description:`GlobalProtect eliminates the need for traditional VPN complexity, offering seamless, always-on secure connectivity. Users experience consistent and high-performance access to applications, whether they are hosted in the cloud, on-premises, or in SaaS environments.`},
     {
-    id: "4",
+    
     title:'Enterprise-Grade Security',
     description:`Microsoft Azure is built with a security-first approach, offering: •	Multi-layered protection with built-in security controls., •	Advanced threat detection with Azure Security Center, •	Compliance with over 90 regulatory standards, including GDPR, HIPAA, and ISO` },
     {
-    id: "5",
+    
     title:'Cost Efficiency',
     description:`Azure offers a pay-as-you-go pricing model, allowing businesses to optimize costs by paying only for the resources they use. Additionally, reserved instances and hybrid benefits enable further cost savings.`
    },
    {
-    id: "6",
+    
     title:'Seamless Hybrid Integration',
     description: `Azure supports hybrid cloud environments, enabling businesses to integrate their on-premises infrastructure with cloud solutions. Tools like Azure Arc and Azure Stack allow for consistent management and operation across environments.`
   },
     {
-    id: "7",
+    
     title:'Innovation and AI Capabilities',
     description: `Leverage cutting-edge technologies like artificial intelligence, machine learning, and IoT to drive innovation. Azure’s AI and analytics services enable businesses to gain actionable insights and enhance decision-making.`
   }
@@ -117,18 +119,18 @@ export const whyS3 = {
   `With its cost-effective pricing model, advanced security features, and unmatched durability (99.999999999% or "11 nines"), Amazon S3 has become the go-to choice for organizations seeking reliable and scalable cloud storage.`
 ]};
 
-export const s3Tabs: Tab[] = [
-  { id: "0", title: "Key Benefits of Amazon S3" },
-  { id: "1", title: "Unmatched Scalability", description: `Amazon S3 is designed to grow with your business. Whether you're storing gigabytes or exabytes, S3 can handle virtually unlimited storage capacity without compromising on performance.` },
-  { id: "2", title: "Industry-Leading Durability and Availability", description: `Amazon S3 ensures your data is safe with 99.999999999% durability and 99.99% availability. Data is automatically replicated across multiple AWS availability zones to protect against data loss.` },
-  { id: "3", title: "Cost-Efficient Storage Tiers", description: `Optimize your storage costs with a range of pricing tiers, including S3 Standard, S3 Intelligent-Tiering, S3 Glacier, and S3 Glacier Deep Archive. Pay only for the storage you use while keeping infrequently accessed data secure and cost-effective.` },
-  { id: "4", title: "Advanced Security and Compliance", description: `Protect your data with AWS’s robust security framework, including encryption at rest and in transit, fine-grained access controls, and compliance with industry standards such as HIPAA, GDPR, and FedRAMP.` },
-  { id: "5", title: "Global Accessibility", description: `Amazon S3 is built on AWS’s extensive global infrastructure, ensuring fast and reliable access to your data from any region, making it perfect for global applications and content delivery.` },
-  { id: "6", title: "Seamless Integration with AWS Services", description: `Amazon S3 integrates effortlessly with other AWS services like AWS Lambda, Amazon EMR, Amazon Athena, and Amazon CloudFront, enabling you to build scalable, data-driven applications and workflows.` },
-  { id: "7", title: "Powerful Data Management Features", description: `Leverage tools like S3 Lifecycle Policies, versioning, and replication to manage your data efficiently. S3's advanced analytics and insights allow you to optimize performance and storage usage.` },
-  { id: "8", title: "Backup and Disaster Recovery", description: `S3 provides automated backups, cross-region replication, and high availability to ensure business continuity even during unexpected events.` },
-  { id: "9", title: "Content Delivery and Streaming", description: `Use Amazon S3 with Amazon CloudFront to deliver content and media at low latency to global users, making it ideal for websites, mobile apps, and streaming platforms.` },
-  { id: "10", title: "AI-Driven Data Insights", description: `Combine Amazon S3 with AWS analytics and machine learning tools to gain actionable insights from your data, enabling smarter decision-making and innovation.` }
+export const s3Tabs: CloudSpecialType[] = [
+  {  image:keyawss3, title: "Key Benefits of Amazon S3" },
+  {  title: "Unmatched Scalability", description: `Amazon S3 is designed to grow with your business. Whether you're storing gigabytes or exabytes, S3 can handle virtually unlimited storage capacity without compromising on performance.` },
+  {   title: "Industry-Leading Durability and Availability", description: `Amazon S3 ensures your data is safe with 99.999999999% durability and 99.99% availability. Data is automatically replicated across multiple AWS availability zones to protect against data loss.` },
+  {image:awscosteff,  title: "Cost-Efficient Storage Tiers", description: `Optimize your storage costs with a range of pricing tiers, including S3 Standard, S3 Intelligent-Tiering, S3 Glacier, and S3 Glacier Deep Archive. Pay only for the storage you use while keeping infrequently accessed data secure and cost-effective.` },
+  { image:awdsecur, title: "Advanced Security and Compliance", description: `Protect your data with AWS’s robust security framework, including encryption at rest and in transit, fine-grained access controls, and compliance with industry standards such as HIPAA, GDPR, and FedRAMP.` },
+  {  title: "Global Accessibility", description: `Amazon S3 is built on AWS’s extensive global infrastructure, ensuring fast and reliable access to your data from any region, making it perfect for global applications and content delivery.` },
+  {  title: "Seamless Integration with AWS Services", description: `Amazon S3 integrates effortlessly with other AWS services like AWS Lambda, Amazon EMR, Amazon Athena, and Amazon CloudFront, enabling you to build scalable, data-driven applications and workflows.` },
+  { image:awsdata, title: "Powerful Data Management Features", description: `Leverage tools like S3 Lifecycle Policies, versioning, and replication to manage your data efficiently. S3's advanced analytics and insights allow you to optimize performance and storage usage.` },
+  {  title: "Backup and Disaster Recovery", description: `S3 provides automated backups, cross-region replication, and high availability to ensure business continuity even during unexpected events.` },
+  { image:awsstreaming, title: "Content Delivery and Streaming", description: `Use Amazon S3 with Amazon CloudFront to deliver content and media at low latency to global users, making it ideal for websites, mobile apps, and streaming platforms.` },
+  {  image:awsai, title: "AI-Driven Data Insights", description: `Combine Amazon S3 with AWS analytics and machine learning tools to gain actionable insights from your data, enabling smarter decision-making and innovation.` }
 ];
 
 export const s3Feature: Feature[] = [
@@ -160,45 +162,45 @@ export const whyGoogle = {
 
 
 
-export const googleTabs:Tab[] = [
+export const googleTabs:CloudSpecialType[] = [
 {
-    id: "0",
+    image:keydrive,
     title:'Key Benefits of Google Drive',
     },
   {
-    id: "1",
+ 
     title:'Secure and Scalable Cloud Storage',
     description:`Google Drive offers scalable storage solutions for businesses of all sizes, from startups to enterprises. Store all your important documents, creative assets, and business-critical files with confidence, knowing that Google’s advanced security protocols keep your data safe.`
   },
   {
-    id: "2",
+    
     title:'Seamless Collaboration in Real Time',
     description:`Work smarter with real-time collaboration. Google Drive’s integration with Google Docs, Sheets, and Slides enables multiple users to work on the same file simultaneously, with changes automatically saved and synced.`
    },{
-    id: "3",
+    
     title:'Access Anytime, Anywhere',
     description:`Whether you’re in the office, at home, or on the go, Google Drive ensures you can access your files from any device with an internet connection. The Google Drive mobile app and offline access features make it easy to stay productive wherever you are.`},
      {
-    id: "4",
+    
     title:'Powerful Search Capabilities',
     description:`Google Drive’s advanced search functionality, powered by Google AI, allows you to find files instantly. Search by file type, owner, keywords, or even by text within scanned documents and images.`},
     {
-    id: "5",
+    
     title:'Flexible Sharing Options',
     description:`Share files and folders with ease. Google Drive provides granular sharing permissions, allowing you to control who can view, comment, or edit your files. Share links securely and manage access with expiration dates and password protection.`
   },
    {
-    id: "6",
+    
     title:'Business Continuity and Disaster Recovery',
     description: `With automatic backups and file versioning, Google Drive ensures your data is protected against accidental deletions or cyber threats. You can restore previous file versions or recover deleted files with just a few clicks.`
   },
     {
-    id: "7",
+    
     title:'Integration with Google Workspace and Beyond',
     description: `Google Drive is part of Google Workspace, which includes a suite of productivity tools like Gmail, Calendar, Meet, and more. It also integrates with hundreds of third-party applications, such as Slack, Salesforce, Adobe, and Microsoft Office, streamlining your workflows.`
   },
    {
-    id: "8",
+    
     title:'Cost-Efficiency and Scalability',
     description: `Google Drive offers flexible pricing plans tailored to meet the needs of individuals, small businesses, and enterprises. With its pay-as-you-grow model, you only pay for the storage and features your business needs.`
   }
@@ -271,45 +273,45 @@ export const whyDrop = {
 
 
 
-export const dropTabs:Tab[] = [
+export const dropTabs:CloudSpecialType[] = [
 {
-    id: "0",
+    
     title:'Key Benefits of Dropbox File Storage',
     },
   {
-    id: "1",
+    
     title:'Secure Cloud Storage',
     description:`Dropbox ensures that your files are protected with advanced encryption and multi-layered security protocols. Whether it’s sensitive business documents or creative assets, you can trust Dropbox to keep your data safe and secure.`
   },
   {
-    id: "2",
+    
     title:'Seamless Access Anywhere',
     description:`Access your files from any device, at any time. With Dropbox, your data is always at your fingertips, whether you’re working from a laptop, tablet, or smartphone. Offline access is also available, ensuring productivity even without an internet connection.`
   },{
-    id: "3",
+    
     title:'Real-Time Collaboration',
     description:`Collaborate on documents, presentations, and creative projects in real time. With features like Dropbox Paper, shared folders, and file commenting, your team can work together efficiently, no matter where they are.`},
     {
-    id: "4",
+    
     title:'Version Control and File Recovery',
     description:`Never worry about accidental file overwrites or deletions. Dropbox keeps a detailed version history of your files, allowing you to recover previous versions or deleted files effortlessly.`
   },{
-    id: "5",
+    
     title:'Scalable Solutions for Any Team Size',
     description:`From small businesses to global enterprises, Dropbox offers scalable plans and tools that grow with your needs. Tailored features such as granular admin controls, data insights, and team management tools ensure Dropbox can support any organization.`
   },
    {
-    id: "6",
+    
     title:'Streamlined Integration with Existing Tools',
     description: `Dropbox integrates with over 300,000 third-party apps and services, including Microsoft Office, Google Workspace, Slack, Zoom, Adobe Creative Cloud, and more. This seamless integration ensures Dropbox becomes a natural extension of your existing workflow.`
    },
     {
-    id: "7",
+    
     title:'Enhanced Productivity with Smart Features',
     description:`Features like Dropbox Smart Sync and suggested file organization use machine learning to save time and optimize workflows by ensuring you always have the files you need without overloading local storage.`
   },
    {
-    id: "8",
+    
     title:'Compliance and Control for Businesses',
     description: `Dropbox meets global compliance standards, including GDPR, HIPAA, and SOC 2, providing businesses with the governance tools they need to protect sensitive information and stay compliant with regulations.`
   }
@@ -379,45 +381,45 @@ export const whyVeem = {
 ]
 }
 
-export const veemTabs:Tab[] = [
+export const veemTabs:CloudSpecialType[] = [
 {
-    id: "0",
+    image:keyveeam,   
     title:'Key Benefits of Veeam Backup as a Service',
     },
   {
-    id: "1",
+    
     title:'Comprehensive Data Protection',
     description:`Veeam BaaS safeguards all your critical workloads, including cloud-native, on-premises, virtual, and hybrid environments. Protect everything from physical servers and VMs to applications like Microsoft 365, ensuring your data is always secure and accessible.`
   },
   {
-    id: "2",
+    
     title:'Ransomware Protection and Cyber Resilience',
     description:`Veeam BaaS integrates advanced ransomware protection to secure your backups against malicious attacks. Immutable backups, air-gapped storage, and intelligent monitoring ensure your business is prepared to recover quickly from any cyber threat.`
   },{
-    id: "3",
+    
     title:'Reliable and Rapid Recovery',
     description:`Minimize downtime with Veeam’s industry-leading recovery technology. From granular file-level recovery to full application and system restores, Veeam BaaS ensures your business is back up and running in minutes, not hours.`
   },{
-    id: "4",
+    
     title:'Cost Efficiency and Scalability',
     description:`Pay only for what you need with flexible consumption-based pricing. As your business grows, Veeam BaaS scales effortlessly to protect larger workloads and evolving IT infrastructures without requiring additional hardware investments.`
    },{
-    id: "5",
+    
     title:'Compliance and Governance',
     description:`Veeam BaaS helps businesses meet regulatory compliance requirements by providing robust data retention, encryption, and reporting features. Rest easy knowing your backups adhere to strict data governance standards.`
   },
    {
-    id: "6",
+    
     title:'Elimination of Backup Complexity',
     description: `With Veeam BaaS, you can offload the complexity of backup management to experienced service providers. This means less time spent on manual tasks and more time focusing on strategic business initiatives.`
   },
     {
-    id: "7",
+    
     title:'Cloud-Native Integration',
     description:`Veeam BaaS seamlessly integrates with major cloud platforms such as AWS, Microsoft Azure, and Google Cloud, allowing you to back up cloud-native workloads or extend on-premises backups to the cloud with ease.`
     },
    {
-    id: "8",
+    
     title:'24/7 Monitoring and Support',
     description: `Delivered by trusted Veeam service providers, Veeam BaaS includes round-the-clock monitoring and expert support to ensure your backups are running smoothly and any issues are resolved quickly.`
   }

@@ -4,12 +4,9 @@ export type HeaderType = {
     description?:string;
     points?: string[];
     position?:"left"|"right";
+    group?:string;
+    section?:string;
 }
-
-
-
-
-
 
 
 export type SubHeaderType = {
@@ -23,3 +20,7 @@ export type SubHeaderType = {
 }
 
 
+export type SubPoints = {
+  title:string;
+  description:string;
+}

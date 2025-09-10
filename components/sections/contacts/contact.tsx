@@ -74,19 +74,24 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElemen
     }
 
     try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(validation.data), // Already validated
-      });
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
 
-      if (!res.ok) throw new Error("Failed to send message");
+    const result = await res.json();
 
+    if (result.success) {
       setFormData({ firstName: "", lastName: "", email: "", phoneNumber: "", message: "" });
       setStatus({ loading: false, success: "Message sent successfully!", error: null });
-    } catch (err) {
-      setStatus({ loading: false, success: null, error: (err as Error).message });
+    } else {
+      throw new Error(result.error || "Failed to send message");
     }
+  } catch (err) {
+    const error = err as Error;
+    setStatus({ loading: false, success: null, error: error.message });
+  }
   };
 
     return (
@@ -110,7 +115,7 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElemen
                 <h2 className=" text-[28px] leading-tight tablet:font-medium tablet:text-5xl">Contact us</h2>
                 <div className="laptop:w-[582px] w-full my-6">
                     <form action="" className="space-y-12 ">
-                        <div className="flex md:flex-col flex-row gap-12 ">
+                        <div className="flex md:flex-row flex-col gap-12 ">
                             <div className="flex flex-col gap-2 w-full">
                                 <label htmlFor="firstName" className="font-medium w-full text-neutral-500 text-sm">First Name</label>
                                 <input

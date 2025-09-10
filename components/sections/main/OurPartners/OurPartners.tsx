@@ -18,8 +18,9 @@ import { BRAMERLOGO } from '@/app/assets'
 const OurPartners = () => {
     
   return (
-    <Section id="our-partners" data-id="our-partners">
+     
         <div className="border-t border-black pt-10 md:mx-12 mx-5 ">
+          <Section id="our-partners" data-id="our-partners">
           <div>
 
 
@@ -32,16 +33,21 @@ const OurPartners = () => {
 
           <KeyFeaturesSection features={productData}/>
 {/* video */}
+          <div>
+
+          </div>
           
           </div>
-
+</Section>
+<Section id="our-vendors" data-id="our-vendors">
           <div className='mt-16'>
+            
             <div className="border-t border-black mt-20">
              <h2 className="text-blue-500 md:text-6xl text-4xl mt-12 mb-5 text-end">Our Vendors</h2>
              
         <Carousel plugins={[
         Autoplay({
-          delay: 1000,
+          delay: 3000,
         }),
       ]}>
             <CarouselContent>
@@ -70,9 +76,9 @@ const OurPartners = () => {
            </div>
 
           </div>
-
+</Section>
         </div>
-      </Section>
+      
   )
 }
 

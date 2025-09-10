@@ -2,7 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState } from "react";
-import { MainSpecialType } from "../type";
+import { MainSpecialType } from "../../type";
 
  type MainSpecialProp = {
   tabData: MainSpecialType[]
@@ -27,7 +27,7 @@ export const  MainSpecial : React.FC<MainSpecialProp> =  ({tabData}) => {
 
 
   return (
-    <section
+    <div
       ref={wrapperRef}
       style={{ height: `${count * 100}vh` }}
       className="relative w-full "
@@ -72,6 +72,6 @@ export const  MainSpecial : React.FC<MainSpecialProp> =  ({tabData}) => {
           />
         </div>
       </motion.div>
-    </section>
+    </div>
   );
 }

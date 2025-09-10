@@ -1,11 +1,11 @@
 import Section from '@/components/Section'
 import React from 'react'
-import Header from '../Header'
-import Special from '../Special'
+import Header from './components/Header'
+import Special from '../components/Special'
 import { ThreePoints } from '@/components/shared/ThreePoints'
 import { anomlyPoints, customBenifits, droneBenifits, inventoryBenifits, inventoryPoints, mudBenifits, mudPoints, saferigBenifits, saferigPoints } from './data'
-import Breaker from '../Breaker'
-import SubHeader from '../SubHeader'
+import Breaker from '../components/Breaker'
+import SubHeader from './components/SubHeader'
 
 const Overview = () => {
   return (

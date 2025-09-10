@@ -1,7 +1,7 @@
 import Section from '@/components/Section'
 import React from 'react'
 import { industries } from './data'
-import Breaker from '../Breaker'
+import Breaker from '../components/Breaker'
 
 const Industries = () => {
   return (

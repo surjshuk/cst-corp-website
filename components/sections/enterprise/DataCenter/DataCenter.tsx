@@ -2,19 +2,42 @@ import React from 'react'
 import { broadcomBenefits, broadcomDesc, broadcomFeatures, ciscoDesc, ciscoTabData, dellDesc, dellFeature, dellTabData, fortinetBenefits, fortinetDesc, fortinetFeatures, hpeDesc, hpeFeature, hpeTabData, ibmDesc, ibmFeature, ibmTabData, ibmWhy, prismaBenefits, prismaDesc, prismaFeatures, vmwareBenefits, vmwareDesc, vmwareFeatures, whatIsBroadcom, whatIsFortinet, whatIsPrisma, whatIsVmware, whyCisco, whyDell, whyHPE } from './data'
 import { cloudPaloFeature } from '../../cloud-services/CloudNetwork/data'
 import { KeyFeaturesSection } from '../../cloud-services/key-features'
-import Header from '../components/Header'
+// import Header from '../components/Header'
 import SubHeader from '../components/SubHeader'
 import Section from '@/components/Section'
 import MainCarousel from '../components/Special'
 import { dellemc, fortinet, hpedata, prisma } from '@/app/assets'
+import Index from '../components/Index'
 
 const DataCenter = () => {
 
   return (
 
     <Section data-id="data-center" id='data-center'>
+        <Index
+        title="Data Center"
+        slug="enterprise-network"
+        data = {[
+          {
+          header:"Data Center",
+        
+          subheader:[
+         `Cisco Nexus Switches`,
+         `HPE Data Center Networking`,
+         `Dell EMC Data Center Networking`,
+         `IBM Cloud Data Center Networking`,
+         `Fortinet Data Center Networking`,
+         `Palo Alto Networks Prisma SD-WAN`,
+         `VMware by Broadcom`,
+         `Broadcom Data Center Switching Solutions`,
+        
+        ]},
+       
+        
+      ]}
+      />
 
-      <Header title={"Data Center"}/> 
+      {/* <Header title={"Data Center"}/>  */}
        <SubHeader
       title='Cisco Nexus Switches'
       subtitle='The Industry-Leading Data Center Networking Solution for Performance, Scalability, and Flexibility'

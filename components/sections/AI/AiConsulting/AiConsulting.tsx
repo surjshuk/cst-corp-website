@@ -1,10 +1,10 @@
 import Section from '@/components/Section'
 import React from 'react'
-import Twin from '../Twin'
+import Twin from '../AiDigitalTwin/components/Twin'
 import { consultBenifits, consultPoints, consultTwin } from './data'
-import Special from '../Special'
+import Special from '../components/Special'
 import { ThreePoints } from '@/components/shared/ThreePoints'
-import Breaker from '../Breaker'
+import Breaker from '../components/Breaker'
 
 const AiConsulting = () => {
   return (

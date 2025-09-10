@@ -1,10 +1,10 @@
 import Section from '@/components/Section'
 import React from 'react'
-import Twin from '../Twin'
+import Twin from './components/Twin'
 import { customBenifits, digitalTwin, twinPoints } from './data'
 import { ThreePoints } from '@/components/shared/ThreePoints'
-import Special from '../Special'
-import Breaker from '../Breaker'
+import Special from '../components/Special'
+import Breaker from '../components/Breaker'
 
 const AiDigitalTwin = () => {
   

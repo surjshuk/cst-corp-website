@@ -1,16 +1,35 @@
 import React from 'react'
-import Header from '../components/Header'
+// import Header from '../components/Header'
 import { azureesc, azureFeature, azurTabs,dropDesc,dropFeature,dropTabs,googleDesc,googleFeature,googleTabs,s3esc,s3Feature,s3Tabs,veemDesc,veemFeature,veemTabs,whyAzure, whyDrop, whyGoogle, whyS3, whyVeem } from './data'
 import CloudSpecial from '../components/Special'
 import { KeyFeaturesSection } from '../key-features'
 import { SubheroVm } from '../components/subheroVM'
 import SubHeader from '../components/SubHeader'
 import Section from '@/components/Section'
+import Index from '../components/Index'
 
 const CloudStorage = () => {
   return (
     <Section id="cloud-storage" data-id="cloud-storage">
-      <Header title={"Cloud Storage"}/> 
+            <Index
+        title="Cloud Ṣtorage"
+        slug="cloud-services"
+        data = {[
+          {
+          header:"Cloud Storage",
+        
+          subheader:[
+          `Microsoft Azure`,
+          `Amazon S3`,
+          `Google Drive`,
+          `Dropbox File Storage`,
+          `Veeam Backup as a Service (BaaS)`
+        ]},
+       
+        
+      ]}
+      />
+      {/* <Header title={"Cloud Storage"}/>  */}
       <SubHeader
             title='Microsoft Azure'
             position='right'

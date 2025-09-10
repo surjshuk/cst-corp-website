@@ -87,18 +87,74 @@ export {default as unlockinsight} from "./images/backgrounds/unlockinsight.png"
 export {default as seamlessinteg} from "./images/backgrounds/seamlessinteg.png"
 export {default as driveinnova} from "./images/backgrounds/driveinnova.png"
 export {default as spc} from "./images/backgrounds/spc.png"
-// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
-// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
-// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
-// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
-// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
-// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
-// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
-// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
-// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
-// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
-// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
+export {default as keygoogle} from "./images/backgrounds/keygoogle.png"
 
+export {default as keyaws} from "./images/backgrounds/keyaws.png"
+export {default as rapidaws} from "./images/backgrounds/rapidaws.png"
+export {default as awsscale} from "./images/backgrounds/awsscale.png"
+export {default as awscost} from "./images/backgrounds/awscost.png"
+export {default as semless} from "./images/backgrounds/semless.png"
+export {default as awscust} from "./images/backgrounds/awscust.png"
+export {default as awsenhance} from "./images/backgrounds/awsenhance.png"
+export {default as aesexpert} from "./images/backgrounds/aesexpert.png"
+
+export {default as mskey} from "./images/backgrounds/mskey.png"
+export {default as mssimplified} from "./images/backgrounds/mssimplified.png"
+export {default as msimprove} from "./images/backgrounds/msimprove.png"
+export {default as mssemless} from "./images/backgrounds/mssemless.png"
+export {default as msenhanced} from "./images/backgrounds/msenhanced.png"
+export {default as msscale} from "./images/backgrounds/msscale.png"
+
+export {default as keyawscloud} from "./images/backgrounds/keyawscloud.png"
+export {default as awssubscrib} from "./images/backgrounds/awssubscrib.png"
+
+export {default as keyglobal} from "./images/backgrounds/keyglobal.png"
+export {default as globalsecur} from "./images/backgrounds/globalsecur.png"
+export {default as zerotrust} from "./images/backgrounds/zerotrust.png"
+export {default as globalsemless} from "./images/backgrounds/globalsemless.png"
+
+
+export {default as keyfortigate} from "./images/backgrounds/keyfortigate.png"
+export {default as fortigatecloud} from "./images/backgrounds/fortigatecloud.png"
+export {default as semvpn} from "./images/backgrounds/semvpn.png"
+
+export {default as hpearuba} from "./images/backgrounds/hpearuba.png"
+export {default as simplifiedHpe} from "./images/backgrounds/simplifiedHpe.png"
+export {default as aihpe} from "./images/backgrounds/aihpe.png"
+export {default as hpecloud} from "./images/backgrounds/hpecloud.png"
+
+export {default as msazure} from "./images/backgrounds/msazure.png"
+export {default as msreach} from "./images/backgrounds/msreach.png"
+
+export {default as keyawss3} from "./images/backgrounds/keyawss3.png"
+export {default as awscosteff} from "./images/backgrounds/awscosteff.png"
+export {default as awdsecur} from "./images/backgrounds/awdsecur.png"
+export {default as awsdata} from "./images/backgrounds/awsdata.png"
+export {default as awsstreaming} from "./images/backgrounds/awsstreaming.png"
+export {default as awsai} from "./images/backgrounds/awsai.png"
+
+export {default as keydrive} from "./images/backgrounds/keydrive.png"
+
+export {default as keyveeam} from "./images/backgrounds/keyveeam.png"
+
+export {default as keygooglework} from "./images/backgrounds/keygooglework.png"
+
+export {default as keyibm} from "./images/backgrounds/keyibm.png"
+
+export {default as keyhub} from "./images/backgrounds/keyhub.png"
+
+export {default as keysales} from "./images/backgrounds/keysales.png"
+
+// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
+// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
+// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
+// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
+// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
+// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
+// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
+// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
+// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
+// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
 
 
 

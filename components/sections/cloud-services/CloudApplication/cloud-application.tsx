@@ -2,16 +2,33 @@ import React from 'react'
 import { SubHeader } from '../components/SubHeader'
 import { AwsDesc, AwsFeature, AwsServiceDesc, AwsTabData, GoogleAiDesc, GoogleFeature, GoogleTabData, whatGoogleDesc } from './data'
 import CloudSpecial from '../components/Special'
-import Header from '../components/Header'
+// import Header from '../components/Header'
 import { KeyFeaturesSection } from '../components/KeyFeatures'
 import Section from '@/components/Section'
+import Index from '../components/Index'
 
 
 const CloudApplication = () => {
   return (
     
     <Section data-id="cloud-application" id="cloud-application">
-      <Header title={"Cloud Application Services"}/> 
+      <Index
+        title="Cloud Application"
+        slug="cloud-services"
+        data = {[
+          {
+          header:"Cloud Application Services",
+        
+          subheader:[
+          `Google AI and Machine Learning APIs`,
+          `AWS AI Services`,
+
+        ]},
+       
+        
+      ]}
+      />
+      {/* <Header title={"Cloud Application Services"}/>  */}
       <SubHeader
       title='Google AI and Machine Learning APIs'
       subtitle='Unlock the Power of Intelligent, Data-Driven Innovation'

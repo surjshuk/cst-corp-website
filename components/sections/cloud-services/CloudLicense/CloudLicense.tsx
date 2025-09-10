@@ -1,24 +1,41 @@
 import React from 'react'
-import Header from '../components/Header'
+// import Header from '../components/Header'
 import { SubHeader } from '../components/SubHeader'
 import { awsLicenceData, awsLicenceDesc, awsLicenceFeature, msNewComerceData, msNewComerceDesc, msNewComerceFeature, whatawsLicenceDesc, whatNewComerceDesc } from './data'
 import CloudSpecial from '../components/Special'
 import { KeyFeaturesSection } from '../key-features'
 import Section from '@/components/Section'
+import Index from '../components/Index'
 
 const CloudLicense = () => {
   return (
     <Section data-id="cloud-license" id="cloud-license">
-      <Header title={"Cloud License"}/> 
+       <Index
+        title="Cloud License"
+        slug="cloud-services"
+        data = {[
+          {
+          header:"Cloud License",
+        
+          subheader:[
+          `Microsoft New Commerce Experience (NCE)`,
+          `Amazon AWS Marketplace for Flexible Cloud Licensing`,
+
+        ]},
+       
+        
+      ]}
+      />
+      {/* <Header title={"Cloud License"}/>  */}
        <SubHeader
-      subtitle='Microsoft New Commerce Experience (NCE)'
+      title='Microsoft New Commerce Experience (NCE)'
       description={msNewComerceDesc}
       group='Cloud License'
       website='ssds'
       position='right'
       />
        <SubHeader
-      subtitle='What is the Microsoft New Commerce Experience (NCE)?'
+      title='What is the Microsoft New Commerce Experience (NCE)?'
       description={whatNewComerceDesc}   
       position='left'  />
 
@@ -28,14 +45,14 @@ const CloudLicense = () => {
         <KeyFeaturesSection title="Key Benefits of the Microsoft NCE" features={msNewComerceFeature}/>
         
        <SubHeader
-      subtitle='Amazon AWS Marketplace for Flexible Cloud Licensing'
+      title='Amazon AWS Marketplace for Flexible Cloud Licensing'
       description={awsLicenceDesc}
       group='Cloud License'
       website='ssds'
       position='right'
       />
        <SubHeader
-      subtitle='What is the AWS Marketplace for Flexible Cloud Licensing ?'
+      title='What is the AWS Marketplace for Flexible Cloud Licensing ?'
       description={whatawsLicenceDesc}   
       position='left'  />
 

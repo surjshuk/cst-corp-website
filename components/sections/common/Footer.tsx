@@ -41,16 +41,14 @@ export const Footer = () => {
 
                     {/* Policies */}
                     <div className="flex-1 flex gap-4 justify-between text-xs mt-5 tablet:justify-center tablet:gap-10 tablet:mt-0">
-                        <Link href="" className="hover:text-black text-secondary">
+                        <Link href="/privacy-policy" className="hover:text-black text-secondary">
                             Privacy Policy
                         </Link>
-                        <Link href="" className="hover:text-black text-secondary">
+                        <Link href="/terms-of-use" className="hover:text-black text-secondary">
                             Terms of Use
                         </Link>
 
-                        <Link href="" className="hover:text-black text-secondary">
-                            Quality Policy
-                        </Link>
+                        
                     </div>
                 </div>
             </div>

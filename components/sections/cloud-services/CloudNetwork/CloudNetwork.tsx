@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../components/Header'
+// import Header from '../components/Header'
 import { SubHeader } from '../components/SubHeader'
 import { arubaDesc, arubaFeature, arubaTabData, ciscoBenifits, ciscoDesc, cloudPaloDesc, cloudPaloFeature, cloudPaloTabData, dnsFeature, fortiGateDesc, fortiGateFeature, fortiGateTabData, loadFeature, vmCloudDesc, VmDesc, whyaruba, whyCloudPalo, whyFortiate, whyVmDesc } from './data'
 import CloudSpecial from '../components/Special'
@@ -8,12 +8,31 @@ import { KeyFeaturesSection } from '../key-features'
 import { Benefits } from '../components/benefits'
 import Section from '@/components/Section'
 import { SubheroVm } from '../components/subheroVM'
+import Index from '../components/Index'
 
 const CloudNetwork = () => {
 
   return (
     <Section data-id="cloud-network" id="cloud-network">
-        <Header title={"Cloud Network"}/> 
+      <Index
+        title="Cloud Network"
+        slug="cloud-services"
+        data = {[
+          {
+          header:"Cloud Network",
+        
+          subheader:[
+          `Palo Alto Networks GlobalProtect Cloud Services`,
+          `FortiGate Cloud Security`,
+          `HPE Aruba Central`,
+          `Cisco Cloud Networking Solutions`
+
+        ]},
+       
+        
+      ]}
+      />
+        {/* <Header title={"Cloud Network"}/>  */}
        <SubHeader
       title='Palo Alto Networks GlobalProtect Cloud Services'
       subtitle='Secure Access Anywhere, Anytime'

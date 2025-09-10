@@ -3,11 +3,13 @@ import { cicoSwitchData, ciscoData, ciscoDesc, ciscoService, fortinetData, forti
 import { SubheroVm } from '../../cloud-services/components/subheroVM'
 import SubHeader from '../components/SubHeader'
 import Header from '../components/Header'
+import Section from '@/components/Section'
 
 const Routing = () => {
   return (
     
-    <div>
+    <Section data-id="routing-and-switching" id='routing-and-switching'>
+      
       <Header title='Routing and Switching'/>
         <SubHeader
       subtitle='Cisco Systems'
@@ -60,7 +62,8 @@ const Routing = () => {
     data={fortinetService}
     />
 
-    </div>
+    
+    </Section>
   )
 }
 

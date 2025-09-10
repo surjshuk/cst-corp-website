@@ -45,7 +45,7 @@ export default function SlideSection() {
   };
 
   return (
-    <section
+    <div
       ref={wrapperRef}
       style={{ height: `${count * 100}vh` }}
       className="relative w-full "
@@ -103,6 +103,6 @@ export default function SlideSection() {
           />
         </div>
       </motion.div>
-    </section>
+    </div>
   );
 }

@@ -43,7 +43,7 @@ export const Values = () => {
   };
 
   return (
-    <section
+    <div
       className="space-y-20 px-5 pt-20 pb-7 tablet:space-y-20 tablet:px-12 tablet:pb-12 laptop:ml-0 laptop:px-20 laptop:pt-40 laptop:pb-20"
       id="values"
     >
@@ -85,6 +85,6 @@ export const Values = () => {
           Every decision, engagement, and deployment we undertake is guided by these values — ensuring CST remains a trusted, forward-looking partner to our clients worldwide.
         </p>
       </div>
-    </section>
+    </div>
   );
 };

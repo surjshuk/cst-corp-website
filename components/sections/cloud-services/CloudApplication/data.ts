@@ -1,4 +1,4 @@
-import { driveinnova, enhanceuser, seamlessinteg, spc, speedupdev, unlockinsight } from "@/app/assets";
+import { aesexpert, awscost, awscust, awsenhance, awsscale, driveinnova, enhanceuser, keyaws, keygoogle, rapidaws, seamlessinteg, semless, spc, speedupdev, unlockinsight } from "@/app/assets";
 import { Feature } from "../../AI/feature";
 import { CloudSpecialType } from "../type";
 
@@ -22,6 +22,7 @@ export const whatGoogleDesc:string[] =[
 export const GoogleTabData: CloudSpecialType[] = [
 {
   title:'Key Benefits of Google AI and Machine Learning APIs',
+  image:keygoogle,
 },
 {
   
@@ -66,43 +67,43 @@ export const GoogleFeature: Feature[] = [
     title: "Google Cloud Natural Language API",
     description:
       "The Natural Language API enables businesses to process and analyze text data. It can detect sentiment, identify key entities, and parse syntactic structure, allowing companies to gain deeper insights from customer reviews, feedback, social media posts, and more. This API is perfect for building intelligent systems that understand context, intent, and meaning from written language.",
-    // image: PLACEHOLDER,
+    
   },
   {
     title: "Google Cloud Speech-to-Text API",
     description:
       "The Speech-to-Text API converts audio content into text in real time. This API can be used for a wide range of applications, including transcription services, voice assistants, and customer support systems. By using Google’s advanced speech recognition models, businesses can easily integrate voice interaction into their products and services, making them more accessible and user-friendly.",
-    // image: PLACEHOLDER,
+    
   },
   {
     title: "Google Cloud Text-to-Speech API",
     description:
       "The Text-to-Speech API transforms written text into natural-sounding speech, supporting a wide variety of languages and voices. This API can be used in applications such as virtual assistants, accessibility tools, and multimedia content creation. By adding lifelike speech synthesis to your applications, you can improve user engagement and accessibility.",
-    // image: PLACEHOLDER,
+    
   },
   {
     title: "Google Cloud Translation API",
     description:
       "The Translation API allows businesses to automatically translate text between multiple languages. With real-time translation capabilities, companies can localize content, communicate with customers in their native languages, and support global expansion efforts. Google’s translation models support over 100 languages, making it easy to reach a global audience with minimal effort.",
-    // image: PLACEHOLDER,
+    
   },
   {
     title: "Google Cloud AutoML",
     description:
       "Google’s AutoML is a suite of machine learning tools that enable businesses to create custom models for specific use cases without requiring deep expertise in data science. AutoML allows businesses to train high-quality models on their own datasets and integrate them into their applications. Whether you are building custom image recognition, text classification, or translation models, AutoML simplifies the process of creating powerful, tailored machine learning solutions.",
-    // image: PLACEHOLDER,
+    
   },
   {
     title: "Google BigQuery ML",
     description:
       "BigQuery ML allows businesses to build machine learning models directly within Google’s data warehouse, BigQuery. This API enables businesses to train models using SQL queries, making it easier to leverage the full potential of data stored in BigQuery without the need for complex data pipelines. BigQuery ML is ideal for companies that want to apply machine learning to large datasets to uncover insights, predict trends, and automate decisions.",
-    // image: PLACEHOLDER,
+    
   },
   {
     title: "Google Cloud Video Intelligence API",
     description:
       "The Video Intelligence API allows businesses to analyze video content by detecting objects, scenes, and activities. It can also identify explicit content and perform video tagging. This API is useful for media companies, content creators, and e-commerce platforms that want to enhance video searchability, moderation, and categorization",
-    // image: PLACEHOLDER,
+    
   }
 ];
 
@@ -119,43 +120,44 @@ export const AwsServiceDesc:string[] = [
 
 
 
-export const AwsTabData:Tab[] = [
+export const AwsTabData:CloudSpecialType[] = [
 {
-    id: "0",
+    image:keyaws,
     title:'Key Benefits of AWS AI Services',
     },
   {
-    id: "1",
+
+    image:rapidaws,
     title:'Rapid Integration with Pre-Trained Models',
     description:'AWS AI Services provide access to pre-trained, industry-leading machine learning models that businesses can integrate into their applications with minimal setup. Whether you need a recommendation engine, image recognition system, or voice assistant, AWS offers powerful, ready-to-use models that can quickly add intelligence to your systems. This reduces the time it takes to deploy AI capabilities and accelerates time-to-market for your products and services.'
   },
   {
-    id: "2",
+    image:awsscale,
     title:'Scalable and Flexible',
     description:'AWS AI Services are designed to scale with your business. Whether you’re working with small datasets or processing massive volumes of information, AWS’s infrastructure ensures high availability, reliability, and scalability. These services can grow with your business needs, handling workloads of any size while maintaining high performance. Whether you’re operating in a single region or across the globe, AWS ensures your AI applications are always available and can scale effortlessly.'
   },
   {
-    id: "3",
+   image:awscost,
     title:'Cost-Effective, Pay-As-You-Go Model',
     description:'AWS AI Services operate on a pay-as-you-go pricing model, meaning businesses only pay for the resources they actually use. This ensures that companies can start small and scale as needed, without large upfront costs or investments in infrastructure. This cost-effective model helps businesses achieve a high return on investment (ROI) while allowing them to experiment with AI without the need for substantial financial commitments.'
   },
   {
-    id: "4",
+    image:semless,
     title:'Seamless Integration Across Applications',
     description:'Google’s AI and ML APIs are built to seamlessly integrate with your existing applications, whether hosted in the cloud or on-premises. With powerful APIs like Vision, Translation, and Language, businesses can add intelligent features directly into their apps, websites, and mobile platforms. These APIs are highly scalable and can handle high volumes of requests, ensuring that your business can scale as demand grows without sacrificing performance or reliability.'
   },
     {
-    id: "5",
+   image:awscust,
     title:'Improve Customer Experience with Personalization',
     description:'One of the key advantages of using AWS AI Services is the ability to personalize customer interactions at scale. Services like Amazon Personalize enable businesses to create customized recommendations based on individual preferences, behaviors, and interactions. Personalization increases engagement, boosts customer satisfaction, and drives sales, making it an invaluable tool for e-commerce, entertainment, and content-driven businesses.'
   },
    {
-    id: "6",
+    image:awsenhance,
     title:'Enhance Security and Privacy',
     description:`Security is at the core of AWS AI Services, with all services built on AWS's secure, compliant infrastructure. AWS offers encryption, access control, and monitoring tools to help businesses maintain the privacy and security of their data. With services that comply with international data privacy laws and regulations, businesses can confidently use AWS AI to process sensitive information while maintaining compliance.`
   },
   {
-    id: "7",
+    image:aesexpert,    
     title:'No Machine Learning Expertise Required',
     description:`One of the standout features of AWS AI Services is that they are designed for developers, not data scientists. These tools are highly intuitive and require no deep expertise in machine learning to implement. With simple API calls, developers can integrate AI and ML capabilities into their applications without needing to train complex models or manage the infrastructure behind them. This makes advanced AI accessible to businesses of all sizes, regardless of their internal expertise.`
   }
@@ -171,13 +173,13 @@ export const AwsFeature: Feature[] = [
     title: "Amazon Polly",
     description:
       `Amazon Polly converts text into lifelike speech using advanced deep learning techniques. This service enables businesses to create voice-enabled applications such as virtual assistants, text-to-speech systems, and interactive voice response (IVR) solutions. Polly supports multiple languages and voices, providing a highly customizable solution for integrating voice interactions into any application.`  
-    // image: PLACEHOLDER,
+    
   },
   {
     title: "Amazon Comprehend",
     description:
       `Amazon Comprehend is a natural language processing (NLP) service that can analyze and understand text. It can identify key phrases, entities, sentiment, and language in text data, allowing businesses to extract meaningful insights from customer reviews, support tickets, social media content, and more. Amazon Comprehend enables companies to automate text analysis, categorize content, and improve customer sentiment analysis with ease.` 
-      // image: PLACEHOLDER,
+      
   },
   {
     title: "Amazon Translate",

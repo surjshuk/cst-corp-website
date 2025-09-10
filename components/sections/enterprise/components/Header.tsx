@@ -2,10 +2,13 @@
 import React from 'react'
 import { HeaderType } from '../type'
 
+const slugify = (str: string) =>
+  str.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)+/g, "");
+
 
 export const Header: React.FC<HeaderType> = ({title,description,position,points }) => {
   return (
-      <div className="lg:px-20 px-4 pt-8">
+      <div  id={slugify(title||"")} className="lg:px-20 px-4 pt-8">
 
         <div className={`${position && position=="right"?"ms-auto":""}  lg:w-[50%] w-[60%] md:py-20 py-5`}>
           <h1 className="md:text-7xl text-primary text-4xl">

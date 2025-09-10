@@ -33,7 +33,7 @@ export const Feature: React.FC<CollapsibleSectionProps> = ({
   };
 
   return (
-    <section
+    <div
       id="solutions"
       className="space-y-20 px-5 pt-20 pb-7 tablet:space-y-20 tablet:px-12 tablet:pb-12 laptop:px-20 laptop:pt-40 laptop:pb-20"
     >
@@ -74,6 +74,6 @@ export const Feature: React.FC<CollapsibleSectionProps> = ({
       <p className="text-xs tablet:text-[25px] text-black font-wayray font-normal leading-normal tablet:w-4/5 tablet:ml-auto text-right">
         {concludingNote}
       </p>
-    </section>
+    </div>
   );
 };
