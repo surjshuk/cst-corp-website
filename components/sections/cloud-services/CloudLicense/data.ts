@@ -1,4 +1,6 @@
+import { awssubscrib, keyawscloud, msenhanced, msimprove, mskey, msscale, mssemless, mssimplified } from "@/app/assets";
 import { Feature } from "../../AI/feature";
+import { CloudSpecialType } from "../type";
 
 
 export interface Tab {
@@ -18,38 +20,39 @@ export const whatNewComerceDesc:string[] =[
 
 
 
-export const msNewComerceData = [
+export const msNewComerceData:CloudSpecialType[] = [
 {
-    id: "0",
+   image:mskey,
     title:'Key Benefits of the Microsoft NCE',
     },
   {
-    id: "1",
+   image:mssimplified,
     title:'Simplified Licensing Management',
     description:'The NCE centralizes licensing into a single, unified platform, making it easier for businesses to manage subscriptions and track their usage. This eliminates much of the confusion associated with legacy licensing models.'
   },
   {
-    id: "2",
+
     title:'Flexible Commitment Terms',
     description:'Provides flexibility with the ability to adjust licenses monthly. This option is ideal for businesses with fluctuating workforce sizes or seasonal demands. Offers cost savings for customers who can commit to a 12-month agreement. This is well-suited for organizations with stable, predictable needs. Enables businesses to lock in pricing for up to three years, providing long-term budget stability and predictable costs'
   },
   {
-    id: "3",
+    image:msimprove,
     title:'Improved Cost Efficiency',
     description:'The NCE incentivizes annual and multi-year commitments by offering discounts compared to monthly plans. This structure rewards businesses that can commit to longer terms, ultimately lowering overall costs.'
   },
   {
-    id: "4",
+    
+    image:mssemless,
     title:'Seamless Integration Across Applications',
     description:'Google’s AI and ML APIs are built to seamlessly integrate with your existing applications, whether hosted in the cloud or on-premises. With powerful APIs like Vision, Translation, and Language, businesses can add intelligent features directly into their apps, websites, and mobile platforms. These APIs are highly scalable and can handle high volumes of requests, ensuring that your business can scale as demand grows without sacrificing performance or reliability.'
   },
     {
-    id: "5",
+   image:msenhanced,
     title:'Enhanced Operational Consistency',
     description:'With the NCE, Microsoft partners and customers benefit from more predictable billing cycles and streamlined processes. Automated renewal options ensure there is no disruption in service continuity.'
   },
    {
-    id: "6",
+    image:msscale,
     title:'Scalable Growth',
     description:'The NCE accommodates business growth by allowing for seamless license additions throughout the term. This scalability ensures organizations can adapt quickly as their needs evolve.'
   }
@@ -87,38 +90,38 @@ export const whatawsLicenceDesc:string[] =[
 ]
 
 
-export const awsLicenceData = [
+export const awsLicenceData:CloudSpecialType[] = [
 {
-    id: "0",
+   image:keyawscloud,
     title:'Key Benefits of the AWS Marketplace for Flexible Cloud Licensing',
     },
   {
-    id: "1",
+   
     title:'Streamlined Licensing Management',
     description:'AWS Marketplace simplifies how organizations purchase and manage their cloud resources. With easy-to-navigate purchasing options, businesses can efficiently manage subscription services without the complexity often associated with traditional licensing models.'
     },
   {
-    id: "2",
+    image:awssubscrib,
     title:'Flexible Subscription and Licensing Models',
     description:'Organizations now have access to a variety of flexible licensing options that are adaptable to their business needs: • Pay-As-You-Go: Allows for on-demand purchasing of cloud services, ideal for businesses that experience fluctuating demand and need maximum flexibility. • Reserved Instances: Offers significant savings for customers willing to commit to a set amount of usage for a longer period, ensuring stable pricing for budget-conscious businesses. • Annual and Multi-Year Plans: Businesses can secure discounted rates by committing to longer-term plans, which offer budget predictability and cost savings.'
   },
   {
-    id: "3",
+   
     title:'Improved Cost Efficiency',
     description:`AWS Marketplace provides businesses with pricing options that reflect their exact needs, allowing for optimized cost management. Long-term contracts and reserved instances deliver considerable savings when compared to pay-as-you-go models.`
   },
   {
-    id: "4",
+  
     title:'Scalable and Flexible Growth',
     description:`As businesses scale, AWS Marketplace offers the ability to expand licenses and services seamlessly. This flexibility ensures that organizations can rapidly adjust their infrastructure to meet growth demands, supporting agile business models.`
     },
     {
-    id: "5",
+   
     title:'Enhanced Operational Consistency',
     description:'With the NCE, Microsoft partners and customers benefit from more predictable billing cycles and streamlined processes. Automated renewal options ensure there is no disruption in service continuity.'
   },
    {
-    id: "6",
+
     title:'Simplified Billing and Management',
     description:`The AWS Marketplace enables consolidated billing for all cloud services, reducing administrative overhead and streamlining financial tracking. This simplifies the process for businesses by centralizing their cloud licensing and service management.`
   }

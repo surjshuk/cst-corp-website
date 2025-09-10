@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../components/Header'
+// import Header from '../components/Header'
 import { SubHeader } from '../components/SubHeader'
 import { awsLicenceData, awsLicenceDesc, awsLicenceFeature, msNewComerceData, msNewComerceDesc, msNewComerceFeature, whatawsLicenceDesc, whatNewComerceDesc } from './data'
 import CloudSpecial from '../components/Special'
@@ -26,7 +26,7 @@ const CloudLicense = () => {
         
       ]}
       />
-      <Header title={"Cloud License"}/> 
+      {/* <Header title={"Cloud License"}/>  */}
        <SubHeader
       title='Microsoft New Commerce Experience (NCE)'
       description={msNewComerceDesc}

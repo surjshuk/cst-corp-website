@@ -15,7 +15,7 @@ export const CloudSecurity = () => (
 
       <Index
         title="Cloud Security"
-        slug="cyber-security"
+        slug="cybersecurity"
         data = {[
           {
           header:"Cloud Security Posture Management (CSPM)",

@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../components/Header'
+// import Header from '../components/Header'
 import { SubHeader } from '../components/SubHeader'
 import CloudSpecial from '../components/Special'
 import { KeyFeaturesSection } from '../key-features'
@@ -11,7 +11,7 @@ const ProductivitySuite = () => {
   return (
     <Section data-id="productivity-suite" id='productivity-suite'>
            <Index
-        title="Cloud License"
+        title="Productivity Suite"
         slug="cloud-services"
         data = {[
           {
@@ -26,7 +26,7 @@ const ProductivitySuite = () => {
         
       ]}
       />
-      <Header title={"Productivity Suite"}/> 
+      {/* <Header title={"Productivity Suite"}/>  */}
        <SubHeader
       title='Microsoft Office 365'
       description={msDesc}

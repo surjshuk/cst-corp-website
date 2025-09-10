@@ -12,6 +12,7 @@ import {
   SheetContent,
 } from "@/components/ui/sheet"
 import { useState } from "react";
+import { UpButton } from "./UpButton";
 
 const navItems = [
   {
@@ -83,6 +84,8 @@ const navItems = [
       { id: "firewall", label: "firewall" },
       { id: "network-monitoring", label: "Network Monitoring" },
       { id: "network-storage", label: "Network Storage" },
+      { id: "routing-and-switching", label: "routing and switching" },
+
     ],
   },
   {
@@ -92,12 +95,15 @@ const navItems = [
   
 ];
 
+
+
 function SideNavItems() {
   const pathname = usePathname();
   const { activeSection } = useActiveSection();
 
   return (
     <div className="relative h-full mt-8">
+      <UpButton activeSection = {activeSection}/>
       <nav className="relative space-y-4">
         {navItems.map((item) => {
           const isActive = pathname === item.href;
@@ -140,7 +146,7 @@ function SideNavItems() {
                               activeSection === sub.id
                                 ? "text-black font-medium"
                                 : "text-neutral-500"
-                            }`}
+                            } capitalize`}
                           >
                             {sub.label}
                           </a>

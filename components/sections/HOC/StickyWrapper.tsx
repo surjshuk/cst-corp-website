@@ -4,18 +4,18 @@ import React, { useState, useEffect, ReactNode, useRef } from 'react';
 
 const StickyWrapper = ({id, className, children, top}: {id: string, className: string, children: ReactNode, top?: boolean}) => {
     const [isSticky, setIsSticky] = useState(top); // Track sticky state -> true => sticky
-    const sectionRef = useRef<HTMLDivElement | null>(null); // Reference to the Hero section
+    const divRef = useRef<HTMLDivElement | null>(null); // Reference to the Hero div
 
     // Effect to handle scroll behavior
     useEffect(() => {
         const handleScroll = () => {
-        if (sectionRef.current && top) {
-            const sectionHeight = sectionRef.current.offsetHeight;
+        if (divRef.current && top) {
+            const divHeight = divRef.current.offsetHeight;
             const scrollPosition = window.scrollY;
 
-            // Check if the scroll position is past the height of the section
-            if (scrollPosition > sectionHeight) {
-            setIsSticky(false); // Remove sticky when scrolled past the Hero section
+            // Check if the scroll position is past the height of the div
+            if (scrollPosition > divHeight) {
+            setIsSticky(false); // Remove sticky when scrolled past the Hero div
             } else {
             setIsSticky(true); // Keep sticky if still in view
             }
@@ -32,13 +32,13 @@ const StickyWrapper = ({id, className, children, top}: {id: string, className: s
     }, [top]);
     
     return (
-        <section
+        <div
             className={cn(`${isSticky ? 'sticky top-0 z-10' : 'static'}`, className)}
             id={id}
-            ref={sectionRef}
+            ref={divRef}
         >
            {children}
-        </section>
+        </div>
     );
 }
 

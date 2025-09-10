@@ -28,7 +28,7 @@ import { cyberSecBG1 } from "@/app/assets";
 
 
   return (
-    <section
+    <div
       ref={wrapperRef}
       style={{ height: `${count * 100}vh` }}
       className="relative w-full "
@@ -73,7 +73,7 @@ import { cyberSecBG1 } from "@/app/assets";
           />
         </div>
       </motion.div>
-    </section>
+    </div>
   );
 }
 

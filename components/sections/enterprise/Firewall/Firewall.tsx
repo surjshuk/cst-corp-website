@@ -2,14 +2,33 @@ import React from 'react'
 import CloudSpecial from '../../cloud-services/components/Special'
 import { KeyFeaturesSection } from '../../cloud-services/key-features'
 import { barracudaBenefits, barracudaDeploy, barracudaDesc, barracudaFeatures, barracudaModelSpecs, ciscoDeploy, ciscoDesc, ciscoFeature, ciscoTabData, fortinetDeploy, fortinetDesc, fortinetFeature, fortinetTabData } from './data'
-import Header from '../components/Header'
+// import Header from '../components/Header'
 import SubHeader from '../components/SubHeader'
 import Section from '@/components/Section'
+import Index from '../components/Index'
 
 const Firewall = () => {
   return (
     <Section data-id="firewall" id="firewall">
-      <Header title={"Firewall"}/> 
+      <Index
+        title="Firewall"
+        slug="enterprise-network"
+        data = {[
+          {
+          header:"Firewall",
+        
+          subheader:[
+         `Cisco`,
+          `Fortinet Firewalls`,
+          `Barracuda CloudGen Firewall`,
+          
+        
+        ]},
+       
+        
+      ]}
+      />
+      {/* <Header title={"Firewall"}/>  */}
 
       <SubHeader
   title="Cisco"

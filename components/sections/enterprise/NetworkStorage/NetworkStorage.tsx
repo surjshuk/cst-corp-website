@@ -5,11 +5,91 @@ import { cephBenefits, cephDesc, cloudObjectBenefits, cloudObjectDesc, cloudVolu
 import Header from '../components/Header'
 import SubHeader from '../components/SubHeader'
 import Section from '@/components/Section'
+import Index from '../components/Index'
 
 const NetworkStorage = () => {
   return (
     <Section data-id="network-storage" id='network-storage'>
-<Header title={"Network Storage"}/> 
+      <Index
+        title="Network Storage"
+        slug="enterprise-network"
+        data = {[
+          {
+          header:"Dell EMC Network Storage Solutions",
+        
+          subheader:[
+         `EMC Unity XT`,
+         `EMC PowerMax`,
+         `EMC Isilon`,
+         `Dell ECS (Elastic Cloud Storage)`,
+         `Dell VxRail`,
+         
+        
+        ]},
+        {
+          header:"NetApp Storage Solutions",
+          subheader:[
+            `NetApp AFF (All Flash FAS)`,
+            `NetApp FAS (Fabric-Attached Storage)`,
+            `NetApp ONTAP`,
+            `NetApp StorageGRID`,
+            `HPE Nimble Storage`,
+            `HPE Cloud Volumes`,
+            `HPE Nimble Storage InfoSight`,
+            ``
+          ]
+        },
+        {
+          header:"IBM Network Storage Solutions",
+          subheader:[
+            `IBM FlashSystem`,
+            `IBM Storwize`,
+            `IBM Cloud Object Storage`,
+            `IBM Spectrum Storage Suite`,
+          
+          ]
+        },
+         {
+          header:"Red Hat Network Storage Solutions",
+          subheader:[
+            `Red Hat Ceph Storage`,
+            `Red Hat Gluster Storage`,
+            `Red Hat OpenShift Container Storage`,
+            
+          
+          ]
+        },
+        {
+          header:"Veeam Network Storage Solutions",
+          subheader:[
+          `Veeam Backup & Replication`,
+          `Veeam Cloud Connect`,
+          
+          
+          ]
+        },
+         {
+          header:"Buffalo Technology Network Storage Solutions",
+          subheader:[
+         `Buffalo TeraStation`,
+         `Buffalo LinkStation`,
+         
+          ]
+        },
+          {
+          header:"QNAP Network Storage Solutions",
+          subheader:[
+         `QNAP NAS Storage`,
+         `QNAP Enterprise Storage`,
+         `QNAP Cloud Storage`,
+
+          ]
+        },
+                
+      ]}
+      />
+{/* <Header title={"Network Storage"}/>  */}
+
 
 <Header title={"Dell EMC Network Storage Solutions"}/> 
 

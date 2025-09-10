@@ -3,7 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 
 import { useRef, useState } from "react";
-import { MainCarouselType } from "../type";
+import { MainCarouselType } from "../../type";
 
  type MainCarouselProp = {
   tabData: MainCarouselType[]
@@ -28,7 +28,7 @@ export const  MainCarousel : React.FC<MainCarouselProp> =  ({tabData}) => {
 
 
   return (
-    <section
+    <div
       ref={wrapperRef}
       style={{ height: `${count * 100}vh` }}
       className="relative w-full "
@@ -71,6 +71,6 @@ export const  MainCarousel : React.FC<MainCarouselProp> =  ({tabData}) => {
           />
         </div>
       </motion.div>
-    </section>
+    </div>
   );
 }

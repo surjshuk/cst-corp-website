@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import localFont from "next/font/local";
 import "./globals.css"
 // import SideNavbar from "@/components/sections/common/SideNavbar"
-import { Footer } from "@/components/sections"
+// import { Footer } from "@/components/sections"
 // import Image from "next/image"
 // import { LOGO } from "@/app/assets/"
 import { GoogleAnalytics } from '@next/third-parties/google'
@@ -10,6 +10,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Analytics } from '@vercel/analytics/next';
 import { ActiveSectionProvider } from "@/context/ActiveSectionContext";
 import Sidebar from "@/components/Sidenavbar";
+import { Footer } from "@/components/sections";
 
 
 // const inter = Inter({ subsets: ["latin"] })
@@ -81,6 +82,7 @@ export default function RootLayout({
             <main className=" bg-background w-full">
               {children}
               <Footer />
+              {/* <UpButton/> */}
             </main>
           </ActiveSectionProvider>
         </div>

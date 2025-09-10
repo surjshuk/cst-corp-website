@@ -74,19 +74,24 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElemen
     }
 
     try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(validation.data), // Already validated
-      });
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
 
-      if (!res.ok) throw new Error("Failed to send message");
+    const result = await res.json();
 
+    if (result.success) {
       setFormData({ firstName: "", lastName: "", email: "", phoneNumber: "", message: "" });
       setStatus({ loading: false, success: "Message sent successfully!", error: null });
-    } catch (err) {
-      setStatus({ loading: false, success: null, error: (err as Error).message });
+    } else {
+      throw new Error(result.error || "Failed to send message");
     }
+  } catch (err) {
+    const error = err as Error;
+    setStatus({ loading: false, success: null, error: error.message });
+  }
   };
 
     return (

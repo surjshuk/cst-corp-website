@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../components/Header'
+// import Header from '../components/Header'
 import { SubHeader } from '../components/SubHeader'
 import { arubaDesc, arubaFeature, arubaTabData, ciscoBenifits, ciscoDesc, cloudPaloDesc, cloudPaloFeature, cloudPaloTabData, dnsFeature, fortiGateDesc, fortiGateFeature, fortiGateTabData, loadFeature, vmCloudDesc, VmDesc, whyaruba, whyCloudPalo, whyFortiate, whyVmDesc } from './data'
 import CloudSpecial from '../components/Special'
@@ -15,7 +15,7 @@ const CloudNetwork = () => {
   return (
     <Section data-id="cloud-network" id="cloud-network">
       <Index
-        title="Cloud License"
+        title="Cloud Network"
         slug="cloud-services"
         data = {[
           {
@@ -32,7 +32,7 @@ const CloudNetwork = () => {
         
       ]}
       />
-        <Header title={"Cloud Network"}/> 
+        {/* <Header title={"Cloud Network"}/>  */}
        <SubHeader
       title='Palo Alto Networks GlobalProtect Cloud Services'
       subtitle='Secure Access Anywhere, Anytime'

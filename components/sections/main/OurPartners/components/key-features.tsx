@@ -17,7 +17,7 @@ export const KeyFeaturesSection: React.FC<KeyFeaturesSectionProps> = ({ features
   };
 
   return (
-    <section
+    <div
       className="pt-10 pb-7 "
       id="key-features"
     >
@@ -51,6 +51,6 @@ export const KeyFeaturesSection: React.FC<KeyFeaturesSectionProps> = ({ features
           </Collapsible>
         ))}
       </div>
-    </section>
+    </div>
   );
 };

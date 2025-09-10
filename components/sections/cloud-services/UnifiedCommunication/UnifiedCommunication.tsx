@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../components/Header'
+// import Header from '../components/Header'
 import { Subhero } from '../components/subhero'
 import { KeyFeaturesSection } from '../key-features'
 import { ciscoBenefits, ciscoDesc, ciscoFeature, contactCenterBenefits, contactCenterDesc, contactCenterFeature, intermediaArchivingDesc, intermediaArchivingFeatures, intermediaBackupDesc, intermediaBackupFeatures, intermediaContactCenterDesc, intermediaContactCenterFeatures, intermediaSipTrunkingDesc, intermediaSipTrunkingFeatures, intermediaUniteDesc, intermediaUniteFeatures, manageBenefits, manageDesc, manageFeature, rcContactCenterDesc, rcContactCenterFeatures, rcMessagingDesc, rcMessagingFeatures, rcMobileAppDesc, rcMobileAppFeatures, rcPhoneDesc, rcPhoneFeatures, rcVideoDesc, rcVideoFeatures, ringcentralVoipDesc, ringcentralVoipFeatures, teamsChatMessagingDesc, teamsChatMessagingFeature, teamsCollaborationToolsDesc, teamsCollaborationToolsFeature, teamsRoomsDesc, teamsRoomsFeature, teamsVideoConferencingDesc, teamsVideoConferencingFeature, teamsVoiceCallingDesc, teamsVoiceCallingFeature, teamsWebinarHostingDesc, teamsWebinarHostingFeature, vonageAIDesc, vonageAIFeatures, vonageMessagingDesc, vonageMessagingFeatures, vonageProgVoiceDesc, vonageProgVoiceFeatures, vonageVideoDesc, vonageVideoFeatures, vonageVoipDesc, vonageVoipFeatures, webexAdvancedFeatures, webexCallingBenefits, webexCallingDesc, webexCallingFeature, webexDesc, webexDevicesBenefits, webexDevicesDesc, webexDevicesFeature, webexEventsBenefits, webexEventsDesc, webexEventsFeature, webexMeetingsBenefits, webexMeetingsDesc, webexMeetingsFeature, webexMessagingBenefits, webexMessagingDesc, webexMessagingFeature } from './data'
@@ -25,7 +25,7 @@ const UnifiedCommunication = () => {
         
       ]}
       />
-      <Header title={"Unified Communications as a Service"}/> 
+      {/* <Header title={"Unified Communications as a Service"}/>  */}
        <Subhero
       subtitle='Cisco UCaaS'
       intro='Cisco Unified Communications'

@@ -1,5 +1,5 @@
 import React from 'react'
-import { SubPoints } from '@/types/declaration';
+import { SubPoints } from '../../type';
 
 type SubSectiontype = {
   sectionTitle:string;

@@ -22,7 +22,7 @@ export const KeyFeaturesSection: React.FC<KeyFeaturesSectionProps> = ({title, fe
   };
 
   return (
-    <section
+    <div
       className=" space-y-20 px-5 pt-20 pb-7 tablet:space-y-20 tablet:px-12 tablet:pb-12 laptop:ml-0 laptop:px-20 laptop:pt-40 laptop:pb-20"
       id="key-features"
     >
@@ -57,6 +57,6 @@ export const KeyFeaturesSection: React.FC<KeyFeaturesSectionProps> = ({title, fe
           </Collapsible>
         ))}
       </div>
-    </section>
+    </div>
   );
 };

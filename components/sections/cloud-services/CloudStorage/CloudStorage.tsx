@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../components/Header'
+// import Header from '../components/Header'
 import { azureesc, azureFeature, azurTabs,dropDesc,dropFeature,dropTabs,googleDesc,googleFeature,googleTabs,s3esc,s3Feature,s3Tabs,veemDesc,veemFeature,veemTabs,whyAzure, whyDrop, whyGoogle, whyS3, whyVeem } from './data'
 import CloudSpecial from '../components/Special'
 import { KeyFeaturesSection } from '../key-features'
@@ -12,7 +12,7 @@ const CloudStorage = () => {
   return (
     <Section id="cloud-storage" data-id="cloud-storage">
             <Index
-        title="Cloud License"
+        title="Cloud Ṣtorage"
         slug="cloud-services"
         data = {[
           {
@@ -29,7 +29,7 @@ const CloudStorage = () => {
         
       ]}
       />
-      <Header title={"Cloud Storage"}/> 
+      {/* <Header title={"Cloud Storage"}/>  */}
       <SubHeader
             title='Microsoft Azure'
             position='right'
