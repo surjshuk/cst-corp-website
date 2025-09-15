@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { z } from "zod";
+import {toast} from "react-hot-toast"
 
 const contactSchema = z.object({
   firstName: z
@@ -85,11 +86,13 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElemen
     if (result.success) {
       setFormData({ firstName: "", lastName: "", email: "", phoneNumber: "", message: "" });
       setStatus({ loading: false, success: "Message sent successfully!", error: null });
+        toast.success("Form Submited Successfully")
     } else {
       throw new Error(result.error || "Failed to send message");
     }
   } catch (err) {
     const error = err as Error;
+    toast.error("Failed to submit form")
     setStatus({ loading: false, success: null, error: error.message });
   }
   };
