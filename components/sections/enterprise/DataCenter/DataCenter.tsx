@@ -1,6 +1,6 @@
 import React from 'react'
-import { broadcomBenefits, broadcomDesc, broadcomFeatures, ciscoDesc, ciscoTabData, dellDesc, dellFeature, dellTabData, fortinetBenefits, fortinetDesc, fortinetFeatures, hpeDesc, hpeFeature, hpeTabData, ibmDesc, ibmFeature, ibmTabData, ibmWhy, prismaBenefits, prismaDesc, prismaFeatures, vmwareBenefits, vmwareDesc, vmwareFeatures, whatIsBroadcom, whatIsFortinet, whatIsPrisma, whatIsVmware, whyCisco, whyDell, whyHPE } from './data'
-import { cloudPaloFeature } from '../../cloud-services/CloudNetwork/data'
+import { broadcomBenefits, broadcomDesc, broadcomFeatures, dellDesc, dellFeature, dellTabData, fortinetBenefits, fortinetDesc, fortinetFeatures, hpeDesc, hpeFeature, hpeTabData, ibmDesc, ibmFeature, ibmTabData, ibmWhy, prismaBenefits, prismaDesc, prismaFeatures, vmwareBenefits, vmwareDesc, vmwareFeatures, whatIsBroadcom, whatIsFortinet, whatIsPrisma, whatIsVmware, whyDell, whyHPE } from './data'
+
 import { KeyFeaturesSection } from '../../cloud-services/key-features'
 // import Header from '../components/Header'
 import SubHeader from '../components/SubHeader'
@@ -22,7 +22,7 @@ const DataCenter = () => {
           header:"Data Center",
         
           subheader:[
-         `Cisco Nexus Switches`,
+        //  `Cisco Nexus Switches`,
          `HPE Data Center Networking`,
          `Dell EMC Data Center Networking`,
          `IBM Cloud Data Center Networking`,
@@ -38,7 +38,7 @@ const DataCenter = () => {
       />
 
       {/* <Header title={"Data Center"}/>  */}
-       <SubHeader
+       {/* <SubHeader
       title='Cisco Nexus Switches'
       subtitle='The Industry-Leading Data Center Networking Solution for Performance, Scalability, and Flexibility'
       description={ciscoDesc}
@@ -55,7 +55,7 @@ const DataCenter = () => {
       
         <MainCarousel tabData={ciscoTabData} />
         
-        <KeyFeaturesSection title="Key Features of Cisco Nexus Switches" features={cloudPaloFeature}/>
+        <KeyFeaturesSection title="Key Features of Cisco Nexus Switches" features={cloudPaloFeature}/> */}
        
       <SubHeader
   title="HPE Data Center Networking"

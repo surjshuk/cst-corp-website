@@ -23,12 +23,12 @@ const Index: React.FC<IndexType> = ({ title, slug,data }) => {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <div className='lg:px-20 px-4 pt-8 mt-12 mb-8 flex items-start'>
-      <div className='w-full'>
-        <h1 className='md:text-7xl text-4xl w-[66%] capitalize'>{title}</h1>
+        <div className='lg:px-20 px-4 pt-8 mt-12 mb-8 xl:flex-row flex-col flex items-start'>
+      <div className='2xl:w-full w-[80%]'>
+        <h1 className='md:text-7xl text-4xl 2xl:w-[66%] w-[70%] capitalize'>{title}</h1>
       </div>
 
-      <div className='w-[75%] grid grid-cols-2 gap-14'>
+      <div className='2xl:w-[75%] w-full grid md:grid-cols-2 grid-cols-1 gap-14 xl:mt-0 mt-10'>
         {data.map((item, idx) => (
           <div
             key={idx}

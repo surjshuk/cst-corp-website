@@ -58,4 +58,26 @@ export const twinPoints = [
     },
 ]
 
-  
+  export const bramerPoints = [ 
+    {
+        title:"Autonomous Navigation",
+        description:"Drones use AI-powered perception systems (computer vision, LiDAR, GPS fusion) to fly without constant human control."
+    },
+    {
+        title:"Smart Mission Planning",
+        description:"AI algorithms analyze terrain, weather, and no-fly zones to optimize routes and waypoints."
+    },
+    {
+        title:"Real-Time Object Detection",
+        description:"Onboard machine learning models allow drones to identify vehicles, people, infrastructure, or hazards in real time."
+    },
+    {
+        title:"Predictive Maintenance",
+        description:"AI monitors drone health through sensor data (motors, battery, rotors). Predictive analytics detect anomalies early, reducing downtime and preventing costly failures."
+    },
+    {
+        title:"Swarm Intelligence",
+        description:"Multiple drones coordinate as a team using distributed AI, enabling coverage of large areas simultaneously. Applications include agriculture spraying, disaster relief, and battlefield reconnaissance."
+    },
+   
+]

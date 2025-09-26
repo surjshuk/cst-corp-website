@@ -4,8 +4,8 @@ import { CollapsiblePoints } from "@/components/shared/CollapisblePoints";
 import { ThreePoints } from "@/components/shared/ThreePoints";
 import Header from "../components/Header";
 import SubHeader from "../components/SubHeader";
-import { awsFeatures, barracudaFeatures, casbCloudLockBenefits, casbCloudLockFeatures, casbMicrosoftFeatures, casbPaloAltoBenefits, casbPaloAltoFeatures, casbProofPointBenefits, casbProofPointFeatures, casbTrendMicroBenefits, casbTrendMicroFeatures, crowdStrikeBenefits, crowdStrikeFeatures, cwppAWSBenefits, cwppAWSFeatures, cwppCloudBenefits, cwppCloudFeatures, cwppFeatures, cwppMicroBenefits, cwppMicroFeatures, cwppMicrosoftBenefits, cwppMicrosoftFeatures, cwppPrismaBenefits, cwppPrismaFeatures, fortiSASEFeatures, googleFeatures, idaasGoogleFeatures, idaasMicrosoftFeatures, idaasOktaFeatures, microFeatures, microsoftFeatures, prismaFeatures, saseCiscoFeatures, sasePrismaFeatures, saseVersaFeatures, saseVMwareFeatures } from "./data";
-import { idaasDuoSecFeatures, idaasIBMFeatures } from "../DataSecurity/data";
+import { awsFeatures, barracudaFeatures, casbCloudLockBenefits, casbMicrosoftFeatures, casbPaloAltoBenefits, casbPaloAltoFeatures, casbProofPointBenefits, casbProofPointFeatures, casbTrendMicroBenefits, casbTrendMicroFeatures, crowdStrikeBenefits, crowdStrikeFeatures, cwppAWSBenefits, cwppAWSFeatures, cwppCloudBenefits, cwppCloudFeatures, cwppFeatures, cwppMicroBenefits, cwppMicroFeatures, cwppMicrosoftBenefits, cwppMicrosoftFeatures, cwppPrismaBenefits, cwppPrismaFeatures, fortiSASEFeatures, googleFeatures, idaasGoogleFeatures, idaasMicrosoftFeatures, idaasOktaFeatures, microFeatures, microsoftFeatures, prismaFeatures, sasePrismaFeatures, saseVersaFeatures, saseVMwareFeatures } from "./data";
+import {idaasIBMFeatures } from "../DataSecurity/data";
 import Index from "../components/Index";
 
 export const CloudSecurity = () => (
@@ -43,7 +43,7 @@ export const CloudSecurity = () => (
           header:"Secure Access Service Edge (SASE)",
           section:"sase",
           subheader:[
-          `Cisco Umbrella`,
+        
           `FortiSASE`,
           `Palo Alto Prisma Access`,
           `VMware SASE`,
@@ -55,7 +55,7 @@ export const CloudSecurity = () => (
           section:"casb",
           subheader:[
           `Microsoft Defender - CASB`,
-          `Cisco Cloudlock - CASB`,
+          
           `Palo Alto Networks - CASB`,
           `Trend Micro Cloud App Security - CASB`,
           `Proofpoint - CASB`,
@@ -69,7 +69,7 @@ export const CloudSecurity = () => (
           `Microsoft Azure AD (IDaaS)`,
           `Google Workspace Identity (IDaaS)`,
           `IBM Security Verify (IDaaS)`,
-          `Duo Security by Cisco (IDaaS)`,
+        
          
         ]}
         
@@ -211,13 +211,13 @@ export const CloudSecurity = () => (
       {/* Secure Access Service Edge (SASE) */}
       <Header title="Secure Access Service Edge (SASE)" />
 
-      <SubHeader
+      {/* <SubHeader
         title="Cisco Umbrella"
         description="Cisco Umbrella is a cloud-delivered security solution that provides a range of services to protect users and networks from cyber threats. Umbrella combines Secure Web Gateway (SWG), DNS-layer security, firewall, and cloud-delivered firewall capabilities, with integration into Cisco SD-WAN for secure, cloud-based access."
         group="Cloud Security" 
         section="SASE"
         position="right" />
-      <CollapsiblePoints data={saseCiscoFeatures} />
+      <CollapsiblePoints data={saseCiscoFeatures} /> */}
 
 
 
@@ -278,13 +278,13 @@ export const CloudSecurity = () => (
       <CollapsiblePoints data={casbMicrosoftFeatures} />
 
 
-      <SubHeader
+      {/* <SubHeader
         title=" Cisco Cloudlock - CASB "
         description="Cisco Cloudlock is a cloud-native CASB solution that provides protection for cloud environments by monitoring and controlling data in cloud applications. It offers a user-friendly interface and focuses on reducing the risk associated with cloud adoption, including data breaches, compliance violations, and insider threats. "
         group="Cloud Security" 
         section="CASB"
         position="right" />
-      <CollapsiblePoints data={casbCloudLockFeatures} />
+      <CollapsiblePoints data={casbCloudLockFeatures} /> */}
 
       <ThreePoints points={casbCloudLockBenefits} />
 
@@ -361,13 +361,13 @@ export const CloudSecurity = () => (
         position="right" />
       <CollapsiblePoints data={idaasIBMFeatures} />
 
-      <SubHeader
+      {/* <SubHeader
         title="Duo Security by Cisco (IDaaS)"
         description="Duo Security, a Cisco company, offers a cloud-based IDaaS platform known for its simplicity and effectiveness in securing user identities and devices. It specializes in multi-factor authentication (MFA), device security, and secure access to cloud and on-premises applications, making it a popular choice for organizations looking to protect their digital assets."
         group="Cloud Security" 
         section="IDaaS"
         position="right"  />
-      <CollapsiblePoints data={idaasDuoSecFeatures} />
+      <CollapsiblePoints data={idaasDuoSecFeatures} /> */}
 
     </Section>
 

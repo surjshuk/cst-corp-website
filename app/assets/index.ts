@@ -145,16 +145,19 @@ export {default as keyhub} from "./images/backgrounds/keyhub.png"
 
 export {default as keysales} from "./images/backgrounds/keysales.png"
 
+export {default as mspowerbi} from "./images/backgrounds/mspowerbi.jpg"
+export {default as outsys} from "./images/backgrounds/outsys.png"
+export {default as outlow} from "./images/backgrounds/outlow.png"
+export {default as appian} from "./images/backgrounds/appian.avif"
+export {default as aicons} from "./images/backgrounds/aicons.png"
+export {default as digitwin} from "./images/backgrounds/digitwin.jpg"
+export {default as aihazard} from "./images/backgrounds/aihazard.jpg"
 // export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
 // export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
 // export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
 // export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
 // export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
-// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
-// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
-// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
-// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
-// export {default as ibmobject} from "./images/backgrounds/ibmobject.png"
+
 
 
 

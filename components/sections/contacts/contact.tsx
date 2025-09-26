@@ -100,7 +100,7 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElemen
     return (
         <div className="p-5 tablet:px-12 tablet:py-10 laptop:px-20 laptop:py-10 bg-black text-white" id="contacts">
             {/* Locations Section */}
-            <div className="pb-60">
+            <div className="pb-32">
                 <h2 className=" mb-3 text-[28px] leading-tight tablet:font-medium tablet:text-5xl">Locations</h2>
                 <div className="space-y-6">
                     <div className="flex gap-24 font-medium">

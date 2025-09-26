@@ -1,5 +1,6 @@
 /* ----- ----- ----- ----- ----- Appian ----- ----- ----- ----- ----- */
 
+import { appian, mspowerbi, outlow, outsys } from "@/app/assets";
 import { Feature } from "@/types/declaration";
 
 export const AppianData = [
@@ -7,7 +8,8 @@ export const AppianData = [
     id: "appian-banking",
     title: "Banking",
     heading: "Transforming Financial Services with Innovation",
-    description: [
+    image:appian,
+    description: 
       {
         subheading:
           "The banking sector requires agility to respond to evolving customer expectations, compliance requirements, and market conditions. Appian’s low-code platform empowers banks to enhance service delivery while ensuring operational efficiency.",
@@ -34,13 +36,14 @@ export const AppianData = [
           }
         ]
       }
-    ]
+    
   },
   {
     id: "appian-healthcare",
     title: "Healthcare",
     heading: "Improving Patient Care and Operational Efficiency",
-    description: [
+        image:appian,
+    description: 
       {
         subheading:
           "In healthcare, Appian’s solutions prioritize patient outcomes and operational effectiveness. Its low-code capabilities address complex processes, regulatory demands, and the need for interoperability.",
@@ -71,13 +74,14 @@ export const AppianData = [
           }
         ]
       }
-    ]
+    
   },
   {
     id: "appian-energy",
     title: "Energy",
     heading: "Enhancing Sustainability and Operational Excellence",
-    description: [
+        image:appian,
+    description: 
       {
         subheading:
           "The energy sector faces challenges like fluctuating demand, regulatory changes, and the push toward sustainability. Appian delivers solutions that improve efficiency and adapt to industry changes.",
@@ -104,13 +108,14 @@ export const AppianData = [
           }
         ]
       }
-    ]
+    
   },
   {
     id: "appian-retail",
     title: "Retail",
     heading: "Elevating Customer Experience and Streamlining Operations",
-    description: [
+        image:appian,
+    description: 
       {
         subheading:
           "Retailers must adapt to rapidly changing customer behaviors and market trends. Appian’s low-code platform helps businesses deliver personalized experiences while optimizing backend processes.",
@@ -137,13 +142,14 @@ export const AppianData = [
           }
         ]
       }
-    ]
+    
   },
   {
     id: "appian-government",
     title: "Government",
     heading: "Enhancing Public Services and Accountability",
-    description: [
+        image:appian,
+    description: 
       {
         subheading:
           "Appian empowers government agencies to modernize operations, enhance citizen engagement, and increase transparency. Its low-code platform simplifies the development of secure, scalable applications for public sector needs.",
@@ -170,13 +176,14 @@ export const AppianData = [
           }
         ]
       }
-    ]
+    
   },
   {
     id: "appian-manufacturing",
     title: "Manufacturing",
     heading: "Driving Innovation and Operational Excellence",
-    description: [
+        image:appian,
+    description: 
       {
         subheading:
           "Manufacturers must optimize production, supply chain operations, and workforce management to stay competitive. Appian’s solutions provide the tools needed to innovate while ensuring efficiency and quality.",
@@ -203,7 +210,7 @@ export const AppianData = [
           }
         ]
       }
-    ]
+    
   }
 ];
 
@@ -253,7 +260,8 @@ export const outSystemsData = [
     id: "oustsystem-1",
     title: "outSystems",
     heading: "Full-Stack Development Made Simple",
-    description: [
+    image:outlow,
+    description: 
       {
         subheading:
           "OutSystems provides a robust full-stack development environment that caters to all aspects of application creation—from frontend design to backend logic and database management.",
@@ -274,13 +282,14 @@ export const outSystemsData = [
           }
         ]
       }
-    ]
+    
   },
   {
     id: "outSytems-2",
     title: "outSytems-2",
     heading: "Improving Patient Care and Operational Efficiency",
-    description: [
+     image:outlow,
+    description: 
       {
         subheading:
           "In healthcare, Appian’s solutions prioritize patient outcomes and operational effectiveness. Its low-code capabilities address complex processes, regulatory demands, and the need for interoperability.",
@@ -307,13 +316,14 @@ export const outSystemsData = [
           }
         ]
       }
-    ]
+    
   },
   {
     id: "outSystems-3",
     title: "outSystems-3",
     heading: "Generative AI Toolset",
-    description: [
+     image:outlow,
+    description: 
       {
         subheading:
           "Energy enterprises face increasing demand for sustainable, reliable, and efficient energy management. Appian offers digital solutions to optimize field operations and asset performance.",
@@ -333,13 +343,14 @@ export const outSystemsData = [
           
         ]
       }
-    ]
+    
   },
   {
     id: "outSystems-4",
     title: "outSystems-4",
     heading: "Pre-Built Integrations for Seamless Connectivity",
-    description: [
+     image:outlow,
+    description: 
       {
         subheading:
           "OutSystems simplifies integration with a comprehensive library of pre-built connectors and APIs.",
@@ -354,13 +365,14 @@ export const outSystemsData = [
           },
         ]
       }
-    ]
+    
   },
   {
     id: "outSystems-5",
     title: "outSystems-5",
     heading: "Advanced Automation Capabilities",
-    description: [
+     image:outlow,
+    description: 
       {
         subheading:
           "OutSystems takes automation to the next level, helping organizations streamline operations and improve efficiency.",
@@ -380,7 +392,7 @@ export const outSystemsData = [
     
         ]
       }
-    ]
+    
   }
 ];
 
@@ -419,7 +431,8 @@ export const outSystemsAnotherData = [
     id: "oustsystem-banking",
     title: "Banking",
     heading: "Digital Transformation in Financial Services",
-    description: [
+    image:outsys,
+    description: 
       {
         subheading:
           "OutSystems helps banks and financial institutions modernize their operations, deliver superior customer experiences, and maintain compliance with ever-evolving regulations.",
@@ -449,13 +462,14 @@ export const outSystemsAnotherData = [
           }
         ]
       }
-    ]
+    
   },
   {
     id: "outSytems-healthcare",
     title: "Healthcare",
     heading: "Transforming Patient Care and Operations",
-    description: [
+     image:outsys,
+    description: 
       {
         subheading:
           "OutSystems enables healthcare organizations to deliver better patient outcomes through innovative, secure, and scalable solutions.",
@@ -482,13 +496,14 @@ export const outSystemsAnotherData = [
           }
         ]
       }
-    ]
+    
   },
   {
     id: "outSystems-energy",
     title: "Energy",
     heading: "Driving Efficiency and Sustainability",
-    description: [
+     image:outsys,
+    description: 
       {
         subheading:
           "OutSystems helps energy companies navigate the complexities of a rapidly evolving industry by enabling digital transformation and operational optimization.",
@@ -516,13 +531,14 @@ export const outSystemsAnotherData = [
           
         ]
       }
-    ]
+    
   },
   {
     id: "outSystems-retail",
     title: "Retail",
     heading: "Enhancing Customer Experiences and Operational Efficiency",
-    description: [
+     image:outsys,
+    description: 
       {
         subheading:
           "OutSystems empowers retailers to stay competitive by enabling agile, data-driven solutions that elevate customer experiences and streamline operations.",
@@ -549,13 +565,14 @@ export const outSystemsAnotherData = [
           },
         ]
       }
-    ]
+    
   },
   {
     id: "outSystems-govenment",
     title: "Government",
     heading: "Accelerating Public Sector Innovation",
-    description: [
+     image:outsys,
+    description: 
       {
         subheading:
           "OutSystems helps governments and public sector organizations deliver citizen-centric services while improving efficiency and reducing costs.",
@@ -583,13 +600,14 @@ export const outSystemsAnotherData = [
     
         ]
       }
-    ]
+    
   },
   {
     id: "outSystems-manufacturing",
     title: "Manufacturing",
     heading: "Driving Smart Factory and Industry 4.0 Initiatives",
-    description: [
+     image:outsys,
+    description: 
       {
         subheading:
           "OutSystems equips manufacturers with the tools to innovate, optimize production, and maintain a competitive edge in the era of Industry 4.0.",
@@ -617,7 +635,7 @@ export const outSystemsAnotherData = [
     
         ]
       }
-    ]
+    
   }
 ];
 
@@ -661,7 +679,8 @@ export const powerBiData = [
     id: "powerBi-banking",
     title: "Banking",
     heading: "Enhancing Financial Insights and Process Automation",
-    description: [
+    image: mspowerbi,
+    description: 
       {
         subheading:
           "Power BI",
@@ -699,13 +718,14 @@ export const powerBiData = [
           },
         ]
       }
-    ]
+    
   },
   {
     id: "powerBi-healthcare",
     title: "Healthcare",
     heading: "Empowering Patient Care and Operational Efficiency",
-    description: [
+     image: mspowerbi,
+    description: 
       {
         subheading:
           "Power BI",
@@ -740,13 +760,14 @@ export const powerBiData = [
           },
         ]
       }
-    ]
+    
   },
   {
     id: "powerBi-energy",
     title: "Energy",
     heading: "Optimizing Operations and Enhancing Sustainability",
-    description: [
+     image: mspowerbi,
+    description: 
       {
         subheading:
           "Power BI",
@@ -782,13 +803,14 @@ export const powerBiData = [
           
         ]
       }
-    ]
+    
   },
   {
     id: "powerBi-retail",
     title: "Retail",
     heading: "Enhancing Customer Experiences and Operational Efficiency",
-    description: [
+     image: mspowerbi,
+    description: 
       {
         subheading:
           "Power BI",
@@ -823,13 +845,14 @@ export const powerBiData = [
           },
         ]
       }
-    ]
+    
   },
   {
     id: "powerBi-govenment",
     title: "Government",
     heading: "Enhancing Public Services and Transparency",
-    description: [
+     image: mspowerbi,
+    description: 
       {
         subheading:
           "Power BI",
@@ -865,13 +888,15 @@ export const powerBiData = [
     
         ]
       }
-    ]
+    
   },
   {
     id: "powerBi-manufacturing",
     title: "Manufacturing",
     heading: "Driving Innovation and Operational Excellence",
-    description: [
+     image: mspowerbi,
+    
+    description: 
       {
         subheading:
           "Power BI",
@@ -911,7 +936,7 @@ export const powerBiData = [
     
         ]
       }
-    ]
+    
   }
 ];
 

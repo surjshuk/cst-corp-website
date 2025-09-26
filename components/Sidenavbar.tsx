@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useActiveSection } from "@/context/ActiveSectionContext";
-import ProgressLine from "./ProgressLine";
+// import ProgressLine from "./ProgressLine";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { LOGO } from "@/app/assets";
@@ -64,7 +64,7 @@ const navItems = [
       { id: "cloud-storage", label: "Cloud Storage" },
       { id: "productivity-suite", label: "Productivity Suite" },
       { id: "saas", label: "SAAS" },
-      { id: "unified-communication", label: "Unified Communication" },
+      // { id: "unified-communication", label: "Unified Communication" },
     ],
   },
   // {
@@ -112,7 +112,7 @@ function SideNavItems() {
             <div key={item.href}>
               <Link
                 href={item.href}
-                className={`text-sm font-medium ${
+                className={`text-sm font-medium transition-all hover:text-primary ${
                   isActive ? "text-primary" : "text-black"
                 }`}
               >
@@ -136,22 +136,39 @@ function SideNavItems() {
                   className="overflow-hidden relative"
                 >
                   <div className="my-4 relative">
-                    <ProgressLine />
-                    <ul className="space-y-4 ps-4">
-                      {item.sub?.map((sub) => (
-                        <li key={sub.id}>
+                    {/* <ProgressLine /> */}
+                    <ul className="space-y-0">
+                      {item.sub?.map((sub,index) => {
+                        const currentIndex = item.sub.findIndex(s => s.id === activeSection);
+                        return (
+                        <li key={sub.id} className="flex relative items-center gap-3">
+                          <motion.div
+                            className="w-0.5 h-10 bg-primary rounded-full origin-top"
+                            initial={{ scaleY: 0 }}
+                            animate={{
+                              scaleY: index < currentIndex     // past sections stay full
+                                ? 1
+                                : index === currentIndex       // current section animates
+                                ? 1
+                                : 0,
+                            }}
+                            transition={{
+                              duration: 0.3,
+                              ease: "easeInOut",
+                            }}
+                          />
                           <a
                             href={`#${sub.id}`}
-                            className={`transition-colors text-sm ${
+                            className={` hover:text-black transition-all text-sm ${
                               activeSection === sub.id
                                 ? "text-black font-medium"
-                                : "text-neutral-500"
+                                : "text-neutral-500" 
                             } capitalize`}
                           >
                             {sub.label}
                           </a>
                         </li>
-                      ))}
+                      )})}
                     </ul>
                   </div>
                 </motion.div>

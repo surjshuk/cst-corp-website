@@ -8,7 +8,7 @@ title?:string;
 
 export const ThreePoints: React.FC<BenefitsSectionProps> = ({ points,title }) => {
   return (
-    <div className="lg:p-20 p-4 mt-12 grid grid-cols-2">
+    <div className="lg:p-20 p-4 mt-12 md:grid md:grid-cols-2">
 
       <div>
         <h2 className="md:text-6xl text-4xl font-normal text-black">

@@ -1,5 +1,5 @@
 import React from 'react'
-import { altoNetworkFeatures, anyConnectFeatures, arubaNetworkPoints, barraFeatures, ciscoEnterprisePoints, ciscoIdentity, clearPassPoints, firepowerFeatures, FortiClientFeatures, fortiFeatures, fortigateFeatures, fortiNACPoints, intrusionFeatures, nextGenFeatures, paloAltoZtaPoints, paloglobalFeatures, prismaAccessPoints, trendFeatures, vmwareNetworkPoints } from './data'
+import { altoNetworkFeatures, arubaNetworkPoints, barraFeatures, clearPassPoints, FortiClientFeatures, fortiFeatures, fortigateFeatures, fortiNACPoints, intrusionFeatures, nextGenFeatures, paloAltoZtaPoints, paloglobalFeatures, prismaAccessPoints, trendFeatures, vmwareNetworkPoints } from './data'
 import { NetworkSection } from '../CloudSecurity/components/networkSection'
 import SubHeader from '../components/SubHeader'
 import Header from '../components/Header'
@@ -26,7 +26,7 @@ const Network = () => {
           subheader:[
           `FortiGate (by Fortinet)`,
           `Palo Alto Next-Generation Firewalls (NGFW)`,
-          `Cisco Firepower`,
+     
           `Barracuda Networks`,
           
         ]},
@@ -46,20 +46,20 @@ const Network = () => {
           header:"Virtual Private Network (VPN)",
           section:"vpn",
           subheader:[
-          `Cisco AnyConnect Secure Mobility Client`,
+         
           `FortiClient`,
           `Palo Alto Networks GlobalProtect`,
         
         ]},
 
         
-         {
-          header:"Network Access Control (NAC)",
-          section:"nac",
-          subheader:[
-          `Cisco Identity Services Engine (ISE)`,
+        //  {
+        //   header:"Network Access Control (NAC)",
+        //   section:"nac",
+        //   subheader:[
+        //   `Cisco Identity Services Engine (ISE)`,
      
-        ]},
+        // ]},
 
 
            {
@@ -69,7 +69,7 @@ const Network = () => {
           `FortiNAC`,
           `Aruba ClearPass Policy Manager`,
           `Palo Alto Networks Prisma Access`,
-          `Cisco Enterprise Network Design`,
+          // `Cisco Enterprise Network Design`,
           `Aruba Secure Wireless and Wired Designs`,
           `Palo Alto Networks Zero Trust Architecture`,
           `VMware Network and Security Solutions`,
@@ -99,14 +99,14 @@ const Network = () => {
             <CollapsiblePoints data={nextGenFeatures} />
       
       
-             <SubHeader
+             {/* <SubHeader
               title="Cisco Firepower"
               description="Cisco Firepower firewalls deliver comprehensive threat defense across networks, endpoints, and applications. These next-generation solutions are powered by Cisco Talos, one of the world’s largest commercial threat intelligence teams."
               group="Network Security" 
               section="Firewall Solutions"
               position="right" />
             <CollapsiblePoints data={firepowerFeatures} />
-      
+       */}
             <SubHeader
               title="Barracuda Networks"
               description="Barracuda Networks specializes in simplified and efficient firewall solutions that deliver enterprise-grade protection without the complexity of traditional setups. Barracuda firewalls are particularly strong in securing distributed networks and cloud-connected systems."
@@ -151,13 +151,13 @@ const Network = () => {
       
             
             <Header title="Virtual Private Network (VPN)" />
-            <SubHeader
+            {/* <SubHeader
               title="Cisco AnyConnect Secure Mobility Client"
               description="Cisco AnyConnect is a leading VPN solution that provides secure, seamless access to enterprise networks from virtually any device, anywhere. Designed with businesses in mind, AnyConnect ensures encrypted communications while enhancing user productivity with its always-on VPN functionality."
                group="Network Security" 
               section="VPN"
               position="right"  />
-            <CollapsiblePoints data={anyConnectFeatures} />
+            <CollapsiblePoints data={anyConnectFeatures} /> */}
       
              <SubHeader
               title="FortiClient"
@@ -175,9 +175,9 @@ const Network = () => {
               position="right" />
             <CollapsiblePoints data={paloglobalFeatures} />
       
-            <Header title="Network Access Control (NAC)"/>
+            {/* <Header title="Network Access Control (NAC)"/> */}
       
-      <SubHeader
+      {/* <SubHeader
               title="Cisco Identity Services Engine (ISE)"
               description="Cisco Identity Services Engine (ISE) is an advanced Network Access Control (NAC) solution designed to enable secure access to network resources. Built with a robust policy-based architecture, ISE provides visibility, control, and automation for device and user access across wired, wireless, and VPN connections. Cisco ISE is particularly effective in enhancing network security by"
               group="Network Security" 
@@ -188,7 +188,7 @@ const Network = () => {
             <NetworkSection sectionTitle="Cisco ISE is particularly effective in enhancing network security by-"
             subPoints={ciscoIdentity}
             
-            />
+            /> */}
       <Header title="Network Access Control (NAC)" />
       
       <SubHeader
@@ -230,7 +230,7 @@ const Network = () => {
         subPoints={prismaAccessPoints}
       />
       
-      <SubHeader
+      {/* <SubHeader
         title="Cisco Enterprise Network Design"
         description="Cisco is a global leader in networking and IT, providing cutting-edge solutions for enterprise network design. With decades of innovation, Cisco offers scalable, secure, and efficient network infrastructure tailored to businesses of all sizes."
         group="Network Security"
@@ -241,7 +241,7 @@ const Network = () => {
       <NetworkSection
         sectionTitle="Cisco delivers robust, scalable, and secure enterprise network architecture:"
         subPoints={ciscoEnterprisePoints}
-      />
+      /> */}
       
       <SubHeader
         title="Aruba Secure Wireless and Wired Designs"
