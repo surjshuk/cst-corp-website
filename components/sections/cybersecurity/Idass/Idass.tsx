@@ -3,7 +3,7 @@ import React from 'react'
 import Header from '../components/Header'
 import SubHeader from '../components/SubHeader'
 import { CollapsiblePoints } from '@/components/shared/CollapisblePoints'
-import { ciscoDuoBenefits, ciscoDuoFeatures, ciscoDuoUseCases, ciscoFeatures, ciscoUseCases, entraBenefits, entraFeatures, entraUseCases, fortinetBenefits, fortinetKeyFeatures, fortinetUseCases, fortiTokenFeatures, fortiTokenUseCases, globalProtectFeatures, globalProtectUseCases, googleAuthenticatorUseCases, googleAuthFeatures, identityFeatures, identityUseCases, microsoftEntraFeatures, microsoftUseCases, oktaBenefits, oktaUseCases, paloAltoBenefits, paloAltoFeatures, paloAltoUseCases, QRadarFeatures, rapidFeatures } from './data'
+import {entraBenefits, entraFeatures, entraUseCases, fortinetBenefits, fortinetKeyFeatures, fortinetUseCases, fortiTokenFeatures, fortiTokenUseCases, globalProtectFeatures, globalProtectUseCases, googleAuthenticatorUseCases, googleAuthFeatures, identityFeatures, identityUseCases, microsoftEntraFeatures, microsoftUseCases, oktaBenefits, oktaUseCases, paloAltoBenefits, paloAltoFeatures, paloAltoUseCases, QRadarFeatures, rapidFeatures } from './data'
 import { UseCases } from '../set-1/usecases'
 import { idaasOktaFeatures } from '../CloudSecurity/data'
 import { ThreePoints } from '@/components/shared/ThreePoints'
@@ -25,7 +25,7 @@ const Idass = () => {
           section:"MFA",
           subheader:[
           `Okta Adaptive MFA`,
-          `Cisco Duo`,
+
           `Microsoft Entra ID (Formerly Azure AD)`,
           `Google Authentication`,
           `FortiToken`,
@@ -38,7 +38,7 @@ const Idass = () => {
           subheader:[
           `Okta for Single Sign-On (SSO) and Identity Access Management (Identity and Access Managemenet (IAM))`,
           `Microsoft Entra ID (formerly Azure AD) for SSO and Identity and Access Managemenet (IAM)`,
-          `Cisco DUO + ISE + Umbrella for SSO and Identity and Access Managemenet (IAM)`,
+          // `Cisco DUO + ISE + Umbrella for SSO and Identity and Access Managemenet (IAM)`,
           `Forti Authenticator for SSO and Identity and Access Managemenet (IAM)`,
           `Palo Alto GlobalProtect for SSO and Identity and Access Managemenet (IAM)`
         ]},
@@ -68,14 +68,14 @@ const Idass = () => {
           <UseCases cases={identityUseCases} />
     
     
-          <SubHeader
+          {/* <SubHeader
             title="Cisco Duo"
             description="Cisco Duo offers a user-friendly MFA and zero-trust security platform that ensures secure access to applications and systems. It is known for its simplicity and strong focus on user experience while delivering enterprise-grade security."
              group="Identity and Access Managemenet (IAM)" 
             section="MFA"
             position="right" />
           <CollapsiblePoints data={ciscoFeatures} />
-          <UseCases cases={ciscoUseCases} />
+          <UseCases cases={ciscoUseCases} /> */}
     
           <SubHeader
             title="Microsoft Entra ID (Formerly Azure AD)"
@@ -144,7 +144,7 @@ const Idass = () => {
           <UseCases cases={entraUseCases} />
     
     
-          <SubHeader
+          {/* <SubHeader
             title="Cisco DUO + ISE + Umbrella for SSO and Identity and Access Managemenet (IAM)"
             description="Cisco offers a comprehensive suite of identity and access management solutions combining DUO (multi-factor authentication and SSO), Identity Services Engine (ISE), and Umbrella (cloud security). Together, they deliver robust SSO capabilities with advanced threat detection and secure access controls."
             group="Identity and Access Managemenet (IAM)" 
@@ -155,7 +155,7 @@ const Idass = () => {
     
           <ThreePoints points={ciscoDuoBenefits} />
     
-          <UseCases cases={ciscoDuoUseCases} />
+          <UseCases cases={ciscoDuoUseCases} /> */}
     
           <SubHeader
             title="Forti Authenticator for SSO and Identity and Access Managemenet (IAM)"

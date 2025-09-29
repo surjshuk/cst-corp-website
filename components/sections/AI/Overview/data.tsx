@@ -1,5 +1,89 @@
 import { ThreePoint } from "@/types/declaration"
 
+
+export const pythiaPoints = [ 
+    {
+        title:"Adaptive Anomaly Detection",
+        description:"Continuously learns asset behavior from both historical and streaming data to flag abnormal conditions."
+    },
+    {
+        title:"Predictive Lifespan Modeling",
+        description:"Provides Remaining Useful Life (RUL) estimates for critical rig components with high accuracy."
+    },
+    {
+        title:"Physics-Aware Diagnostics",
+        description:"Combines AI insights with engineering models to confirm failure signatures and reduce false alarms."
+    },
+    {
+        title:"Actionable Maintenance Guidance",
+        description:"Translates fault detection into step-by-step recommendations operators can immediately apply."
+    },
+    {
+        title:"Feedback-Driven Refinement",
+        description:"Incorporates operator input to continuously improve prediction reliability and trustworthiness."
+    },
+    {
+        title:"Integrated Safety Monitoring",
+        description:"Enhances operational safety with real-time hazard detection through video and thermal feeds."
+    }
+]
+
+
+export const medicalPoints = [ 
+    {
+        title:"Demand Forecasting",
+        description:"Predicts future inventory needs using patient trends, seasonal data, and treatment patterns."
+    },
+    {
+        title:"Real-Time Stock Tracking",
+        description:"Monitors supplies with IoT and barcode integration to maintain accurate inventory visibility."
+    },
+    {
+        title:"Automated Replenishment",
+        description:"Generates smart purchase orders and alerts to avoid stockouts or overstocking."
+    },
+    {
+        title:"Expiry & Waste Management",
+        description:"Identifies expiring medicines early and optimizes usage to reduce wastage and cost."
+    },
+    {
+        title:"Critical Item Prioritization",
+        description:"Highlights lifesaving supplies like blood bags, oxygen, or emergency drugs for proactive restocking."
+    },
+    {
+        title:"Regulatory Compliance",
+        description:"Ensures traceability and reporting aligned with healthcare standards and safety protocols."
+    }
+]
+
+
+export const aicctvPoints = [ 
+    {
+        title:"Smart Object Recognition",
+        description:"Identifies people, vehicles, and items with high accuracy in diverse environments."
+    },
+    {
+        title:"Behavior & Threat Detection",
+        description:"Flags unusual movement, loitering, or aggression using AI-powered pattern analysis."
+    },
+    {
+        title:"Intrusion Alerts",
+        description:"Automatically detects perimeter breaches or restricted area entries in real time."
+    },
+    {
+        title:"Safety & Compliance Monitoring",
+        description:"Ensures PPE usage, fire exits clearance, and safety protocol adherence via vision models."
+    },
+    {
+        title:"Crowd & Flow Analysis",
+        description:"Analyzes crowd density, queue length, and flow to support safety and efficiency."
+    },
+    {
+        title:"Evidence Archiving",
+        description:"Indexes video streams with searchable tags for faster investigations and compliance audits."
+    }
+]
+
 export const anomlyPoints = [
     {
         title:"Real-Time Anomaly Detection",

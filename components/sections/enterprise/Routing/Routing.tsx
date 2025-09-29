@@ -1,5 +1,5 @@
 import React from 'react'
-import { cicoSwitchData, ciscoData, ciscoDesc, ciscoService, fortinetData, fortinetDesc, fortinetService, fortinetSwitchData, merakData, merakiDesc, merakService } from './data'
+import { fortinetData, fortinetDesc, fortinetService, fortinetSwitchData} from './data'
 import { SubheroVm } from '../../cloud-services/components/subheroVM'
 import SubHeader from '../components/SubHeader'
 import Header from '../components/Header'
@@ -11,7 +11,7 @@ const Routing = () => {
     <Section data-id="routing-and-switching" id='routing-and-switching'>
       
       <Header title='Routing and Switching'/>
-        <SubHeader
+        {/* <SubHeader
       subtitle='Cisco Systems'
       description={ciscoDesc}
     />
@@ -27,9 +27,9 @@ const Routing = () => {
      <SubheroVm
     subtitle='Services'
     data={ciscoService}
-    />
+    /> */}
 
-     <SubHeader
+     {/* <SubHeader
       subtitle='Meraki (A Cisco Company)'
       description={merakiDesc}
     />
@@ -41,7 +41,7 @@ const Routing = () => {
        <SubheroVm
     subtitle='Services'
     data={merakService}
-    />
+    /> */}
 
 
      <SubHeader

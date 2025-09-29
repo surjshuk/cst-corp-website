@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import SubHeader from "../components/SubHeader";
 import { CollapsiblePoints } from "@/components/shared/CollapisblePoints";
 import { ThreePoints } from "@/components/shared/ThreePoints";
-import { dlpCiscoBenefits, dlpCiscoFeatures, dlpPaloAltoBenefits, dlpPaloAltoFeatures, dlpTrendMicroBenefits, dlpTrendMicroFeatures, dlpVersaBenefits, dlpVersaFeatures, idaasIBMFeatures } from "./data";
+import {dlpPaloAltoBenefits, dlpPaloAltoFeatures, dlpTrendMicroBenefits, dlpTrendMicroFeatures, dlpVersaBenefits, dlpVersaFeatures, idaasIBMFeatures } from "./data";
 import { fortiDLPBenefits } from "../CloudSecurity/data";
 import Index from "../components/Index";
 
@@ -23,7 +23,7 @@ export const DataSecurity = () => {
           section:"dlp",
           subheader:[
           `FortiDLP`,
-          `Cisco Umbrella- DLP`,
+      
           `Palo Alto Prisma - DLP`,
           `Versa Networks - DLP`,
           `Microsoft Purview`,
@@ -46,7 +46,7 @@ export const DataSecurity = () => {
                   <ThreePoints points={fortiDLPBenefits} />
             
             
-                  <SubHeader
+                  {/* <SubHeader
                     title=" Cisco Umbrella- DLP "
                     description="Cisco Umbrella is a cloud-delivered network security platform that provides comprehensive DLP capabilities, particularly focusing on protecting data from leaks during cloud-based activities. Cisco Umbrella integrates DLP with its suite of advanced threat protection tools, including DNS-layer security, cloud firewall, and secure web gateway."
                     group="Data Security" 
@@ -54,7 +54,7 @@ export const DataSecurity = () => {
                     position="right"/>
                   <CollapsiblePoints data={dlpCiscoFeatures} />
             
-                  <ThreePoints points={dlpCiscoBenefits} />
+                  <ThreePoints points={dlpCiscoBenefits} /> */}
             
             
                   <SubHeader

@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import SubHeader from "../components/SubHeader";
 import { CollapsiblePoints } from "@/components/shared/CollapisblePoints";
 import { ThreePoints } from "@/components/shared/ThreePoints";
-import { dataProofpointFeatures, emailProofpointBenefits, emailProofpointFeatures, segBarracudaBenefits, segBarracudaFeatures, segCiscoBenefits, segCiscoFeatures, segFortinetBenefits, segFortinetFeatures, segProofPointBenefits, segProofPointFeatures, segSecurenceBenefits, segSecurenceFeatures, segTrendMicroBenefits, segTrendMicroFeatures, spamProofpointBenefits, spamProofpointFeatures } from "./data";
+import { dataProofpointFeatures, emailProofpointBenefits, emailProofpointFeatures, segBarracudaBenefits, segBarracudaFeatures, segFortinetBenefits, segFortinetFeatures, segProofPointBenefits, segProofPointFeatures, segSecurenceBenefits, segSecurenceFeatures, segTrendMicroBenefits, segTrendMicroFeatures, spamProofpointBenefits, spamProofpointFeatures } from "./data";
 import Index from "../components/Index";
 
 export const EmailSecurity = () => {
@@ -20,7 +20,6 @@ export const EmailSecurity = () => {
           subheader:[
           `Proofpoint`,
           `Barracuda`,
-          `CISCO`,
           `Fortinet`,
           `Trend Micro`,
           `Securence`
@@ -77,7 +76,7 @@ export const EmailSecurity = () => {
                  <CollapsiblePoints data={segBarracudaFeatures} />
            
                  <ThreePoints points={segBarracudaBenefits} />
-           
+{/*            
                  <SubHeader
                    title="CISCO"
                    description="Cisco’s Email Security Appliance (ESA) provides robust protection against email threats, leveraging the power of Cisco’s Talos Intelligence Group for real-time threat analysis."
@@ -86,7 +85,7 @@ export const EmailSecurity = () => {
                    position="right" />
                  <CollapsiblePoints data={segCiscoFeatures} />
            
-                 <ThreePoints points={segCiscoBenefits} />
+                 <ThreePoints points={segCiscoBenefits} /> */}
            
                  <SubHeader
                    title="Fortinet"

@@ -4,13 +4,17 @@ export async function POST(req: NextRequest) {
   try {
     const data = await req.json();
 
-    const googleRes = await fetch("https://script.google.com/macros/s/AKfycbzdwLR6g430vIJLelqY6S2s1rwKW_dj6hcbOe6RFHsg_rvIt8p9O3QCc7rSmLZ2jjNo/exec", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    });
+    // Forward data to Google Apps Script
+    const googleRes = await fetch(
+      "https://script.google.com/macros/s/AKfycby159zdUWPGkRwaQi9Bx-67kDggJ3WXJDuxwJzafuVlBPrXGCVoO45GsOcaaAO5dLK_/exec",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      }
+    );
 
-    // Apps Script might return text, so parse safely
+    // Apps Script might return plain text, so parse safely
     const text = await googleRes.text();
     let parsed;
     try {
@@ -19,10 +23,17 @@ export async function POST(req: NextRequest) {
       parsed = { raw: text };
     }
 
+    // If Apps Script returns status: "error", propagate it
+    if (parsed.status === "error") {
+      return NextResponse.json(
+        { success: false, error: parsed.message || "Apps Script error" },
+        { status: 400 }
+      );
+    }
+
     return NextResponse.json({ success: true, data: parsed });
   } catch (err) {
     const error = err as Error;
-
     return NextResponse.json(
       { success: false, error: error.message },
       { status: 500 }

@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { z } from "zod";
+import {toast} from "react-hot-toast"
 
 const contactSchema = z.object({
   firstName: z
@@ -85,11 +86,13 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElemen
     if (result.success) {
       setFormData({ firstName: "", lastName: "", email: "", phoneNumber: "", message: "" });
       setStatus({ loading: false, success: "Message sent successfully!", error: null });
+        toast.success("Form Submited Successfully")
     } else {
       throw new Error(result.error || "Failed to send message");
     }
   } catch (err) {
     const error = err as Error;
+    toast.error("Failed to submit form")
     setStatus({ loading: false, success: null, error: error.message });
   }
   };
@@ -97,7 +100,7 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElemen
     return (
         <div className="p-5 tablet:px-12 tablet:py-10 laptop:px-20 laptop:py-10 bg-black text-white" id="contacts">
             {/* Locations Section */}
-            <div className="pb-60">
+            <div className="pb-32">
                 <h2 className=" mb-3 text-[28px] leading-tight tablet:font-medium tablet:text-5xl">Locations</h2>
                 <div className="space-y-6">
                     <div className="flex gap-24 font-medium">

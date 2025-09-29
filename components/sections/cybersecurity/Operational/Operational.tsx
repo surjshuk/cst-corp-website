@@ -1,5 +1,5 @@
 import React from 'react'
-import { arcticWolfCipFeatures, arcticWolfIotSecurityFeatures, arubaBenefits, arubaCipFeatures, arubaFeatures, arubaIotSecurityFeatures, arubaScadaBenefits, arubaScadaFeatures, ciscoCipFeatures, ciscoIotSecurityFeatures, ciscoScadaBenefits, ciscoScadaFeatures, darktraceBenefits, darktraceCipFeatures, darktraceFeatures, darktraceIotSecurityFeatures, darktraceScadaBenefits, darktraceScadaFeatures, fortinetCipFeatures, fortinetICSBenefits, fortinetICSFeatures, fortinetIotSecurityFeatures, fortinetScadaBenefits, fortinetScadaFeatures, icsBenefits, icsFeature, paloAltoICSBenefits, paloAltoICSFeatures, paloAltoIotSecurityFeatures, paloAltoScadaBenefits, paloAltoScadaFeatures, paloCipFeatures, sentinelOneBenefits, sentinelOneCipFeatures, sentinelOneFeatures, sentinelOneIotSecurityFeatures, sentinelOneScadaBenefits, sentinelOneScadaFeatures, tenableBenefits, tenableCipFeatures, tenableFeatures, tenableIotSecurityFeatures, tenableScadaBenefits, tenableScadaFeatures } from './data'
+import { arcticWolfCipFeatures, arcticWolfIotSecurityFeatures, arubaBenefits, arubaCipFeatures, arubaFeatures, arubaIotSecurityFeatures, arubaScadaBenefits, arubaScadaFeatures, darktraceBenefits, darktraceCipFeatures, darktraceFeatures, darktraceIotSecurityFeatures, darktraceScadaBenefits, darktraceScadaFeatures, fortinetCipFeatures, fortinetICSBenefits, fortinetICSFeatures, fortinetIotSecurityFeatures, fortinetScadaBenefits, fortinetScadaFeatures, paloAltoICSBenefits, paloAltoICSFeatures, paloAltoIotSecurityFeatures, paloAltoScadaBenefits, paloAltoScadaFeatures, paloCipFeatures, sentinelOneBenefits, sentinelOneCipFeatures, sentinelOneFeatures, sentinelOneIotSecurityFeatures, sentinelOneScadaBenefits, sentinelOneScadaFeatures, tenableBenefits, tenableCipFeatures, tenableFeatures, tenableIotSecurityFeatures, tenableScadaBenefits, tenableScadaFeatures } from './data'
 import { CollapsiblePoints } from '@/components/shared/CollapisblePoints'
 import SubHeader from '../components/SubHeader'
 import Header from '../components/Header'
@@ -23,7 +23,7 @@ const Operational = () => {
           header:"Industrial Control Systems (ICS) Security",
           section:"ics",
           subheader:[
-          `Cisco ICS Security`,
+          // `Cisco ICS Security`,
           `Fortinet ICS Security`,
           `Palo Alto ICS Security`,
           `Tenable ICS Security`,
@@ -38,7 +38,7 @@ const Operational = () => {
           header:"Supervisory Control and Data Acquisition (SCADA) Security",
           section:"ics",
           subheader:[
-          `Cisco SCADA Security Solutions`,
+          // `Cisco SCADA Security Solutions`,
           `Fortinet SCADA Security Solutions`,
           `Palo Alto Networks SCADA Security Solutions`,
           `Tenable SCADA Security Solutions`,
@@ -53,7 +53,7 @@ const Operational = () => {
           header:"Critical Infrastructure Protection (CIP)",
           section:"cip",
           subheader:[
-          `Cisco Critical Infrastructure Protection`,
+          // `Cisco Critical Infrastructure Protection`,
           `Fortinet Critical Infrastructure Protection`,
           `Palo Alto Networks Critical Infrastructure Protection`,
           `Tenable Critical Infrastructure Protection`,
@@ -68,7 +68,7 @@ const Operational = () => {
           header:"IoT Device Security",
           section:"iot",
           subheader:[
-          `Cisco IoT Security`,
+          // `Cisco IoT Security`,
           `Fortinet IoT Security`,
           `Palo Alto Networks IoT Security`,
           `Tenable IoT Security`,
@@ -86,7 +86,7 @@ const Operational = () => {
   />
       <Header title="Industrial Control Systems (ICS) Security" />
 
-      <SubHeader
+      {/* <SubHeader
   title="Cisco ICS Security"
   description="Cisco's Industrial Control Systems (ICS) security solutions are part of its broader Operational Technology (OT) security portfolio. Cisco integrates networking, security, and visibility to safeguard critical ICS environments against evolving cyber threats. Cisco's solutions are built to protect against threats while ensuring operational."
  group="Operational Technology Security (OTS)" 
@@ -95,7 +95,7 @@ const Operational = () => {
 />
 
  <CollapsiblePoints data={icsFeature} />
-  <ThreePoints points={icsBenefits} />
+  <ThreePoints points={icsBenefits} /> */}
 
   <SubHeader
   title="Fortinet ICS Security"
@@ -165,7 +165,7 @@ const Operational = () => {
 <Header title="Supervisory Control and Data Acquisition (SCADA) Security
 "  />
 
-<SubHeader
+{/* <SubHeader
   title="Cisco SCADA Security Solutions"
   description="Cisco offers a robust suite of security solutions tailored for Supervisory Control and Data Acquisition (SCADA) systems within Operational Technology (OT) environments. Recognizing the unique challenges of industrial networks, Cisco's approach integrates advanced security measures to protect critical infrastructure without compromising operational efficiency."
    group="Operational Technology Security (OTS)" 
@@ -174,7 +174,7 @@ const Operational = () => {
 />
 
 <CollapsiblePoints data={ciscoScadaFeatures} />
-<ThreePoints points={ciscoScadaBenefits} />
+<ThreePoints points={ciscoScadaBenefits} /> */}
 
 
 <SubHeader
@@ -245,7 +245,7 @@ const Operational = () => {
 
 <Header title="Critical Infrastructure Protection (CIP)"  />
 
-<SubHeader
+{/* <SubHeader
   title="Cisco Critical Infrastructure Protection"
   description="Cisco delivers a comprehensive suite of solutions designed to secure critical infrastructure across industries by integrating real-time visibility, network segmentation, threat intelligence, and zero trust architecture."
    group="Operational Technology Security (OTS)" 
@@ -253,7 +253,7 @@ const Operational = () => {
         position="right" 
 />
 
-<CollapsiblePoints data={ciscoCipFeatures} />
+<CollapsiblePoints data={ciscoCipFeatures} /> */}
 
 
 <SubHeader
@@ -329,7 +329,7 @@ const Operational = () => {
 
 <Header title="IoT Device Security " />
 
-<SubHeader
+{/* <SubHeader
   title="Cisco IoT Security"
   description="Cisco’s Industrial Threat Defense secures OT, ICS, and cyber-physical systems through visibility, segmentation, and unified threat response."
      group="Operational Technology Security (OTS)" 
@@ -337,7 +337,7 @@ const Operational = () => {
         position="right" 
 />
 
-<CollapsiblePoints data={ciscoIotSecurityFeatures} />
+<CollapsiblePoints data={ciscoIotSecurityFeatures} /> */}
 
 <SubHeader
   title="Fortinet IoT Security"

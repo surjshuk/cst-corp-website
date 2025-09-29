@@ -6,12 +6,11 @@ import "./globals.css"
 // import Image from "next/image"
 // import { LOGO } from "@/app/assets/"
 import { GoogleAnalytics } from '@next/third-parties/google'
-import { Toaster } from "@/components/ui/toaster";
 import { Analytics } from '@vercel/analytics/next';
 import { ActiveSectionProvider } from "@/context/ActiveSectionContext";
 import Sidebar from "@/components/Sidenavbar";
 import { Footer } from "@/components/sections";
-
+import {Toaster} from "react-hot-toast"
 
 // const inter = Inter({ subsets: ["latin"] })
 
@@ -86,7 +85,10 @@ export default function RootLayout({
             </main>
           </ActiveSectionProvider>
         </div>
-        <Toaster />
+        <Toaster
+          position="top-center"
+          reverseOrder={false}
+        />
          <Analytics />
       </body>
       <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS_GID || "G-XYZ"} />  

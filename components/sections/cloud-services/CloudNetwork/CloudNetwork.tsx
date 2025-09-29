@@ -1,11 +1,10 @@
 import React from 'react'
 // import Header from '../components/Header'
 import { SubHeader } from '../components/SubHeader'
-import { arubaDesc, arubaFeature, arubaTabData, ciscoBenifits, ciscoDesc, cloudPaloDesc, cloudPaloFeature, cloudPaloTabData, dnsFeature, fortiGateDesc, fortiGateFeature, fortiGateTabData, loadFeature, vmCloudDesc, VmDesc, whyaruba, whyCloudPalo, whyFortiate, whyVmDesc } from './data'
+import { arubaDesc, arubaFeature, arubaTabData, cloudPaloDesc, cloudPaloFeature, cloudPaloTabData, fortiGateDesc, fortiGateFeature, fortiGateTabData, vmCloudDesc, VmDesc, whyaruba, whyCloudPalo, whyFortiate, whyVmDesc } from './data'
 import CloudSpecial from '../components/Special'
 import { KeyFeaturesSection } from '../key-features'
 
-import { Benefits } from '../components/benefits'
 import Section from '@/components/Section'
 import { SubheroVm } from '../components/subheroVM'
 import Index from '../components/Index'
@@ -25,7 +24,7 @@ const CloudNetwork = () => {
           `Palo Alto Networks GlobalProtect Cloud Services`,
           `FortiGate Cloud Security`,
           `HPE Aruba Central`,
-          `Cisco Cloud Networking Solutions`
+         
 
         ]},
        
@@ -111,7 +110,7 @@ subtitle='VMware Cloud Networking Services'
 
 
        
- <SubHeader
+ {/* <SubHeader
       title='Cisco Cloud Networking Solutions'
       subtitle='DNS and Load Balancing'
       description={ciscoDesc}
@@ -126,7 +125,7 @@ subtitle='VMware Cloud Networking Services'
             <KeyFeaturesSection title="Key Features of Cisco Cloud Load Balancing" features={loadFeature}/>
        
 
-      <Benefits  benefits={ciscoBenifits}/>
+      <Benefits  benefits={ciscoBenifits}/> */}
 
 
     </Section>

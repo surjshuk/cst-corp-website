@@ -1,11 +1,13 @@
 import React from 'react'
-import CloudSpecial from '../../cloud-services/components/Special'
+// import MainCarousel from '../../cloud-services/components/Special'
 import { KeyFeaturesSection } from '../../cloud-services/key-features'
-import { barracudaBenefits, barracudaDeploy, barracudaDesc, barracudaFeatures, barracudaModelSpecs, ciscoDeploy, ciscoDesc, ciscoFeature, ciscoTabData, fortinetDeploy, fortinetDesc, fortinetFeature, fortinetTabData } from './data'
+import { barracudaBenefits, barracudaDeploy, barracudaDesc, barracudaFeatures, barracudaModelSpecs, fortinetDeploy, fortinetDesc, fortinetFeature, fortinetTabData } from './data'
 // import Header from '../components/Header'
 import SubHeader from '../components/SubHeader'
 import Section from '@/components/Section'
 import Index from '../components/Index'
+import MainCarousel from '../components/Special'
+import { bcuda, firwal } from '@/app/assets'
 
 const Firewall = () => {
   return (
@@ -18,7 +20,7 @@ const Firewall = () => {
           header:"Firewall",
         
           subheader:[
-         `Cisco`,
+        //  `Cisco`,
           `Fortinet Firewalls`,
           `Barracuda CloudGen Firewall`,
           
@@ -30,7 +32,7 @@ const Firewall = () => {
       />
       {/* <Header title={"Firewall"}/>  */}
 
-      <SubHeader
+      {/* <SubHeader
   title="Cisco"
   description={ciscoDesc}
      group='Firewall'
@@ -38,21 +40,21 @@ const Firewall = () => {
       position='right'
 />
 
-<CloudSpecial
+<MainCarousel
   tabData={ciscoTabData}
   
-/>
-
+/> */}
+{/* 
 <KeyFeaturesSection
   title="Key Features of Cisco Firepower Threat Defense (FTD)"
   features={ciscoFeature}
-/>
+/> */}
 
 
-<KeyFeaturesSection
+{/* <KeyFeaturesSection
   title="Deployment Options"
   features={ciscoDeploy}
-/>
+/> */}
 
 <SubHeader
   title="Fortinet Firewalls"
@@ -62,9 +64,9 @@ const Firewall = () => {
       position='right'
 />
 
-<CloudSpecial
+<MainCarousel
   tabData={fortinetTabData}
-  
+  image = {firwal}
 />
 
 
@@ -88,9 +90,9 @@ const Firewall = () => {
 />
 
 
-<CloudSpecial
+<MainCarousel
   tabData={barracudaBenefits}
-
+  image = {bcuda}
 />
 
 

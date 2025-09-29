@@ -1,6 +1,6 @@
 import { ThreePoints } from '@/components/shared/ThreePoints'
 import React from 'react'
-import { arcticWolfFeatures, arcticWolfMdrFeatures, arcticWolfUseCases, arcticWolfXDRFeatures, ciscoMdrFeatures, ciscoSecureFeatures, ciscoSecureXFeatures, ciscoSecureXUseCases, ciscoSoarBenefits, ciscoSoarFeatures, crowdStrikeFalconXDRFeatures, darktraceSoarBenefits, darktraceSoarFeatures, falconInsightFeatures, fortiMdrFeatures, fortiSIEMFeatures, fortiSIEMUseCases, fortiSoarBenefits, fortiSoarFeatures, fortiXDRFeatures, ibmQradarFeatures, ibmQradarUseCases, qradarSoarBenefits, qradarSoarFeatures, sentinelOneXdrFeatures, sentinelOneXDRFeatures } from './data'
+import { arcticWolfFeatures, arcticWolfMdrFeatures, arcticWolfUseCases, arcticWolfXDRFeatures, crowdStrikeFalconXDRFeatures, darktraceSoarBenefits, darktraceSoarFeatures, falconInsightFeatures, fortiMdrFeatures, fortiSIEMFeatures, fortiSIEMUseCases, fortiSoarBenefits, fortiSoarFeatures, fortiXDRFeatures, ibmQradarFeatures, ibmQradarUseCases, qradarSoarBenefits, qradarSoarFeatures, sentinelOneXdrFeatures, sentinelOneXDRFeatures } from './data'
 import SubHeader from '../components/SubHeader'
 import { CollapsiblePoints } from '@/components/shared/CollapisblePoints'
 import Header from '../components/Header'
@@ -25,11 +25,11 @@ const Threat = () => {
                   header:"Security Information and Event Management",
                   section:"siem",
                   subheader:[
-                  `Cisco SecureX (SIEM)`,
+                  // `Cisco SecureX (SIEM)`,
                   `FortiSIEM`,
                   `Arctic Wolf SIEM`,
                   `IBM QRadar SIEM`,
-                  `Cisco Secure MDR`,
+                  // `Cisco Secure MDR`,
                   `FortiMDR`,
                   `SentinelOne Singularity XDR`,
                   `Arctic Wolf MDR`,
@@ -41,12 +41,12 @@ const Threat = () => {
                   header:"Extended Detection and Response (XDR)",
                   section:"xdr",
                   subheader:[
-                 `Cisco SecureX`,
+                //  `Cisco SecureX`,
                  `FortiXDR`,
                  `SentinelOne Singularity XDR`,
                  `Arctic Wolf XDR`,
                  `CrowdStrike Falcon Insight XDR`,
-                 `Cisco SOAR`,
+                //  `Cisco SOAR`,
                  `FortiSOAR by Fortinet`,
                  `Darktrace Antigena SOAR`,
                  `IBM Security QRadar SOAR`,
@@ -60,7 +60,7 @@ const Threat = () => {
           />
     <Header title="Security Information and Event Management "  />
 
-    <SubHeader
+    {/* <SubHeader
       title="Cisco SecureX (SIEM)"
       description="Cisco SecureX is a unified security platform that integrates Cisco and third-party tools to streamline threat detection, investigation, and response. It empowers security operations with real-time insights, automation, and integrated threat intelligence."
       group="threat detection and response (TDR)" 
@@ -69,7 +69,7 @@ const Threat = () => {
     />  
 
     <CollapsiblePoints data={ciscoSecureXFeatures} />
-    <UseCases cases={ciscoSecureXUseCases} />
+    <UseCases cases={ciscoSecureXUseCases} /> */}
 
 
     <SubHeader
@@ -108,7 +108,7 @@ group="threat detection and response (TDR)"
 
 
 
-<SubHeader
+{/* <SubHeader
   title="Cisco Secure MDR"
   description="Cisco Secure MDR is a managed detection and response solution combining 24/7 monitoring, threat intelligence from Cisco Talos, and expert-led incident response across cloud, endpoint, and network environments."
  group="threat detection and response (TDR)" 
@@ -116,7 +116,7 @@ group="threat detection and response (TDR)"
         position="right" 
 />
 
-  <CollapsiblePoints data={ciscoMdrFeatures } />
+  <CollapsiblePoints data={ciscoMdrFeatures } /> */}
    
    <SubHeader
   title="FortiMDR"
@@ -161,7 +161,7 @@ group="threat detection and response (TDR)"
 
   <Header title="Extended Detection and Response (XDR) "  />
 
-<SubHeader
+{/* <SubHeader
   title="Cisco SecureX"
   description="Cisco SecureX is an integrated platform that unifies threat detection, response, and security operations across Cisco and third-party tools, enabling real-time visibility and automation."
 group="threat detection and response (TDR)" 
@@ -169,7 +169,7 @@ group="threat detection and response (TDR)"
         position="right" 
 />
 
-<CollapsiblePoints data={ciscoSecureFeatures} />
+<CollapsiblePoints data={ciscoSecureFeatures} /> */}
 
 
 <SubHeader
@@ -212,7 +212,7 @@ group="threat detection and response (TDR)"
 
 <CollapsiblePoints data={crowdStrikeFalconXDRFeatures} />
 
-<SubHeader
+{/* <SubHeader
   title="Cisco SOAR"
   description="Cisco SOAR is a robust Security Orchestration, Automation, and Response platform that streamlines security operations by automating workflows, enhancing team collaboration, and accelerating incident response through integrations with Cisco and third-party tools."
 group="threat detection and response (TDR)" 
@@ -221,7 +221,7 @@ group="threat detection and response (TDR)"
 />
 
 <CollapsiblePoints data={ciscoSoarFeatures} />
-<ThreePoints points={ciscoSoarBenefits} />
+<ThreePoints points={ciscoSoarBenefits} /> */}
 
 <SubHeader
   title="FortiSOAR by Fortinet"

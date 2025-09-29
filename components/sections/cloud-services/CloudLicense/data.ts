@@ -1,4 +1,4 @@
-import { awssubscrib, keyawscloud, msenhanced, msimprove, mskey, msscale, mssemless, mssimplified } from "@/app/assets";
+import { awscons, awsgrowth, awssubscrib, bilaws, iceff, keyawscloud, licaws, msenhanced, msimprove, mskey, msscale, mssemless, mssimplified } from "@/app/assets";
 import { Feature } from "../../AI/feature";
 import { CloudSpecialType } from "../type";
 
@@ -96,7 +96,7 @@ export const awsLicenceData:CloudSpecialType[] = [
     title:'Key Benefits of the AWS Marketplace for Flexible Cloud Licensing',
     },
   {
-   
+       image:licaws,
     title:'Streamlined Licensing Management',
     description:'AWS Marketplace simplifies how organizations purchase and manage their cloud resources. With easy-to-navigate purchasing options, businesses can efficiently manage subscription services without the complexity often associated with traditional licensing models.'
     },
@@ -106,22 +106,22 @@ export const awsLicenceData:CloudSpecialType[] = [
     description:'Organizations now have access to a variety of flexible licensing options that are adaptable to their business needs: • Pay-As-You-Go: Allows for on-demand purchasing of cloud services, ideal for businesses that experience fluctuating demand and need maximum flexibility. • Reserved Instances: Offers significant savings for customers willing to commit to a set amount of usage for a longer period, ensuring stable pricing for budget-conscious businesses. • Annual and Multi-Year Plans: Businesses can secure discounted rates by committing to longer-term plans, which offer budget predictability and cost savings.'
   },
   {
-   
+   image:iceff,
     title:'Improved Cost Efficiency',
     description:`AWS Marketplace provides businesses with pricing options that reflect their exact needs, allowing for optimized cost management. Long-term contracts and reserved instances deliver considerable savings when compared to pay-as-you-go models.`
   },
   {
-  
+    image:awsgrowth,
     title:'Scalable and Flexible Growth',
     description:`As businesses scale, AWS Marketplace offers the ability to expand licenses and services seamlessly. This flexibility ensures that organizations can rapidly adjust their infrastructure to meet growth demands, supporting agile business models.`
     },
     {
-   
+   image:awscons,
     title:'Enhanced Operational Consistency',
     description:'With the NCE, Microsoft partners and customers benefit from more predictable billing cycles and streamlined processes. Automated renewal options ensure there is no disruption in service continuity.'
   },
    {
-
+    image:bilaws,
     title:'Simplified Billing and Management',
     description:`The AWS Marketplace enables consolidated billing for all cloud services, reducing administrative overhead and streamlining financial tracking. This simplifies the process for businesses by centralizing their cloud licensing and service management.`
   }

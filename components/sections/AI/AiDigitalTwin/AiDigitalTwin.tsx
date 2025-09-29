@@ -1,10 +1,12 @@
 import Section from '@/components/Section'
 import React from 'react'
 import Twin from './components/Twin'
-import { customBenifits, digitalTwin, twinPoints } from './data'
+import { bramerPoints, customBenifits, digitalTwin, twinPoints } from './data'
 import { ThreePoints } from '@/components/shared/ThreePoints'
 import Special from '../components/Special'
 import Breaker from '../components/Breaker'
+import { digitwin } from '@/app/assets'
+import SubHeader from '../../cybersecurity/components/SubHeader'
 
 const AiDigitalTwin = () => {
   
@@ -27,7 +29,15 @@ const AiDigitalTwin = () => {
        
         <ThreePoints points={customBenifits}/>
  
-        <Special points={twinPoints} title="How It Works"/>
+        <Special points={twinPoints} title="How It Works" image={digitwin}/>
+
+        
+<SubHeader 
+    title="Bramer ai drone solution"
+    description='This solution optimizes hospital and clinic supply chains by forecasting demand, tracking usage in real-time, and preventing shortages or waste. Using AI-driven insights, it balances critical stock levels for medicines, consumables, and devices, ensuring resources are always available when patients and doctors need them most.'
+/>
+
+           <Special points={bramerPoints}/>
  </Section>
   )
 

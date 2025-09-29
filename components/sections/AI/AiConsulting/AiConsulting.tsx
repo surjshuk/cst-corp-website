@@ -5,6 +5,7 @@ import { consultBenifits, consultPoints, consultTwin } from './data'
 import Special from '../components/Special'
 import { ThreePoints } from '@/components/shared/ThreePoints'
 import Breaker from '../components/Breaker'
+import { aicons } from '@/app/assets'
 
 const AiConsulting = () => {
   return (
@@ -23,7 +24,7 @@ const AiConsulting = () => {
         
             </div>
         <Twin title="Importance" points={consultTwin}/>
-        <Special title="Monetization Strategies" points={consultPoints} />
+        <Special title="Monetization Strategies" points={consultPoints} image={aicons} />
         <ThreePoints title="Services" points={consultBenifits}/>
        
     </Section>

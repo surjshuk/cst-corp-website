@@ -4,7 +4,7 @@ import CloudNetwork from "@/components/sections/cloud-services/CloudNetwork/Clou
 import CloudStorage from "@/components/sections/cloud-services/CloudStorage/CloudStorage";
 import ProductivitySuite from "@/components/sections/cloud-services/ProductivitySuite/ProductivitySuite";
 import Saas from "@/components/sections/cloud-services/Saas/Saas";
-import UnifiedCommunication from "@/components/sections/cloud-services/UnifiedCommunication/UnifiedCommunication";
+// import UnifiedCommunication from "@/components/sections/cloud-services/UnifiedCommunication/UnifiedCommunication";
 
 export default function CloudServicesPage() {
     return (
@@ -15,7 +15,7 @@ export default function CloudServicesPage() {
             <CloudStorage/>
             <ProductivitySuite/>
             <Saas/>
-            <UnifiedCommunication/>
+            {/* <UnifiedCommunication/> */}
         </div>
     );
 }

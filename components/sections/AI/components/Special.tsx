@@ -1,18 +1,21 @@
 import { PYTHIAAI } from '@/app/assets/'
 import { point } from '@/types/declaration';
+import { StaticImageData } from 'next/image';
 
 import React from 'react'
 
 type SpecialProps = {
   points: point[];
   title?:string
+  image?:StaticImageData
 };
 
-const Special: React.FC<SpecialProps> = ({points,title}) => {
+const Special: React.FC<SpecialProps> = ({points,title,image}) => {
   return (
     <div className="md:min-h-screen h-auto mt-28 relative text-white bg-cover bg-center bg-no-repeat" 
-    style={{backgroundImage:`url(${PYTHIAAI.src})`}}>
+    style={{backgroundImage:`url(${image?.src || PYTHIAAI.src})`}}>
           {/* <Image src={PYTHIAAI} alt="" className="w-full h-full  absolute top-0 left-0  "/> */}
+          <div className="absolute top-0 left-0 w-full h-full bg-black/70 "></div>  
           <div className="w-full h-full lg:p-20 px-4 py-14 z-10 relative">
             <h2 className="md:w-[22%] w-[70%]  md:text-6xl text-4xl">{title?title:"Key Capabilities"}</h2>
         

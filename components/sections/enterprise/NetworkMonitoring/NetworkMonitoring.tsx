@@ -1,11 +1,13 @@
 import React from 'react'
 import { nectusBenefits, nectusDesc, nectusFeatures, thousandEyesBenefits, thousandEyesDesc, thousandEyesFeatures } from './data'
 import { KeyFeaturesSection } from '../../cloud-services/key-features'
-import CloudSpecial from '../../cloud-services/components/Special'
+
 // import Header from '../components/Header'
 import SubHeader from '../components/SubHeader'
 import Section from '@/components/Section'
 import Index from '../components/Index'
+import { necnetw, tenet } from '@/app/assets'
+import MainCarousel from '../components/Special'
 
 const NetworkMonitoring = () => {
   return (
@@ -42,9 +44,9 @@ const NetworkMonitoring = () => {
   features={nectusFeatures}
 />
 
-<CloudSpecial
+<MainCarousel
   tabData={nectusBenefits}
-  
+  image={necnetw}
 />
 
 <SubHeader
@@ -60,9 +62,9 @@ const NetworkMonitoring = () => {
   features={thousandEyesFeatures}
 />
 
-<CloudSpecial
+<MainCarousel
   tabData={thousandEyesBenefits}
-  
+  image={tenet}
 />
 
 
