@@ -1,5 +1,5 @@
 
-import { awdsecur, awsai, awscosteff, awsdata, awsstreaming, keyawss3, keydrive, keyveeam, msazure, msreach } from "@/app/assets";
+import { aibc, anai, awdsecur, awsai, awscosteff, awsdata, awsstreaming, bscont, comprec, csef, csied, dataint, disrec, dpbox, dropint, dtprote, dtrac, egsec, flesha, gwoed, hybsec, innovai, inprod, keyawss3, keydrive, keyveeam, msazure, msreach, powser, ransprot, rlcollab, rltm, scasol, seccloud, secclouds, simacan, simux, tfs, vcrt } from "@/app/assets";
 import { Feature } from "../../AI/feature";
 import { CloudSpecialType } from "../type";
 
@@ -40,25 +40,25 @@ export const azurTabs:CloudSpecialType[] = [
     title:'Global Reach',
     description:`With data centers across more than 60 regions worldwide, Azure ensures low latency, high availability, and compliance with local regulations. This global footprint enables businesses to operate seamlessly and deliver services to customers anywhere in the world.`
     },{
-    
+    image:simux,
     title:'Seamless User Experience',
     description:`GlobalProtect eliminates the need for traditional VPN complexity, offering seamless, always-on secure connectivity. Users experience consistent and high-performance access to applications, whether they are hosted in the cloud, on-premises, or in SaaS environments.`},
     {
-    
+    image:egsec,
     title:'Enterprise-Grade Security',
     description:`Microsoft Azure is built with a security-first approach, offering: •	Multi-layered protection with built-in security controls., •	Advanced threat detection with Azure Security Center, •	Compliance with over 90 regulatory standards, including GDPR, HIPAA, and ISO` },
     {
-    
+    image:csef,
     title:'Cost Efficiency',
     description:`Azure offers a pay-as-you-go pricing model, allowing businesses to optimize costs by paying only for the resources they use. Additionally, reserved instances and hybrid benefits enable further cost savings.`
    },
    {
-    
+    image:hybsec,
     title:'Seamless Hybrid Integration',
     description: `Azure supports hybrid cloud environments, enabling businesses to integrate their on-premises infrastructure with cloud solutions. Tools like Azure Arc and Azure Stack allow for consistent management and operation across environments.`
   },
     {
-    
+    image:innovai,
     title:'Innovation and AI Capabilities',
     description: `Leverage cutting-edge technologies like artificial intelligence, machine learning, and IoT to drive innovation. Azure’s AI and analytics services enable businesses to gain actionable insights and enhance decision-making.`
   }
@@ -168,39 +168,39 @@ export const googleTabs:CloudSpecialType[] = [
     title:'Key Benefits of Google Drive',
     },
   {
- 
+    image:seccloud,
     title:'Secure and Scalable Cloud Storage',
     description:`Google Drive offers scalable storage solutions for businesses of all sizes, from startups to enterprises. Store all your important documents, creative assets, and business-critical files with confidence, knowing that Google’s advanced security protocols keep your data safe.`
   },
   {
-    
+    image:rlcollab,
     title:'Seamless Collaboration in Real Time',
     description:`Work smarter with real-time collaboration. Google Drive’s integration with Google Docs, Sheets, and Slides enables multiple users to work on the same file simultaneously, with changes automatically saved and synced.`
    },{
-    
+    image:anai,
     title:'Access Anytime, Anywhere',
     description:`Whether you’re in the office, at home, or on the go, Google Drive ensures you can access your files from any device with an internet connection. The Google Drive mobile app and offline access features make it easy to stay productive wherever you are.`},
      {
-    
+    image:powser,
     title:'Powerful Search Capabilities',
     description:`Google Drive’s advanced search functionality, powered by Google AI, allows you to find files instantly. Search by file type, owner, keywords, or even by text within scanned documents and images.`},
     {
-    
+    image:flesha,
     title:'Flexible Sharing Options',
     description:`Share files and folders with ease. Google Drive provides granular sharing permissions, allowing you to control who can view, comment, or edit your files. Share links securely and manage access with expiration dates and password protection.`
   },
    {
-    
+    image:disrec,
     title:'Business Continuity and Disaster Recovery',
     description: `With automatic backups and file versioning, Google Drive ensures your data is protected against accidental deletions or cyber threats. You can restore previous file versions or recover deleted files with just a few clicks.`
   },
     {
-    
+    image:gwoed,
     title:'Integration with Google Workspace and Beyond',
     description: `Google Drive is part of Google Workspace, which includes a suite of productivity tools like Gmail, Calendar, Meet, and more. It also integrates with hundreds of third-party applications, such as Slack, Salesforce, Adobe, and Microsoft Office, streamlining your workflows.`
   },
    {
-    
+    image:csef,
     title:'Cost-Efficiency and Scalability',
     description: `Google Drive offers flexible pricing plans tailored to meet the needs of individuals, small businesses, and enterprises. With its pay-as-you-grow model, you only pay for the storage and features your business needs.`
   }
@@ -275,43 +275,42 @@ export const whyDrop = {
 
 export const dropTabs:CloudSpecialType[] = [
 {
-    
+    image:dpbox,
     title:'Key Benefits of Dropbox File Storage',
     },
   {
-    
+    image:secclouds,
     title:'Secure Cloud Storage',
     description:`Dropbox ensures that your files are protected with advanced encryption and multi-layered security protocols. Whether it’s sensitive business documents or creative assets, you can trust Dropbox to keep your data safe and secure.`
   },
-  {
-    
+  { image:simacan,
     title:'Seamless Access Anywhere',
     description:`Access your files from any device, at any time. With Dropbox, your data is always at your fingertips, whether you’re working from a laptop, tablet, or smartphone. Offline access is also available, ensuring productivity even without an internet connection.`
   },{
-    
+    image:rltm,
     title:'Real-Time Collaboration',
     description:`Collaborate on documents, presentations, and creative projects in real time. With features like Dropbox Paper, shared folders, and file commenting, your team can work together efficiently, no matter where they are.`},
     {
-    
+    image:vcrt,
     title:'Version Control and File Recovery',
     description:`Never worry about accidental file overwrites or deletions. Dropbox keeps a detailed version history of your files, allowing you to recover previous versions or deleted files effortlessly.`
   },{
-    
+    image:scasol,
     title:'Scalable Solutions for Any Team Size',
     description:`From small businesses to global enterprises, Dropbox offers scalable plans and tools that grow with your needs. Tailored features such as granular admin controls, data insights, and team management tools ensure Dropbox can support any organization.`
   },
    {
-    
+    image:dropint,
     title:'Streamlined Integration with Existing Tools',
     description: `Dropbox integrates with over 300,000 third-party apps and services, including Microsoft Office, Google Workspace, Slack, Zoom, Adobe Creative Cloud, and more. This seamless integration ensures Dropbox becomes a natural extension of your existing workflow.`
    },
     {
-    
+    image:inprod,
     title:'Enhanced Productivity with Smart Features',
     description:`Features like Dropbox Smart Sync and suggested file organization use machine learning to save time and optimize workflows by ensuring you always have the files you need without overloading local storage.`
   },
    {
-    
+    image:bscont,
     title:'Compliance and Control for Businesses',
     description: `Dropbox meets global compliance standards, including GDPR, HIPAA, and SOC 2, providing businesses with the governance tools they need to protect sensitive information and stay compliant with regulations.`
   }
@@ -387,39 +386,39 @@ export const veemTabs:CloudSpecialType[] = [
     title:'Key Benefits of Veeam Backup as a Service',
     },
   {
-    
+    image:dtprote,
     title:'Comprehensive Data Protection',
     description:`Veeam BaaS safeguards all your critical workloads, including cloud-native, on-premises, virtual, and hybrid environments. Protect everything from physical servers and VMs to applications like Microsoft 365, ensuring your data is always secure and accessible.`
   },
   {
-    
+    image:ransprot,
     title:'Ransomware Protection and Cyber Resilience',
     description:`Veeam BaaS integrates advanced ransomware protection to secure your backups against malicious attacks. Immutable backups, air-gapped storage, and intelligent monitoring ensure your business is prepared to recover quickly from any cyber threat.`
   },{
-    
+    image:dtrac,
     title:'Reliable and Rapid Recovery',
     description:`Minimize downtime with Veeam’s industry-leading recovery technology. From granular file-level recovery to full application and system restores, Veeam BaaS ensures your business is back up and running in minutes, not hours.`
   },{
-    
+    image:csied,
     title:'Cost Efficiency and Scalability',
     description:`Pay only for what you need with flexible consumption-based pricing. As your business grows, Veeam BaaS scales effortlessly to protect larger workloads and evolving IT infrastructures without requiring additional hardware investments.`
    },{
-    
+    image:comprec,
     title:'Compliance and Governance',
     description:`Veeam BaaS helps businesses meet regulatory compliance requirements by providing robust data retention, encryption, and reporting features. Rest easy knowing your backups adhere to strict data governance standards.`
   },
    {
-    
+    image:aibc,
     title:'Elimination of Backup Complexity',
     description: `With Veeam BaaS, you can offload the complexity of backup management to experienced service providers. This means less time spent on manual tasks and more time focusing on strategic business initiatives.`
   },
     {
-    
+    image:dataint,
     title:'Cloud-Native Integration',
     description:`Veeam BaaS seamlessly integrates with major cloud platforms such as AWS, Microsoft Azure, and Google Cloud, allowing you to back up cloud-native workloads or extend on-premises backups to the cloud with ease.`
     },
    {
-    
+    image:tfs,
     title:'24/7 Monitoring and Support',
     description: `Delivered by trusted Veeam service providers, Veeam BaaS includes round-the-clock monitoring and expert support to ensure your backups are running smoothly and any issues are resolved quickly.`
   }

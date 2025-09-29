@@ -6,7 +6,7 @@ import { KeyFeaturesSection } from '../../cloud-services/key-features'
 import SubHeader from '../components/SubHeader'
 import Section from '@/components/Section'
 import MainCarousel from '../components/Special'
-import { dellemc, fortinet, hpedata, prisma } from '@/app/assets'
+import { broadcamdat, dellemc, fortinet, hpedata, ibmcloudSS, prisma, vmware } from '@/app/assets'
 import Index from '../components/Index'
 
 const DataCenter = () => {
@@ -127,6 +127,7 @@ const DataCenter = () => {
 
 <MainCarousel
   tabData={ibmTabData}
+  image={ibmcloudSS}
 />
 
 <KeyFeaturesSection
@@ -203,7 +204,7 @@ image={prisma}
 
 <MainCarousel
   tabData={vmwareBenefits}
-
+  image = {vmware}
 />
 
 <KeyFeaturesSection
@@ -229,6 +230,7 @@ image={prisma}
 
 <MainCarousel
   tabData={broadcomBenefits}
+  image={broadcamdat}
 />
 
 <KeyFeaturesSection

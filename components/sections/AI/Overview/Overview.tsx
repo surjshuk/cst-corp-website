@@ -6,7 +6,7 @@ import { ThreePoints } from '@/components/shared/ThreePoints'
 import { aicctvPoints, anomlyPoints, customBenifits, droneBenifits, medicalPoints, mudBenifits, mudPoints, pythiaPoints, saferigBenifits, saferigPoints } from './data'
 import Breaker from '../components/Breaker'
 import SubHeader from './components/SubHeader'
-import { aihazard } from '@/app/assets'
+import { AIBG1, aihazard, mainBG1, mainBG2, mainBG3, mainBG4 } from '@/app/assets'
 // import Index from '../components/Index'
 
 const Overview = () => {
@@ -57,21 +57,21 @@ const Overview = () => {
     description='PythiaAI is an AI-powered predictive maintenance solution designed for oil and gas drilling operations. It continuously analyzes real-time Electronic Drilling Recorder (EDR) data and optional sensor inputs such as vibration, torque, and temperature. The system predicts failures, estimates Remaining Useful Life (RUL), and delivers actionable guidance to reduce downtime and improve safety.'
 />
 
-          <Special points={pythiaPoints}/>
+          <Special points={pythiaPoints} image={mainBG1}/>
 
 <SubHeader 
     title="AI-Powered Medical Inventory"
     description='This solution optimizes hospital and clinic supply chains by forecasting demand, tracking usage in real-time, and preventing shortages or waste. Using AI-driven insights, it balances critical stock levels for medicines, consumables, and devices, ensuring resources are always available when patients and doctors need them most.'
 />
 
-           <Special points={medicalPoints}/>
+           <Special points={medicalPoints} image={mainBG2}/>
 
            <SubHeader 
     title="AI-Enabled CCTV Surveillance"
     description='This solution transforms traditional security cameras into intelligent monitoring systems. By applying computer vision and deep learning, it can detect suspicious activity, track people or assets, and identify safety risks in real time. The system reduces manual monitoring burden while enhancing security, compliance, and situational awareness across facilities.'
 />
 
-           <Special points={aicctvPoints}/>
+           <Special points={aicctvPoints} image={mainBG3}/>
 
 
             <SubHeader 
@@ -81,7 +81,7 @@ const Overview = () => {
                 '
             />
           
-           <Special points={anomlyPoints}/>
+           <Special points={anomlyPoints} image={mainBG4}/>
 
 
             <Header 
@@ -116,7 +116,7 @@ const Overview = () => {
               '
             />
             
-            <Special points={mudPoints}/>
+            <Special points={mudPoints} image={AIBG1}/>
             <ThreePoints points={mudBenifits}/>
     
            

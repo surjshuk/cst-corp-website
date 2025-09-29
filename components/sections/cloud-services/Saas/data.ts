@@ -1,5 +1,5 @@
 
-import { keyibm } from "@/app/assets";
+import { adacro, anarepo, busagil, cloudcont, costsave, crossdev, custrlt, custserv, enhcollab, enprod, futureproof, hubspot, igsec, keyibm, licmag, markauto, marketaut, paperreduc, pipeline, rbeco, redhat, salefor, scalms, seccomp, semcollab, simint, wcsuppo } from "@/app/assets";
 import { Feature } from "../../AI/feature";
 import { CloudSpecialType } from "../type";
 
@@ -23,16 +23,16 @@ export const whyAdobe:string[] = [
 
 export const adobeTabData:CloudSpecialType[] = [
 {
-    
+    image:adacro,
     title:'Key Benefits of Adobe Acrobat',
     },
   {
-    
+    image:enprod,
     title:'Enhanced Productivity',
     description:`Adobe Acrobat streamlines document workflows, enabling users to quickly create, edit, and organize PDFs. Features like bulk conversion, one-click export to Microsoft Office formats, and intelligent document scanning save time and effort.`
 },
   {
-    
+    image:semcollab,
     title:'Seamless Collaboration',
     description:`Share and collaborate on documents effortlessly with Acrobat’s real-time commenting, tracking, and review features. Multiple users can annotate and review files simultaneously, keeping everyone on the same page.`
 },{
@@ -40,17 +40,17 @@ export const adobeTabData:CloudSpecialType[] = [
     title:'Unmatched Versatility',
     description:`Whether you need to merge multiple documents into a single file, create interactive forms, or convert scanned images into searchable text using OCR (optical character recognition), Adobe Acrobat has the tools to handle any PDF task.`
 },{
-    
+    image:crossdev,
     title:'Cross-Device Accessibility',
     description:`Adobe Acrobat works seamlessly across desktops, tablets, and smartphones. With cloud storage integration, you can access your documents anytime, anywhere, ensuring uninterrupted productivity`
 },
     {
-    
+    image:igsec,
     title:'Enterprise-Grade Security',
     description: `Protect sensitive information with Adobe’s robust security features, including password protection, redaction tools, and encryption options. Control document access and permissions to safeguard your data.`
 },
    {
-    
+    image:paperreduc, 
     title:'Sustainability and Paper Reduction',
     description: `Switching to digital workflows with Adobe Acrobat helps reduce paper usage, contributing to environmentally friendly business practices while optimizing your operations.`
 },
@@ -115,30 +115,30 @@ export const ibmTabData:CloudSpecialType[] = [
     title:'Key Benefits of the IBM Enterprise Licensing Agreement',
     },
   {
-    
+    image:licmag,
     title:'Simplified Licensing Management',
     description:`Reduce administrative burdens with a single, unified agreement that covers all your IBM software and services.`
 },
   {
-    
+    image:costsave,
     title:'Cost Savings',
     description:`Optimize your IT spend with volume discounts, predictable pricing, and flexible payment terms. The IBM ELA helps businesses lower total cost of ownership while ensuring access to world-class solutions.`
 },{
-    
+    image:busagil,
     title:'Business Agility',
     description: `Easily scale licenses to align with organizational growth or changes in strategy. The ELA allows you to adapt quickly to new challenges and opportunities`
 },{
-    
+    image:enhcollab,
     title:'Enhanced Collaboration',
     description:`Empower your teams with access to IBM’s industry-leading tools, enabling them to innovate and collaborate more effectively.`
 },
     {
-    
+    image:futureproof,
     title:' Future-Proofing Your Organization',
     description: `Stay ahead of the curve with access to IBM’s latest technologies, updates, and innovations, ensuring your business remains competitive in an evolving digital landscape.`
 },
    {
-    
+    // image:cmp,
     title:'Compliance Confidence',
     description: `With built-in compliance tools and proactive reporting, the IBM ELA helps minimize risks and ensures your organization meets regulatory standards.`
 },
@@ -200,34 +200,34 @@ export const whyRedHat:string[] = [
 
 export const redHatTabData:CloudSpecialType[] = [
 {
-    
+    image:redhat,
     title:'Key Benefits of Red Hat Linux',
     },
   {
-    
+    image:seccomp,
     title:'Unmatched Security and Compliance',
     description:`Red Hat Linux is built with security at its core, offering a variety of tools to ensure your environment remains protected. With features like SELinux (Security-Enhanced Linux), built-in firewall capabilities, and regular security patches, Red Hat Linux helps organizations mitigate risks and safeguard their infrastructure. Additionally, Red Hat Linux is designed to meet regulatory compliance standards, providing businesses with the tools necessary to maintain secure, compliant IT environments across industries.`
 },
   {
-    
+    image:igsec,
     title:'Enterprise-Grade Stability and Reliability',
     description:`Red Hat Linux is known for its high stability, ensuring that your IT infrastructure operates reliably around the clock. Its long lifecycle support, with up to 10 years of updates and maintenance, ensures that your systems remain up to date without disrupting critical business operations. Red Hat Linux is the go-to choice for businesses that require a stable and reliable operating system to power their mission-critical applications.`
 },{
-    
+    image:scalms,
     title:'Scalability and Flexibility',
     description: `Red Hat Linux is designed to scale efficiently, allowing organizations to expand their infrastructure as business needs grow. Whether you’re running a small server or managing large-scale cloud environments, Red Hat Linux adapts to the specific requirements of your workloads. It provides the flexibility to deploy applications on physical, virtual, or cloud-based environments, enabling businesses to innovate and grow without worrying about infrastructure limitations.`
 },{
-    
+    image:cloudcont,
     title:'Optimized for Cloud and Containers',
     description:`Red Hat Linux is optimized for modern workloads, including cloud-native applications and containerized environments. With integrated support for containers, Kubernetes, and Docker, Red Hat Linux allows businesses to deploy, manage, and scale cloud applications quickly and efficiently. This cloud-native approach enhances agility, reduces development time, and accelerates the deployment of microservices and other containerized applications.`
 },
     {
-    
+    image:rbeco,
     title:' Robust Ecosystem and Tools',
     description: `Red Hat Linux is part of the larger Red Hat ecosystem, which includes a broad range of tools and services designed to support your enterprise IT needs. With tools like Red Hat Ansible Automation Platform for automation, Red Hat OpenShift for container orchestration, and Red Hat Satellite for system management, businesses can enhance productivity and streamline IT operations. The rich ecosystem ensures that businesses can automate, integrate, and manage their entire IT infrastructure seamlessly.`
 },
    {
-    
+    image:wcsuppo,
     title:'World-Class Support and Training',
     description: `Red Hat Linux is backed by Red Hat’s renowned support and training services, providing businesses with 24/7 access to expert guidance, troubleshooting, and patches. Red Hat’s subscription model offers access to the latest software releases, security updates, and patches, ensuring that your systems remain secure and up to date. In addition, Red Hat provides comprehensive training and certification programs, enabling your IT team to develop the skills needed to manage your Linux environment effectively.`
 },
@@ -280,33 +280,33 @@ export const whyHub:string[] = [
 
 export const hubTabData:CloudSpecialType[] = [
 {
-    
+    image:hubspot,
     title:'Key Benefits of HubSpot',
     },
   {
-    
+    image:custrlt,
     title:'Unmatched Customer Relationship Management',
     description:`HubSpot’s CRM helps businesses build strong, personalized relationships with their customers. It offers a variety of features such as lead tracking, contact management, and email marketing automation, all designed to ensure businesses can nurture and engage with their customers efficiently. HubSpot’s user-friendly interface helps sales teams access a full view of their leads and customers in one place.`},
   {
-    
+    image:marketaut,
     title:'Enterprise-Grade Marketing Automation and Analytics ',
     description:`HubSpot is renowned for its powerful marketing automation tools, which include email marketing, social media management, landing pages, and ad tracking. Its robust analytics and reporting tools help businesses measure the success of their marketing campaigns, optimize performance, and improve ROI. HubSpot enables businesses to make data-driven decisions that lead to smarter marketing strategies.`
 },{
-    
+    image:pipeline,
     title:'Sales and Pipeline Management',
     description: `HubSpot provides tools that help sales teams organize, track, and close deals more effectively. It automates many aspects of the sales process, such as follow-up reminders, email sequences, and task assignments. HubSpot’s sales pipeline tracking ensures that businesses can manage deals from start to finish, enabling sales teams to focus on closing deals rather than administrative tasks.`
 },{
-    
+    image:simint,
     title:'Seamless Integration and Scalability',
     description: `HubSpot’s platform integrates with over 500 third-party apps, enabling businesses to connect their CRM with other essential tools. Whether you're working with email, social media, or accounting software, HubSpot adapts to your existing ecosystem. HubSpot’s flexibility ensures that businesses can scale their operations without worrying about outgrowing the platform.`
 },
     {
-    
+    image:custserv,
     title:' Customer Service Tools ',
     description: `HubSpot’s service hub enables businesses to deliver excellent customer service. With features like live chat, knowledge base, and ticket management, businesses can provide timely support to customers. The service hub integrates with the CRM, allowing businesses to have all customer interactions in one unified platform.`
 },
    {
-    
+    image:wcsuppo,
     title:'World-Class Support and Training ',
     description: `HubSpot offers a variety of support options, including 24/7 customer service, a comprehensive knowledge base, and community forums. HubSpot Academy provides training resources, including certifications, to help your team become experts in using the platform. HubSpot’s customer success team ensures that businesses get the most out of their investment in the platform.`
 },
@@ -359,33 +359,33 @@ export const whySale:string[] = [
 
 export const saleData:CloudSpecialType[] = [
 {
-    
+    image:salefor,
     title:'Key Benefits of Salesforce',
     },
   {
-    
+     image:custrlt,
     title:'Unmatched Customer Relationship Management ',
     description:`Salesforce’s CRM helps businesses manage and grow customer relationships by providing a unified view of every interaction. With features like contact management, lead tracking, and sales forecasting, Salesforce enables businesses to nurture leads, increase conversion rates, and foster long-term customer loyalty.`
 },{
-    
+    image:markauto,
     title:'Comprehensive Marketing Automation ',
     description: `Salesforce offers a comprehensive suite of marketing tools, including email marketing, social media tracking, advertising automation, and customer segmentation. Its Marketing Cloud empowers businesses to create personalized and targeted marketing campaigns that drive customer engagement and boost ROI.`
 },{
-    
+    image:pipeline,
     title:'Sales and Pipeline Management ',
     description: `Salesforce provides powerful sales tools that allow businesses to manage sales pipelines, track performance, and close deals faster. Sales teams can automate key tasks, track leads and opportunities, and access real-time performance data to make informed decisions and improve overall sales efficiency.`
 },{
-    
+     image:custserv,
     title:'Customer Service and Support Excellence',
     description: `Salesforce Service Cloud provides businesses with the tools to deliver exceptional customer service. Features include case management, knowledge base, live chat, and AI-powered service automation. With a single platform to manage customer inquiries, support tickets, and communication, businesses can resolve issues faster and improve customer satisfaction.`
 },
     {
-    
+    image:anarepo,
     title:'Robust Analytics and Reporting  ',
     description: `Salesforce offers comprehensive reporting and analytics tools that allow businesses to track performance, identify trends, and gain actionable insights. The platform’s advanced analytics capabilities ensure that decision-makers have access to real-time data, helping businesses optimize sales and marketing strategies.`
 },
    {
-    
+    image:wcsuppo,
     title:'World-Class Support and Training ',
     description: `Salesforce provides 24/7 support through a variety of channels, including a help center, community forums, and direct customer support. With Salesforce Trailhead, users have access to a wide range of learning resources, certifications, and training materials to maximize their use of the platform and improve internal capabilities.`
 },

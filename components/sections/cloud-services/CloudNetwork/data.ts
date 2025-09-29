@@ -1,5 +1,5 @@
 
-import { aihpe, fortigatecloud, globalsecur, globalsemless, hpearuba, hpecloud, keyfortigate, keyglobal, semvpn, simplifiedHpe, zerotrust } from "@/app/assets";
+import { aihpe, athpro, centcont, clnav, depo, enhprod, fortigatecloud, globalsecur, globalsemless, hpearuba, hpecloud, hyml, keyfortigate, keyglobal, opercomp, realtime, semvpn, simcloudint, simplifiedHpe, useexp, visrep, zerotru, zerotrust } from "@/app/assets";
 import { Feature } from "../../AI/feature";
 import { CloudSpecialType } from "../type";
 
@@ -42,22 +42,22 @@ export const cloudPaloTabData:CloudSpecialType[] = [
     title:'Seamless User Experience',
     description:`GlobalProtect eliminates the need for traditional VPN complexity, offering seamless, always-on secure connectivity. Users experience consistent and high-performance access to applications, whether they are hosted in the cloud, on-premises, or in SaaS environments.`},
     {
-    
+    image:clnav,
     title:'Cloud-Native Scalability',
     description:`Built on Palo Alto Networks' Prisma Access cloud infrastructure, GlobalProtect delivers unparalleled scalability. Whether you’re onboarding hundreds or thousands of users, the service scales effortlessly to meet the demands of growing organizations without requiring hardware upgrades.`
     },
     {
-    
+    image:enhprod,
     title:'Enhanced Productivity',
     description:`By ensuring fast and reliable connectivity with intelligent traffic routing and optimized application access, GlobalProtect helps users stay productive without compromising security.`
     },
    {
-   
+   image:centcont,
     title:'Centralized Visibility and Control',
     description: `Manage and monitor all user activity, devices, and applications from a single pane of glass. GlobalProtect’s centralized management capabilities enable IT teams to enforce consistent security policies, simplify operations, and respond to threats in real time.`
     },
     {
-    
+    image:hyml,
     title:'Optimized for Hybrid and Multi-Cloud Environments',
     description: `GlobalProtect ensures seamless connectivity and security for businesses operating in hybrid and multi-cloud environments. It enables direct access to cloud-based applications while maintaining enterprise-grade protection.`
      }
@@ -124,7 +124,7 @@ export const fortiGateTabData:CloudSpecialType[] = [
     title:'Key Benefits of FortiGate Cloud Security',
     },
   {
-   
+   image:athpro,
     title:'Advanced Threat Protection',
     description:'FortiGate Cloud Security provides enterprise-grade security powered by Fortinet’s security fabric, offering deep packet inspection (DPI), intrusion prevention systems (IPS), antivirus, web filtering, and application control. By leveraging machine learning, artificial intelligence, and FortiGuard Labs threat intelligence, FortiGate delivers real-time protection against both known and unknown threats, including zero-day attacks. With this level of security, your organization is always one step ahead of cybercriminals.'
    },
@@ -133,26 +133,26 @@ export const fortiGateTabData:CloudSpecialType[] = [
     title:'Cloud-Native Scalability and Flexibility',
     description:'FortiGate Cloud Security is built to scale with your organization. Whether your business is growing rapidly, expanding into new regions, or adopting a hybrid cloud architecture, FortiGate provides the flexibility and scalability to meet your evolving security needs. With cloud management, you can quickly deploy new locations, users, and devices without worrying about hardware limitations. The cloud-native nature of FortiGate ensures that as your network grows, your security infrastructure grows seamlessly with it.'
   },{
-   
+   image:centcont,
     title:'Centralized Security Management',
     description:`One of the key advantages of FortiGate Cloud Security is its centralized management interface, which provides a unified view of your entire network security landscape. With FortiGate, you can manage and monitor your security policies, firewall settings, traffic logs, and incident reports from a single platform. This centralized approach not only simplifies management but also helps ensure consistent security across all network touchpoints—whether on-premises, in the cloud, or at remote locations.`
    },{
-    
+    image:simcloudint, 
     title:'Seamless Integration with Cloud Infrastructure',
     description:`FortiGate Cloud Security integrates natively with leading public cloud providers such as AWS, Microsoft Azure, and Google Cloud. This deep integration ensures that your security policies extend seamlessly across all cloud environments. By providing security that is consistent and scalable, FortiGate enables businesses to operate securely in their cloud environments while adhering to security best practices and compliance standards.`
   },
     {
-    
+    image:zerotru,
     title:'Zero Trust Security Model',
     description:`FortiGate adopts a Zero Trust approach to security, ensuring that no user or device is trusted by default, regardless of location or network. With granular, role-based access controls, FortiGate ensures that only authorized users and devices can access sensitive resources. Continuous monitoring and real-time authentication help enforce this model, providing businesses with the highest levels of security in today’s distributed network environments.`
     },
    {
-   
+    image:visrep,
     title:'Enhanced Visibility and Reporting',
     description: `With FortiGate Cloud Security, businesses gain complete visibility into network traffic, application usage, and security events. The platform provides detailed reporting, dashboards, and alerts that help IT teams detect anomalies, investigate threats, and take proactive measures to mitigate risk. FortiGate’s robust reporting features help businesses stay compliant with industry regulations and provide transparency into their network security posture.`
     },
     {
-    
+    image:opercomp,
     title:'Reduced Operational Complexity',
     description: `FortiGate Cloud Security eliminates the need for complex, on-premises hardware deployments, significantly reducing operational overhead. With automated updates, centralized policy management, and real-time traffic analysis, FortiGate allows IT teams to focus on strategic initiatives while ensuring that security remains a top priority. This simplicity and automation are key advantages of using a cloud-based security solution.`
     },
@@ -220,11 +220,11 @@ export const arubaTabData:CloudSpecialType[] = [
     title:'AI-Powered Insights and Automation',
     description:`Aruba Central leverages artificial intelligence (AI) and machine learning to provide businesses with intelligent insights into their network performance. The platform’s AI-powered tools automatically detect network issues, identify trends, and offer actionable recommendations to optimize network performance. By automating routine network management tasks such as configuration, monitoring, and troubleshooting, Aruba Central frees up IT teams to focus on more strategic initiatives while ensuring a consistently high-performing network.`
   },{
-   
+    image:realtime,
     title:'Real-Time Visibility and Analytics',
     description:`With Aruba Central, businesses gain real-time visibility into the performance of their entire network infrastructure. The platform provides comprehensive analytics that enables IT teams to monitor everything from device health and network traffic to security events and user activity. Detailed reports and dashboards help organizations understand how their network is performing, identify potential issues before they impact users, and take proactive steps to optimize network operations.`
   },{
-    
+    image:useexp,
     title:'Enhanced Security and Compliance',
     description:`Security is built into Aruba Central at every layer of the network. The platform provides centralized visibility into network security events, alerts businesses to potential threats, and enables automated threat mitigation. Aruba Central also integrates with Aruba ClearPass, Aruba’s network access control solution, to ensure that only authorized users and devices can access the network. With features like role-based access control, secure VPN access, and encryption, businesses can protect sensitive data and meet compliance requirements more effectively.`
    },
@@ -239,7 +239,7 @@ export const arubaTabData:CloudSpecialType[] = [
     description: `As a cloud-based solution, Aruba Central eliminates the need for on-premises infrastructure and manual updates. Software and firmware updates are automatically pushed to the platform, ensuring that your network devices are always up to date with the latest features, security patches, and enhancements. This eliminates the time-consuming process of manually updating devices and reduces the risk of vulnerabilities due to outdated software.`
   },
     {
-    
+    image:depo,
     title:'Flexible Deployment Options',
     description:`Aruba Central offers businesses the flexibility to deploy their network management solution in the way that best suits their needs. Whether you’re looking to manage a fully cloud-based network, a hybrid environment, or an on-premises network, Aruba Central provides the tools and capabilities to manage every aspect of your network from a single, integrated platform. This flexibility makes Aruba Central the ideal choice for organizations looking to streamline network operations and reduce complexity.`
   }

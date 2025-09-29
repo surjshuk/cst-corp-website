@@ -1,11 +1,13 @@
 import React from 'react'
-import CloudSpecial from '../../cloud-services/components/Special'
+// import MainCarousel from '../../cloud-services/components/Special'
 import { KeyFeaturesSection } from '../../cloud-services/key-features'
 import { barracudaBenefits, barracudaDeploy, barracudaDesc, barracudaFeatures, barracudaModelSpecs, fortinetDeploy, fortinetDesc, fortinetFeature, fortinetTabData } from './data'
 // import Header from '../components/Header'
 import SubHeader from '../components/SubHeader'
 import Section from '@/components/Section'
 import Index from '../components/Index'
+import MainCarousel from '../components/Special'
+import { bcuda, firwal } from '@/app/assets'
 
 const Firewall = () => {
   return (
@@ -38,7 +40,7 @@ const Firewall = () => {
       position='right'
 />
 
-<CloudSpecial
+<MainCarousel
   tabData={ciscoTabData}
   
 /> */}
@@ -62,9 +64,9 @@ const Firewall = () => {
       position='right'
 />
 
-<CloudSpecial
+<MainCarousel
   tabData={fortinetTabData}
-  
+  image = {firwal}
 />
 
 
@@ -88,9 +90,9 @@ const Firewall = () => {
 />
 
 
-<CloudSpecial
+<MainCarousel
   tabData={barracudaBenefits}
-
+  image = {bcuda}
 />
 
 

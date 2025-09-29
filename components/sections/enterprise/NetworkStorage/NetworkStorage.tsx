@@ -1,11 +1,12 @@
 import React from 'react'
-import CloudSpecial from '../../cloud-services/components/Special'
 import { cephBenefits, cephDesc, cloudObjectBenefits, cloudObjectDesc, cloudVolumesBenefits, cloudVolumesDesc, dellEcsBenefits, dellEcsDesc, dellVxRailBenefits, dellVxRailDesc, emcIsilonBenefits, emcIsilonDesc, emcPowerMaxBenefits, emcPowerMaxDesc, emcUnityXTBenefits, emcUnityXTDesc, flashSystemBenefits, flashSystemDesc, glusterBenefits, glusterDesc, infoSightBenefits, infoSightDesc, linkStationBenefits, linkStationDesc, netappAFFBenefits, netappAFFDesc, netappFASBenefits, netappFASDesc, netappONTAPBenefits, netappONTAPDesc, netappStorageGRIDBenefits, netappStorageGRIDDesc, nimbleBenefits, nimbleDesc, openshiftBenefits, openshiftDesc, qnapCloudBenefits, qnapCloudDesc, qnapEnterpriseBenefits, qnapEnterpriseDesc, qnapNASBenefits, qnapNASDesc, spectrumBenefits, spectrumDesc, storwizeBenefits, storwizeDesc, teraStationBenefits, teraStationDesc, veeamBenefits, veeamCloudBenefits, veeamCloudDesc, veeamDesc } from './data'
 
 import Header from '../components/Header'
 import SubHeader from '../components/SubHeader'
 import Section from '@/components/Section'
 import Index from '../components/Index'
+import MainCarousel from '../components/Special'
+import { bflink, bfter, dellemcpo, dellemcsa, delvcx, emcecs, emcisilon, hpecl, hpenim, hpenin, ibmcl, ibmflash, ibmspectrum, ibmstor, netaff, netfas, netontap, netstor, qnapcloud, qnapEnterprise, qnapnas, redgul, redhat, redhatopen, veeambackup, veeamreplica } from '@/app/assets'
 
 const NetworkStorage = () => {
   return (
@@ -101,9 +102,10 @@ const NetworkStorage = () => {
 
 
 
-<CloudSpecial
+<MainCarousel
   tabData={emcUnityXTBenefits}
- 
+  image={dellemcsa}
+  
 />
 
 <SubHeader
@@ -111,9 +113,9 @@ const NetworkStorage = () => {
   description={emcPowerMaxDesc}
 />
 
-<CloudSpecial
+<MainCarousel
   tabData={emcPowerMaxBenefits}
-
+image={dellemcpo}
 />
 
 {/* EMC Isilon */}
@@ -121,9 +123,9 @@ const NetworkStorage = () => {
   title='EMC Isilon'
   description={emcIsilonDesc}
 />
-<CloudSpecial
+<MainCarousel
   tabData={emcIsilonBenefits}
-
+  image={emcisilon}
 />
 
 {/* Dell ECS */}
@@ -131,9 +133,9 @@ const NetworkStorage = () => {
   title='Dell ECS (Elastic Cloud Storage)'
   description={dellEcsDesc}
 />
-<CloudSpecial
+<MainCarousel
   tabData={dellEcsBenefits}
-
+  image={emcecs}
 />
 
 {/* Dell VxRail */}
@@ -141,8 +143,9 @@ const NetworkStorage = () => {
   title='Dell VxRail'
   description={dellVxRailDesc}
 />
-<CloudSpecial
+<MainCarousel
   tabData={dellVxRailBenefits}
+  image={delvcx}
 
 />
 
@@ -154,9 +157,9 @@ const NetworkStorage = () => {
 />
 
 
-<CloudSpecial
+<MainCarousel
   tabData={netappAFFBenefits}
-  
+  image={netaff}
 />
 
 <SubHeader
@@ -166,9 +169,9 @@ const NetworkStorage = () => {
 
 
 
-<CloudSpecial
+<MainCarousel
   tabData={netappFASBenefits}
-
+  image={netfas}
 />
 
 
@@ -178,9 +181,9 @@ const NetworkStorage = () => {
 />
 
 
-<CloudSpecial
+<MainCarousel
   tabData={netappONTAPBenefits}
-
+  image={netontap}
 />
 
 <SubHeader
@@ -189,9 +192,9 @@ const NetworkStorage = () => {
 />
 
 
-<CloudSpecial
+<MainCarousel
   tabData={netappStorageGRIDBenefits}
-
+  image={netstor}
 />
 
 
@@ -200,8 +203,9 @@ const NetworkStorage = () => {
   title='HPE Nimble Storage'
   description={nimbleDesc}
 />
-<CloudSpecial
+<MainCarousel
   tabData={nimbleBenefits}
+  image={hpenim}
 
 />
 
@@ -209,9 +213,9 @@ const NetworkStorage = () => {
   title='HPE Cloud Volumes'
   description={cloudVolumesDesc}
 />
-<CloudSpecial
+<MainCarousel
   tabData={cloudVolumesBenefits}
-  
+  image={hpecl}
 />
 
 <SubHeader
@@ -220,9 +224,9 @@ const NetworkStorage = () => {
 />
 
 
-<CloudSpecial
+<MainCarousel
   tabData={infoSightBenefits}
-  
+  image={hpenin}
 />
 
 <Header title='IBM Network Storage Solutions' />
@@ -234,8 +238,9 @@ const NetworkStorage = () => {
 />
 
 
-<CloudSpecial
+<MainCarousel
   tabData={flashSystemBenefits}
+  image={ibmflash}
  
 />
 
@@ -245,9 +250,9 @@ const NetworkStorage = () => {
   description={storwizeDesc}
 />
 
-<CloudSpecial
+<MainCarousel
   tabData={storwizeBenefits}
-
+  image={ibmstor}
 />
 
 <SubHeader
@@ -255,9 +260,9 @@ const NetworkStorage = () => {
   description={cloudObjectDesc}
 />
 
-<CloudSpecial
+<MainCarousel
   tabData={cloudObjectBenefits}
-
+  image={ibmcl}
 />
 
 
@@ -266,9 +271,9 @@ const NetworkStorage = () => {
   description={spectrumDesc}
 />
 
-<CloudSpecial
+<MainCarousel
   tabData={spectrumBenefits}
-
+  image={ibmspectrum}
 />
 
 <Header title='Red Hat Network Storage Solutions' />
@@ -280,9 +285,9 @@ const NetworkStorage = () => {
 />
 
 
-<CloudSpecial
+<MainCarousel
   tabData={cephBenefits}
-
+  image={redhat}
 />
 
 
@@ -291,9 +296,9 @@ const NetworkStorage = () => {
   description={glusterDesc}
 />
 
-<CloudSpecial
+<MainCarousel
   tabData={glusterBenefits}
-
+  image={redgul}
 />
 
 
@@ -302,8 +307,9 @@ const NetworkStorage = () => {
   description={openshiftDesc}
 />
 
-<CloudSpecial
+<MainCarousel
   tabData={openshiftBenefits}
+  image={redhatopen}
   
 />
 
@@ -314,8 +320,9 @@ const NetworkStorage = () => {
   description={veeamDesc}
 />
 
-<CloudSpecial
+<MainCarousel
   tabData={veeamBenefits}
+  image={veeambackup}
   
 />
 
@@ -325,8 +332,10 @@ const NetworkStorage = () => {
   description={veeamCloudDesc}
 />
 
-<CloudSpecial
+<MainCarousel
   tabData={veeamCloudBenefits}
+  image={veeamreplica}
+
   
 />
 
@@ -338,8 +347,9 @@ const NetworkStorage = () => {
 />
 
 
-<CloudSpecial
+<MainCarousel
   tabData={teraStationBenefits}
+  image={bfter}
 
 />
 
@@ -348,9 +358,9 @@ const NetworkStorage = () => {
   description={linkStationDesc}
 />
 
-<CloudSpecial
+<MainCarousel
   tabData={linkStationBenefits}
-
+image={bflink}
 />
 
 <Header title='QNAP Network Storage Solutions'/>
@@ -360,19 +370,20 @@ const NetworkStorage = () => {
   description={qnapNASDesc}
 />
 
-<CloudSpecial
+<MainCarousel
   tabData={qnapNASBenefits}
-  
+  image={qnapnas}
 />
 
 <SubHeader
   title='QNAP Enterprise Storage'
   description={qnapEnterpriseDesc}
+
 />
 
-<CloudSpecial
+<MainCarousel
   tabData={qnapEnterpriseBenefits}
-  
+  image={qnapEnterprise}
 />
 
 <SubHeader
@@ -380,9 +391,9 @@ const NetworkStorage = () => {
   description={qnapCloudDesc}
 />
 
-<CloudSpecial
+<MainCarousel
   tabData={qnapCloudBenefits}
-  
+  image={qnapcloud}
 />
 
 
