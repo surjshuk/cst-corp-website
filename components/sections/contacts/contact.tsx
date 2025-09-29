@@ -146,7 +146,7 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElemen
                                 {errors.lastName && <p className="text-red-500 text-sm">{errors.lastName}</p>}
                             </div>
                         </div>
-                        <div className="flex md:flex-col flex-row gap-12">
+                        <div className="flex md:flex-row flex-col gap-12 ">
                             <div className="flex flex-col gap-2 w-full">
                                 <label htmlFor="email" className="font-medium text-neutral-500 w-full text-sm">Email</label>
                                <input
