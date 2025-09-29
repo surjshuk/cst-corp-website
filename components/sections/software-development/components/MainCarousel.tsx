@@ -76,11 +76,11 @@ import { cyberSecBG1 } from "@/app/assets";
               </div>
             <div className="flex flex-col justify-between w-full h-full relative z-10 xl:p-20 md:px-10 px-5 py-20">
               <h2 className="text-4xl md:text-5xl font-medium mt-12">{slide.heading}</h2>
-              <div className="md:w-2/5 w-[70%]">
-                <p className="mb-2">{slide.description?.subheading}</p>
-                <ul className="space-y-2">
+              <div className="lg:w-2/5 md:w-[70%] w-[95%] mt-2">
+                <p className="mb-2 md:text-lg text-sm">{slide.description?.subheading}</p>
+                <ul className="space-y-2 ">
                   {
-                    slide.description?.subdescription?.map((item,index)=><li key={index} className=""><span className="font-bold">{item.key}</span>: {item.value}</li>)
+                    slide.description?.subdescription?.map((item,index)=><li key={index} className="md:text-lg text-sm"><span className="font-bold">{item.key}</span>: {item.value}</li>)
                   }
                   <li></li>
                 </ul>

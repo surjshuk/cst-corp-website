@@ -28,11 +28,11 @@ const Index: React.FC<IndexType> = ({ title, slug,data }) => {
         <h1 className='md:text-7xl text-4xl 2xl:w-[66%] w-[70%] capitalize'>{title}</h1>
       </div>
 
-      <div className='2xl:w-[75%] w-full grid md:grid-cols-2 grid-cols-1 gap-14 xl:mt-0 mt-10'>
+      <div className='2xl:w-[75%] w-full grid md:grid-cols-2 grid-cols-1 lg:gap-14 md:gap-8 gap-5 xl:mt-0 mt-10'>
         {data.map((item, idx) => (
           <div
             key={idx}
-            className='bg-white shadow-lg px-4 py-7 rounded-2xl w-full relative h-80 overflow-hidden'
+            className='bg-white shadow-lg px-4 py-7 rounded-2xl w-full relative lg:h-80  min-h-48 h-full overflow-hidden'
             onMouseEnter={() => setOpen(idx)}
             onMouseLeave={() => setOpen(null)}
           >

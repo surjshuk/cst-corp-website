@@ -44,8 +44,8 @@ export const Footer = () => {
                         <Link href="/privacy-policy" className="hover:text-black text-secondary">
                             Privacy Policy
                         </Link>
-                        <Link href="/terms-of-use" className="hover:text-black text-secondary">
-                            Terms of Use
+                        <Link href="/terms-of-condition" className="hover:text-black text-secondary">
+                            Terms & Conditions
                         </Link>
 
                         
