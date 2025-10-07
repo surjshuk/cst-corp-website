@@ -1,10 +1,10 @@
-import { AUTONOMY, cyberSecBG1, cyberSecBG2, mainBG3, mainBG4 } from "@/app/assets";
+import { aidigital, aimedical, AUTONOMY, pythiaai, saferigai } from "@/app/assets";
 import { MainSpecialType } from "../type";
 
 export const mainTabData:MainSpecialType[] = [
   {
     heading: "Pythia AI",
-     image:cyberSecBG1,
+     image:pythiaai,
     description: [
       `Utilizes sensor and EDR data from rigs for continuous monitoring.`,
       `Detects anomalies in pressure, vibration, torque, flow, and temperature.`,
@@ -14,7 +14,7 @@ export const mainTabData:MainSpecialType[] = [
   },
   {
     heading: "SafeRig, AI-Powered Next Generation CCTV Solution",
-    image:mainBG4,
+    image:saferigai,
     description: [
       ` Offers an intelligent, automated, and real-time safety monitoring framework that can operate with minimum or no internet access.`,
       `Real-time alerts for Safety Violations with centralized data and alert visualization. `,
@@ -35,7 +35,7 @@ export const mainTabData:MainSpecialType[] = [
   {
    
     heading: "AI-Enabled Medical Inventory Management",
-    image:mainBG3,
+    image:aimedical,
     description: [
       `Automates tracking of medicines for hospitals, pharmacies, and providers.`,
       `Prevents losses from overstocking, shortages, or expiries.`,
@@ -45,7 +45,7 @@ export const mainTabData:MainSpecialType[] = [
   },
   {
     heading: "AI Digital Twin Technology",
-    image:cyberSecBG2,
+    image:aidigital,
     description: [
       `Creates virtual replicas of physical assets and systems.`,
       `Predicts failures before they occur to reduce downtime.`,

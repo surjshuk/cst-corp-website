@@ -1,4 +1,4 @@
-import { AUTONOMY, DEFENCEAPPLICATION, FOCUSONDEEPTECH, INSPECTION, mainBG1, mainBG2 , mainBG4, PLACEHOLDER } from "@/app/assets";
+import { DEFENCEAPPLICATION, eandutil, finserv, healthandlife, INSPECTION, mainBG2 , pharma, PLACEHOLDER, retailande } from "@/app/assets";
 import { MainCarouselType } from "../type";
 
 
@@ -12,7 +12,7 @@ export const carouseltabData:MainCarouselType[] = [
   },
   {
     heading: "Chemicals and Pharmaceuticals",
-    image:FOCUSONDEEPTECH,
+    image:pharma,
     description:
       ` Unlock breakthroughs faster with CST's compliant IT frameworks, secure databases, and AI-powered tools—accelerating drug discovery, ensuring regulatory excellence, and transforming chemical and pharma operations.`
   },
@@ -29,20 +29,20 @@ export const carouseltabData:MainCarouselType[] = [
       ` Ignite learning potential with CST's innovative cloud platforms for virtual classrooms and student data systems—enhancing accessibility, boosting efficiency, and creating engaging educational experiences that inspire.`
     },
   {
-    image:mainBG4,
+    image:eandutil,
     heading: "Energy and Utilities",
     description:
       ` Power up efficiency with CST's smart grid tech and predictive analytics—optimizing resource distribution, minimizing downtime, and fueling sustainable innovation in oil, gas, renewables, and utilities.`
   },
   {
-    image:PLACEHOLDER,
+    image:finserv,
     heading: "Financial Services",
     description:
       ` Fortify your financial future with CST's elite fintech security, blockchain expertise, and AI-driven fraud detection—safeguarding banking, insurance, and assets while unlocking seamless, innovative growth.`
 },
 
   {
-    image:AUTONOMY,
+    image:healthandlife,
     heading: "Healthcare and Life Sciences",
     description:
       `ovative growth.
@@ -58,7 +58,7 @@ Healthcare and Life Sciences: Transform patient care with CST's compliant-secure
 },
 
   {
-    image:mainBG1,
+    image:retailande,
     heading: "Retail and E-commerce",
     description:
       ` Dominate the market with CST's powerhouse e-commerce platforms and AI personalization—fortified by unbreakable cybersecurity for thriving online and in-store retail experiences that convert and captivate.`
