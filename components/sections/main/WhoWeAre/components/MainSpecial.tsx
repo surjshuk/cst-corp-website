@@ -51,6 +51,7 @@ export const  MainSpecial : React.FC<MainSpecialProp> =  ({tabData}) => {
               transition: "opacity 0.5s ease",
             }}
             >
+              <div className="bg-black/30 absolute z-10 top-0 left-0 h-full w-full"></div>
               {/* <Image src={slide.image || ""} alt="" className="absolute w-full opacity-50 h-full"/> */}
             <div className="flex  flex-col justify-between h-full relative z-10 md:p-12 p-5 ">
               <h2 className=" lg:text-6xl 2xl:w-1/2 md:w-2/3 w-[90%] md:text-5xl text-4xl  text-white/70 ">{slide.heading}</h2>

@@ -19,7 +19,7 @@ const navItems = [
     label: "Main",
     href: "/",
     sub: [
-      { id: "who-we-are", label: "Who We Are" },
+      { id: "who-we-serve", label: "Who We serve" },
       { id: "what-we-serve", label: "What We Serve" },
       { id: "our-partners", label: "Our Partners" },
       { id: "our-vendors", label: "Our Vendors" },

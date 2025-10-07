@@ -27,7 +27,7 @@ const OurPartners = () => {
           <h2 className="md:text-6xl text-4xl text-blue-500 text-end ">Our Partners</h2>
 
           <div className="md:mt-28 mt-14">
-            <Image src={BRAMERLOGO} alt='' className='w-[200px]'/>
+            <Image src={BRAMERLOGO} alt='Bramer' className='w-[200px]'/>
             <p className="md:w-2/3 md:text-2xl text-2xl mt-8 w-[95%]">At Bramer, we are dedicated to engineering advanced autonomous systems that drive operational efficiency and deliver actionable intelligence across critical domains.</p>
           </div>
 

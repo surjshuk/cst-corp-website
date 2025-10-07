@@ -6,7 +6,7 @@ import { MainSpecial } from './components/MainSpecial'
 const WhoWeAre = () => {
   return (
     <div>
-        <Section data-id="who-we-are" id="who-we-are">
+        <Section data-id="who-we-serve" id="who-we-serve">
        
         <MainSpecial tabData={mainTabData} />
 

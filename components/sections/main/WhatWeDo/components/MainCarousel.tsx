@@ -53,6 +53,8 @@ export const  MainCarousel : React.FC<MainCarouselProp> =  ({tabData}) => {
               transition: "opacity 0.5s ease",
             }}
             >
+              <div className="bg-black/30 absolute z-10 top-0 left-0 h-full w-full"></div>
+
               {/* <Image src={slide.image || ""} alt="" className="absolute w-full opacity-50 h-full"/> */}
             <div className="flex md:flex-row flex-col justify-between md:items-end w-full h-full relative z-10 xl:p-20 md:px-10 px-5 py-20">
               <h2 className="md:text-5xl text-4xl 2xl:w-2/5 lg:w-[60%] md:w-[50%] w-[90%]  text-white">{slide.heading}</h2>
